@@ -8,6 +8,7 @@ env:
 
 install: >
   echo -e " \033[1;33mInstalling dependencies ";
+  npm install
   npm install -g ajv-cli
   docker pull mongo:3.6
   docker pull ${ORION_IMAGE}
