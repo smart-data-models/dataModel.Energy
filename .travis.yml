@@ -1,0 +1,33 @@
+dist: xenial
+language: minimal
+
+env:
+  global:
+    - ORIONLD_IMAGE=fiware/orion-ld
+    - ORION_IMAGE=fiware/orion
+
+install: >
+  echo -e " \033[1;33mInstalling dependencies ";
+  npm install -g ajv-cli
+  docker pull mongo:3.6
+  docker pull ${ORION_IMAGE}
+  docker pull ${ORIONLD_IMAGE}
+
+before_script: >
+  echo -e " \033[1;33mRunning Orion instance and wait until it is finished...";
+  docker run --name mongodb -d mongo:3.6
+  docker run -d --name orion1 --link mongodb:mongodb -p 1026:1026 ${ORION_IMAGE} -dbhost mongodb
+
+  echo -e "\n⏳ Waiting for \033[1;34mOrion\033[0m to be available\n"
+  while [ `docker run --network fiware_default --rm curlimages/curl -s -o /dev/null -w %{http_code} 'http://orion:1026/version'` -eq 000 ]
+    do
+      echo -e "Context Broker HTTP state: " `curl -s -o /dev/null -w %{http_code} 'http://localhost:1026/version'` " (waiting for 200)"
+      sleep 1
+    done
+
+  echo -e "\n\033[1;34mOrion\033[0m available\n"
+
+
+script: >
+  echo -e " \033[1;33mRunning schema validation for the files...";
+  ajv -s ./ThreePhaseAcMeasurement/schema.json -d ./ThreePhaseAcMeasurement/example-normalized.jsonld
