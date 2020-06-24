@@ -1,0 +1,220 @@
+ThreePhaseAcMeasurement:
+  required:
+    - id
+    - type
+  allOf:
+    - $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+  type: object
+  description: >-
+    An electrical  measurement from a system that uses three phase alternating
+    current.
+  properties:
+    activeEnergyExport:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    activeEnergyImport:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    activePower:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    address:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+    alternateName:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    apparentEnergyExport:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    apparentEnergyImport:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    apparentPower:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    areaServed:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    current:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    dataProvider:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    dateEnergyMeteringStarted:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    description:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+    displacementPowerFactor:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    frequency:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    location:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+    name:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+    owner:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items: &ref_0
+        anyOf:
+          - type: string
+            minLength: 1
+            maxLength: 256
+            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
+          - type: string
+            format: uri
+    phaseToPhaseVoltage:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    phaseVoltage:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    powerFactor:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    reactiveEnergyExport:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    reactiveEnergyImport:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    reactivePower:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    refDevice:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items: *ref_0
+    refTargetDevice:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items: *ref_0
+    source:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    thdCurrent:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    thdVoltage:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    totalActiveEnergyExport:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalActiveEnergyImport:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalActivePower:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalApparentEnergyExport:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalApparentEnergyImport:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalApparentPower:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalDisplacementPowerFactor:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalPowerFactor:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalReactiveEnergyExport:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalReactiveEnergyImport:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    totalReactivePower:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
