@@ -4,7 +4,7 @@ ThreePhaseAcMeasurement:
     - type
   allOf:
     - $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
   description: >-
     An electrical  measurement from a system that uses three phase alternating
@@ -27,10 +27,10 @@ ThreePhaseAcMeasurement:
       description: ''
     address:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
     alternateName:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/alternateName
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
     apparentEnergyExport:
       x-ngsi:
         type: Property
@@ -48,7 +48,7 @@ ThreePhaseAcMeasurement:
       description: ''
     areaServed:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/areaServed
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/areaServed
     current:
       x-ngsi:
         type: Property
@@ -69,7 +69,7 @@ ThreePhaseAcMeasurement:
       format: date-time
     description:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
     displacementPowerFactor:
       x-ngsi:
         type: Property
@@ -82,12 +82,12 @@ ThreePhaseAcMeasurement:
       description: ''
     location:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
     name:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
     owner:
-      $ref: https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/owner
+      $ref: https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     phaseToPhaseVoltage:
       x-ngsi:
         type: Property
@@ -132,7 +132,7 @@ ThreePhaseAcMeasurement:
       items: *ref_0
     source:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/source
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
     thdCurrent:
       x-ngsi:
         type: Property

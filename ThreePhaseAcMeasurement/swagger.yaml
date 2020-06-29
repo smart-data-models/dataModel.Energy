@@ -2,7 +2,7 @@
 components: 
   schemas: 
     ThreePhaseAcMeasurement: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/28f3f994702dc75318cfae247959c24d7d0d3968/ThreePhaseAcMeasurement/schema.yaml#/ThreePhaseAcMeasurement"
+      $ref: "https://smart-data-models.github.io/dataModel.Energy/28f3f994702dc75318cfae247959c24d7d0d3968/ThreePhaseAcMeasurement/model.yaml#/ThreePhaseAcMeasurement"
 info: 
   description: >-
     An electrical  measurement from a system that uses three phase alternating
@@ -34,12 +34,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.UrbanMobility/master/ThreePhaseAcMeasurement/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.UrbanMobility/ThreePhaseAcMeasurement/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.UrbanMobility/master/ThreePhaseAcMeasurement/example-normalized-ld.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.UrbanMobility/ThreePhaseAcMeasurement/example-normalized-ld.jsonld"
           description: OK
       tags: 
         - ngsi-ld
