@@ -1,16 +1,16 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0",
-  "$id": "https://fiware.github.io/data-models/specs/Energy/ThreePhaseAcMeasurement/schema.json",
-  "title": "FIWARE - Energy / Three Phase AC Measurement",
+  "$id": "https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/schema.json",
+  "title": "Smart Data Models - Energy / Three Phase AC Measurement",
   "description": "An electrical  measurement from a system that uses three phase alternating current.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://fiware.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
     },
     {
-      "$ref": "https://fiware.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     },
     {
       "properties": {
@@ -21,7 +21,7 @@
         "refDevice": {
           "type": "array",
           "items": {
-            "$ref": "https://fiware.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
           },
           "minItems": 1,
           "uniqueItems": true
@@ -29,7 +29,7 @@
         "refTargetDevice": {
           "type": "array",
           "items": {
-            "$ref": "https://fiware.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
           },
           "minItems": 1,
           "uniqueItems": true
