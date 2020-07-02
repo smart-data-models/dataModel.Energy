@@ -124,13 +124,20 @@ ThreePhaseAcMeasurement:
       description: ''
     refDevice:
       x-ngsi:
-        type: Property
+        type: Relationship
       type: array
       description: ''
-      items: *ref_0
+      items:  &ref_0
+        anyOf:
+          - type: string
+            minLength: 1
+            maxLength: 256
+            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
+          - type: string
+            format: uri
     refTargetDevice:
       x-ngsi:
-        type: Property
+        type: Relationship
       type: array
       description: ''
       items: *ref_0
