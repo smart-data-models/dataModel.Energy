@@ -10,7 +10,7 @@ ThreePhaseAcMeasurement:
     - $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
-  description: >-
+  description: |
     An electrical  measurement from a system that uses three phase alternating
     current.
   properties:
@@ -59,11 +59,8 @@ ThreePhaseAcMeasurement:
       type: object
       description: ''
     dataProvider:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: ''
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
     dateEnergyMeteringStarted:
       x-ngsi:
         type: Property
