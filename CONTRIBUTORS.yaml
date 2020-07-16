@@ -1,0 +1,30 @@
+description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
+contributors:
+-
+ name: Dmitrii
+ surname:  Demin
+ mail: mail@demin.co
+ organization: None
+ project: 
+ comments: 
+-
+ name: Jose M.
+ surname:  Cantera
+ mail: jmcanterafonseca4github@gmail.com
+ organization: CanteraFonseca.EU
+ project: 
+ comments: 
+-
+ name: Otto
+ surname:  Hylli
+ mail: None
+ organization: Tampere University
+ project: 
+ comments: 
+-
+ name: Jason
+ surname:  Fox
+ mail: None
+ organization: @Fiware 
+ project: 
+ comments: 
