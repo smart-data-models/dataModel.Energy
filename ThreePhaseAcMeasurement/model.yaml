@@ -18,17 +18,17 @@ ThreePhaseAcMeasurement:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Active energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     activeEnergyImport:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Active energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     activePower:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Active power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     address:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/address
@@ -39,17 +39,17 @@ ThreePhaseAcMeasurement:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Apparent energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     apparentEnergyImport:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: ' Apparent energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     apparentPower:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Apparent power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     areaServed:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/areaServed
@@ -57,19 +57,19 @@ ThreePhaseAcMeasurement:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.'
     dataProvider:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Specifies the URL to information about the provider of this information'
     dateEnergyMeteringStarted:
       x-ngsi:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: 'The starting date for metering energy.'
       format: date-time
     description:
       $ref: >-
@@ -78,12 +78,12 @@ ThreePhaseAcMeasurement:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: ' Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
     frequency:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'The frequency of the circuit'
     location:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
@@ -96,43 +96,43 @@ ThreePhaseAcMeasurement:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).'
     phaseVoltage:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'The voltage between each phase and neutral conductor. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
     powerFactor:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
     reactiveEnergyExport:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Fundamental frequency reactive energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     reactiveEnergyImport:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Fundamental frequency reactive energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     reactivePower:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: ' Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     refDevice:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'Device(s) used to obtain the measurement.'
       items: *ref_0
     refTargetDevice:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: ' Device(s) for which the measurement was taken.'
       items: *ref_0
     source:
       $ref: >-
@@ -141,64 +141,64 @@ ThreePhaseAcMeasurement:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Total harmonic distortion of electrical current. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
     thdVoltage:
       x-ngsi:
         type: Property
       type: object
-      description: ''
+      description: 'Total harmonic distortion of voltage for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
     totalActiveEnergyExport:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total energy exported since metering started (since dateEnergyMeteringStarted).'
     totalActiveEnergyImport:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total energy imported i.e. consumed since metering started (since dateEnergyMeteringStarted).'
     totalActivePower:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Active power consumed (counting all phases)'
     totalApparentEnergyExport:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total energy exported (with regards to apparent power) since the metering start date (dateEnergyMeteringStarted).'
     totalApparentEnergyImport:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total energy imported i.e. consumed (with regards to apparent power) since the metering start date (dateEnergyMeteringStarted).'
     totalApparentPower:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Apparent power consumed (counting all phases).'
     totalDisplacementPowerFactor:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system'
     totalPowerFactor:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Power factor including all phases.'
     totalReactiveEnergyExport:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total fundamental frequency reactive energy exported since metering started (since dateEnergyMeteringStarted).'
     totalReactiveEnergyImport:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total energy imported i.e. consumed (with regards to fundamental frequency reactive power) since the metering start date (dateEnergyMeteringStarted).'
     totalReactivePower:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Reactive power consumed (counting all phases).'
