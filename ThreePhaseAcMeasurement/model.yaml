@@ -10,7 +10,7 @@ ThreePhaseAcMeasurement:
     - $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
-  description: >-
+  description: |
     An electrical  measurement from a system that uses three phase alternating
     current.
   properties:
@@ -59,11 +59,8 @@ ThreePhaseAcMeasurement:
       type: object
       description: 'Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.'
     dataProvider:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: 'Specifies the URL to information about the provider of this information'
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
     dateEnergyMeteringStarted:
       x-ngsi:
         type: Property
@@ -91,7 +88,8 @@ ThreePhaseAcMeasurement:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
     owner:
-      $ref: https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     phaseToPhaseVoltage:
       x-ngsi:
         type: Property
@@ -124,13 +122,20 @@ ThreePhaseAcMeasurement:
       description: ' Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
     refDevice:
       x-ngsi:
-        type: Property
+        type: Relationship
       type: array
       description: 'Device(s) used to obtain the measurement.'
-      items: *ref_0
+      items:  &ref_0
+        anyOf:
+          - type: string
+            minLength: 1
+            maxLength: 256
+            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
+          - type: string
+            format: uri
     refTargetDevice:
       x-ngsi:
-        type: Property
+        type: Relationship
       type: array
       description: ' Device(s) for which the measurement was taken.'
       items: *ref_0
