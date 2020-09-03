@@ -1,0 +1,399 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "schemaVersion": "0.0",
+  "$id": "https://smart-data-models.github.io/data-models.Energy/PhotovoltaicDevice/schema.json",
+  "title": "PhotovoltaicDevice schema",
+  "description": "The Data Model is intended to describe the mechanical, electrical and thermal characteristics of photo-voltaic panels according to *STC - Standard Test Condition* and *NOCT - Normal Operating Cell Temperature*. *Remark* : This Data Model can be used directly as a main entity to describe the `Photovoltaic Device`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. The measures performed for STC and NOCT are `Pmax` (Maximum Nominal Power), `Umpp` (Optimal operating voltage), `Impp` (Optimal Operating Current), `Uoc` (Open Circuit Voltage), `Isc` (Short Circuit Current). *Additional Information about Data Model:* This Data Model can be used directly as a main entity to describe the device [PHOTOVOLTAIC] or as a sub-entity of the Data Model [DEVICE] using a reference by the `refDevice` attribute.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "PhotovoltaicDevice"
+          ],
+          "description": "NGSI Entity type"
+        },
+        "refDevice": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+        },
+        "refPointOfInterest": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+        },
+        "dateLastReported": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "brandName": {
+          "type": "string"
+        },
+        "modelName": {
+          "type": "string"
+        },
+        "manufacturerName": {
+          "type": "string"
+        },
+        "serialNumber": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "application": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "electric",
+              "thermal",
+              "other"
+            ]
+          }
+        },
+        "cellType": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "monocrystalline",
+              "polycrystalline",
+              "amorphousSilicon",
+              "CIS",
+              "CfTe",
+              "other"
+            ]
+          }
+        },
+        "typeOfUse": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "indoor",
+              "outdoor",
+              "mixed",
+              "other"
+            ]
+          }
+        },
+        "installationMode": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "ground",
+              "wall",
+              "pole",
+              "roofing",
+              "other"
+            ]
+          }
+        },
+        "installationCondition": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "none",
+              "extremeHeat",
+              "extremeCold",
+              "extremeClimate",
+              "extremeHumidity",
+              "desert",
+              "sand",
+              "marine",
+              "saline",
+              "dust",
+              "seismic",
+              "other"
+            ]
+          }
+        },
+        "possibilityOfUse": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "stationary",
+              "mobile",
+              "mixed",
+              "other"
+            ]
+          }
+        },
+        "documentation": {
+          "type": "string"
+        },
+        "owners": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cellDimension": {
+          "type": "object",
+          "properties": {
+            "length": {
+              "type": "number",
+              "minimum": 0
+            },
+            "width": {
+              "type": "number",
+              "minimum": 0
+            },
+            "thickness": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "moduleNbCells": {
+          "type": "number"
+        },
+        "moduleDimension": {
+          "type": "object",
+          "properties": {
+            "length": {
+              "type": "number",
+              "minimum": 0
+            },
+            "width": {
+              "type": "number",
+              "minimum": 0
+            },
+            "thickness": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "PanelNbModules": {
+          "type": "number"
+        },
+        "panelDimension": {
+          "type": "object",
+          "properties": {
+            "length": {
+              "type": "number",
+              "minimum": 0
+            },
+            "width": {
+              "type": "number",
+              "minimum": 0
+            },
+            "thickness": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "panelWeight": {
+          "type": "number",
+          "minimum": 0
+        },
+        "arealWeight": {
+          "type": "number"
+        },
+        "MaxPressureLoad": {
+          "type": "object",
+          "properties": {
+            "hail": {
+              "type": "number",
+              "minimum": 0
+            },
+            "snow": {
+              "type": "number",
+              "minimum": 0
+            },
+            "wind": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "NominalPower": {
+          "type": "number",
+          "minimum": 0
+        },
+        "MaximumSystemVoltage": {
+          "type": "number",
+          "minimum": 0
+        },
+        "applicationClass": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "C"
+            ]
+          }
+        },
+        "fireClass": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "C"
+            ]
+          }
+        },
+        "protectionIP": {
+          "type": "string"
+        },
+        "pTCClass": {
+          "type": "number",
+          "minimum": 0
+        },
+        "nTCClass": {
+          "type": "number",
+          "minimum": 0
+        },
+        "moduleSTC": {
+          "type": "object",
+          "properties": {
+            "Pmax": {
+              "type": "number",
+              "minimum": 0
+            },
+            "Umpp": {
+              "type": "number",
+              "minimum": 0
+            },
+            "Impp": {
+              "type": "number",
+              "minimum": 0
+            },
+            "Uoc": {
+              "type": "number",
+              "minimum": 0
+            },
+            "Isc": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "moduleNOCT": {
+          "type": "object",
+          "properties": {
+            "Pmax": {
+              "type": "number",
+              "minimum": 0
+            },
+            "Umpp": {
+              "type": "number",
+              "minimum": 0
+            },
+            "Impp": {
+              "type": "number",
+              "minimum": 0
+            },
+            "Uoc": {
+              "type": "number",
+              "minimum": 0
+            },
+            "Isc": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "moduleYieldRate": {
+          "type": "number",
+          "minimum": 0
+        },
+        "panelOperatingTemperature": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number",
+              "minimum": -50
+            },
+            "max": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "cellOperatingTemperature": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number",
+              "minimum": 0
+            },
+            "max": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "temperatureCoefficient": {
+          "type": "object",
+          "properties": {
+            "Pmax": {
+              "type": "number",
+              "minimum": -1
+            },
+            "Uoc": {
+              "type": "number",
+              "minimum": -1
+            },
+            "Isc": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "performanceLowIrradiance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "panelLifetime": {
+          "type": "number",
+          "minimum": 0
+        },
+        "panelYieldCurve": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "panelYieldRate": {
+          "type": "number",
+          "minimum": 0
+        },
+        "panelTiltReference": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number",
+              "minimum": 0
+            },
+            "max": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "location",
+    "dateLastReported"
+  ]
+}
