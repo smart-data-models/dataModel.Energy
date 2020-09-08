@@ -1,7 +1,20 @@
-# Energy
+# dataModel.Energy
+This folder contains domain specific data models related to energy. The adaptation of IEC standards (CIM) is one of the goals of this subject.
 
-This folder contains domain specific data models related to energy. Currently
-only one entity type has been defined:
+The following entity types are available:
+- [ThreePhaseAcMeasurement](https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/README.md). An electrical  measurement from a system that uses three phase alternating
+current.
 
--   [`ThreePhaseAcMeasurement`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/swagger.yaml): represents a measurement from an electrical
-    system that uses three-phase alternating current
+
+
+The list of incubated (on development) data models are:
+
+[ACMeasurement_incubated](https://github.com/smart-data-models/dataModel.Energy/tree/master/ACMeasurement_incubated)
+
+[InverterDevice_incubated](https://github.com/smart-data-models/dataModel.Energy/tree/master/InverterDevice_incubated)
+
+[Link](https://github.com/smart-data-models/dataModel.Energy/blob/master/CONTRIBUTORS.yaml) to the 4 current contributors of the data models of this Subject.
+
+You can raise an [issue](https://github.com/smart-data-models/dataModel.Energy/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.Energy/pulls) on existing data models
+
+
