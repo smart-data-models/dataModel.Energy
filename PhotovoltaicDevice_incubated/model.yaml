@@ -10,17 +10,16 @@ PhotovoltaicDevice:
   type: object
   description: |
     The Data Model is intended to describe the mechanical, electrical and
-    thermal characteristics of photo-voltaic panels according to *STC - Standard
-    Test Condition* and *NOCT - Normal Operating Cell Temperature*. *Remark* :
+    thermal characteristics of photo-voltaic panels according to STC - Standard
+    Test Condition* and *NOCT - Normal Operating Cell Temperature 
     This Data Model can be used directly as a main entity to describe the
-    `Photovoltaic Device`  or as a sub-entity of the Data Model  `DEVICE` using
-    a reference by the `refDevice` attribute. The measures performed for STC and
-    NOCT are `Pmax` (Maximum Nominal Power), `Umpp` (Optimal operating voltage),
-    `Impp` (Optimal Operating Current), `Uoc` (Open Circuit Voltage), `Isc`
-    (Short Circuit Current). *Additional Information about Data Model:* This
+      or as a sub-entity of the Data Model  using
+    a reference by the attribute. The measures performed for STC and
+    NOCT are  (Maximum Nominal Power),  (Optimal operating voltage),
+    (Optimal Operating Current),  (Open Circuit Voltage), 
+    (Short Circuit Current).  Information about Data ModelThis
     Data Model can be used directly as a main entity to describe the device
     [PHOTOVOLTAIC] or as a sub-entity of the Data Model [DEVICE] using a
-    reference by the `refDevice` attribute.
   properties:
     MaxPressureLoad:
       x-ngsi:
