@@ -1,0 +1,65 @@
+---
+# Copyright (c) 2020 Contributors to Smart-Data-Models
+# see https://github.com/smart-data-models/dataModel.Energy
+--- 
+components: 
+  schemas: 
+    PhotovoltaicDevice: 
+      $ref: "https://smart-data-models.github.io/dataModel.Energy/PhotovoltaicDevice_incubated/model.yaml#/PhotovoltaicDevice"
+info: 
+  description: |
+    The Data Model is intended to describe the mechanical, electrical and
+    thermal characteristics of photo-voltaic panels according to STC - Standard
+    Test Condition* and *NOCT - Normal Operating Cell Temperature :
+    This Data Model can be used directly as a main entity to describe the
+      or as a sub-entity of the Data Model  using
+    a reference by the attribute. The measures performed for STC and
+    NOCT are  (Maximum Nominal Power),  (Optimal operating voltage),
+    (Optimal Operating Current),  (Open Circuit Voltage), 
+    (Short Circuit Current).  Information about Data Model:This
+    Data Model can be used directly as a main entity to describe the device
+    [PHOTOVOLTAIC] or as a sub-entity of the Data Model [DEVICE] using a
+    reference by the attribute.
+    
+  title: PhotovoltaicDevice
+  version: "1.0.0"
+openapi: "3.0.0"
+
+# These paths are merely representative.
+paths: 
+  /ngsi-ld/v1/entities: 
+    get: 
+      description: "Retrieve a set of entities which matches a specific query from an NGSI-LD system"
+      parameters: 
+        - 
+          in: query
+          name: type
+          required: true
+          schema: 
+            enum: 
+              - PhotovoltaicDevice
+            type: string
+      responses: 
+        ? "200"
+        : 
+          content: 
+            application/ld+json: 
+              examples: 
+                keyvalues: 
+                  summary: "Key-Values Pairs"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.Energy/PhotovoltaicDevice_incubated/examples/example.json"
+                normalized: 
+                  summary: "Normalized NGSI-LD"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.Energy/PhotovoltaicDevice_incubated/examples/example-normalized.jsonld"
+          description: OK
+      tags: 
+        - ngsi-ld
+tags: 
+  - 
+  
+    description: "NGSI-LD Linked-data Format"
+    name: ngsi-ld
