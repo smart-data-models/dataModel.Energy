@@ -1,7 +1,7 @@
----
+
 # Copyright (c) 2020 Contributors to Smart-Data-Models
 # see https://github.com/smart-data-models/dataModel.Energy
---- 
+---
 components: 
   schemas: 
     PhotovoltaicDevice: 
@@ -10,13 +10,13 @@ info:
   description: |
     The Data Model is intended to describe the mechanical, electrical and
     thermal characteristics of photo-voltaic panels according to STC - Standard
-    Test Condition* and *NOCT - Normal Operating Cell Temperature :
+    Test Condition* and *NOCT - Normal Operating Cell Temperature 
     This Data Model can be used directly as a main entity to describe the
       or as a sub-entity of the Data Model  using
     a reference by the attribute. The measures performed for STC and
     NOCT are  (Maximum Nominal Power),  (Optimal operating voltage),
     (Optimal Operating Current),  (Open Circuit Voltage), 
-    (Short Circuit Current).  Information about Data Model:This
+    (Short Circuit Current).  Information about Data ModelThis
     Data Model can be used directly as a main entity to describe the device
     [PHOTOVOLTAIC] or as a sub-entity of the Data Model [DEVICE] using a
     reference by the attribute.
@@ -54,7 +54,7 @@ paths:
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.Energy/PhotovoltaicDevice_incubated/examples/example-normalized.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.Energy/PhotovoltaicDevice_incubated/examples/example-normalized.json"
           description: OK
       tags: 
         - ngsi-ld
