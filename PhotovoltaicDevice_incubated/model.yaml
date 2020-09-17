@@ -1,0 +1,345 @@
+PhotovoltaicDevice:
+  required:
+    - id
+    - type
+    - location
+    - dateLastReported
+  allOf:
+    - $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+  type: object
+  description: >-
+    The Data Model is intended to describe the mechanical, electrical and
+    thermal characteristics of photo-voltaic panels according to *STC - Standard
+    Test Condition* and *NOCT - Normal Operating Cell Temperature*. *Remark* :
+    This Data Model can be used directly as a main entity to describe the
+    `Photovoltaic Device`  or as a sub-entity of the Data Model  `DEVICE` using
+    a reference by the `refDevice` attribute. The measures performed for STC and
+    NOCT are `Pmax` (Maximum Nominal Power), `Umpp` (Optimal operating voltage),
+    `Impp` (Optimal Operating Current), `Uoc` (Open Circuit Voltage), `Isc`
+    (Short Circuit Current). *Additional Information about Data Model:* This
+    Data Model can be used directly as a main entity to describe the device
+    [PHOTOVOLTAIC] or as a sub-entity of the Data Model [DEVICE] using a
+    reference by the `refDevice` attribute.
+  properties:
+    MaxPressureLoad:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    MaximumSystemVoltage:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    NominalPower:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    PanelNbModules:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    address:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+    alternateName:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    application:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - electric
+          - thermal
+          - other
+    applicationClass:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - A
+          - B
+          - C
+    areaServed:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    arealWeight:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    brandName:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    cellDimension:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    cellOperatingTemperature:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    cellType:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - monocrystalline
+          - polycrystalline
+          - amorphousSilicon
+          - CIS
+          - CfTe
+          - other
+    dataProvider:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    dateLastReported:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    description:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+    documentation:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    fireClass:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - A
+          - B
+          - C
+    installationCondition:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - none
+          - extremeHeat
+          - extremeCold
+          - extremeClimate
+          - extremeHumidity
+          - desert
+          - sand
+          - marine
+          - saline
+          - dust
+          - seismic
+          - other
+    installationMode:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - ground
+          - wall
+          - pole
+          - roofing
+          - other
+    location:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+    manufacturerName:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    modelName:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    moduleDimension:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    moduleNOCT:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    moduleNbCells:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    moduleSTC:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    moduleYieldRate:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    nTCClass:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    name:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+    owner:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        anyOf:
+          - type: string
+            minLength: 1
+            maxLength: 256
+            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
+          - type: string
+            format: uri
+    owners:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+    pTCClass:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    panelDimension:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    panelLifetime:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    panelOperatingTemperature:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    panelTiltReference:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    panelWeight:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    panelYieldCurve:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+    panelYieldRate:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    performanceLowIrradiance:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    possibilityOfUse:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - stationary
+          - mobile
+          - mixed
+          - other
+    protectionIP:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    serialNumber:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+    source:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    temperatureCoefficient:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    typeOfUse:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - indoor
+          - outdoor
+          - mixed
+          - other
