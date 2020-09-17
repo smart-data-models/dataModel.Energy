@@ -8,7 +8,7 @@ PhotovoltaicDevice:
     - $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
   type: object
-  description: >-
+  description: |
     The Data Model is intended to describe the mechanical, electrical and
     thermal characteristics of photo-voltaic panels according to *STC - Standard
     Test Condition* and *NOCT - Normal Operating Cell Temperature*. *Remark* :
