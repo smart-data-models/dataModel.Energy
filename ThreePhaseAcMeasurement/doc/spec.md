@@ -1,1 +1,1 @@
-Content to be extracted from READMe aqccording to the template
+Content to be extracted from READMe according to the template
