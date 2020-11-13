@@ -30,7 +30,7 @@
         },
         "refTargetDevice": {
           "type": "array",
-          "description": "Relationship. Device(s) for which the measurement was taken..",
+          "description": "Relationship. Device(s) for which the measurement was taken.",
           "items": {
             "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
           },
@@ -254,7 +254,7 @@
         },
         "powerFactor": {
           "type": "object",
-          "description": "Property. Model:'http://schema.org/StructuredValue'. Units:'-1 to +1'.Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3",
+          "description": "Property. Model:'http://schema.org/StructuredValue'. Units:'-1 to +1'. Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3",
           "properties": {
             "L1": {
               "type": "number",
