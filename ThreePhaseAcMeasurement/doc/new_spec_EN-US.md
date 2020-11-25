@@ -606,6 +606,7 @@ ThreePhaseAcMeasurement:
 ```  
 </details>    
 Text to be included after list of properties  
+## Example payloads    
 #### ThreePhaseAcMeasurement NGSI V2 key-values Example    
 Here is an example of a ThreePhaseAcMeasurement in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
