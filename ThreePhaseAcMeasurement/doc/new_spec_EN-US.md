@@ -604,6 +604,7 @@ ThreePhaseAcMeasurement:
   type: object    
 ```  
 Text to be included after list of properties  
+#### ThreePhaseAcMeasurement NGSI V2 key-values Example    
 Here is an example of a ThreePhaseAcMeasurement in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
@@ -674,6 +675,7 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
+#### ThreePhaseAcMeasurement NGSI V2 normalized Example    
 Here is an example of a ThreePhaseAcMeasurement in JSON format as normalized. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
@@ -998,6 +1000,7 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
+#### ThreePhaseAcMeasurement NGSI-LD key-values Example    
 Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as key-values. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {"@context": ["https://schema.lab.fiware.org/ld/context",  
@@ -1030,6 +1033,7 @@ ThreePhaseAcMeasurement:
  "totalReactivePower": -7830.332031,  
  "type": "ThreePhaseAcMeasurement"}  
 ```  
+#### ThreePhaseAcMeasurement NGSI-LD normalized Example    
 Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
