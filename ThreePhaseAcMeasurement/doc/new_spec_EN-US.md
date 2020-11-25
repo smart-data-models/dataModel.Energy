@@ -1,70 +1,16 @@
 Entity: ThreePhaseAcMeasurement  
-===============================
-  
+===============================  
+This specification is a **temporal version**. It is automatically generated from the  documented properties described in the schema.json condensed into the file `model.yaml`. A temporary `new_model.yaml` file has been created in every data model to avoid impacting into existing scripts. Thus, the specification will be incomplete as long as the schema.json is not updated to the new format (documenting properties). Once updated the `model.yaml` (`new_model.yaml`) needs to be updated as well (automatically) . Further info in this [link](https://github.com/smart-data-models/data-models/blob/master/specs/warning_message_new_spec.md). As long as it is a provisional format any [feedback is welcomed in this form](https://smartdatamodels.org/index.php/submit-an-issue-2/) choosing option `Feedback on the new specification`  
+Global description: **An electrical  measurement from a system that uses three phase alternating current.**  
 
-This specification is a **temporal version**. It is automatically generated from the  documented properties described in the schema.json condensed into the file `model.yaml`. A temporary `new_model.yaml` file has been created in every data model to avoid impacting into existing scripts. Thus, the specification will be incomplete as long as the schema.json is not updated to the new format (documenting properties). Once updated the `model.yaml` (`new_model.yaml`) needs to be updated as well (automatically) . Further info in this [link](https://github.com/smart-data-models/data-models/blob/master/specs/warning_message_new_spec.md). As long as it is a provisional format any [feedback is welcomed in this form](https://smartdatamodels.org/index.php/submit-an-issue-2/) choosing option `Feedback on the new specification`  
+## List of properties  
 
-Global description: **An electrical  measurement from a system that uses three phase alternating current.**  
-
-
-## List of properties  
-
-
-- `activeEnergyExport`: Active energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  
-- `activeEnergyImport`: Active energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  
-- `activePower`: The actual values will beconveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.   
-- `address`: The mailing address.  
-- `alternateName`: An alternative name for this item  
-- `apparentEnergyExport`: Apparent energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  
-- `apparentEnergyImport`: Apparent energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  
-- `apparentPower`: Apparent power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3  
-- `areaServed`: The geographic area where a service or offered item is provided.  
-- `current`: Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.  
-- `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  
-- `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  
-- `dateEnergyMeteringStarted`: The starting date for metering energy.  
-- `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  
-- `description`: A description of this item  
-- `displacementPowerFactor`: Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  
-- `frequency`: The frequency of the circuit.  
-- `id`:   
-- `location`:   
-- `name`: The name of this item.  
-- `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  
-- `phaseToPhaseVoltage`: Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).  
-- `phaseVoltage`: The voltage between each phase and neutral conductor. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  
-- `powerFactor`: Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  
-- `reactiveEnergyExport`: Fundamental frequency reactive energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  
-- `reactiveEnergyImport`: Fundamental frequency reactive energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  
-- `reactivePower`: Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.  
-- `refDevice`: Relationship. Device(s) used to obtain the measurement.  
-- `refTargetDevice`: Relationship. Device(s) for which the measurement was taken.  
-- `seeAlso`:   
-- `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  
-- `thdCurrent`: Total harmonic distortion of electrical current. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  
-- `thdVoltage`: Total harmonic distortion of voltage for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  
-- `totalActiveEnergyExport`: Total energy exported since metering started (since `dateEnergyMeteringStarted`).  
-- `totalActiveEnergyImport`: Total energy imported i.e. consumed since metering started (since `dateEnergyMeteringStarted`).  
-- `totalActivePower`: Active power consumed (counting all phases)  
-- `totalApparentEnergyExport`: Total energy exported (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)  
-- `totalApparentEnergyImport`: Total energy imported i.e. consumed (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)  
-- `totalApparentPower`: Apparent power consumed (counting all phases).  
-- `totalDisplacementPowerFactor`: Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system  
-- `totalPowerFactor`: Power factor including all phases  
-- `totalReactiveEnergyExport`: Total fundamental frequency reactive energy exported since metering started (since `dateEnergyMeteringStarted`).  
-- `totalReactiveEnergyImport`: Total energy imported i.e. consumed (with regards to fundamental frequency reactive power) since the metering start date (`dateEnergyMeteringStarted`)  
-- `totalReactivePower`: Reactive power consumed (counting all phases)  
-- `type`: It must be equal to `ThreePhaseAcMeasurement`.  
-  
-
-Text to be included between overall title and description.  
-
-## Data Model description of properties  
-
-Sorted alphabetically  
-<details><summary><strong>full yaml details</strong></summary>
-  
-```yaml  
+- `activeEnergyExport`: Active energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `activeEnergyImport`: Active energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `activePower`: The actual values will beconveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.   - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `apparentEnergyExport`: Apparent energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `apparentEnergyImport`: Apparent energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `apparentPower`: Apparent power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3  - `areaServed`: The geographic area where a service or offered item is provided.  - `current`: Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateEnergyMeteringStarted`: The starting date for metering energy.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `displacementPowerFactor`: Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `frequency`: The frequency of the circuit.  - `id`:   - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `phaseToPhaseVoltage`: Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).  - `phaseVoltage`: The voltage between each phase and neutral conductor. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `powerFactor`: Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `reactiveEnergyExport`: Fundamental frequency reactive energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `reactiveEnergyImport`: Fundamental frequency reactive energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `reactivePower`: Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `refDevice`: Relationship. Device(s) used to obtain the measurement.  - `refTargetDevice`: Relationship. Device(s) for which the measurement was taken.  - `seeAlso`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `thdCurrent`: Total harmonic distortion of electrical current. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `thdVoltage`: Total harmonic distortion of voltage for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `totalActiveEnergyExport`: Total energy exported since metering started (since `dateEnergyMeteringStarted`).  - `totalActiveEnergyImport`: Total energy imported i.e. consumed since metering started (since `dateEnergyMeteringStarted`).  - `totalActivePower`: Active power consumed (counting all phases)  - `totalApparentEnergyExport`: Total energy exported (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)  - `totalApparentEnergyImport`: Total energy imported i.e. consumed (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)  - `totalApparentPower`: Apparent power consumed (counting all phases).  - `totalDisplacementPowerFactor`: Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system  - `totalPowerFactor`: Power factor including all phases  - `totalReactiveEnergyExport`: Total fundamental frequency reactive energy exported since metering started (since `dateEnergyMeteringStarted`).  - `totalReactiveEnergyImport`: Total energy imported i.e. consumed (with regards to fundamental frequency reactive power) since the metering start date (`dateEnergyMeteringStarted`)  - `totalReactivePower`: Reactive power consumed (counting all phases)  - `type`: It must be equal to `ThreePhaseAcMeasurement`.    
+Text to be included between overall title and description.  
+## Data Model description of properties  
+Sorted alphabetically  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 ThreePhaseAcMeasurement:    
   description: 'An electrical  measurement from a system that uses three phase alternating current.'    
   properties:    
@@ -659,16 +605,11 @@ ThreePhaseAcMeasurement:
   type: object    
 ```  
 </details>    
-
-Text to be included after list of properties  
-
-#### ThreePhaseAcMeasurement NGSI V2 key-values Example    
-
-Here is an example of a ThreePhaseAcMeasurement in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
-
-```json  
-
-{  
+Text to be included after list of properties  
+#### ThreePhaseAcMeasurement NGSI V2 key-values Example    
+Here is an example of a ThreePhaseAcMeasurement in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
   "type": "ThreePhaseAcMeasurement",  
   "dateEnergyMeteringStarted": "2018-07-07T15:05:59.408Z",  
@@ -736,14 +677,10 @@ Here is an example of a ThreePhaseAcMeasurement in JSON format as key-values. Th
   }  
 }  
 ```  
-
-#### ThreePhaseAcMeasurement NGSI V2 normalized Example    
-
-Here is an example of a ThreePhaseAcMeasurement in JSON format as normalized. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
-
-```json  
-
-{  
+#### ThreePhaseAcMeasurement NGSI V2 normalized Example    
+Here is an example of a ThreePhaseAcMeasurement in JSON format as normalized. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
   "type": "ThreePhaseAcMeasurement",  
   "dateEnergyMeteringStarted": {  
@@ -1065,14 +1002,10 @@ Here is an example of a ThreePhaseAcMeasurement in JSON format as normalized. Th
   }  
 }  
 ```  
-
-#### ThreePhaseAcMeasurement NGSI-LD key-values Example    
-
-Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as key-values. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-
-```json  
-
-{"@context": ["https://schema.lab.fiware.org/ld/context",  
+#### ThreePhaseAcMeasurement NGSI-LD key-values Example    
+Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as key-values. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+```json  
+{"@context": ["https://schema.lab.fiware.org/ld/context",  
               "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
  "activePower": {"L1": 11996.416016, "L2": 9461.501953, "L3": 10242.351562},  
  "apparentPower": {"L1": 13201.412109, "L2": 10755.304688, "L3": 11941.094727},  
@@ -1102,14 +1035,10 @@ Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as key-values.
  "totalReactivePower": -7830.332031,  
  "type": "ThreePhaseAcMeasurement"}  
 ```  
-
-#### ThreePhaseAcMeasurement NGSI-LD normalized Example    
-
-Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-
-```json  
-
-{  
+#### ThreePhaseAcMeasurement NGSI-LD normalized Example    
+Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+```json  
+{  
     "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
     "type": "ThreePhaseAcMeasurement",  
     "dateEnergyMeteringStarted": {  
@@ -1390,5 +1319,4 @@ Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as normalized.
     ]  
 }  
 ```  
-
-Text after  all  
+Text after  all  
