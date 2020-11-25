@@ -9,6 +9,7 @@ Entity: ThreePhaseAcMeasurement
 Text to be included between overall title and description.  
 ## Data Model description of properties  
 Sorted alphabetically  
+<details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ThreePhaseAcMeasurement:    
   description: 'An electrical  measurement from a system that uses three phase alternating current.'    
@@ -603,6 +604,7 @@ ThreePhaseAcMeasurement:
     - type    
   type: object    
 ```  
+</details>    
 Text to be included after list of properties  
 #### ThreePhaseAcMeasurement NGSI V2 key-values Example    
 Here is an example of a ThreePhaseAcMeasurement in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
