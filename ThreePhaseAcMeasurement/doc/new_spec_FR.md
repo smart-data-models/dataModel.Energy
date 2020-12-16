@@ -1,11 +1,13 @@
 Entité : ThreePhaseAcMeasurement  
 ================================  
-Cette spécification est une **version temporelle**. Elle est générée automatiquement à partir des propriétés documentées décrites dans le schema.json condensé dans le fichier `model.yaml`. Un fichier temporaire `nouveau_modèle.yaml` a été créé dans chaque modèle de données pour éviter d'avoir un impact sur les scripts existants. Ainsi, la spécification sera incomplète tant que le fichier schema.json n'est pas mis à jour au nouveau format (documentation des propriétés). Une fois mis à jour, le fichier `model.yaml` (`nouveau_model.yaml`) doit être mis à jour également (automatiquement) . Plus d'informations dans ce [lien](https://github.com/smart-data-models/data-models/blob/master/specs/warning_message_new_spec.md). Tant qu'il s'agit d'un format provisoire, tout [feedback est le bienvenu dans ce formulaire](https://smartdatamodels.org/index.php/submit-an-issue-2/) en choisissant l'option "Feedback sur la nouvelle spécification".  
+[Licence ouverte](https://github.com/smart-data-models//dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md)  
 Description globale : **Mesure électrique d'un système qui utilise un courant alternatif triphasé.**  
 
 ## Liste des biens  
 
-- `activeEnergyExport`: Énergie active exportée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `activeEnergyImport`: Énergie active importée, c'est-à-dire consommée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `activePower`: Les valeurs réelles seront transmises par des sous-propriétés dont le nom sera égal à celui de chacune des phases de courant alternatif : L1, L2, L3.  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `apparentEnergyExport`: Énergie apparente exportée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `apparentEnergyImport`: Énergie apparente importée, c'est-à-dire consommée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `apparentPower`: Puissance apparente consommée par phase. Les valeurs réelles seront transmises par des sous-propriétés dont le nom sera égal à celui de chacune des phases de courant alternatif : L1, L2, L3  - `areaServed`: La zone géographique où un service ou un article offert est fourni.  - `current`: Le courant électrique. Les valeurs réelles seront véhiculées par une sous-propriété par phase de courant alternatif et par le fil neutre : L1, L2, L3 et N.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateEnergyMeteringStarted`: La date de début du comptage de l'énergie.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `displacementPowerFactor`: Facteur de puissance de déplacement pour chaque phase. La quantité est basée sur la fréquence fondamentale du système. Les valeurs réelles seront transmises par un sous-propriétaire par phase de courant alternatif : L1, L2 et L3  - `frequency`: La fréquence du circuit.  - `id`:   - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `phaseToPhaseVoltage`: Tension entre les phases. Une valeur pour chaque paire de phases : phases 1 et 2 (L12), phases 2 et 3 (L32), phases 3 et 1 (L31).  - `phaseVoltage`: La tension entre chaque phase et le conducteur neutre. Les valeurs réelles seront transmises par un sous-propriétaire par phase de courant alternatif : L1, L2 et L3  - `powerFactor`: Facteur de puissance pour chaque phase. Les valeurs réelles seront transmises par un sous-propriétaire par phase de courant alternatif : L1, L2 et L3  - `reactiveEnergyExport`: Energie réactive à fréquence fondamentale exportée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `reactiveEnergyImport`: Énergie réactive à fréquence fondamentale importée, c'est-à-dire consommée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `reactivePower`: Puissance réactive à fréquence fondamentale. Les valeurs réelles seront véhiculées par des sous-propriétés dont les noms seront égaux à celui de chacune des phases de courant alternatif : L1, L2, L3.  - `refDevice`: Relation. Appareil(s) utilisé(s) pour obtenir la mesure.  - `refTargetDevice`: Relation. Appareil(s) pour lequel (lesquels) la mesure a été prise.  - `seeAlso`:   - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `thdCurrent`: Distorsion harmonique totale du courant électrique. Les valeurs réelles seront transmises par une sous-propriété par phase de courant alternatif : L1, L2 et L3  - `thdVoltage`: Distorsion harmonique totale de la tension pour chaque phase. Les valeurs réelles seront transmises par un sous-propriétaire par phase de courant alternatif : L1, L2 et L3  - `totalActiveEnergyExport`: Total de l'énergie exportée depuis le début de la mesure (depuis la date de début de la mesure de l'énergie).  - `totalActiveEnergyImport`: Total de l'énergie importée, c'est-à-dire consommée depuis que le comptage a commencé (depuis la "date à laquelle le comptage de l'énergie a commencé").  - `totalActivePower`: Puissance active consommée (en comptant toutes les phases)  - `totalApparentEnergyExport`: Énergie totale exportée (en ce qui concerne la puissance apparente) depuis la date de début du comptage ("dateEnergyMeteringStarted")  - `totalApparentEnergyImport`: Énergie totale importée, c'est-à-dire consommée (en ce qui concerne la puissance apparente) depuis la date de début du comptage (`dateEnergyMeteringStarted`)  - `totalApparentPower`: Puissance apparente consommée (en comptant toutes les phases).  - `totalDisplacementPowerFactor`: Facteur de puissance de déplacement incluant toutes les phases. La quantité est basée sur la fréquence fondamentale du système  - `totalPowerFactor`: Facteur de puissance incluant toutes les phases  - `totalReactiveEnergyExport`: Total de l'énergie réactive à fréquence fondamentale exportée depuis le début du comptage (depuis la "date de début du comptage de l'énergie").  - `totalReactiveEnergyImport`: Énergie totale importée, c'est-à-dire consommée (en ce qui concerne la puissance réactive à fréquence fondamentale) depuis la date de début du comptage ("dateEnergyMeteringStarted")  - `totalReactivePower`: Puissance réactive consommée (en comptant toutes les phases)  - `type`: Elle doit être égale à "Mesure en trois phases".    
+- `activeEnergyExport`: Énergie active exportée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `activeEnergyImport`: Énergie active importée, c'est-à-dire consommée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `activePower`: Les valeurs réelles seront transmises par des sous-propriétés dont le nom sera égal à celui de chacune des phases de courant alternatif : L1, L2, L3.  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `apparentEnergyExport`: Énergie apparente exportée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `apparentEnergyImport`: Énergie apparente importée, c'est-à-dire consommée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `apparentPower`: Puissance apparente consommée par phase. Les valeurs réelles seront transmises par des sous-propriétés dont le nom sera égal à celui de chacune des phases de courant alternatif : L1, L2, L3  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `current`: Le courant électrique. Les valeurs réelles seront véhiculées par une sous-propriété par phase de courant alternatif et par le fil neutre : L1, L2, L3 et N.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateEnergyMeteringStarted`: La date de début du comptage de l'énergie.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `displacementPowerFactor`: Facteur de puissance de déplacement pour chaque phase. La quantité est basée sur la fréquence fondamentale du système. Les valeurs réelles seront transmises par un sous-propriétaire par phase de courant alternatif : L1, L2 et L3  - `frequency`: La fréquence du circuit.  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `phaseToPhaseVoltage`: Tension entre les phases. Une valeur pour chaque paire de phases : phases 1 et 2 (L12), phases 2 et 3 (L32), phases 3 et 1 (L31).  - `phaseVoltage`: La tension entre chaque phase et le conducteur neutre. Les valeurs réelles seront transmises par un sous-propriétaire par phase de courant alternatif : L1, L2 et L3  - `powerFactor`: Facteur de puissance pour chaque phase. Les valeurs réelles seront transmises par un sous-propriétaire par phase de courant alternatif : L1, L2 et L3  - `reactiveEnergyExport`: Energie réactive à fréquence fondamentale exportée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `reactiveEnergyImport`: Énergie réactive à fréquence fondamentale importée, c'est-à-dire consommée par phase depuis la date de début du comptage. Les valeurs réelles seront transmises par des sous-propriétés dont les noms seront égaux au nom de chacune des phases de courant alternatif : L1, L2, L3.  - `reactivePower`: Puissance réactive à fréquence fondamentale. Les valeurs réelles seront véhiculées par des sous-propriétés dont les noms seront égaux à celui de chacune des phases de courant alternatif : L1, L2, L3.  - `refDevice`: Appareil(s) utilisé(s) pour obtenir la mesure.  - `refTargetDevice`: Appareil(s) pour lequel (lesquels) la mesure a été prise.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `thdCurrent`: Distorsion harmonique totale du courant électrique. Les valeurs réelles seront transmises par une sous-propriété par phase de courant alternatif : L1, L2 et L3  - `thdVoltage`: Distorsion harmonique totale de la tension pour chaque phase. Les valeurs réelles seront transmises par un sous-propriétaire par phase de courant alternatif : L1, L2 et L3  - `totalActiveEnergyExport`: Total de l'énergie exportée depuis le début de la mesure (depuis la date de début de la mesure de l'énergie).  - `totalActiveEnergyImport`: Total de l'énergie importée, c'est-à-dire consommée depuis que le comptage a commencé (depuis la "date à laquelle le comptage de l'énergie a commencé").  - `totalActivePower`: Puissance active consommée (en comptant toutes les phases)  - `totalApparentEnergyExport`: Énergie totale exportée (en ce qui concerne la puissance apparente) depuis la date de début du comptage ("dateEnergyMeteringStarted")  - `totalApparentEnergyImport`: Énergie totale importée, c'est-à-dire consommée (en ce qui concerne la puissance apparente) depuis la date de début du comptage (`dateEnergyMeteringStarted`)  - `totalApparentPower`: Puissance apparente consommée (en comptant toutes les phases).  - `totalDisplacementPowerFactor`: Facteur de puissance de déplacement incluant toutes les phases. La quantité est basée sur la fréquence fondamentale du système  - `totalPowerFactor`: Facteur de puissance incluant toutes les phases  - `totalReactiveEnergyExport`: Total de l'énergie réactive à fréquence fondamentale exportée depuis le début du comptage (depuis la "date de début du comptage de l'énergie").  - `totalReactiveEnergyImport`: Énergie totale importée, c'est-à-dire consommée (en ce qui concerne la puissance réactive à fréquence fondamentale) depuis la date de début du comptage ("dateEnergyMeteringStarted")  - `totalReactivePower`: Puissance réactive consommée (en comptant toutes les phases)  - `type`: Elle doit être égale à "Mesure en trois phases".    
+Propriétés requises  
+- `id`  - `type`    
 Texte à inclure entre le titre général et la description.  
 ## Modèle de données description des biens  
 Classement par ordre alphabétique (cliquez pour plus de détails)  
@@ -63,18 +65,25 @@ ThreePhaseAcMeasurement:
       description: 'The mailing address.'    
       properties:    
         addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
           type: string    
         addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
           type: string    
         areaServed:    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
           type: string    
         postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         postalCode:    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/Text'''    
           type: string    
       type: Property    
     alternateName:    
@@ -129,8 +138,10 @@ ThreePhaseAcMeasurement:
         model: http://schema.org/StructuredValue    
         units: 'volt-ampere (VA)'    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided.'    
+      description: 'The geographic area where a service or offered item is provided'    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     current:    
       description: 'Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.'    
       properties:    
@@ -202,6 +213,8 @@ ThreePhaseAcMeasurement:
         - description: 'Property. Identifier format of any NGSI entity'    
           format: uri    
           type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
     location:    
       $id: https://geojson.org/schema/Geometry.json    
       $schema: "http://json-schema.org/draft-07/schema#"    
@@ -356,6 +369,7 @@ ThreePhaseAcMeasurement:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       type: Property    
     phaseToPhaseVoltage:    
       description: 'Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).'    
@@ -454,20 +468,23 @@ ThreePhaseAcMeasurement:
         model: http://schema.org/StructuredValue    
         units: 'volts-ampere-reactive (VAr)'    
     refDevice:    
-      description: 'Relationship. Device(s) used to obtain the measurement.'    
+      description: 'Device(s) used to obtain the measurement.'    
       items:    
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       minItems: 1    
-      type: array    
+      type: Relationship    
       uniqueItems: true    
     refTargetDevice:    
-      description: 'Relationship. Device(s) for which the measurement was taken.'    
+      description: 'Device(s) for which the measurement was taken.'    
       items:    
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       minItems: 1    
-      type: array    
+      type: Relationship    
       uniqueItems: true    
     seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
             - format: uri    
@@ -476,6 +493,7 @@ ThreePhaseAcMeasurement:
           type: array    
         - format: uri    
           type: string    
+      type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
@@ -679,7 +697,7 @@ ThreePhaseAcMeasurement:
 }  
 ```  
 #### Mesure en trois phases NGSI V2 normalisée Exemple  
-Voici un exemple de mesure en trois phases au format JSON normalisé. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple de mesure en trois phases au format JSON normalisé. Ce format est compatible avec la version 2 du NGSI lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1004,7 +1022,7 @@ ThreePhaseAcMeasurement:
 }  
 ```  
 #### Mesure en trois phases des valeurs clés de l'INSG-LD Exemple  
-Voici un exemple de mesure en trois phases au format JSON-LD comme valeurs clés. Ce format est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple de mesure en trois phases au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {"@context": ["https://schema.lab.fiware.org/ld/context",  
               "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
