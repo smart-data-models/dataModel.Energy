@@ -50,18 +50,25 @@ ThreePhaseAcMeasurement:
       description: 'The mailing address.'
       properties:
         addressCountry:
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''
           type: string
         addressLocality:
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''
           type: string
         addressRegion:
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''
           type: string
         areaServed:
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''
           type: string
         postOfficeBoxNumber:
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''
           type: string
         postalCode:
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''
           type: string
         streetAddress:
+          description: 'Property. The street address. Model:''https://schema.org/Text'''
           type: string
       type: Property
     alternateName:
@@ -116,8 +123,10 @@ ThreePhaseAcMeasurement:
         model: http://schema.org/StructuredValue
         units: 'volt-ampere (VA)'
     areaServed:
-      description: 'The geographic area where a service or offered item is provided.'
+      description: 'The geographic area where a service or offered item is provided'
       type: Property
+      x-ngsi:
+        model: https://schema.org/Text
     current:
       description: 'Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.'
       properties:
@@ -189,6 +198,8 @@ ThreePhaseAcMeasurement:
         - description: 'Property. Identifier format of any NGSI entity'
           format: uri
           type: string
+      description: 'Unique identifier of the entity'
+      type: Property
     location:
       $id: https://geojson.org/schema/Geometry.json
       $schema: "http://json-schema.org/draft-07/schema#"
@@ -343,6 +354,7 @@ ThreePhaseAcMeasurement:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
+        description: 'Property. Unique identifier of the entity'
       type: Property
     phaseToPhaseVoltage:
       description: 'Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).'
@@ -441,20 +453,23 @@ ThreePhaseAcMeasurement:
         model: http://schema.org/StructuredValue
         units: 'volts-ampere-reactive (VAr)'
     refDevice:
-      description: 'Relationship. Device(s) used to obtain the measurement.'
+      description: 'Device(s) used to obtain the measurement.'
       items:
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
+        description: 'Property. Unique identifier of the entity'
       minItems: 1
-      type: array
+      type: Relationship
       uniqueItems: true
     refTargetDevice:
-      description: 'Relationship. Device(s) for which the measurement was taken.'
+      description: 'Device(s) for which the measurement was taken.'
       items:
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
+        description: 'Property. Unique identifier of the entity'
       minItems: 1
-      type: array
+      type: Relationship
       uniqueItems: true
     seeAlso:
+      description: 'list of uri pointing to additional resources about the item'
       oneOf:
         - items:
             - format: uri
@@ -463,6 +478,7 @@ ThreePhaseAcMeasurement:
           type: array
         - format: uri
           type: string
+      type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
       type: Property
