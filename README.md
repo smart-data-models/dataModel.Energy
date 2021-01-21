@@ -4,9 +4,7 @@ This folder contains domain specific data models related to energy. The adaptati
 ### List of data models
 
 The following entity types are available:
-- [ThreePhaseAcMeasurement](https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/README.md). An electrical  measurement from a system that uses three phase alternating
-current.
-
+- [ThreePhaseAcMeasurement](https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/README.md). An electrical  measurement from a system that uses three phase alternating current.
 
 
 
