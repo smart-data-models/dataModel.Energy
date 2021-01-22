@@ -2,9 +2,7 @@
 
 ## Description 
 
-An electrical  measurement from a system that uses three phase alternating
-current.
-
+An electrical  measurement from a system that uses three phase alternating current.
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/swagger.yaml)
