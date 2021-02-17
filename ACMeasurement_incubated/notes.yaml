@@ -1,0 +1,10 @@
+notesHeader:
+  Additional Information about Attributes.  For some attributes such as current and voltage the value is a structured value with properties for the Single-Phase (L) or three different phases (L1, L2 and L3). For some measurements such as the different power types (active, reactive and apparent power) there is an attribute for the total from all phases. The rules are defined as  - Three Phase - Total = L1 + L2 + L3 - Single Phase - Total = L.  For most of the attributes, there are various ways they can be actually measured. For this purpose the measurementType Meta Data Attribute can be used. It can have the following values average, rms, minimum, maximum. When using the values [average, rms, minimum, maximum], another metadata attribute called measurementInterval should be used to give the length of the measurement period in seconds. Also a timestamp attribute should be the end time of the measurement period.
+
+notesMiddle:
+  Note. The values will be conveyed by 1 or 3 sub properties depending The Type of Phase for each phase
+  Single-Phase. Individual values L.
+  ThreePhase. Sum of the individual values. L1, L2, L3.
+  All values are calculated from the start date of the measurement [dateEnergyMeteringStarted]
+
+notesFooter:
