@@ -574,8 +574,8 @@ ACMeasurement:
 </details>    
 Hinweis. Die Werte werden durch 1 oder 3 Untereigenschaften übermittelt, abhängig von der Art der Phase für jede Phase Single-Phase. Einzelwerte L. ThreePhase. Summe der Einzelwerte. L1, L2, L3. Alle Werte werden ab dem Startdatum der Messung [dateEnergyMeteringStarted] berechnet  
 ## Beispiel-Nutzlasten  
-#### ACMeasurement NGSI V2 key-values Beispiel  
-Hier ist ein Beispiel für ein ACMeasurement im JSON-Format als Key-Values. Dies ist kompatibel mit NGSI V2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+#### ACMeasurement NGSI-v2 key-values Beispiel  
+Hier ist ein Beispiel für ein ACMeasurement im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
@@ -661,8 +661,8 @@ ACMeasurement:
   }  
 }  
 ```  
-#### ACMeasurement NGSI V2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein ACMeasurement im JSON-Format wie normalisiert. Dies ist kompatibel mit NGSI V2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+#### ACMeasurement NGSI-v2 normalisiert Beispiel  
+Hier ist ein Beispiel für ein ACMeasurement im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
