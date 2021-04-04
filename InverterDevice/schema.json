@@ -248,7 +248,7 @@
         },
         "nominalPowerDC": {
           "type": "number",
-          "description": "Property. Nominal Power or Maximum Power factor for cos ϕ=1. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt. Model:'https://schema.org/Number'. Units:'Watt'"
+          "description": "Property. Nominal Power or Maximum Power factor for cos phi=1. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt. Model:'https://schema.org/Number'. Units:'Watt'"
         },
         "nominalVoltageDC": {
           "type": "number",
@@ -401,7 +401,7 @@
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "Property. Power factor for cos ϕ. A value between [0,1] Units:'Volt'. Model:'http://schema.org/Number'"
+          "description": "Property. Power factor for cos phi. A value between [0,1] Units:'Volt'. Model:'http://schema.org/Number'"
         },
         "moduleYieldRate": {
           "type": "object",
