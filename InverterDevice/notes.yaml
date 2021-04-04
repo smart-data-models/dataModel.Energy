@@ -1,0 +1,6 @@
+notesHeader:
+  Additional Information about Data Model. This Data Model can be used directly as a main entity to describe the device [INVERTER] or as a sub-entity of the Data Model [DEVICE] using a reference by the `refDevice` attribute.
+
+notesMiddle:
+
+notesFooter:

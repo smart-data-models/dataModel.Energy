@@ -1,0 +1,116 @@
+{
+  "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",
+  "type": "InverterDevice",
+  "name": "INVDEV-T1-G0-027",
+  "alternateName": "AirPort – global Observation",
+  "description": "Description of the Inverter linked to Battery and PhotoVoltaic Devices",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      43.66481,
+      7.196545
+    ]
+  },
+  "address": {
+    "addressCountry": "FR",
+    "addressLocality": "Nice",
+    "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"
+  },
+  "areaServed": "Nice Aeroport",
+  "dateLastReported": "2020-03-17T08:45:00Z",
+  "brandName": "KOSTAL ELEC",
+  "modelName": "SB 4000TL-20",
+  "manufacturerName": "SOLAR ELECTRIC CPY",
+  "serialNumber": "SEKOPI10327458712",
+  "application": [
+    "robotics"
+  ],
+  "typeOfUse": "indoor",
+  "installationMode": "wall",
+  "installationCondition": [
+    "extremeClimate"
+  ],
+  "possibilityOfUse": "stationary",
+  "documentation": "https://www.myInverter.fr",
+  "owners": [
+    "Airport-Division Maintenance"
+  ],
+  "phaseType": "threePhase",
+  "supplyPhaseNb": 3,
+  "dimension": {
+    "length": 52.75,
+    "depth": 23.5,
+    "height": 45.25
+  },
+  "weight": 34,
+  "protectionIP": "55",
+  "protectionIK": 10,
+  "protectionClassSLK": "1",
+  "overVoltageCategory": "III",
+  "operatingTemperature": {
+    "min": -25,
+    "max": 60
+  },
+  "operatingAirHumidity": {
+    "min": 0,
+    "max": 0.95
+  },
+  "nominalPowerDC": 4200,
+  "nominalVoltageDC": 400,
+  "nominalAmpereDC ": 17,
+  "nominalFrequencyDC": 50,
+  "operatingVoltageDC": {
+    "min": 125,
+    "max": 550
+  },
+  "operatingAmpereDC": {
+    "min": 17,
+    "max": 17
+  },
+  "operatingFrequencyDC": {
+    "min": 50,
+    "max": 50
+  },
+  "mPPTPVVoltageDC": {
+    "min": 188,
+    "max": 440
+  },
+  "startingVoltageDC": 150,
+  "nbMPPTrackersDC": 3,
+  "nbInputParallelDC": "A:2,B:2",
+  "maxInputCurrentParallelAssembly": 25,
+  "nominalPowerAC": 3680,
+  "maxOutputPowerAC": 4000,
+  "nominalVoltageAC": 230,
+  "nominalAmpereAC ": 16,
+  "nominalFrequencyAC": 50,
+  "operatingVoltageAC": {
+    "min": 180,
+    "max": 280
+  },
+  "operatingAmpereAC": {
+    "min": 16,
+    "max": 22
+  },
+  "operatingFrequencyAC": {
+    "min": 50,
+    "max": 60
+  },
+  "powerFactorAC": 1,
+  "moduleYieldRate": {
+    "euro": 97.1,
+    "eta": 96.4
+  },
+  "noiseLevel": 29,
+  "self-consumption": 0.5,
+  "topology": "without transformer",
+  "coolingSystem": "OptiCool",
+  "inverterStatus": [
+    "00-OnSector",
+    "06-OverVoltage"
+  ],
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld",
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+  ]
+}
