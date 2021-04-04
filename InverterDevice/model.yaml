@@ -405,7 +405,7 @@ InverterDevice:
         model: https://schema.org/Number
         units: Watt
     nominalPowerDC:
-      description: 'Nominal Power or Maximum Power factor for cos ϕ=1. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt'
+      description: 'Nominal Power or Maximum Power factor for cos phi=1. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt'
       type: Property
       x-ngsi:
         model: https://schema.org/Number
@@ -551,7 +551,7 @@ InverterDevice:
         - other
       type: Property
     powerFactorAC:
-      description: 'Power factor for cos ϕ'
+      description: 'Power factor for cos phi'
       maximum: 1
       minimum: 0
       type: Property
