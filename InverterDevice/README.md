@@ -5,6 +5,8 @@
 The data model is intended to describe the mechanical, electrical characteristics of an Inverter according to *DC - Direct Current Information* supplied as input and *AC - Alternating Current Information*  returned as output. *Remark*: This Data Model can be used directly as a main entity to describe the device [Inverter] or as a sub-entity of the Data Model {DEVICE] using a reference by the [refDevice] attribute.
 ### Specification
 
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Energy/InverterDevice/swagger.yaml)
+
 Link to the [specification](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/doc/spec.md)
 
 Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/doc/spec_ES.md)
