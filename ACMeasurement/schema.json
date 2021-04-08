@@ -58,7 +58,7 @@
           "type": "string",
           "enum": [
             "singlePhase",
-            "treePhase"
+            "threePhase"
           ],
           "description": "Property. Model:'https://schema.org/Text'. Type of Phase. A unique value. Enum:'singlePhase, threePhase'"
         },
@@ -233,16 +233,13 @@
           "description": "Property. Model:'https://schema.org/StructuredValue'. Fundamental frequency reactive power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'volts-ampere-reactive'",
           "properties": {
             "L1": {
-              "type": "number",
-              "minimum": 0
+              "type": "number"
             },
             "L2": {
-              "type": "number",
-              "minimum": 0
+              "type": "number"
             },
             "L3": {
-              "type": "number",
-              "minimum": 0
+              "type": "number"
             }
           }
         },
