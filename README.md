@@ -19,7 +19,7 @@ The list of incubated (on development) data models are:
 
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.Energy/blob/master/CONTRIBUTORS.yaml) to the 4 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.Energy/blob/master/CONTRIBUTORS.yaml) to the 5 current contributors of the data models of this Subject.
 
 
 ### Contribution
