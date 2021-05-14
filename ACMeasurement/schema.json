@@ -20,11 +20,6 @@
                         "ACMeasurement"
                     ]
                 },
-                "dateObserved": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'https://schema.org/DateTime'. Date and time of this observation represented by an ISO8601 UTC format. It can be represented by an specific time instant or by an ISO8601 interval to separate attributes `dateObservedFrom`,`dateObservedTo`."
-                },
                 "dateObservedFrom": {
                     "type": "string",
                     "format": "date-time",
