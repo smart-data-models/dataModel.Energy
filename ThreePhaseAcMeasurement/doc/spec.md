@@ -1,11 +1,12 @@
 Entity: ThreePhaseAcMeasurement  
 ===============================  
 [Open License](https://github.com/smart-data-models//dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **An electrical  measurement from a system that uses three phase alternating current.**  
 
 ## List of properties  
 
-- `activeEnergyExport`: Active energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `activeEnergyImport`: Active energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `activePower`: The actual values will beconveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.   - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `apparentEnergyExport`: Apparent energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `apparentEnergyImport`: Apparent energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `apparentPower`: Apparent power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3  - `areaServed`: The geographic area where a service or offered item is provided  - `current`: Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateEnergyMeteringStarted`: The starting date for metering energy.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `displacementPowerFactor`: Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `frequency`: The frequency of the circuit.  - `id`: Unique identifier of the entity  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `phaseToPhaseVoltage`: Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).  - `phaseVoltage`: The voltage between each phase and neutral conductor. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `powerFactor`: Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `reactiveEnergyExport`: Fundamental frequency reactive energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `reactiveEnergyImport`: Fundamental frequency reactive energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `reactivePower`: Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `refDevice`: Device(s) used to obtain the measurement.  - `refTargetDevice`: Device(s) for which the measurement was taken.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `thdCurrent`: Total harmonic distortion of electrical current. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `thdVoltage`: Total harmonic distortion of voltage for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `totalActiveEnergyExport`: Total energy exported since metering started (since `dateEnergyMeteringStarted`).  - `totalActiveEnergyImport`: Total energy imported i.e. consumed since metering started (since `dateEnergyMeteringStarted`).  - `totalActivePower`: Active power consumed (counting all phases)  - `totalApparentEnergyExport`: Total energy exported (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)  - `totalApparentEnergyImport`: Total energy imported i.e. consumed (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)  - `totalApparentPower`: Apparent power consumed (counting all phases).  - `totalDisplacementPowerFactor`: Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system  - `totalPowerFactor`: Power factor including all phases  - `totalReactiveEnergyExport`: Total fundamental frequency reactive energy exported since metering started (since `dateEnergyMeteringStarted`).  - `totalReactiveEnergyImport`: Total energy imported i.e. consumed (with regards to fundamental frequency reactive power) since the metering start date (`dateEnergyMeteringStarted`)  - `totalReactivePower`: Reactive power consumed (counting all phases)  - `type`: It must be equal to `ThreePhaseAcMeasurement`.    
+- `activeEnergyExport`: Active energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `activeEnergyImport`: Active energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `activePower`: The actual values will beconveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.   - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `apparentEnergyExport`: Apparent energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `apparentEnergyImport`: Apparent energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `apparentPower`: Apparent power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3  - `areaServed`: The geographic area where a service or offered item is provided  - `current`: Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateEnergyMeteringStarted`: The starting date for metering energy.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `displacementPowerFactor`: Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `frequency`: The frequency of the circuit.  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `phaseToPhaseVoltage`: Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).  - `phaseVoltage`: The voltage between each phase and neutral conductor. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `powerFactor`: Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `reactiveEnergyExport`: Fundamental frequency reactive energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `reactiveEnergyImport`: Fundamental frequency reactive energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `reactivePower`: Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.  - `refDevice`: Device(s) used to obtain the measurement.  - `refTargetDevice`: Device(s) for which the measurement was taken.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `thdCurrent`: Total harmonic distortion of electrical current. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `thdVoltage`: Total harmonic distortion of voltage for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3  - `totalActiveEnergyExport`: Total energy exported since metering started (since `dateEnergyMeteringStarted`).  - `totalActiveEnergyImport`: Total energy imported i.e. consumed since metering started (since `dateEnergyMeteringStarted`).  - `totalActivePower`: Active power consumed (counting all phases)  - `totalApparentEnergyExport`: Total energy exported (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)  - `totalApparentEnergyImport`: Total energy imported i.e. consumed (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)  - `totalApparentPower`: Apparent power consumed (counting all phases).  - `totalDisplacementPowerFactor`: Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system  - `totalPowerFactor`: Power factor including all phases  - `totalReactiveEnergyExport`: Total fundamental frequency reactive energy exported since metering started (since `dateEnergyMeteringStarted`).  - `totalReactiveEnergyImport`: Total energy imported i.e. consumed (with regards to fundamental frequency reactive power) since the metering start date (`dateEnergyMeteringStarted`)  - `totalReactivePower`: Reactive power consumed (counting all phases)  - `type`: It must be equal to `ThreePhaseAcMeasurement`.    
 Required properties  
 - `id`  - `type`    
 Text to be included between overall title and description.  
@@ -62,30 +63,29 @@ ThreePhaseAcMeasurement:
         model: http://schema.org/StructuredValue    
         units: 'watt (W).Active power consumed per phase'    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -216,10 +216,10 @@ ThreePhaseAcMeasurement:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -239,7 +239,8 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -262,7 +263,8 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -287,7 +289,8 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -309,7 +312,8 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -334,7 +338,8 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -361,7 +366,7 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -487,8 +492,8 @@ ThreePhaseAcMeasurement:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -625,8 +630,8 @@ ThreePhaseAcMeasurement:
 </details>    
 Text to be included after list of properties  
 ## Example payloads    
-#### ThreePhaseAcMeasurement NGSI V2 key-values Example    
-Here is an example of a ThreePhaseAcMeasurement in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+#### ThreePhaseAcMeasurement NGSI-v2 key-values Example    
+Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -696,8 +701,8 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
-#### ThreePhaseAcMeasurement NGSI V2 normalized Example    
-Here is an example of a ThreePhaseAcMeasurement in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
+#### ThreePhaseAcMeasurement NGSI-v2 normalized Example    
+Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1024,318 +1029,365 @@ ThreePhaseAcMeasurement:
 #### ThreePhaseAcMeasurement NGSI-LD key-values Example    
 Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
-{"@context": ["https://schema.lab.fiware.org/ld/context",  
-              "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
- "activePower": {"L1": 11996.416016, "L2": 9461.501953, "L3": 10242.351562},  
- "apparentPower": {"L1": 13201.412109, "L2": 10755.304688, "L3": 11941.094727},  
- "current": {"L1": 56.126038, "L2": 45.894356, "L3": 50.872452, "N": 0.0},  
- "dateEnergyMeteringStarted": {"@type": "DateTime",  
-                               "@value": "2018-07-07T15:05:59.408Z"},  
- "description": "measurement corresponding to the ventilation machine rooms",  
- "displacementPowerFactor": {"L1": 0.978013, "L2": 0.973317, "L3": 0.960382},  
- "frequency": 50.020672,  
- "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
- "name": "HKAPK0200",  
- "phaseToPhaseVoltage": {"L12": 406.769196,  
-                         "L23": 407.081238,  
-                         "L31": 407.734558},  
- "phaseVoltage": {"L1": 234.961304, "L2": 234.563477, "L3": 235.354034},  
- "powerFactor": {"L1": 0.908817, "L2": 0.879906, "L3": 0.859293},  
- "reactivePower": {"L1": -2612.606934, "L2": -2209.906006, "L3": -3007.81958},  
- "refDevice": ["urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"],  
- "thdCurrent": {"L1": 0.38497337, "L2": 0.45807529, "L3": 0.4938652},  
- "thdVoltage": {"L1": 0.01471114, "L2": 0.01600046, "L3": 0.01541459},  
- "totalActiveEnergyExport": 1059.80176,  
- "totalActiveEnergyImport": 150781.96448,  
- "totalActivePower": 31700.269531,  
- "totalApparentPower": 36019.089844,  
- "totalReactiveEnergyExport": 93275.02176,  
- "totalReactiveEnergyImport": 20490.3392,  
- "totalReactivePower": -7830.332031,  
- "type": "ThreePhaseAcMeasurement"}  
+{  
+  "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
+  "type": "ThreePhaseAcMeasurement",  
+  "dateEnergyMeteringStarted": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2018-07-07T15:05:59.408Z"  
+    }  
+  },  
+  "refDevice": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"  
+    ]  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "HKAPK0200"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "measurement corresponding to the ventilation machine rooms"  
+  },  
+  "totalActiveEnergyImport": {  
+    "type": "Property",  
+    "value": 150781.96448,  
+    "observedAt": "2019-01-24T22:00:00.173Z"  
+  },  
+  "totalReactiveEnergyImport": {  
+    "type": "Property",  
+    "value": 20490.3392,  
+    "observedAt": "2019-01-24T22:00:00.173Z"  
+  },  
+  "totalActiveEnergyExport": {  
+    "type": "Property",  
+    "value": 1059.80176,  
+    "observedAt": "2019-01-24T22:00:00.173Z"  
+  },  
+  "totalReactiveEnergyExport": {  
+    "type": "Property",  
+    "value": 93275.02176,  
+    "observedAt": "2019-01-24T22:00:00.173Z"  
+  },  
+  "totalActivePower": {  
+    "type": "Property",  
+    "value": 31700.269531,  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "activePower": {  
+    "type": "Property",  
+    "value": {  
+      "L1": 11996.416016,  
+      "L2": 9461.501953,  
+      "L3": 10242.351562  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "totalReactivePower": {  
+    "type": "Property",  
+    "value": -7830.332031,  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "reactivePower": {  
+    "type": "Property",  
+    "value": {  
+      "L1": -2612.606934,  
+      "L2": -2209.906006,  
+      "L3": -3007.81958  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "totalApparentPower": {  
+    "type": "Property",  
+    "value": 36019.089844,  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "apparentPower": {  
+    "type": "Property",  
+    "value": {  
+      "L1": 13201.412109,  
+      "L2": 10755.304688,  
+      "L3": 11941.094727  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "powerFactor": {  
+    "type": "Property",  
+    "value": {  
+      "L1": 0.908817,  
+      "L2": 0.879906,  
+      "L3": 0.859293  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    },  
+    "onlyPositive": {  
+      "type": "Property",  
+      "value": true  
+    }  
+  },  
+  "displacementPowerFactor": {  
+    "type": "Property",  
+    "value": {  
+      "L1": 0.978013,  
+      "L2": 0.973317,  
+      "L3": 0.960382  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    },  
+    "onlyPositive": {  
+      "type": "Property",  
+      "value": true  
+    }  
+  },  
+  "frequency": {  
+    "type": "Property",  
+    "value": 50.020672,  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "current": {  
+    "type": "Property",  
+    "value": {  
+      "L1": 56.126038,  
+      "L2": 45.894356,  
+      "L3": 50.872452,  
+      "N": 0.0  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "rms"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "phaseVoltage": {  
+    "type": "Property",  
+    "value": {  
+      "L1": 234.961304,  
+      "L2": 234.563477,  
+      "L3": 235.354034  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "rms"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "phaseToPhaseVoltage": {  
+    "type": "Property",  
+    "value": {  
+      "L12": 406.769196,  
+      "L23": 407.081238,  
+      "L31": 407.734558  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "rms"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "thdVoltage": {  
+    "type": "Property",  
+    "value": {  
+      "L1": 0.01471114,  
+      "L2": 0.01600046,  
+      "L3": 0.01541459  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "thdCurrent": {  
+    "type": "Property",  
+    "value": {  
+      "L1": 0.38497337,  
+      "L2": 0.45807529,  
+      "L3": 0.4938652  
+    },  
+    "observedAt": "2019-01-24T22:00:00.173Z",  
+    "measurementType": {  
+      "type": "Property",  
+      "value": "average"  
+    },  
+    "measurementInterval": {  
+      "type": "Property",  
+      "value": 1  
+    }  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
 ```  
 #### ThreePhaseAcMeasurement NGSI-LD normalized Example    
 Here is an example of a ThreePhaseAcMeasurement in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
-    "type": "ThreePhaseAcMeasurement",  
-    "dateEnergyMeteringStarted": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2018-07-07T15:05:59.408Z"  
-        }  
-    },  
-    "refDevice": {  
-        "type": "Relationship",  
-        "object": [  
-            "urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"  
-        ]  
-    },  
-    "name": {  
-        "type": "Property",  
-        "value": "HKAPK0200"  
-    },  
-    "description": {  
-        "type": "Property",  
-        "value": "measurement corresponding to the ventilation machine rooms"  
-    },  
-    "totalActiveEnergyImport": {  
-        "type": "Property",  
-        "value": 150781.96448,  
-        "observedAt": "2019-01-24T22:00:00.173Z"  
-    },  
-    "totalReactiveEnergyImport": {  
-        "type": "Property",  
-        "value": 20490.3392,  
-        "observedAt": "2019-01-24T22:00:00.173Z"  
-    },  
-    "totalActiveEnergyExport": {  
-        "type": "Property",  
-        "value": 1059.80176,  
-        "observedAt": "2019-01-24T22:00:00.173Z"  
-    },  
-    "totalReactiveEnergyExport": {  
-        "type": "Property",  
-        "value": 93275.02176,  
-        "observedAt": "2019-01-24T22:00:00.173Z"  
-    },  
-    "totalActivePower": {  
-        "type": "Property",  
-        "value": 31700.269531,  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "activePower": {  
-        "type": "Property",  
-        "value": {  
-            "L1": 11996.416016,  
-            "L2": 9461.501953,  
-            "L3": 10242.351562  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "totalReactivePower": {  
-        "type": "Property",  
-        "value": -7830.332031,  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "reactivePower": {  
-        "type": "Property",  
-        "value": {  
-            "L1": -2612.606934,  
-            "L2": -2209.906006,  
-            "L3": -3007.81958  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "totalApparentPower": {  
-        "type": "Property",  
-        "value": 36019.089844,  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "apparentPower": {  
-        "type": "Property",  
-        "value": {  
-            "L1": 13201.412109,  
-            "L2": 10755.304688,  
-            "L3": 11941.094727  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "powerFactor": {  
-        "type": "Property",  
-        "value": {  
-            "L1": 0.908817,  
-            "L2": 0.879906,  
-            "L3": 0.859293  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        },  
-        "onlyPositive": {  
-            "type": "Property",  
-            "value": true  
-        }  
-    },  
-    "displacementPowerFactor": {  
-        "type": "Property",  
-        "value": {  
-            "L1": 0.978013,  
-            "L2": 0.973317,  
-            "L3": 0.960382  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        },  
-        "onlyPositive": {  
-            "type": "Property",  
-            "value": true  
-        }  
-    },  
-    "frequency": {  
-        "type": "Property",  
-        "value": 50.020672,  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "current": {  
-        "type": "Property",  
-        "value": {  
-            "L1": 56.126038,  
-            "L2": 45.894356,  
-            "L3": 50.872452,  
-            "N": 0.0  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "rms"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "phaseVoltage": {  
-        "type": "Property",  
-        "value": {  
-            "L1": 234.961304,  
-            "L2": 234.563477,  
-            "L3": 235.354034  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "rms"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "phaseToPhaseVoltage": {  
-        "type": "Property",  
-        "value": {  
-            "L12": 406.769196,  
-            "L23": 407.081238,  
-            "L31": 407.734558  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "rms"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "thdVoltage": {  
-        "type": "Property",  
-        "value": {  
-            "L1": 0.01471114,  
-            "L2": 0.01600046,  
-            "L3": 0.01541459  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "thdCurrent": {  
-        "type": "Property",  
-        "value": {  
-            "L1": 0.38497337,  
-            "L2": 0.45807529,  
-            "L3": 0.4938652  
-        },  
-        "observedAt": "2019-01-24T22:00:00.173Z",  
-        "measurementType": {  
-            "type": "Property",  
-            "value": "average"  
-        },  
-        "measurementInterval": {  
-            "type": "Property",  
-            "value": 1  
-        }  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-    ]  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ],  
+  "activePower": {  
+    "L1": 11996.416016,  
+    "L2": 9461.501953,  
+    "L3": 10242.351562  
+  },  
+  "apparentPower": {  
+    "L1": 13201.412109,  
+    "L2": 10755.304688,  
+    "L3": 11941.094727  
+  },  
+  "current": {  
+    "L1": 56.126038,  
+    "L2": 45.894356,  
+    "L3": 50.872452,  
+    "N": 0.0  
+  },  
+  "dateEnergyMeteringStarted": {  
+    "@type": "DateTime",  
+    "@value": "2018-07-07T15:05:59.408Z"  
+  },  
+  "description": "measurement corresponding to the ventilation machine rooms",  
+  "displacementPowerFactor": {  
+    "L1": 0.978013,  
+    "L2": 0.973317,  
+    "L3": 0.960382  
+  },  
+  "frequency": 50.020672,  
+  "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
+  "name": "HKAPK0200",  
+  "phaseToPhaseVoltage": {  
+    "L12": 406.769196,  
+    "L23": 407.081238,  
+    "L31": 407.734558  
+  },  
+  "phaseVoltage": {  
+    "L1": 234.961304,  
+    "L2": 234.563477,  
+    "L3": 235.354034  
+  },  
+  "powerFactor": {  
+    "L1": 0.908817,  
+    "L2": 0.879906,  
+    "L3": 0.859293  
+  },  
+  "reactivePower": {  
+    "L1": -2612.606934,  
+    "L2": -2209.906006,  
+    "L3": -3007.81958  
+  },  
+  "refDevice": [  
+    "urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"  
+  ],  
+  "thdCurrent": {  
+    "L1": 0.38497337,  
+    "L2": 0.45807529,  
+    "L3": 0.4938652  
+  },  
+  "thdVoltage": {  
+    "L1": 0.01471114,  
+    "L2": 0.01600046,  
+    "L3": 0.01541459  
+  },  
+  "totalActiveEnergyExport": 1059.80176,  
+  "totalActiveEnergyImport": 150781.96448,  
+  "totalActivePower": 31700.269531,  
+  "totalApparentPower": 36019.089844,  
+  "totalReactiveEnergyExport": 93275.02176,  
+  "totalReactiveEnergyImport": 20490.3392,  
+  "totalReactivePower": -7830.332031,  
+  "type": "ThreePhaseAcMeasurement"  
 }  
 ```  
 Text after  all  
