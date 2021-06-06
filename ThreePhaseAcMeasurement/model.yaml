@@ -13,9 +13,10 @@ ThreePhaseAcMeasurement:
         L3:
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'kilowatt hour (kWh)'
     activeEnergyImport:
       description: 'Active energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
@@ -29,9 +30,10 @@ ThreePhaseAcMeasurement:
         L3:
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'kilowatt hour (kWh)'
     activePower:
       description: 'The actual values will beconveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3. '
@@ -42,9 +44,10 @@ ThreePhaseAcMeasurement:
           type: number
         L3:
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'watt (W).Active power consumed per phase'
     address:
       description: 'The mailing address'
@@ -67,12 +70,15 @@ ThreePhaseAcMeasurement:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     apparentEnergyExport:
       description: 'Apparent energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
       properties:
@@ -85,9 +91,10 @@ ThreePhaseAcMeasurement:
         L3:
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'kilovolt-ampere-hour (kVAh)'
     apparentEnergyImport:
       description: 'Apparent energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
@@ -101,9 +108,10 @@ ThreePhaseAcMeasurement:
         L3:
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'kilovolt-ampere-hour (kVAh)'
     apparentPower:
       description: 'Apparent power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3'
@@ -117,15 +125,17 @@ ThreePhaseAcMeasurement:
         L3:
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'volt-ampere (VA)'
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     current:
       description: 'Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.'
       properties:
@@ -137,30 +147,40 @@ ThreePhaseAcMeasurement:
           type: number
         N:
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'Ampers (A)'
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateEnergyMeteringStarted:
       description: 'The starting date for metering energy.'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: http://schema.org/DateTime
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     displacementPowerFactor:
       description: 'Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
       properties:
@@ -176,16 +196,18 @@ ThreePhaseAcMeasurement:
           maximum: 1
           minimum: -1
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: '-1 to +1'
     frequency:
       description: 'The frequency of the circuit.'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
         units: 'Hertz (Hz)'
     id:
       anyOf: &threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
@@ -198,7 +220,8 @@ ThreePhaseAcMeasurement:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -350,16 +373,21 @@ ThreePhaseAcMeasurement:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      type: Geoproperty
+      x-ngsi:
+        type: Geoproperty
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     phaseToPhaseVoltage:
       description: 'Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).'
       properties:
@@ -372,9 +400,10 @@ ThreePhaseAcMeasurement:
         L31:
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: (http://schema.org/StructuredValue
+        type: Property
         units: 'Volts (V)'
     phaseVoltage:
       description: 'The voltage between each phase and neutral conductor. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
@@ -388,9 +417,10 @@ ThreePhaseAcMeasurement:
         L3:
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'Volts (V)'
     powerFactor:
       description: 'Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
@@ -407,9 +437,10 @@ ThreePhaseAcMeasurement:
           maximum: 1
           minimum: -1
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: '-1 to +1'
     reactiveEnergyExport:
       description: 'Fundamental frequency reactive energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
@@ -423,9 +454,10 @@ ThreePhaseAcMeasurement:
         L3:
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'kilovolt-ampere-reactive-hour (kVArh)'
     reactiveEnergyImport:
       description: 'Fundamental frequency reactive energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
@@ -439,9 +471,10 @@ ThreePhaseAcMeasurement:
         L3:
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: 'kilovolt-ampere-reactive-hour (kVArh)'
+        type: Property
         units: http://schema.org/StructuredValue
     reactivePower:
       description: 'Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
@@ -452,9 +485,10 @@ ThreePhaseAcMeasurement:
           type: number
         L3:
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: 'volts-ampere-reactive (VAr)'
     refDevice:
       description: 'Device(s) used to obtain the measurement.'
@@ -462,16 +496,20 @@ ThreePhaseAcMeasurement:
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       minItems: 1
-      type: Relationship
+      type: array
       uniqueItems: true
+      x-ngsi:
+        type: Relationship
     refTargetDevice:
       description: 'Device(s) for which the measurement was taken.'
       items:
         anyOf: *threephaseacmeasurement_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       minItems: 1
-      type: Relationship
+      type: array
       uniqueItems: true
+      x-ngsi:
+        type: Relationship
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -482,10 +520,13 @@ ThreePhaseAcMeasurement:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     thdCurrent:
       description: 'Total harmonic distortion of electrical current. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
       properties:
@@ -501,9 +542,10 @@ ThreePhaseAcMeasurement:
           maximum: 1
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: '0 to 1'
     thdVoltage:
       description: 'Total harmonic distortion of voltage for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3'
@@ -520,92 +562,106 @@ ThreePhaseAcMeasurement:
           maximum: 1
           minimum: 0
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: http://schema.org/StructuredValue
+        type: Property
         units: '0 to 1'
     totalActiveEnergyExport:
       description: 'Total energy exported since metering started (since `dateEnergyMeteringStarted`).'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: 'kilowatt hour (kWh)'
     totalActiveEnergyImport:
       description: 'Total energy imported i.e. consumed since metering started (since `dateEnergyMeteringStarted`).'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: 'kilowatt hour (kWh)'
     totalActivePower:
       description: 'Active power consumed (counting all phases)'
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
         units: 'watt (W)'
     totalApparentEnergyExport:
       description: 'Total energy exported (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: 'kilovolt-ampere-reactive-hour (kVArh)'
     totalApparentEnergyImport:
       description: 'Total energy imported i.e. consumed (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: 'kilovolt-ampere-hour (kVAh)'
     totalApparentPower:
       description: 'Apparent power consumed (counting all phases).'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
         units: 'volt-ampere (VA)'
     totalDisplacementPowerFactor:
       description: 'Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system'
       maximum: 1
       minimum: -1
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
         units: '-1 to +1'
     totalPowerFactor:
       description: 'Power factor including all phases'
       maximum: 1
       minimum: -1
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
         units: '-1 to +1'
     totalReactiveEnergyExport:
       description: 'Total fundamental frequency reactive energy exported since metering started (since `dateEnergyMeteringStarted`).'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: 'kilovolt-ampere-reactive-hour (kVArh)'
     totalReactiveEnergyImport:
       description: 'Total energy imported i.e. consumed (with regards to fundamental frequency reactive power) since the metering start date (`dateEnergyMeteringStarted`)'
       minimum: 0
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: 'kilovolt-ampere-reactive-hour (kVArh)'
     totalReactivePower:
       description: 'Reactive power consumed (counting all phases)'
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
         units: 'volt-ampere-reactive (VAr)'
     type:
       description: 'It must be equal to `ThreePhaseAcMeasurement`.'
       enum:
         - ThreePhaseAcMeasurement
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
   required:
     - id
     - type
