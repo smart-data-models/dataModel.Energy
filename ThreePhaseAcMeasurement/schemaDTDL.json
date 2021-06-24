@@ -1,0 +1,599 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ThreePhaseAcMeasurement;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - Energy / Three Phase AC Measurement adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/ThreePhaseAcMeasurement/schema.json",
+    "description": "An electrical  measurement from a system that uses three phase alternating current.",
+    "displayName": "ThreePhaseAcMeasurement",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateEnergyMeteringStarted",
+            "writable": true,
+            "displayName": "dateEnergyMeteringStarted",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "The starting date for metering energy."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "frequency",
+            "writable": true,
+            "displayName": "frequency",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The frequency of the circuit."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "totalActiveEnergyExport",
+            "writable": true,
+            "displayName": "totalActiveEnergyExport",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total energy exported since metering started (since `dateEnergyMeteringStarted`)."
+        },
+        {
+            "name": "totalActiveEnergyImport",
+            "writable": true,
+            "displayName": "totalActiveEnergyImport",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total energy imported i.e. consumed since metering started (since `dateEnergyMeteringStarted`)."
+        },
+        {
+            "name": "totalActivePower",
+            "writable": true,
+            "displayName": "totalActivePower",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Active power consumed (counting all phases)"
+        },
+        {
+            "name": "totalApparentEnergyExport",
+            "writable": true,
+            "displayName": "totalApparentEnergyExport",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total energy exported (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)"
+        },
+        {
+            "name": "totalApparentEnergyImport",
+            "writable": true,
+            "displayName": "totalApparentEnergyImport",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total energy imported i.e. consumed (with regards to apparent power) since the metering start date (`dateEnergyMeteringStarted`)"
+        },
+        {
+            "name": "totalApparentPower",
+            "writable": true,
+            "displayName": "totalApparentPower",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Apparent power consumed (counting all phases)."
+        },
+        {
+            "name": "totalDisplacementPowerFactor",
+            "writable": true,
+            "displayName": "totalDisplacementPowerFactor",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system"
+        },
+        {
+            "name": "totalPowerFactor",
+            "writable": true,
+            "displayName": "totalPowerFactor",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power factor including all phases"
+        },
+        {
+            "name": "totalReactiveEnergyExport",
+            "writable": true,
+            "displayName": "totalReactiveEnergyExport",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total fundamental frequency reactive energy exported since metering started (since `dateEnergyMeteringStarted`)."
+        },
+        {
+            "name": "totalReactiveEnergyImport",
+            "writable": true,
+            "displayName": "totalReactiveEnergyImport",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total energy imported i.e. consumed (with regards to fundamental frequency reactive power) since the metering start date (`dateEnergyMeteringStarted`)"
+        },
+        {
+            "name": "totalReactivePower",
+            "writable": true,
+            "displayName": "totalReactivePower",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reactive power consumed (counting all phases)"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refDevice",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Device(s) used to obtain the measurement.",
+            "displayName": "refDevice"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refTargetDevice",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Device(s) for which the measurement was taken.",
+            "displayName": "refTargetDevice"
+        },
+        {
+            "@type": "object",
+            "name": "activeEnergyExport",
+            "comment": "Active energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.",
+            "displayName": "activeEnergyExport",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "activeEnergyImport",
+            "comment": "Active energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.",
+            "displayName": "activeEnergyImport",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "activePower",
+            "comment": "The actual values will beconveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3. ",
+            "displayName": "activePower",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "apparentEnergyExport",
+            "comment": "Apparent energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.",
+            "displayName": "apparentEnergyExport",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "apparentEnergyImport",
+            "comment": "Apparent energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.",
+            "displayName": "apparentEnergyImport",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "apparentPower",
+            "comment": "Apparent power consumed per phase. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3",
+            "displayName": "apparentPower",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "current",
+            "comment": "Electrical current. The actual values will be conveyed by one subproperty per alternating current phase and the neutral wire: L1, L2, L3 and N.",
+            "displayName": "current",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                },
+                {
+                    "name": "N",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "displacementPowerFactor",
+            "comment": "Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3",
+            "displayName": "displacementPowerFactor",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "phaseToPhaseVoltage",
+            "comment": "Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).",
+            "displayName": "phaseToPhaseVoltage",
+            "fields": [
+                {
+                    "name": "L12",
+                    "schema": "long"
+                },
+                {
+                    "name": "L23",
+                    "schema": "long"
+                },
+                {
+                    "name": "L31",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "phaseVoltage",
+            "comment": "The voltage between each phase and neutral conductor. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3",
+            "displayName": "phaseVoltage",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "powerFactor",
+            "comment": "Power factor for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3",
+            "displayName": "powerFactor",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "reactiveEnergyExport",
+            "comment": "Fundamental frequency reactive energy exported per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.",
+            "displayName": "reactiveEnergyExport",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "reactiveEnergyImport",
+            "comment": "Fundamental frequency reactive energy imported i.e. consumed per phase since the metering start date. The actual values will be conveyed by subproperties which names will be equal to the name of each of the alternating current phases: L1, L2, L3.",
+            "displayName": "reactiveEnergyImport",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "reactivePower",
+            "comment": "Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.",
+            "displayName": "reactivePower",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "thdCurrent",
+            "comment": "Total harmonic distortion of electrical current. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3",
+            "displayName": "thdCurrent",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "thdVoltage",
+            "comment": "Total harmonic distortion of voltage for each phase. The actual values will be conveyed by one subproperty per alternating current phase: L1, L2 and L3",
+            "displayName": "thdVoltage",
+            "fields": [
+                {
+                    "name": "L1",
+                    "schema": "long"
+                },
+                {
+                    "name": "L2",
+                    "schema": "long"
+                },
+                {
+                    "name": "L3",
+                    "schema": "long"
+                }
+            ]
+        }
+    ]
+}

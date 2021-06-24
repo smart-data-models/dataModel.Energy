@@ -1,0 +1,802 @@
+{
+    "@id": "dtmi:com:ngsi-ld:InverterDevice;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "InverterDevice schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/InverterDevice/schema.json",
+    "description": "The data model is intended to describe the mechanical, electrical characteristics of an Inverter according to *DC - Direct Current Information* supplied as input and *AC - Alternating Current Information*  returned as output. *Remark*: This Data Model can be used directly as a main entity to describe the device [Inverter] or as a sub-entity of the Data Model {DEVICE] using a reference by the [refDevice] attribute.",
+    "displayName": "InverterDevice",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "brandName",
+            "writable": true,
+            "displayName": "brandName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Brand Name of the item"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateLastReported",
+            "writable": true,
+            "displayName": "dateLastReported",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "A timestamps which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "documentation",
+            "writable": true,
+            "displayName": "documentation",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Technical Documentation (Installation / maintenance / used)"
+        },
+        {
+            "name": "manufacturerName",
+            "writable": true,
+            "displayName": "manufacturerName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Manufacturer Name of the item"
+        },
+        {
+            "name": "maxInputCurrentParallelAssembly",
+            "writable": true,
+            "displayName": "maxInputCurrentParallelAssembly",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere. Unis:'Ampere'"
+        },
+        {
+            "name": "maxOutputPowerAC",
+            "writable": true,
+            "displayName": "maxOutputPowerAC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum Power or Apparent Power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **D46** represents Volt Ampere"
+        },
+        {
+            "name": "modelName",
+            "writable": true,
+            "displayName": "modelName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Model name of the item"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "nbInputParallelDC",
+            "writable": true,
+            "displayName": "nbInputParallelDC",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Maximum Number of inputs (in parallel)"
+        },
+        {
+            "name": "nbMPPTrackersDC",
+            "writable": true,
+            "displayName": "nbMPPTrackersDC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of MPP trackers"
+        },
+        {
+            "name": "noiseLevel",
+            "writable": true,
+            "displayName": "noiseLevel",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Sound Power level of the Device. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **2N** represents Decibel"
+        },
+        {
+            "name": "nominalAmpereAC",
+            "writable": true,
+            "displayName": "nominalAmpereAC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nominal Amperage *(Code I)*. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere"
+        },
+        {
+            "name": "nominalAmpereDC",
+            "writable": true,
+            "displayName": "nominalAmpereDC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nominal Amperage. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere"
+        },
+        {
+            "name": "nominalFrequencyAC",
+            "writable": true,
+            "displayName": "nominalFrequencyAC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nominal Frequency. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz"
+        },
+        {
+            "name": "nominalFrequencyDC",
+            "writable": true,
+            "displayName": "nominalFrequencyDC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": " Nominal Frequency. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz"
+        },
+        {
+            "name": "nominalPowerAC",
+            "writable": true,
+            "displayName": "nominalPowerAC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nominal Power . The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt"
+        },
+        {
+            "name": "nominalPowerDC",
+            "writable": true,
+            "displayName": "nominalPowerDC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nominal Power or Maximum Power factor for cos phi=1. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt"
+        },
+        {
+            "name": "nominalVoltageAC",
+            "writable": true,
+            "displayName": "nominalVoltageAC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nominal battery voltage *(Code U)*. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt"
+        },
+        {
+            "name": "nominalVoltageDC",
+            "writable": true,
+            "displayName": "nominalVoltageDC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nominal voltage. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt"
+        },
+        {
+            "name": "powerFactorAC",
+            "writable": true,
+            "displayName": "powerFactorAC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power factor for cos phi"
+        },
+        {
+            "name": "protectionIK",
+            "writable": true,
+            "displayName": "protectionIK",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "IK '*Mecanic Protection*' level relating to numeric classification for the degrees of protection provided by enclosures for electrical equipment against external mechanical impacts, according to International Electro technical Commission standard (EN 62-262). - IK varies from 0 (minimum resistance) to 10 (maximum resistance) which represents an Impact Energy (Unit Joule)"
+        },
+        {
+            "name": "protectionIP",
+            "writable": true,
+            "displayName": "protectionIP",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "IP '*Ingress Protection*' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). - First digit: Solid particle protection (Single numeral: 0\u20136 or 'X'). - Second digit: Liquid ingress protection (Single numeral: 0\u20139 or 'X' ).- Third digit: Personal Protection  against access to dangerous part"
+        },
+        {
+            "name": "refDevice",
+            "writable": true,
+            "displayName": "refDevice"
+        },
+        {
+            "name": "refPointOfInterest",
+            "writable": true,
+            "displayName": "refPointOfInterest"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "self-consumption",
+            "writable": true,
+            "displayName": "self-consumption",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Self-consumption during nigth. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  For instance, **WTT** represents Watt"
+        },
+        {
+            "name": "serialNumber",
+            "writable": true,
+            "displayName": "serialNumber",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Serial numbers of the item"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "startingVoltageDC",
+            "writable": true,
+            "displayName": "startingVoltageDC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Starting voltage. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt"
+        },
+        {
+            "name": "supplyPhaseNb",
+            "writable": true,
+            "displayName": "supplyPhaseNb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of power supply phases"
+        },
+        {
+            "name": "topology",
+            "writable": true,
+            "displayName": "topology",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Description of the topology of the installation."
+        },
+        {
+            "name": "weight",
+            "writable": true,
+            "displayName": "weight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Weight. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **KGM** represents Kilogram"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "application",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Target application of the Device regarding the environment. A unique value. Enum:'electricMobility, energyStorage, emergencyStorage, lighting, industrialStorage, houseHoldStorage, robotics, production, other'",
+            "displayName": "application"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "installationCondition",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Condition and possibility of use in the following environments. Enum:'extremeHeat, extremeCold, extremeHumidity, extremeClimate, desert, sand, marine, saline, dust, seismic, other'.",
+            "displayName": "installationCondition"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "inverterStatus",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Status of the inverter. A combination of values.",
+            "displayName": "inverterStatus"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "dimension",
+            "comment": "External dimension of a Panel. The format is structured by a sub-property of 3 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter",
+            "displayName": "dimension",
+            "fields": [
+                {
+                    "name": "depth",
+                    "schema": "long"
+                },
+                {
+                    "name": "height",
+                    "schema": "long"
+                },
+                {
+                    "name": "length",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "mPPTPVVoltageDC",
+            "comment": "Minimum and Maximum Photo-voltaic voltage range, MPPT allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt",
+            "displayName": "mPPTPVVoltageDC",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "moduleYieldRate",
+            "comment": "Yield Rate of the Device. The format is structured by a sub-property of 2 items (European Standard - Manufacturer Standard). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent",
+            "displayName": "moduleYieldRate",
+            "fields": [
+                {
+                    "name": "eta",
+                    "schema": "long"
+                },
+                {
+                    "name": "euro",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operatingAirHumidity",
+            "comment": "Ambient operating Air Humidity range. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent.",
+            "displayName": "operatingAirHumidity",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operatingAmpereAC",
+            "comment": "Minimum and Maximum Ampere allowed.. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere",
+            "displayName": "operatingAmpereAC",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operatingAmpereDC",
+            "comment": "Minimum and Maximum Ampere allowed.. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere",
+            "displayName": "operatingAmpereDC",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operatingFrequencyAC",
+            "comment": "Minimum and Maximum Frequency allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz",
+            "displayName": "operatingFrequencyAC",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operatingFrequencyDC",
+            "comment": "Minimum and Maximum Frequency allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz",
+            "displayName": "operatingFrequencyDC",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operatingTemperature",
+            "comment": "Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius.",
+            "displayName": "operatingTemperature",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operatingVoltageAC",
+            "comment": "Minimum and Maximum voltage allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt",
+            "displayName": "operatingVoltageAC",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operatingVoltageDC",
+            "comment": "Minimum and Maximum voltage allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt.",
+            "displayName": "operatingVoltageDC",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "coolingSystem",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Convection",
+                        "displayName": "Convection",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "OptiCool",
+                        "displayName": "OptiCool",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Regulated-fan",
+                        "displayName": "Regulated-fan",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Other",
+                        "displayName": "Other",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "installationMode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "aerial",
+                        "displayName": "aerial",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "ground",
+                        "displayName": "ground",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "pole",
+                        "displayName": "pole",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "roofing",
+                        "displayName": "roofing",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "underGround",
+                        "displayName": "underGround",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "wall",
+                        "displayName": "wall",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 7
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "overVoltageCategory",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "I",
+                        "displayName": "I",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "II",
+                        "displayName": "II",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "III",
+                        "displayName": "III",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "IV",
+                        "displayName": "IV",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "phaseType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "singlePhase",
+                        "displayName": "singlePhase",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "threePhase",
+                        "displayName": "threePhase",
+                        "enumValue": 2
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "possibilityOfUse",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "mixed",
+                        "displayName": "mixed",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "mobile",
+                        "displayName": "mobile",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "stationary",
+                        "displayName": "stationary",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "protectionClassSLK",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": 0,
+                        "displayName": 0,
+                        "enumValue": 1
+                    },
+                    {
+                        "name": 1,
+                        "displayName": 1,
+                        "enumValue": 2
+                    },
+                    {
+                        "name": 2,
+                        "displayName": 2,
+                        "enumValue": 3
+                    },
+                    {
+                        "name": 3,
+                        "displayName": 3,
+                        "enumValue": 4
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "typeOfUse",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "indoor",
+                        "displayName": "indoor",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "outdoor",
+                        "displayName": "outdoor",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "mixed",
+                        "displayName": "mixed",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        }
+    ]
+}

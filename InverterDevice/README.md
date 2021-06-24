@@ -9,9 +9,11 @@ Link to the [interactive specification](https://swagger.lab.fiware.org/?url=http
 
 Link to the [specification](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/doc/spec.md)
 
-Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/doc/spec_ES.md)
 
-Link to the [specification in French](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/doc/spec_FR.md)
+Lien vers le [spécification en français](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/doc/spec_FR.md)
+
+Link zu der [deutchen Spezifikation](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/doc/spec_DE.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/examples/example.json) (keyvalues) for NGSI v2
@@ -23,7 +25,11 @@ Link to the [example](https://smart-data-models.github.io/dataModel.Energy/Inver
 Link to the [example](https://smart-data-models.github.io/dataModel.Energy/InverterDevice/examples/example-normalized.jsonld) (normalized) for NGSI-LD
 ### Dynamic Examples generation
 
-Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator_v0.91.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/InverterDevice/schema.json&email=info@smartdatamodels.org) of NGSI-LD payloads compliant with this data model. Refresh for new values
+Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator_v0.92.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/InverterDevice/schema.json&email=info@smartdatamodels.org) of NGSI-LD normalized payloads compliant with this data model. Refresh for new values
+
+Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator_keyvalues_v0.92.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/InverterDevice/schema.json&email=info@smartdatamodels.org) of NGSI-LD keyvalues payloads compliant with this data model. Refresh for new values
+
+Link to the [Generator](https://smartdatamodels.org/extra/geojson_features_generator_v1.0.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/InverterDevice/schema.json&email=info@smartdatamodels.org) of geojson feature format payloads compliant with this data model. Refresh for new values
 ### Contribution
 
  If you have any issue on this data model you can raise an [issue](https://github.com/smart-data-models/dataModel.Energy/issues)  or contribute with a [PR](https://github.com/smart-data-models/dataModel.Energy/pulls)
