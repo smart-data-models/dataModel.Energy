@@ -179,6 +179,13 @@ ACMeasurement:
       type: string
       x-ngsi:
         type: Property
+    dateObserved:
+      description: 'Date and time of this observation represented by an ISO8601 UTC format. It can be represented by an specific time instant or by an ISO8601 interval to separate attributes `dateObservedFrom`,`dateObservedTo`.'
+      format: date-time
+      type: string
+      x-ngsi:
+        model: https://schema.org/DateTime
+        type: Property
     dateObservedFrom:
       description: 'Observation period: Start date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted.'
       format: date-time
@@ -425,7 +432,7 @@ ACMeasurement:
       description: 'Type of Phase. A unique value. Enum:''singlePhase, threePhase'''
       enum:
         - singlePhase
-        - treePhase
+        - threePhase
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -504,13 +511,10 @@ ACMeasurement:
       description: 'Fundamental frequency reactive power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'
       properties:
         L1:
-          minimum: 0
           type: number
         L2:
-          minimum: 0
           type: number
         L3:
-          minimum: 0
           type: number
       type: object
       x-ngsi:
@@ -689,7 +693,6 @@ ACMeasurement:
   required:
     - id
     - type
-    - location
-    - dateObserved
     - phaseType
   type: object
+  version: ""
