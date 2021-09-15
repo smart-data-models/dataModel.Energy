@@ -378,5 +378,13 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "dateLastReported",
+        "typeOfUse",
+        "dimension"
     ]
 }
