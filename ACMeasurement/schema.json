@@ -5,5 +5,427 @@
     "$id": "https://smart-data-models.github.io/data-models.Energy/ACMeasurement/schema.json",
     "title": "ACMeasurement schema",
     "description": "The Data Model intended to measure the electrical energies consumed by an electrical system which uses an Alternating Current (AC) for a three-phase (L1, L2, L3) or single-phase (L) and neutral (N). It integrates the initial version of the data Modem [THREEPHASEMEASUREMENT], extended to also perform single-phase measurements. It includes attributes for various electrical measurements such as power, frequency, current and voltage.",
-    "type": "object"
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Property. NGSI property type. It has to be ACMeasurement",
+                    "enum": [
+                        "ACMeasurement"
+                    ]
+                },
+                "dateObserved": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Date and time of this observation represented by an ISO8601 UTC format. It can be represented by an specific time instant or by an ISO8601 interval to separate attributes `dateObservedFrom`,`dateObservedTo`."
+                },
+                "dateObservedFrom": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Observation period: Start date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted."
+                },
+                "dateObservedTo": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Observation period: End date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted."
+                },
+                "refDevice": {
+                    "type": "array",
+                    "description": "Property. Reference to the devices which captured this observation. Model:'https://schema.org/URL'",
+                    "items": {
+                        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                },
+                "refTargetDevice": {
+                    "type": "array",
+                    "description": "Relationship. Reference to a list of the devices for which the measurement was taken",
+                    "items": {
+                        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                },
+                "phaseType": {
+                    "type": "string",
+                    "enum": [
+                        "singlePhase",
+                        "threePhase"
+                    ],
+                    "description": "Property. Model:'https://schema.org/Text'. Type of Phase. A unique value. Enum:'singlePhase, threePhase'"
+                },
+                "frequency": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. The frequency of the circuit. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'Hertz'"
+                },
+                "dateEnergyMeteringStarted": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. The starting date for metering energy in an ISO8601 UTC format."
+                },
+                "activeEnergyImport": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Active energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilowatt hour'",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "reactiveEnergyImport": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Fundamental frequency reactive energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilovolt-ampere-reactive-hour'",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "apparentEnergyImport": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Apparent energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilovolt-ampere-hour'",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "activeEnergyExport": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Active energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilowatt hour'",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "reactiveEnergyExport": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Fundamental frequency reactive energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilovolt-ampere-reactive-hour'",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "apparentEnergyExport": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Apparent energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilovolt-ampere-hour'",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "totalActiveEnergyImport": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Total energy imported i.e. consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilowatt hour'"
+                },
+                "totalReactiveEnergyImport": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Total energy imported i.e. consumed (with regards to fundamental frequency reactive power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilovolt-ampere-reactive-hour.'"
+                },
+                "totalApparentEnergyImport": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Total energy imported i.e. consumed (with regards to apparent power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilovolt-ampere-hour.'"
+                },
+                "totalActiveEnergyExport": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Total energy imported i.e. consumed . The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilowatt hour'"
+                },
+                "totalReactiveEnergyExport": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Total fundamental frequency reactive energy exported. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilovolt-ampere-reactive-hour'"
+                },
+                "totalApparentEnergyExport": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Total energy exported (with regards to apparent power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'kilovolt-ampere-hour'"
+                },
+                "activePower": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Active power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'Watt'",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "reactivePower": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Fundamental frequency reactive power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'volts-ampere-reactive'",
+                    "properties": {
+                        "L1": {
+                            "type": "number"
+                        },
+                        "L2": {
+                            "type": "number"
+                        },
+                        "L3": {
+                            "type": "number"
+                        }
+                    }
+                },
+                "apparentPower": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Apparent power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'Watt'",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "totalActivePower": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Total Active Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'Watt'"
+                },
+                "totalReactivePower": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Total Reactive Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'volt-ampere-reactive'"
+                },
+                "totalApparentPower": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Model:'https://schema.org/Number'. Total Apparent Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'volt-ampere'"
+                },
+                "powerFactor": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Power factor for each phase.",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": -1,
+                            "maximum": 1
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": -1,
+                            "maximum": 1
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": -1,
+                            "maximum": 1
+                        }
+                    }
+                },
+                "displacementPowerFactor": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system.",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": -1,
+                            "maximum": 1
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": -1,
+                            "maximum": 1
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": -1,
+                            "maximum": 1
+                        }
+                    }
+                },
+                "totalPowerFactor": {
+                    "type": "number",
+                    "minimum": -1,
+                    "maximum": 1,
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Sum of Power factor including all phases."
+                },
+                "totalDisplacementPowerFactor": {
+                    "type": "number",
+                    "minimum": -1,
+                    "maximum": 1,
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Sum of Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system."
+                },
+                "current": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Electrical current. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'Ampere'",
+                    "properties": {
+                        "L1": {
+                            "type": "number"
+                        },
+                        "L2": {
+                            "type": "number"
+                        },
+                        "L3": {
+                            "type": "number"
+                        },
+                        "N": {
+                            "type": "number"
+                        }
+                    }
+                },
+                "phaseVoltage": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. The voltage between each phase and neutral conductor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'Volts'",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "thdVoltage": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Total harmonic distortion of voltage for each phase.",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                        }
+                    }
+                },
+                "thdCurrent": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Total harmonic distortion of current for each phase.",
+                    "properties": {
+                        "L1": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                        },
+                        "L2": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                        },
+                        "L3": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                        }
+                    }
+                },
+                "phaseToPhaseVoltage": {
+                    "type": "object",
+                    "description": "Property. Model:'https://schema.org/StructuredValue'. Voltage between phases. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'Volts'",
+                    "properties": {
+                        "L12": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L23": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "L31": {
+                            "type": "number",
+                            "minimum": 0
+                        }
+                    }
+                }
+            }
+        }
+    ]
 }
