@@ -460,5 +460,12 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "dateLastReported",
+        "phaseType"
     ]
 }
