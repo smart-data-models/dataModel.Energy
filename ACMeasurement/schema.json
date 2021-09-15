@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/schema#",
     "schemaVersion": "0.0.2",
     "modelTags": "",
-    "$id": "https://smart-data-models.github.io/data-models.Energy/ACMeasurement/schema.json"
+    "$id": "https://smart-data-models.github.io/data-models.Energy/ACMeasurement/schema.json",
+    "title": "ACMeasurement schema"
 }
