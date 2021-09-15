@@ -3,5 +3,6 @@
     "schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/data-models.Energy/TechnicalCabinetDevice/schema.json",
-    "title": "TechnicalCabinetDevice schema"
+    "title": "TechnicalCabinetDevice schema",
+    "description": "Technical Cabinet Device Data Model is intended to to describe the technical characteristics of the Device, designed to be placed in an urban or interurban environment. The main objective of these cabinets for this Data Model is to protect the electrical equipment necessary for the control, surveillance, reading and management of urban lighting, signaling, video and electrical distribution. The scope of use of some of these cabinets can extend to an additional protection for installations of modular apparatuses of telephony, data processing, meteorological stations, photo-voltaic stations, wind turbines stations, telecommunications, networks, data, bre Optics , etc. *Remark* : This Data Model can be used directly as a main entity to describe the device `Technical Cabinet`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. It can also refer to the list of all the components it contains, with the `refDeviceList` attribute, using the Data Model  `DEVICE`"
 }
