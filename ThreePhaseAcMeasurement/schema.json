@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/schema.json",
     "title": "Smart Data Models - Energy / Three Phase AC Measurement",
-    "description": "An electrical  measurement from a system that uses three phase alternating current."
+    "description": "An electrical  measurement from a system that uses three phase alternating current.",
+    "type": "object"
 }
