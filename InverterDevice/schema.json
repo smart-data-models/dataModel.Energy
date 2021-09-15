@@ -467,5 +467,6 @@
         "location",
         "dateLastReported",
         "phaseType"
-    ]
+    ],
+    "$schemaVersion": "0.0.1"
 }
