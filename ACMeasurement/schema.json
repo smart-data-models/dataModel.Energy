@@ -427,5 +427,10 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "phaseType"
     ]
 }
