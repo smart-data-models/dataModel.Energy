@@ -6,7 +6,7 @@ Entity: ACMeasurement
 
 ## List of properties  
 
-- `activeEnergyExport`: Active energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `activeEnergyImport`: Active energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `activePower`: Active power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `apparentEnergyExport`: Apparent energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `apparentEnergyImport`: Apparent energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `apparentPower`: Apparent power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `areaServed`: The geographic area where a service or offered item is provided  - `current`: Electrical current. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateEnergyMeteringStarted`: The starting date for metering energy in an ISO8601 UTC format.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: Date and time of this observation represented by an ISO8601 UTC format. It can be represented by an specific time instant or by an ISO8601 interval to separate attributes `dateObservedFrom`,`dateObservedTo`.  - `dateObservedFrom`: Observation period: Start date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted.  - `dateObservedTo`: Observation period: End date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted.  - `description`: A description of this item  - `displacementPowerFactor`: Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system.  - `frequency`: The frequency of the circuit. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `id`: Unique identifier of the entity  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `phaseToPhaseVoltage`: Voltage between phases. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `phaseType`: Type of Phase. A unique value. Enum:'singlePhase, threePhase'  - `phaseVoltage`: The voltage between each phase and neutral conductor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `powerFactor`: Power factor for each phase.  - `reactiveEnergyExport`: Fundamental frequency reactive energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `reactiveEnergyImport`: Fundamental frequency reactive energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `reactivePower`: Fundamental frequency reactive power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `refDevice`: Reference to the devices which captured this observation  - `refTargetDevice`: Reference to a list of the devices for which the measurement was taken  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `thdCurrent`: Total harmonic distortion of current for each phase.  - `thdVoltage`: Total harmonic distortion of voltage for each phase.  - `totalActiveEnergyExport`: Total energy imported i.e. consumed . The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalActiveEnergyImport`: Total energy imported i.e. consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalActivePower`: Total Active Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalApparentEnergyExport`: Total energy exported (with regards to apparent power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalApparentEnergyImport`: Total energy imported i.e. consumed (with regards to apparent power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalApparentPower`: Total Apparent Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalDisplacementPowerFactor`: Sum of Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system.  - `totalPowerFactor`: Sum of Power factor including all phases.  - `totalReactiveEnergyExport`: Total fundamental frequency reactive energy exported. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalReactiveEnergyImport`: Total energy imported i.e. consumed (with regards to fundamental frequency reactive power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalReactivePower`: Total Reactive Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `type`: NGSI property type. It has to be ACMeasurement    
+- `activeEnergyExport`: Active energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `activeEnergyImport`: Active energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `activePower`: Active power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `apparentEnergyExport`: Apparent energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `apparentEnergyImport`: Apparent energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `apparentPower`: Apparent power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `areaServed`: The geographic area where a service or offered item is provided  - `current`: Electrical current. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateEnergyMeteringStarted`: The starting date for metering energy in an ISO8601 UTC format.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObservedFrom`: Observation period: Start date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted.  - `dateObservedTo`: Observation period: End date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted.  - `description`: A description of this item  - `displacementPowerFactor`: Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system.  - `frequency`: The frequency of the circuit. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `phaseToPhaseVoltage`: Voltage between phases. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `phaseType`: Type of Phase. A unique value. Enum:'singlePhase, threePhase'  - `phaseVoltage`: The voltage between each phase and neutral conductor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `powerFactor`: Power factor for each phase.  - `reactiveEnergyExport`: Fundamental frequency reactive energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `reactiveEnergyImport`: Fundamental frequency reactive energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `reactivePower`: Fundamental frequency reactive power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `refDevice`: Reference to the devices which captured this observation  - `refTargetDevice`: Reference to a list of the devices for which the measurement was taken  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `thdCurrent`: Total harmonic distortion of current for each phase.  - `thdVoltage`: Total harmonic distortion of voltage for each phase.  - `totalActiveEnergyExport`: Total energy imported i.e. consumed . The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalActiveEnergyImport`: Total energy imported i.e. consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalActivePower`: Total Active Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalApparentEnergyExport`: Total energy exported (with regards to apparent power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalApparentEnergyImport`: Total energy imported i.e. consumed (with regards to apparent power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalApparentPower`: Total Apparent Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalDisplacementPowerFactor`: Sum of Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system.  - `totalPowerFactor`: Sum of Power factor including all phases.  - `totalReactiveEnergyExport`: Total fundamental frequency reactive energy exported. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalReactiveEnergyImport`: Total energy imported i.e. consumed (with regards to fundamental frequency reactive power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `totalReactivePower`: Total Reactive Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `type`: NGSI property type. It has to be ACMeasurement    
 Required properties  
 - `dateObserved`  - `id`  - `location`  - `phaseType`  - `type`    
 Additional Information about Attributes.  For some attributes such as current and voltage the value is a structured value with properties for the Single-Phase (L) or three different phases (L1, L2 and L3). For some measurements such as the different power types (active, reactive and apparent power) there is an attribute for the total from all phases. The rules are defined as  - Three Phase - Total = L1 + L2 + L3 - Single Phase - Total = L.  For most of the attributes, there are various ways they can be actually measured. For this purpose the measurementType Meta Data Attribute can be used. It can have the following values average, rms, minimum, maximum. When using the values [average, rms, minimum, maximum], another metadata attribute called measurementInterval should be used to give the length of the measurement period in seconds. Also a timestamp attribute should be the end time of the measurement period.  
@@ -29,9 +29,10 @@ ACMeasurement:
         L3:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: 'kilowatt hour'    
     activeEnergyImport:    
       description: 'Active energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
@@ -45,9 +46,10 @@ ACMeasurement:
         L3:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: 'kilowatt hour'    
     activePower:    
       description: 'Active power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
@@ -61,9 +63,10 @@ ACMeasurement:
         L3:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: Watt    
     address:    
       description: 'The mailing address'    
@@ -86,12 +89,15 @@ ACMeasurement:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     apparentEnergyExport:    
       description: 'Apparent energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
@@ -104,9 +110,10 @@ ACMeasurement:
         L3:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: kilovolt-ampere-hour    
     apparentEnergyImport:    
       description: 'Apparent energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
@@ -120,9 +127,10 @@ ACMeasurement:
         L3:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: kilovolt-ampere-hour    
     apparentPower:    
       description: 'Apparent power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
@@ -136,15 +144,17 @@ ACMeasurement:
         L3:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: Watt    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     current:    
       description: 'Electrical current. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
@@ -156,42 +166,61 @@ ACMeasurement:
           type: number    
         N:    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: Ampere    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateEnergyMeteringStarted:    
       description: 'The starting date for metering energy in an ISO8601 UTC format.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateObserved:    
+      description: 'Date and time of this observation represented by an ISO8601 UTC format. It can be represented by an specific time instant or by an ISO8601 interval to separate attributes `dateObservedFrom`,`dateObservedTo`.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
+        type: Property    
     dateObservedFrom:    
       description: 'Observation period: Start date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateObservedTo:    
       description: 'Observation period: End date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     displacementPowerFactor:    
       description: 'Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system.'    
       properties:    
@@ -207,15 +236,17 @@ ACMeasurement:
           maximum: 1    
           minimum: -1    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     frequency:    
       description: 'The frequency of the circuit. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: Hertz    
     id:    
       anyOf: &acmeasurement_-_properties_-_owner_-_items_-_anyof    
@@ -228,12 +259,13 @@ ACMeasurement:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +285,8 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -276,7 +309,8 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -301,7 +335,8 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -323,7 +358,8 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -348,7 +384,8 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -375,16 +412,21 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *acmeasurement_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     phaseToPhaseVoltage:    
       description: 'Voltage between phases. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
@@ -397,18 +439,20 @@ ACMeasurement:
         L31:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: Volts    
     phaseType:    
       description: 'Type of Phase. A unique value. Enum:''singlePhase, threePhase'''    
       enum:    
         - singlePhase    
-        - treePhase    
-      type: Property    
+        - threePhase    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     phaseVoltage:    
       description: 'The voltage between each phase and neutral conductor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
@@ -421,9 +465,10 @@ ACMeasurement:
         L3:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: Volts    
     powerFactor:    
       description: 'Power factor for each phase.'    
@@ -440,9 +485,10 @@ ACMeasurement:
           maximum: 1    
           minimum: -1    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     reactiveEnergyExport:    
       description: 'Fundamental frequency reactive energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
@@ -455,9 +501,10 @@ ACMeasurement:
         L3:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: kilovolt-ampere-reactive-hour    
     reactiveEnergyImport:    
       description: 'Fundamental frequency reactive energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
@@ -471,25 +518,24 @@ ACMeasurement:
         L3:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: kilovolt-ampere-reactive-hour    
     reactivePower:    
       description: 'Fundamental frequency reactive power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
-          minimum: 0    
           type: number    
         L2:    
-          minimum: 0    
           type: number    
         L3:    
-          minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: volts-ampere-reactive    
     refDevice:    
       description: 'Reference to the devices which captured this observation'    
@@ -497,18 +543,21 @@ ACMeasurement:
         anyOf: *acmeasurement_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
       minItems: 1    
-      type: Property    
+      type: array    
       uniqueItems: true    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Property    
     refTargetDevice:    
       description: 'Reference to a list of the devices for which the measurement was taken'    
       items:    
         anyOf: *acmeasurement_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
       minItems: 1    
-      type: Relationship    
+      type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -519,10 +568,13 @@ ACMeasurement:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     thdCurrent:    
       description: 'Total harmonic distortion of current for each phase.'    
       properties:    
@@ -538,9 +590,10 @@ ACMeasurement:
           maximum: 1    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     thdVoltage:    
       description: 'Total harmonic distortion of voltage for each phase.'    
       properties:    
@@ -556,96 +609,109 @@ ACMeasurement:
           maximum: 1    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     totalActiveEnergyExport:    
       description: 'Total energy imported i.e. consumed . The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'kilowatt hour'    
     totalActiveEnergyImport:    
       description: 'Total energy imported i.e. consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'kilowatt hour'    
     totalActivePower:    
       description: 'Total Active Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: Watt    
     totalApparentEnergyExport:    
       description: 'Total energy exported (with regards to apparent power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: kilovolt-ampere-hour    
     totalApparentEnergyImport:    
       description: 'Total energy imported i.e. consumed (with regards to apparent power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: kilovolt-ampere-hour.    
     totalApparentPower:    
       description: 'Total Apparent Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: volt-ampere    
     totalDisplacementPowerFactor:    
       description: 'Sum of Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system.'    
       maximum: 1    
       minimum: -1    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     totalPowerFactor:    
       description: 'Sum of Power factor including all phases.'    
       maximum: 1    
       minimum: -1    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     totalReactiveEnergyExport:    
       description: 'Total fundamental frequency reactive energy exported. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: kilovolt-ampere-reactive-hour    
     totalReactiveEnergyImport:    
       description: 'Total energy imported i.e. consumed (with regards to fundamental frequency reactive power). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: kilovolt-ampere-reactive-hour.    
     totalReactivePower:    
       description: 'Total Reactive Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: volt-ampere-reactive    
     type:    
       description: 'NGSI property type. It has to be ACMeasurement'    
       enum:    
         - ACMeasurement    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
-    - location    
-    - dateObserved    
     - phaseType    
   type: object    
+  version: ""    
 ```  
 </details>    
 Note. The values will be conveyed by 1 or 3 sub properties depending The Type of Phase for each phase Single-Phase. Individual values L. ThreePhase. Sum of the individual values. L1, L2, L3. All values are calculated from the start date of the measurement [dateEnergyMeteringStarted]  
