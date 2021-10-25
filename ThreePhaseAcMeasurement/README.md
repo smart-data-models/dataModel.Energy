@@ -6,7 +6,7 @@ Version: 0.0.1
 An electrical  measurement from a system that uses three phase alternating current.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/ThreePhaseAcMeasurement/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/doc/spec.md)
 
