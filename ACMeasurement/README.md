@@ -6,7 +6,7 @@ Version: 0.0.1
 The Data Model intended to measure the electrical energies consumed by an electrical system which uses an Alternating Current (AC) for a three-phase (L1, L2, L3) or single-phase (L) and neutral (N). It integrates the initial version of the data Modem [THREEPHASEMEASUREMENT], extended to also perform single-phase measurements. It includes attributes for various electrical measurements such as power, frequency, current and voltage.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Energy/blob/master/ACMeasurement/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/ACMeasurement/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Energy/blob/master/ACMeasurement/doc/spec.md)
 
