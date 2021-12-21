@@ -1,272 +1,283 @@
 {
-	"id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",
-	"type": "InverterDevice",
-	"name": {
-		"type": "Property",
-		"value": "INVDEV-T1-G0-027"
-	},
-	"alternateName": {
-		"type": "Property",
-		"value": "AirPort – global Observation"
-	},
-	"description": {
-		"type": "Property",
-		"value": "Description of the Inverter linked to Battery and PhotoVoltaic Devices"
-	},
-	"location": {
-		"type": "GeoProperty",
-		"value": {
-			"type": "Point",
-			"coordinates ": [43.664810, 7.196545]
-		}
-	},
-	"address": {
-		"type": "Property",
-		"value": {
-			"addressCountry": "FR",
-			"addressLocality": "Nice",
-			"streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"
-		}
-	},
-	"areaServed": {
-		"type": "Property",
-		"value": "Nice Aeroport"
-	},
-	"dateLastReported": {
-		"type": "Property",
-		"value": {
-			"type": "DateTime",
-			"value": "2020-03-17T08:45:00Z"
-		}
-	},
-	"brandName": {
-		"type": "Property",
-		"value": "KOSTAL ELEC"
-	},
-	"modelName": {
-		"type": "Property",
-		"value": "SB 4000TL-20"
-	},
-	"manufacturerName": {
-		"type": "Property",
-		"value": "SOLAR ELECTRIC CPY"
-	},
-	"serialNumber": {
-		"type": "Property",
-		"value": "SEKOPI10327458712"
-	},
-	"application": {
-		"type": "Property",
-		"value": ["robotics"]
-	},
-	"typeOfUse": {
-		"type": "Property",
-		"value": "indoor"
-	},
-	"installationMode": {
-		"type": "Property",
-		"value": "wall"
-	},
-	"installationCondition": {
-		"type": "Property",
-		"value": ["extremeClimate"]
-	},
-	"possibilityOfUse": {
-		"type": "Property",
-		"value": "stationary"
-	},
-	"documentation": {
-		"type": "Property",
-		"value": "https://www.myInverter.fr"
-	},
-	"owners": {
-		"type": "Property",
-		"value": ["Airport-Division Maintenance"]
-	},
-	"phaseType": {
-		"type": "Property",
-		"value": "threePhase"
-	},
-	"supplyPhaseNb": {
-		"type": "Property",
-		"value": 3
-	},
-	"dimension": {
-		"type": "Property",
-		"value": {
-			"length": 52.75,
-			"depth": 23.5,
-			"height": 45.25
-		}
-	},
-	"weight": {
-		"type": "Property",
-		"value": 34
-	},
-	"protectionIP": {
-		"type": "Property",
-		"value": "55"
-	},
-	"protectionIK": {
-		"type": "Property",
-		"value": 10
-	},
-	"protectionClassSLK": {
-		"type": "Property",
-		"value": "1"
-	},
-	"overVoltageCategory": {
-		"type": "Property",
-		"value": "III"
-	},
-	"operatingTemperature": {
-		"type": "Property",
-		"value": {
-			"min": -25,
-			"max": 60
-		}
-	},
-	"operatingAirHumidity": {
-		"type": "Property",
-		"value": {
-			"min": 0,
-			"max": 0.95
-		}
-	},
-	"nominalPowerDC": {
-		"type": "Property",
-		"value": 4200
-	},
-	"nominalVoltageDC": {
-		"type": "Property",
-		"value": 400
-	},
-	"nominalAmpereDC ": {
-		"type": "Property",
-		"value": 17
-	},
-	"nominalFrequencyDC": {
-		"type": "Property",
-		"value": 50
-	},
-	"operatingVoltageDC": {
-		"type": "Property",
-		"value": {
-			"min": 125,
-			"max": 550
-		}
-	},
-	"operatingAmpereDC": {
-		"type": "Property",
-		"value": {
-			"min": 17,
-			"max": 17
-		}
-	},
-	"operatingFrequencyDC": {
-		"type": "Property",
-		"value": {
-			"min": 50,
-			"max": 50
-		}
-	},
-	"mPPTPVVoltageDC": {
-		"type": "Property",
-		"value": {
-			"min": 188,
-			"max": 440
-		}
-	},
-	"startingVoltageDC": {
-		"type": "Property",
-		"value": 150
-	},
-	"nbMPPTrackersDC": {
-		"type": "Property",
-		"value": 3
-	},
-	"nbInputParallelDC": {
-		"type": "Property",
-		"value": "A:2,B:2"
-	},
-	"maxInputCurrentParallelAssembly": {
-		"type": "Property",
-		"value": 25
-	},
-	"nominalPowerAC": {
-		"type": "Property",
-		"value": 3680
-	},
-	"maxOutputPowerAC": {
-		"type": "Property",
-		"value": 4000
-	},
-	"nominalVoltageAC": {
-		"type": "Property",
-		"value": 230
-	},
-	"nominalAmpereAC ": {
-		"type": "Property",
-		"value": 16
-	},
-	"nominalFrequencyAC": {
-		"type": "Property",
-		"value": 50
-	},
-	"operatingVoltageAC": {
-		"type": "Property",
-		"value": {
-			"min": 180,
-			"max": 280
-		}
-	},
-	"operatingAmpereAC": {
-		"type": "Property",
-		"value": {
-			"min": 16,
-			"max": 22
-		}
-	},
-	"operatingFrequencyAC": {
-		"type": "Property",
-		"value": {
-			"min": 50,
-			"max": 60
-		}
-	},
-	"powerFactorAC": {
-		"type": "Property",
-		"value": 1
-	},
-	"moduleYieldRate": {
-		"type": "Property",
-		"value": {
-			"euro": 97.1,
-			"eta": 96.4
-		}
-	},
-	"noiseLevel": {
-		"type": "Property",
-		"value": 29
-	},
-	"self-consumption": {
-		"type": "Property",
-		"value": 0.5
-	},
-	"topology": {
-		"type": "Property",
-		"value": "without transformer"
-	},
-	"coolingSystem": {
-			"type": "Property",
-			"value": "OptiCool"
-	},
-	"inverterStatus": {
-		"type": "Property",
-		"value": ["00-OnSector", "06-OverVoltage"]
-	},
-	"@context": [
-		"https://smartdatamodels.org/context.jsonld",
-		"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-	]
+    "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",
+    "type": "InverterDevice",
+    "address": {
+        "type": "Property",
+        "value": {
+            "addressCountry": "FR",
+            "addressLocality": "Nice",
+            "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"
+        }
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "AirPort \u2013 global Observation"
+    },
+    "application": {
+        "type": "Property",
+        "value": [
+            "robotics"
+        ]
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Nice Aeroport"
+    },
+    "brandName": {
+        "type": "Property",
+        "value": "KOSTAL ELEC"
+    },
+    "coolingSystem": {
+        "type": "Property",
+        "value": "OptiCool"
+    },
+    "dateLastReported": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2020-03-17T08:45:00Z"
+        }
+    },
+    "description": {
+        "type": "Property",
+        "value": "Description of the Inverter linked to Battery and PhotoVoltaic Devices"
+    },
+    "dimension": {
+        "type": "Property",
+        "value": {
+            "length": 52.75,
+            "depth": 23.5,
+            "height": 45.25
+        }
+    },
+    "documentation": {
+        "type": "Property",
+        "value": "https://www.myInverter.fr"
+    },
+    "installationCondition": {
+        "type": "Property",
+        "value": [
+            "extremeClimate"
+        ]
+    },
+    "installationMode": {
+        "type": "Property",
+        "value": "wall"
+    },
+    "inverterStatus": {
+        "type": "Property",
+        "value": [
+            "00-OnSector",
+            "06-OverVoltage"
+        ]
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates ": [
+                43.66481,
+                7.196545
+            ]
+        }
+    },
+    "mPPTPVVoltageDC": {
+        "type": "Property",
+        "value": {
+            "min": 188,
+            "max": 440
+        }
+    },
+    "manufacturerName": {
+        "type": "Property",
+        "value": "SOLAR ELECTRIC CPY"
+    },
+    "maxInputCurrentParallelAssembly": {
+        "type": "Property",
+        "value": 25
+    },
+    "maxOutputPowerAC": {
+        "type": "Property",
+        "value": 4000
+    },
+    "modelName": {
+        "type": "Property",
+        "value": "SB 4000TL-20"
+    },
+    "moduleYieldRate": {
+        "type": "Property",
+        "value": {
+            "euro": 97.1,
+            "eta": 96.4
+        }
+    },
+    "name": {
+        "type": "Property",
+        "value": "INVDEV-T1-G0-027"
+    },
+    "nbInputParallelDC": {
+        "type": "Property",
+        "value": "A:2,B:2"
+    },
+    "nbMPPTrackersDC": {
+        "type": "Property",
+        "value": 3
+    },
+    "noiseLevel": {
+        "type": "Property",
+        "value": 29
+    },
+    "nominalAmpereAC ": {
+        "type": "Property",
+        "value": 16
+    },
+    "nominalAmpereDC ": {
+        "type": "Property",
+        "value": 17
+    },
+    "nominalFrequencyAC": {
+        "type": "Property",
+        "value": 50
+    },
+    "nominalFrequencyDC": {
+        "type": "Property",
+        "value": 50
+    },
+    "nominalPowerAC": {
+        "type": "Property",
+        "value": 3680
+    },
+    "nominalPowerDC": {
+        "type": "Property",
+        "value": 4200
+    },
+    "nominalVoltageAC": {
+        "type": "Property",
+        "value": 230
+    },
+    "nominalVoltageDC": {
+        "type": "Property",
+        "value": 400
+    },
+    "operatingAirHumidity": {
+        "type": "Property",
+        "value": {
+            "min": 0,
+            "max": 0.95
+        }
+    },
+    "operatingAmpereAC": {
+        "type": "Property",
+        "value": {
+            "min": 16,
+            "max": 22
+        }
+    },
+    "operatingAmpereDC": {
+        "type": "Property",
+        "value": {
+            "min": 17,
+            "max": 17
+        }
+    },
+    "operatingFrequencyAC": {
+        "type": "Property",
+        "value": {
+            "min": 50,
+            "max": 60
+        }
+    },
+    "operatingFrequencyDC": {
+        "type": "Property",
+        "value": {
+            "min": 50,
+            "max": 50
+        }
+    },
+    "operatingTemperature": {
+        "type": "Property",
+        "value": {
+            "min": -25,
+            "max": 60
+        }
+    },
+    "operatingVoltageAC": {
+        "type": "Property",
+        "value": {
+            "min": 180,
+            "max": 280
+        }
+    },
+    "operatingVoltageDC": {
+        "type": "Property",
+        "value": {
+            "min": 125,
+            "max": 550
+        }
+    },
+    "overVoltageCategory": {
+        "type": "Property",
+        "value": "III"
+    },
+    "owners": {
+        "type": "Property",
+        "value": [
+            "Airport-Division Maintenance"
+        ]
+    },
+    "phaseType": {
+        "type": "Property",
+        "value": "threePhase"
+    },
+    "possibilityOfUse": {
+        "type": "Property",
+        "value": "stationary"
+    },
+    "powerFactorAC": {
+        "type": "Property",
+        "value": 1
+    },
+    "protectionClassSLK": {
+        "type": "Property",
+        "value": "1"
+    },
+    "protectionIK": {
+        "type": "Property",
+        "value": 10
+    },
+    "protectionIP": {
+        "type": "Property",
+        "value": "55"
+    },
+    "self-consumption": {
+        "type": "Property",
+        "value": 0.5
+    },
+    "serialNumber": {
+        "type": "Property",
+        "value": "SEKOPI10327458712"
+    },
+    "startingVoltageDC": {
+        "type": "Property",
+        "value": 150
+    },
+    "supplyPhaseNb": {
+        "type": "Property",
+        "value": 3
+    },
+    "topology": {
+        "type": "Property",
+        "value": "without transformer"
+    },
+    "typeOfUse": {
+        "type": "Property",
+        "value": "indoor"
+    },
+    "weight": {
+        "type": "Property",
+        "value": 34
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
 }
