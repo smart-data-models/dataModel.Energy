@@ -1,309 +1,309 @@
 {
-  "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",
-  "type": "ACMeasurement",
-  "name": {
-    "type": "Property",
-    "value": " AirPort-NCE-T1-F01-TR05-ACTP"
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "AirPort  global Observation"
-  },
-  "description": {
-    "type": "Property",
-    "value": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1  Floor 01  Technical Room 05 for Triphase alternating current."
-  },
-  "location": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        43.66481,
-        7.196545
-      ]
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "Nice Aeroport"
-  },
-  "dateObserved": {
-    "type": "Property",
-    "value": {
-      "type": "DateTime",
-      "value": "2020-03-17TT08:45:00Z"
-    }
-  },
-  "refDevice": {
-    "type": "Relationship",
-    "object": [
-      "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"
+    "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",
+    "type": "ACMeasurement",
+    "activePower": {
+        "type": "Property",
+        "value": {
+            "L1": 11996.416016,
+            "L2": 9461.501953,
+            "L3": 10242.351562
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "AirPort  global Observation"
+    },
+    "apparentPower": {
+        "type": "Property",
+        "value": {
+            "L1": 13201.412109,
+            "L2": 10755.304688,
+            "L3": 11941.094727
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Nice Aeroport"
+    },
+    "current": {
+        "type": "Property",
+        "value": {
+            "L1": 56.126038,
+            "L2": 45.894356,
+            "L3": 50.872452,
+            "N": 0.0
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "rms"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "dateEnergyMeteringStarted": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2020-07-07T15:05:59.408Z"
+        }
+    },
+    "dateObserved": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2020-03-17TT08:45:00Z"
+        }
+    },
+    "description": {
+        "type": "Property",
+        "value": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1  Floor 01  Technical Room 05 for Triphase alternating current."
+    },
+    "displacementPowerFactor": {
+        "type": "Property",
+        "value": {
+            "L1": 0.978013,
+            "L2": 0.973317,
+            "L3": 0.960382
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        },
+        "onlyPositive": {
+            "type": "Property",
+            "value": true
+        }
+    },
+    "frequency": {
+        "type": "Property",
+        "value": 50.020672,
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                43.66481,
+                7.196545
+            ]
+        }
+    },
+    "name": {
+        "type": "Property",
+        "value": " AirPort-NCE-T1-F01-TR05-ACTP"
+    },
+    "phaseToPhaseVoltage": {
+        "type": "Property",
+        "value": {
+            "L12": 406.769196,
+            "L23": 407.081238,
+            "L31": 407.734558
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "rms"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "phaseType": {
+        "type": "Property",
+        "value": "threePhase"
+    },
+    "phaseVoltage": {
+        "type": "Property",
+        "value": {
+            "L1": 234.961304,
+            "L2": 234.563477,
+            "L3": 235.354034
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "rms"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "powerFactor": {
+        "type": "Property",
+        "value": {
+            "L1": 0.908817,
+            "L2": 0.879906,
+            "L3": 0.859293
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        },
+        "onlyPositive": {
+            "type": "Property",
+            "value": true
+        }
+    },
+    "reactivePower": {
+        "type": "Property",
+        "value": {
+            "L1": -2612.606934,
+            "L2": -2209.906006,
+            "L3": -3007.81958
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "refDevice": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"
+        ]
+    },
+    "thdCurrent": {
+        "type": "Property",
+        "value": {
+            "L1": 0.38497337,
+            "L2": 0.45807529,
+            "L3": 0.4938652
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "thdVoltage": {
+        "type": "Property",
+        "value": {
+            "L1": 0.01471114,
+            "L2": 0.01600046,
+            "L3": 0.01541459
+        },
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "totalActiveEnergyExport": {
+        "type": "Property",
+        "value": 1059.80176,
+        "observedAt": "2020-02-24T22:00:00.173Z"
+    },
+    "totalActiveEnergyImport": {
+        "type": "Property",
+        "value": 150781.96448,
+        "observedAt": "2020-02-24T22:00:00.173Z"
+    },
+    "totalActivePower": {
+        "type": "Property",
+        "value": 31700.269531,
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "totalApparentPower": {
+        "type": "Property",
+        "value": 36019.089844,
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "totalReactiveEnergyExport": {
+        "type": "Property",
+        "value": 93275.02176,
+        "observedAt": "2020-02-24T22:00:00.173Z"
+    },
+    "totalReactiveEnergyImport": {
+        "type": "Property",
+        "value": 20490.3392,
+        "observedAt": "2020-02-24T22:00:00.173Z"
+    },
+    "totalReactivePower": {
+        "type": "Property",
+        "value": -7830.332031,
+        "observedAt": "2020-02-24T22:00:00.173Z",
+        "measurementType": {
+            "type": "Property",
+            "value": "average"
+        },
+        "measurementInterval": {
+            "type": "Property",
+            "value": 1
+        }
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"
     ]
-  },
-  "phaseType": {
-    "type": "Property",
-    "value": "threePhase"
-  },
-  "frequency": {
-    "type": "Property",
-    "value": 50.020672,
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "dateEnergyMeteringStarted": {
-    "type": "Property",
-    "value": {
-      "type": "DateTime",
-      "value": "2020-07-07T15:05:59.408Z"
-    }
-  },
-  "totalActiveEnergyImport": {
-    "type": "Property",
-    "value": 150781.96448,
-    "observedAt": "2020-02-24T22:00:00.173Z"
-  },
-  "totalReactiveEnergyImport": {
-    "type": "Property",
-    "value": 20490.3392,
-    "observedAt": "2020-02-24T22:00:00.173Z"
-  },
-  "totalActiveEnergyExport": {
-    "type": "Property",
-    "value": 1059.80176,
-    "observedAt": "2020-02-24T22:00:00.173Z"
-  },
-  "totalReactiveEnergyExport": {
-    "type": "Property",
-    "value": 93275.02176,
-    "observedAt": "2020-02-24T22:00:00.173Z"
-  },
-  "activePower": {
-    "type": "Property",
-    "value": {
-      "L1": 11996.416016,
-      "L2": 9461.501953,
-      "L3": 10242.351562
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "reactivePower": {
-    "type": "Property",
-    "value": {
-      "L1": -2612.606934,
-      "L2": -2209.906006,
-      "L3": -3007.81958
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "apparentPower": {
-    "type": "Property",
-    "value": {
-      "L1": 13201.412109,
-      "L2": 10755.304688,
-      "L3": 11941.094727
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "totalActivePower": {
-    "type": "Property",
-    "value": 31700.269531,
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "totalReactivePower": {
-    "type": "Property",
-    "value": -7830.332031,
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "totalApparentPower": {
-    "type": "Property",
-    "value": 36019.089844,
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "powerFactor": {
-    "type": "Property",
-    "value": {
-      "L1": 0.908817,
-      "L2": 0.879906,
-      "L3": 0.859293
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    },
-    "onlyPositive": {
-      "type": "Property",
-      "value": true
-    }
-  },
-  "displacementPowerFactor": {
-    "type": "Property",
-    "value": {
-      "L1": 0.978013,
-      "L2": 0.973317,
-      "L3": 0.960382
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    },
-    "onlyPositive": {
-      "type": "Property",
-      "value": true
-    }
-  },
-  "current": {
-    "type": "Property",
-    "value": {
-      "L1": 56.126038,
-      "L2": 45.894356,
-      "L3": 50.872452,
-      "N": 0.0
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "rms"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "phaseVoltage": {
-    "type": "Property",
-    "value": {
-      "L1": 234.961304,
-      "L2": 234.563477,
-      "L3": 235.354034
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "rms"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "phaseToPhaseVoltage": {
-    "type": "Property",
-    "value": {
-      "L12": 406.769196,
-      "L23": 407.081238,
-      "L31": 407.734558
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "rms"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "thdVoltage": {
-    "type": "Property",
-    "value": {
-      "L1": 0.01471114,
-      "L2": 0.01600046,
-      "L3": 0.01541459
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "thdCurrent": {
-    "type": "Property",
-    "value": {
-      "L1": 0.38497337,
-      "L2": 0.45807529,
-      "L3": 0.4938652
-    },
-    "observedAt": "2020-02-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
 }
