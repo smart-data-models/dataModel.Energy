@@ -1,0 +1,77 @@
+{
+  "id": "urn:ngsi-ld:SolarEnergy:id:BHDU:88967916",
+  "type": "SolarEnergy",
+  "activePower": {
+    "L1": 17.3,
+    "L2": 19.5,
+    "L3": 20.4
+  },
+  "address": {
+    "addressCountry": "India",
+    "addressLocality": "New Delhi",
+    "addressRegion": "Delhi",
+    "postOfficeBoxNumber": "",
+    "postalCode": "110001",
+    "streetAddress": "Jai Singh Marg, Hanuman Road Area, Connaught Place"
+  },
+  "alternateName": "Solar energy source 1",
+  "areaServed": "",
+  "current": {
+    "L1": 1.2,
+    "L2": 1.2,
+    "L3": 1.3,
+    "N": 0.7
+  },
+  "dataDescriptor": "urn:ngsi-ld:SolarEnergy:dataDescriptor:TTTK:11491249",
+  "dataProvider": "",
+  "dateCreated": "2022-01-10T01:49:09Z",
+  "dateModified": "2022-01-10T01:50:52Z",
+  "description": "Solar energy source 1",
+  "energyGenerated": 766.1,
+  "frequency": 50,
+  "location": {
+    "coordinates": [
+      -35.589575,
+      -78.339812
+    ],
+    "type": "Point"
+  },
+  "maxSolarPowerMeasure": 989.8,
+  "name": "Solar Energy measured at resource 1",
+  "observationDateTime": "2022-01-20T20:02:52Z",
+  "owner": [
+    "urn:ngsi-ld:SolarEnergy:items:DACI:25767721",
+    "urn:ngsi-ld:SolarEnergy:items:YVQJ:55840840"
+  ],
+  "phaseCurrent": {
+    "L1": 111.5,
+    "L2": 109.3,
+    "L3": 111.0
+  },
+  "phaseVoltage": {
+    "L1": 120.5,
+    "L2": 116.4,
+    "L3": 119.8
+  },
+  "powerFactor": {
+    "L1": 0.7,
+    "L2": 0.7,
+    "L3": 0.5
+  },
+  "reactivePower": {
+    "L1": 108.1,
+    "L2": 107.0,
+    "L3": 106.5
+  },
+  "seeAlso": [
+    "urn:ngsi-ld:SolarEnergy:items:XREG:08856151"
+  ],
+  "source": "",
+  "totalActivePower": 873.9,
+  "totalEnergyGenerated": 527.6,
+  "totalReactivePower": 110.8,
+  "voltage": 122.0,
+  "@context": [
+    "https://smart-data-models.github.io/dataModel.Energy/context.jsonld"
+  ]
+}
