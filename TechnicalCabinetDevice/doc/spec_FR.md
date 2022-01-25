@@ -1242,3 +1242,4 @@ TechnicalCabinetDevice:
   ]  
 }  
 ```  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude

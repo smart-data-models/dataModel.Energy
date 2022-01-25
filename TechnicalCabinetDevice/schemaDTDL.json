@@ -1,0 +1,548 @@
+{
+    "@id": "dtmi:com:ngsi-ld:TechnicalCabinetDevice;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "TechnicalCabinetDevice schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/TechnicalCabinetDevice/schema.json",
+    "description": "Technical Cabinet Device Data Model is intended to to describe the technical characteristics of the Device, designed to be placed in an urban or interurban environment. The main objective of these cabinets for this Data Model is to protect the electrical equipment necessary for the control, surveillance, reading and management of urban lighting, signaling, video and electrical distribution. The scope of use of some of these cabinets can extend to an additional protection for installations of modular apparat",
+    "displayName": "TechnicalCabinetDevice",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "brandName",
+            "writable": true,
+            "displayName": "brandName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the brand"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateLastReported",
+            "writable": true,
+            "displayName": "dateLastReported",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "A timestamp which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "documentation",
+            "writable": true,
+            "displayName": "documentation",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A link to device's documentation"
+        },
+        {
+            "name": "doorCount",
+            "writable": true,
+            "displayName": "doorCount",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Count of doors of the technical Cabinet."
+        },
+        {
+            "name": "doorOpeningAngle",
+            "writable": true,
+            "displayName": "doorOpeningAngle",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Door opening angle expressed in decimal degrees with a range from 0 to 180 degree. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **DD** represents Decimal Degrees."
+        },
+        {
+            "name": "manufacturerName",
+            "writable": true,
+            "displayName": "manufacturerName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the manufacturer"
+        },
+        {
+            "name": "maximumSystemVoltage",
+            "writable": true,
+            "displayName": "maximumSystemVoltage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum system voltage permitted for the **module**. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt"
+        },
+        {
+            "name": "modelName",
+            "writable": true,
+            "displayName": "modelName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the model as given by the manufacturer."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "protectionIK",
+            "writable": true,
+            "displayName": "protectionIK",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "IK '*Mecanic Protection*' level relating to numeric classification for the degrees of protection provided by enclosures for electrical equipment against external mechanical impacts, according to International Electro technical Commission standard (EN 62-262). - IK varies from 0 (minimum resistance) to 10 (maximum resistance) which represents an Impact Energy (Unit Joule)"
+        },
+        {
+            "name": "protectionIP",
+            "writable": true,
+            "displayName": "protectionIP",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "IP 'Ingress Protection' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). First digit: Solid particle protection (Single numeral: 06 or 'X'). Second digit: Liquid ingress protection (Single numeral: 09 or 'X' ).Third digit: Personal Protection against access to dangerous parts (optional"
+        },
+        {
+            "name": "refDevice",
+            "writable": true,
+            "displayName": "refDevice"
+        },
+        {
+            "name": "refPointOfInterest",
+            "writable": true,
+            "displayName": "refPointOfInterest"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "serialNumber",
+            "writable": true,
+            "displayName": "serialNumber",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Serial number of the container"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "weight",
+            "writable": true,
+            "displayName": "weight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Weight of the item. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **KGM** represents Kilograms"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "application",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Target application of the Device regarding the environment. A combination of these values. Enum:'commercial, distributionService, industrial, other, publicWorks, road, tertiary, urbanService'",
+            "displayName": "application"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "designMaterials",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Design materials to build the cabinet. A combination of  these values. Enum:'ABS-Plastic, aluminum, fiberGlass, galvanizedSteel, other, polyester, stainlessSteel'",
+            "displayName": "designMaterials"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "doorClosingMode",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Door closing mode. A unique value of these values. Enum:'fixedHandle, other, revolvingHandle, triangleHandle'",
+            "displayName": "doorClosingMode"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorCoating",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Interior Coating. A combination of these values. Enum:'fiberGlass, other, plastic, polyester, polyesterResin, steel",
+            "displayName": "exteriorCoating"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorFinish",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Exterior finish. A combination of these values. Enum:'graffiti, other, raised, roughcast, smooth, textured'",
+            "displayName": "exteriorFinish"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "installationCondition",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Condition and possibility of use in the following environments. A combination of these values. Enum:'desert, dust, extremeCold, extremeClimate, extremeHeat, extremeHumidity, marine, none, other, saline, seismic, sand'",
+            "displayName": "installationCondition"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "interiorCoating",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Interior Coating. A combination of these values. Enum:'fiberGlass, heatInsulating, other, plastic, polyester, polyesterResin, steel'",
+            "displayName": "interiorCoating"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "protectionOthers",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Others protection of the technical cabinet. A combination of these values. Enum:'abrasion, basement, dampProof, display, doorTearing, dust, forcedOpening, graffiti, insect, other, roofOverload, saltSpray, shielding, solar, vandalism, water'",
+            "displayName": "protectionOthers"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refDeviceList",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A list of reference to the [Devices](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which are inside the technical Cabinet Device.",
+            "displayName": "refDeviceList"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "ventilationMode",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Ventilation mode. A combination of these values. Enum:'airConditioners, dehumidifier, none, other, selfVentilatedGills'",
+            "displayName": "ventilationMode"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "dimension",
+            "comment": "The format is structured by a sub-property of 3 items. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter.",
+            "displayName": "dimension",
+            "fields": [
+                {
+                    "name": "depth",
+                    "schema": "long"
+                },
+                {
+                    "name": "height",
+                    "schema": "long"
+                },
+                {
+                    "name": "width",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "internalDimension",
+            "comment": "Internal dimension corresponding to the place to work inside the technical cabinet. The format is structured by a sub-property of 3 items. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter",
+            "displayName": "internalDimension",
+            "fields": [
+                {
+                    "name": "depth",
+                    "schema": "long"
+                },
+                {
+                    "name": "height",
+                    "schema": "long"
+                },
+                {
+                    "name": "width",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operatingTemperature",
+            "comment": "Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius.",
+            "displayName": "operatingTemperature",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "long"
+                },
+                {
+                    "name": "min",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "doorType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "mixed",
+                        "displayName": "mixed",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "solid",
+                        "displayName": "solid",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "transparent",
+                        "displayName": "transparent",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "installationMode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "aerial",
+                        "displayName": "aerial",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "ground",
+                        "displayName": "ground",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "pole",
+                        "displayName": "pole",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "roofing",
+                        "displayName": "roofing",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "underground",
+                        "displayName": "underground",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "wall",
+                        "displayName": "wall",
+                        "enumValue": 7
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "possibilityOfUse",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "mixed",
+                        "displayName": "mixed",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "mobile",
+                        "displayName": "mobile",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "stationary",
+                        "displayName": "stationary",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "typeOfUse",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "indoor",
+                        "displayName": "indoor",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "mixed",
+                        "displayName": "mixed",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "outdoor",
+                        "displayName": "outdoor",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        }
+    ]
+}
