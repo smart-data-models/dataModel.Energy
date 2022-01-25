@@ -8,16 +8,12 @@ The following entity types are available:
 
 - [InverterDevice](https://github.com/smart-data-models/dataModel.Energy/blob/master/InverterDevice/README.md). The data model is intended to describe the mechanical, electrical characteristics of an Inverter according to *DC - Direct Current Information* supplied as input and *AC - Alternating Current Information*  returned as output. *Remark*: This Data Model can be used directly as a main entity to describe the device [Inverter] or as a sub-entity of the Data Model {DEVICE] using a reference by the [refDevice] attribute.
 
-- [TechnicalCabinetDevice](https://github.com/smart-data-models/dataModel.Energy/blob/master/TechnicalCabinetDevice/README.md). Technical Cabinet Device Data Model is intended to to describe the technical characteristics of the Device, designed to be placed in an urban or interurban environment. The main objective of these cabinets for this Data Model is to protect the electrical equipment necessary for the control, surveillance, reading and management of urban lighting, signaling, video and electrical distribution. The scope of use of some of these cabinets can extend to an additional protection for installations of modular apparatuses of telephony, data processing, meteorological stations, photo-voltaic stations, wind turbines stations, telecommunications, networks, data, bre Optics , etc. *Remark* : This Data Model can be used directly as a main entity to describe the device `Technical Cabinet`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. It can also refer to the list of all the components it contains, with the `refDeviceList` attribute, using the Data Model  `DEVICE`
+- [SolarEnergy](https://github.com/smart-data-models/dataModel.Energy/blob/master/SolarEnergy/README.md). A Data Model for Solar Energy generation.
+
+- [TechnicalCabinetDevice](https://github.com/smart-data-models/dataModel.Energy/blob/master/TechnicalCabinetDevice/README.md). Technical Cabinet Device Data Model is intended to to describe the technical characteristics of the Device, designed to be placed in an urban or interurban environment. The main objective of these cabinets for this Data Model is to protect the electrical equipment necessary for the control, surveillance, reading and management of urban lighting, signaling, video and electrical distribution. The scope of use of some of these cabinets can extend to an additional protection for installations of modular apparatuses of telephony, data processing, meteorological stations, photo-voltaic stations, wind turbines stations, telecommunications, networks, data, bre Optics , etc. *Remark* : This Data Model can be used directly as a main entity to describe the device `Technical Cabinet`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. It can also refer to the list of all the components it contains, with the `refDeviceList` attribute, using the Data Model 'DEVICE'
 
 - [ThreePhaseAcMeasurement](https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/README.md). An electrical  measurement from a system that uses three phase alternating current.
 
-
-
-### Incubated data models
-The list of incubated (on development) data models are:
-
-  - [PhotovoltaicDevice_incubated](https://github.com/smart-data-models/dataModel.Energy/tree/master/PhotovoltaicDevice_incubated)
 
 
 ### Contributors
