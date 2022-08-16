@@ -473,9 +473,9 @@ ThreePhaseAcMeasurement:
           type: number
       type: object
       x-ngsi:
-        model: 'kilovolt-ampere-reactive-hour (kVArh)'
+        model: http://schema.org/StructuredValue
         type: Property
-        units: http://schema.org/StructuredValue
+        units: 'kilovolt-ampere-reactive-hour (kVArh)'
     reactivePower:
       description: 'Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.'
       properties:
@@ -671,4 +671,4 @@ ThreePhaseAcMeasurement:
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2
