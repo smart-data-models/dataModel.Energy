@@ -1,16 +1,18 @@
-Entità: InverterDevice  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: InverterDevice  
 ======================  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Energy/blob/master/InverterDevice/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Il modello di dati ha lo scopo di descrivere le caratteristiche meccaniche ed elettriche di un inverter secondo *DC - Direct Current Information* fornito come input e *AC - Alternating Current Information* restituito come output. *Nota*: Questo modello di dati può essere usato direttamente come entità principale per descrivere il dispositivo [Inverter] o come sotto-entità del modello di dati {DEVICE] usando un riferimento tramite l'attributo [refDevice].  
+Descrizione globale: **Il modello di dati è destinato a descrivere le caratteristiche meccaniche ed elettriche di un inverter in base a *DC - Informazioni sulla corrente continua* fornite in ingresso e *AC - Informazioni sulla corrente alternata* restituite in uscita. *Nota*: Questo modello di dati può essere utilizzato direttamente come entità principale per descrivere il dispositivo [Inverter] o come sotto-entità del modello di dati {DEVICE] utilizzando un riferimento tramite l'attributo [refDevice].  
+versione: 0.0.1  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `application`: Applicazione mirata del dispositivo per quanto riguarda l'ambiente. Un valore unico. Enum:'electricMobility, energyStorage, emergencyStorage, lighting, industrialStorage, houseHoldStorage, robotics, production, other'  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `brandName`: Nome della marca dell'articolo  - `coolingSystem`:  Sistema di raffreddamento del dispositivo. Enum:'Convection, OptiCool, Regulated-fan, Other'  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateLastReported`: Un timestamp che denota l'ultima volta in cui il dispositivo ha riportato con successo dei dati. Data e ora in formato ISO8601 UTC  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `dimension`: Dimensione esterna di un pannello. Il formato è strutturato da una sottoproprietà di 3 elementi. Il codice dell'unità (testo) è dato utilizzando i [codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **CMT** rappresenta il centimetro  - `documentation`: Documentazione tecnica (installazione / manutenzione / usato)  - `id`: Identificatore unico dell'entità  - `installationCondition`: Condizione e possibilità di utilizzo nei seguenti ambienti. Enum:'extremeHeat, extremeCold, extremeHumidity, extremeClimate, desert, sand, marine, saline, dust, seismic, other'.  - `installationMode`: Posizionamento del dispositivo rispetto a un sistema di riferimento a terra. Un valore unico. Enum:'aerial, ground, pole, roofing, underGround, wall, other'  - `inverterStatus`: Stato dell'inverter. Una combinazione di valori.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mPPTPVVoltageDC`: Gamma di tensione fotovoltaica minima e massima, MPPT consentito. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è dato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **VLT** rappresenta Volt  - `manufacturerName`: Nome del produttore dell'articolo  - `maxInputCurrentParallelAssembly`: Max. Ingresso di corrente con un gruppo parallelo. Il codice dell'unità (testo) è dato usando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **AMP** rappresenta l'Ampere. Unità:'Ampere'.  - `maxOutputPowerAC`: Potenza massima o potenza apparente. Il codice dell'unità (testo) è dato usando il [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **D46** rappresenta Volt Ampere  - `modelName`: Nome del modello dell'articolo  - `moduleYieldRate`: Tasso di rendimento del dispositivo. Il formato è strutturato da una sottoproprietà di 2 voci (Standard europeo - Standard del produttore). Il codice dell'unità (testo) è dato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **P1** rappresenta Percentuale  - `name`: Il nome di questo articolo.  - `nbInputParallelDC`: Numero massimo di ingressi (in parallelo)  - `nbMPPTrackersDC`: Numero di inseguitori MPP  - `noiseLevel`: Livello di potenza sonora del dispositivo. Il codice dell'unità (testo) è dato usando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **2N** rappresenta il Decibel  - `nominalAmpereAC`: Amperaggio nominale *(Codice I)*. Il codice dell'unità (testo) è dato usando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **AMP** rappresenta l'Ampere  - `nominalAmpereDC`: Amperaggio nominale. Il codice dell'unità (testo) è dato usando il [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **AMP** rappresenta l'Ampere  - `nominalFrequencyAC`: Frequenza nominale. Il codice dell'unità (testo) è dato usando il [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **HTZ** rappresenta Hertz  - `nominalFrequencyDC`:  Frequenza nominale. Il codice dell'unità (testo) è dato usando il [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **HTZ** rappresenta Hertz  - `nominalPowerAC`: Potenza nominale. Il codice dell'unità (testo) è dato usando il [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **WTT** rappresenta i Watt  - `nominalPowerDC`: Potenza nominale o fattore di potenza massima per cos phi=1. Il codice dell'unità (testo) è dato usando il [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **WTT** rappresenta i Watt  - `nominalVoltageAC`: Tensione nominale della batteria *(Codice U)*. Il codice dell'unità (testo) è dato usando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **VLT** rappresenta Volt  - `nominalVoltageDC`: Tensione nominale. Il codice dell'unità (testo) è dato usando il [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **VLT** rappresenta Volt  - `operatingAirHumidity`: Gamma di umidità dell'aria di funzionamento. Il formato è strutturato da una sotto-proprietà di 2 elementi. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **P1** rappresenta la percentuale.  - `operatingAmpereAC`: Ampere minimo e massimo consentito. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **AMP** rappresenta l'Ampere  - `operatingAmpereDC`: Ampere minimo e massimo consentito. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **AMP** rappresenta l'Ampere  - `operatingFrequencyAC`: Frequenza minima e massima consentita. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è dato usando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **HTZ** rappresenta Hertz  - `operatingFrequencyDC`: Frequenza minima e massima consentita. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è dato usando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **HTZ** rappresenta Hertz  - `operatingTemperature`: Intervallo di temperatura operativa ambientale. Si tratta della resistenza minima e massima al freddo e al caldo. Il formato è strutturato da una sotto-proprietà di 2 elementi. Il codice dell'unità (testo) è dato usando il [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **CEL** rappresenta il grado Celsius.  - `operatingVoltageAC`: Tensione minima e massima consentita. Il formato è strutturato da una sotto-proprietà di 2 elementi. Il codice dell'unità (testo) è dato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **VLT** rappresenta Volt  - `operatingVoltageDC`: Tensione minima e massima consentita. Il formato è strutturato da una sotto-proprietà di 2 elementi. Il codice dell'unità (testo) è dato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **VLT** rappresenta il Volt.  - `overVoltageCategory`: Categoria di sovratensione. - I : collegamento ai circuiti con sovratensioni transitorie ad un livello basso appropriato. - II : isolamento principale e isolamento supplementare (terminale di terra). - III : impianti fissi con affidabilità e disponibilità soggette a specifiche. - IV : materiali all'origine dell'impianto elettrico come i contatori elettrici e i materiali principali di protezione contro le sovracorrenti.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `phaseType`: Tipo di fase. Un valore unico. Enum:'singlePhase,threePhase'  - `possibilityOfUse`: Possibilità di utilizzo. Enum:'misto, mobile, fisso, altro'.  - `powerFactorAC`: Fattore di potenza per cos phi  - `protectionClassSLK`: Classe di protezione (SKL). - 0 : isolamento principale senza collegamento a terra. - 1 : isolamento principale e isolamento supplementare (terminale di terra). - 2 : isolamento doppio o rinforzato (equivalente al doppio dell'isolamento principale) senza parte metallica accessibile. - 3 : funzionamento in bassissima tensione di sicurezza (SELV) (50V massimo).  - `protectionIK`: Livello IK '*Protezione meccanica*' relativo alla classificazione numerica dei gradi di protezione forniti dagli involucri per apparecchiature elettriche contro gli impatti meccanici esterni, secondo la norma della Commissione Elettrotecnica Internazionale (EN 62-262). - IK varia da 0 (resistenza minima) a 10 (resistenza massima) che rappresenta un'energia di impatto (unità Joule)  - `protectionIP`: IP '*Protezione da intrusione*' per la scatola di giunzione. Questo è il livello che classifica e valuta il grado di protezione fornito dagli involucri meccanici e dagli involucri elettrici contro l'intrusione, la polvere, il contatto accidentale e l'acqua secondo lo standard della Commissione Elettrotecnica Internazionale (EN 60-529). - Prima cifra: Protezione dalle particelle solide (numero unico: 0-6 o "X"). - Seconda cifra: Protezione dall'ingresso di liquidi (numero singolo: 0-9 o 'X' ).- Terza cifra: Protezione personale contro l'accesso a parti pericolose (lettera aggiuntiva opzionale).- Quarta cifra: Altre protezioni (lettera aggiuntiva opzionale).  - `refDevice`: Riferimento all'entità principale [Dispositivo](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) se usato come secondo collegamento.  - `refPointOfInterest`: Riferimento a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) collegato all'osservazione.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `self-consumption`: Autoconsumo durante la notte. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  Per esempio, **WTT** rappresenta i Watt  - `serialNumber`: Numeri di serie dell'articolo  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `startingVoltageDC`: Tensione di partenza. Il codice dell'unità (testo) è dato usando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **VLT** rappresenta Volt  - `supplyPhaseNb`: Numero di fasi di alimentazione  - `topology`: Descrizione della topologia dell'installazione.  - `type`: Tipo di entità NGSI. Deve essere InverterDevice  - `typeOfUse`: Uso accettato per quanto riguarda il suo posizionamento in un ambiente interno/esterno. Enum:'interno, esterno, misto, altro'.  - `weight`: Peso. Il codice dell'unità (testo) è dato usando il [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **KGM** rappresenta il chilogrammo    
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `application`: Applicazione mirata del dispositivo all'ambiente. Un valore unico. Enum:'mobilità elettrica, stoccaggio di energia, stoccaggio di emergenza, illuminazione, stoccaggio industriale, stoccaggio domestico, robotica, produzione, altro'.  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `brandName`: Nome del marchio dell'articolo  - `coolingSystem`:  Sistema di raffreddamento del dispositivo. Enum:'Convezione, OptiCool, Ventola regolata, Altro'.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateLastReported`: Un timestamp che indica l'ultima volta in cui il dispositivo ha riportato dati con successo. Data e ora in formato ISO8601 UTC  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `dimension`: Dimensione esterna di un pannello. Il formato è strutturato da una sottoproprietà di 3 elementi. Il codice dell'unità di misura (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **CMT** rappresenta il centimetro.  - `documentation`: Documentazione tecnica (installazione / manutenzione / utilizzo)  - `id`: Identificatore univoco dell'entità  - `installationCondition`: Condizione e possibilità di utilizzo nei seguenti ambienti. Enum:'calore estremo, freddo estremo, umidità estrema, clima estremo, deserto, sabbia, mare, salino, polvere, sismico, altro'.  - `installationMode`: Posizionamento del dispositivo rispetto a un sistema di riferimento a terra. Un valore unico. Enum:'antenna, terra, palo, copertura, sottosuolo, muro, altro'.  - `inverterStatus`: Stato dell'inverter. Una combinazione di valori.  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mPPTPVVoltageDC`: Intervallo minimo e massimo di tensione fotovoltaica, MPPT consentito. Il formato è strutturato da una sotto-proprietà di 2 elementi. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **VLT** rappresenta il Volt  - `manufacturerName`: Produttore Nome dell'articolo  - `maxInputCurrentParallelAssembly`: Max. Corrente in ingresso con un gruppo parallelo. Il codice dell'unità di misura (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **AMP** rappresenta gli Ampere. Unis:'Ampere'  - `maxOutputPowerAC`: Potenza massima o potenza apparente. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **D46** rappresenta il Volt Ampere  - `modelName`: Nome del modello dell'articolo  - `moduleYieldRate`: Tasso di rendimento del dispositivo. Il formato è strutturato da una sottoproprietà di 2 voci (Standard europeo - Standard del produttore). Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **P1** rappresenta Percentuale  - `name`: Il nome di questo elemento.  - `nbInputParallelDC`: Numero massimo di ingressi (in parallelo)  - `nbMPPTrackersDC`: Numero di inseguitori MPP  - `noiseLevel`: Livello di potenza sonora del dispositivo. Il codice dell'unità di misura (testo) viene fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **2N** rappresenta il Decibel  - `nominalAmpereAC`: Amperaggio nominale *(Codice I)*. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **AMP** rappresenta gli Ampere  - `nominalAmpereDC`: Amperaggio nominale. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **AMP** rappresenta gli Ampere  - `nominalFrequencyAC`: Frequenza nominale. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **HTZ** rappresenta gli Hertz.  - `nominalFrequencyDC`:  Frequenza nominale. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **HTZ** rappresenta gli Hertz.  - `nominalPowerAC`: Potenza nominale . Il codice dell'unità di misura (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **WTT** rappresenta i Watt  - `nominalPowerDC`: Potenza nominale o fattore di potenza massima per cos phi=1. Il codice dell'unità di misura (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **WTT** rappresenta i Watt  - `nominalVoltageAC`: Tensione nominale della batteria *(Codice U)*. Il codice dell'unità di misura (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **VLT** rappresenta il Volt  - `nominalVoltageDC`: Tensione nominale. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **VLT** rappresenta il Volt  - `operatingAirHumidity`: Intervallo di umidità dell'aria ambiente di funzionamento. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **P1** rappresenta la percentuale.  - `operatingAmpereAC`: Ampere minimo e massimo consentito... Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **AMP** rappresenta l'Ampere  - `operatingAmpereDC`: Ampere minimo e massimo consentito... Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **AMP** rappresenta l'Ampere  - `operatingFrequencyAC`: Frequenza minima e massima consentita. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **HTZ** rappresenta gli Hertz.  - `operatingFrequencyDC`: Frequenza minima e massima consentita. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **HTZ** rappresenta gli Hertz.  - `operatingTemperature`: Intervallo della temperatura di funzionamento ambientale. Si tratta della resistenza minima e massima al freddo e al caldo. Il formato è strutturato da una sotto-proprietà di 2 elementi. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **CEL** rappresenta il grado Celsius.  - `operatingVoltageAC`: Tensione minima e massima consentita. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **VLT** rappresenta Volt  - `operatingVoltageDC`: Tensione minima e massima consentita. Il formato è strutturato da una sottoproprietà di 2 elementi. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **VLT** rappresenta il Volt.  - `overVoltageCategory`: Categoria di sovratensione. - I : collegamento a circuiti con sovratensioni transitorie di livello adeguatamente basso. - II : isolamento principale e isolamento supplementare (terminale di terra). - III : impianti fissi con affidabilità e disponibilità soggette a specifiche. - IV : materiali all'origine dell'impianto elettrico come contatori elettrici e materiali principali di protezione contro le sovracorrenti.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `phaseType`: Tipo di fase. Un valore unico. Enum:'monofase,trifase'.  - `possibilityOfUse`: Possibilità di utilizzo. Enum:'misto, mobile, fisso, altro'.  - `powerFactorAC`: Fattore di potenza per cos phi  - `protectionClassSLK`: Classe di protezione (SKL). - 0 : isolamento principale senza collegamento a terra. - 1 : isolamento principale e isolamento supplementare (terminale di terra). - 2 : isolamento doppio o rinforzato (equivalente al doppio dell'isolamento principale) senza parte metallica accessibile. - 3 : funzionamento in bassissima tensione di sicurezza (SELV) (50V al massimo).  - `protectionIK`: Livello IK "*protezione meccanica*" relativo alla classificazione numerica dei gradi di protezione forniti dalle custodie per apparecchiature elettriche contro gli impatti meccanici esterni, secondo lo standard della Commissione Elettrotecnica Internazionale (EN 62-262). - L'IK varia da 0 (resistenza minima) a 10 (resistenza massima) e rappresenta un'energia d'impatto (unità di misura Joule).  - `protectionIP`: IP "*Protezione dall'ingresso*" per la scatola di giunzione. Questo livello classifica e valuta il grado di protezione fornito dagli involucri meccanici e dalle custodie elettriche contro le intrusioni, la polvere, i contatti accidentali e l'acqua secondo lo standard della Commissione Elettrotecnica Internazionale (EN 60-529). - Prima cifra: Protezione da particelle solide (numero singolo: 0-6 o "X"). - Seconda cifra: Protezione contro l'ingresso di liquidi (numero singolo: 0-9 o "X"): Protezione personale contro l'accesso a parti pericolose (lettera aggiuntiva opzionale).- Quarta cifra: Altre protezioni (lettera aggiuntiva opzionale).  - `refDevice`: Riferimento all'Entità principale [Dispositivo](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) se usato come secondo collegamento.  - `refPointOfInterest`: Riferimento a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) collegato all'osservazione.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `self-consumption`: Autoconsumo durante la notte. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  Ad esempio, **WTT** rappresenta i Watt  - `serialNumber`: Numeri di serie dell'articolo  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `startingVoltageDC`: Tensione di partenza. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **VLT** rappresenta il Volt  - `supplyPhaseNb`: Numero di fasi di alimentazione  - `topology`: Descrizione della topologia dell'installazione.  - `type`: Tipo di entità NGSI. Deve essere InverterDevice  - `typeOfUse`: Uso accettato per quanto riguarda il posizionamento in un ambiente interno/esterno. Enum:'interno, esterno, misto, altro'.  - `weight`: Peso. Il codice dell'unità di misura (testo) viene fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **KGM** rappresenta il chilogrammo.    
 Proprietà richieste  
 - `dateLastReported`  - `id`  - `location`  - `phaseType`  - `type`    
-Informazioni aggiuntive sul modello di dati. Questo modello di dati può essere usato direttamente come entità principale per descrivere il dispositivo [INVERTER] o come sotto-entità del modello di dati [DEVICE] usando un riferimento tramite l'attributo `refDevice`.  
-## Descrizione del modello di dati delle proprietà  
+Informazioni aggiuntive sul Modello di dati. Questo modello di dati può essere usato direttamente come entità principale per descrivere il dispositivo [INVERTER] o come sotto-entità del modello di dati [DEVICE] usando un riferimento tramite l'attributo `refDevice`.  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -378,11 +380,12 @@ InverterDevice:
         model: https://schema.org/manufacturer    
         type: Property    
     maxInputCurrentParallelAssembly:    
-      description: 'Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere. Unis:''Ampere'''    
+      description: 'Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
+        units: Ampere    
     maxOutputPowerAC:    
       description: 'Maximum Power or Apparent Power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **D46** represents Volt Ampere'    
       type: number    
@@ -775,12 +778,12 @@ InverterDevice:
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/InverterDevice/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/InverterDevice/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
-## Esempio di payloads  
+## Esempi di payload  
 #### InverterDevice NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un InverterDevice in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di InverterDevice in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
@@ -896,7 +899,7 @@ InverterDevice:
 }  
 ```  
 #### InverterDevice NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un InverterDevice in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di InverterDevice in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
@@ -1179,400 +1182,411 @@ InverterDevice:
   }  
 }  
 ```  
-#### InverterDevice NGSI-LD valori chiave Esempio  
-Ecco un esempio di un InverterDevice in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+#### InverterDevice Valori chiave NGSI-LD Esempio  
+Ecco un esempio di InverterDevice in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
-  "type": "InverterDevice",  
-  "name": "INVDEV-T1-G0-027",  
-  "alternateName": "AirPort â€“ global Observation",  
-  "description": "Description of the Inverter linked to Battery and PhotoVoltaic Devices",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.66481,  
-      7.196545  
+    "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
+    "type": "InverterDevice",  
+    "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
+    },  
+    "alternateName": "AirPort \u2013 global Observation",  
+    "application": [  
+        "robotics"  
+    ],  
+    "areaServed": "Nice Aeroport",  
+    "brandName": "KOSTAL ELEC",  
+    "coolingSystem": "OptiCool",  
+    "dateLastReported": "2020-03-17T08:45:00Z",  
+    "description": "Description of the Inverter linked to Battery and PhotoVoltaic Devices",  
+    "dimension": {  
+        "length": 52.75,  
+        "depth": 23.5,  
+        "height": 45.25  
+    },  
+    "documentation": "https://www.myInverter.fr",  
+    "installationCondition": [  
+        "extremeClimate"  
+    ],  
+    "installationMode": "wall",  
+    "inverterStatus": [  
+        "00-OnSector",  
+        "06-OverVoltage"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.66481,  
+            7.196545  
+        ]  
+    },  
+    "mPPTPVVoltageDC": {  
+        "min": 188,  
+        "max": 440  
+    },  
+    "manufacturerName": "SOLAR ELECTRIC CPY",  
+    "maxInputCurrentParallelAssembly": 25,  
+    "maxOutputPowerAC": 4000,  
+    "modelName": "SB 4000TL-20",  
+    "moduleYieldRate": {  
+        "euro": 97.1,  
+        "eta": 96.4  
+    },  
+    "name": "INVDEV-T1-G0-027",  
+    "nbInputParallelDC": "A:2,B:2",  
+    "nbMPPTrackersDC": 3,  
+    "noiseLevel": 29,  
+    "nominalAmpereAC ": 16,  
+    "nominalAmpereDC ": 17,  
+    "nominalFrequencyAC": 50,  
+    "nominalFrequencyDC": 50,  
+    "nominalPowerAC": 3680,  
+    "nominalPowerDC": 4200,  
+    "nominalVoltageAC": 230,  
+    "nominalVoltageDC": 400,  
+    "operatingAirHumidity": {  
+        "min": 0,  
+        "max": 0.95  
+    },  
+    "operatingAmpereAC": {  
+        "min": 16,  
+        "max": 22  
+    },  
+    "operatingAmpereDC": {  
+        "min": 17,  
+        "max": 17  
+    },  
+    "operatingFrequencyAC": {  
+        "min": 50,  
+        "max": 60  
+    },  
+    "operatingFrequencyDC": {  
+        "min": 50,  
+        "max": 50  
+    },  
+    "operatingTemperature": {  
+        "min": -25,  
+        "max": 60  
+    },  
+    "operatingVoltageAC": {  
+        "min": 180,  
+        "max": 280  
+    },  
+    "operatingVoltageDC": {  
+        "min": 125,  
+        "max": 550  
+    },  
+    "overVoltageCategory": "III",  
+    "owners": [  
+        "Airport-Division Maintenance"  
+    ],  
+    "phaseType": "threePhase",  
+    "possibilityOfUse": "stationary",  
+    "powerFactorAC": 1,  
+    "protectionClassSLK": "1",  
+    "protectionIK": 10,  
+    "protectionIP": "55",  
+    "self-consumption": 0.5,  
+    "serialNumber": "SEKOPI10327458712",  
+    "startingVoltageDC": 150,  
+    "supplyPhaseNb": 3,  
+    "topology": "without transformer",  
+    "typeOfUse": "indoor",  
+    "weight": 34,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
-  },  
-  "areaServed": "Nice Aeroport",  
-  "dateLastReported": "2020-03-17T08:45:00Z",  
-  "brandName": "KOSTAL ELEC",  
-  "modelName": "SB 4000TL-20",  
-  "manufacturerName": "SOLAR ELECTRIC CPY",  
-  "serialNumber": "SEKOPI10327458712",  
-  "application": [  
-    "robotics"  
-  ],  
-  "typeOfUse": "indoor",  
-  "installationMode": "wall",  
-  "installationCondition": [  
-    "extremeClimate"  
-  ],  
-  "possibilityOfUse": "stationary",  
-  "documentation": "https://www.myInverter.fr",  
-  "owners": [  
-    "Airport-Division Maintenance"  
-  ],  
-  "phaseType": "threePhase",  
-  "supplyPhaseNb": 3,  
-  "dimension": {  
-    "length": 52.75,  
-    "depth": 23.5,  
-    "height": 45.25  
-  },  
-  "weight": 34,  
-  "protectionIP": "55",  
-  "protectionIK": 10,  
-  "protectionClassSLK": "1",  
-  "overVoltageCategory": "III",  
-  "operatingTemperature": {  
-    "min": -25,  
-    "max": 60  
-  },  
-  "operatingAirHumidity": {  
-    "min": 0,  
-    "max": 0.95  
-  },  
-  "nominalPowerDC": 4200,  
-  "nominalVoltageDC": 400,  
-  "nominalAmpereDC ": 17,  
-  "nominalFrequencyDC": 50,  
-  "operatingVoltageDC": {  
-    "min": 125,  
-    "max": 550  
-  },  
-  "operatingAmpereDC": {  
-    "min": 17,  
-    "max": 17  
-  },  
-  "operatingFrequencyDC": {  
-    "min": 50,  
-    "max": 50  
-  },  
-  "mPPTPVVoltageDC": {  
-    "min": 188,  
-    "max": 440  
-  },  
-  "startingVoltageDC": 150,  
-  "nbMPPTrackersDC": 3,  
-  "nbInputParallelDC": "A:2,B:2",  
-  "maxInputCurrentParallelAssembly": 25,  
-  "nominalPowerAC": 3680,  
-  "maxOutputPowerAC": 4000,  
-  "nominalVoltageAC": 230,  
-  "nominalAmpereAC ": 16,  
-  "nominalFrequencyAC": 50,  
-  "operatingVoltageAC": {  
-    "min": 180,  
-    "max": 280  
-  },  
-  "operatingAmpereAC": {  
-    "min": 16,  
-    "max": 22  
-  },  
-  "operatingFrequencyAC": {  
-    "min": 50,  
-    "max": 60  
-  },  
-  "powerFactorAC": 1,  
-  "moduleYieldRate": {  
-    "euro": 97.1,  
-    "eta": 96.4  
-  },  
-  "noiseLevel": 29,  
-  "self-consumption": 0.5,  
-  "topology": "without transformer",  
-  "coolingSystem": "OptiCool",  
-  "inverterStatus": [  
-    "00-OnSector",  
-    "06-OverVoltage"  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
 #### InverterDevice NGSI-LD normalizzato Esempio  
-Ecco un esempio di un InverterDevice in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di InverterDevice in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-	"id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
-	"type": "InverterDevice",  
-	"name": {  
-		"type": "Property",  
-		"value": "INVDEV-T1-G0-027"  
-	},  
-	"alternateName": {  
-		"type": "Property",  
-		"value": "AirPort â€“ global Observation"  
-	},  
-	"description": {  
-		"type": "Property",  
-		"value": "Description of the Inverter linked to Battery and PhotoVoltaic Devices"  
-	},  
-	"location": {  
-		"type": "GeoProperty",  
-		"value": {  
-			"type": "Point",  
-			"coordinates ": [43.664810, 7.196545]  
-		}  
-	},  
-	"address": {  
-		"type": "Property",  
-		"value": {  
-			"addressCountry": "FR",  
-			"addressLocality": "Nice",  
-			"streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
-		}  
-	},  
-	"areaServed": {  
-		"type": "Property",  
-		"value": "Nice Aeroport"  
-	},  
-	"dateLastReported": {  
-		"type": "Property",  
-		"value": {  
-			"type": "DateTime",  
-			"value": "2020-03-17T08:45:00Z"  
-		}  
-	},  
-	"brandName": {  
-		"type": "Property",  
-		"value": "KOSTAL ELEC"  
-	},  
-	"modelName": {  
-		"type": "Property",  
-		"value": "SB 4000TL-20"  
-	},  
-	"manufacturerName": {  
-		"type": "Property",  
-		"value": "SOLAR ELECTRIC CPY"  
-	},  
-	"serialNumber": {  
-		"type": "Property",  
-		"value": "SEKOPI10327458712"  
-	},  
-	"application": {  
-		"type": "Property",  
-		"value": ["robotics"]  
-	},  
-	"typeOfUse": {  
-		"type": "Property",  
-		"value": "indoor"  
-	},  
-	"installationMode": {  
-		"type": "Property",  
-		"value": "wall"  
-	},  
-	"installationCondition": {  
-		"type": "Property",  
-		"value": ["extremeClimate"]  
-	},  
-	"possibilityOfUse": {  
-		"type": "Property",  
-		"value": "stationary"  
-	},  
-	"documentation": {  
-		"type": "Property",  
-		"value": "https://www.myInverter.fr"  
-	},  
-	"owners": {  
-		"type": "Property",  
-		"value": ["Airport-Division Maintenance"]  
-	},  
-	"phaseType": {  
-		"type": "Property",  
-		"value": "threePhase"  
-	},  
-	"supplyPhaseNb": {  
-		"type": "Property",  
-		"value": 3  
-	},  
-	"dimension": {  
-		"type": "Property",  
-		"value": {  
-			"length": 52.75,  
-			"depth": 23.5,  
-			"height": 45.25  
-		}  
-	},  
-	"weight": {  
-		"type": "Property",  
-		"value": 34  
-	},  
-	"protectionIP": {  
-		"type": "Property",  
-		"value": "55"  
-	},  
-	"protectionIK": {  
-		"type": "Property",  
-		"value": 10  
-	},  
-	"protectionClassSLK": {  
-		"type": "Property",  
-		"value": "1"  
-	},  
-	"overVoltageCategory": {  
-		"type": "Property",  
-		"value": "III"  
-	},  
-	"operatingTemperature": {  
-		"type": "Property",  
-		"value": {  
-			"min": -25,  
-			"max": 60  
-		}  
-	},  
-	"operatingAirHumidity": {  
-		"type": "Property",  
-		"value": {  
-			"min": 0,  
-			"max": 0.95  
-		}  
-	},  
-	"nominalPowerDC": {  
-		"type": "Property",  
-		"value": 4200  
-	},  
-	"nominalVoltageDC": {  
-		"type": "Property",  
-		"value": 400  
-	},  
-	"nominalAmpereDC ": {  
-		"type": "Property",  
-		"value": 17  
-	},  
-	"nominalFrequencyDC": {  
-		"type": "Property",  
-		"value": 50  
-	},  
-	"operatingVoltageDC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 125,  
-			"max": 550  
-		}  
-	},  
-	"operatingAmpereDC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 17,  
-			"max": 17  
-		}  
-	},  
-	"operatingFrequencyDC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 50,  
-			"max": 50  
-		}  
-	},  
-	"mPPTPVVoltageDC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 188,  
-			"max": 440  
-		}  
-	},  
-	"startingVoltageDC": {  
-		"type": "Property",  
-		"value": 150  
-	},  
-	"nbMPPTrackersDC": {  
-		"type": "Property",  
-		"value": 3  
-	},  
-	"nbInputParallelDC": {  
-		"type": "Property",  
-		"value": "A:2,B:2"  
-	},  
-	"maxInputCurrentParallelAssembly": {  
-		"type": "Property",  
-		"value": 25  
-	},  
-	"nominalPowerAC": {  
-		"type": "Property",  
-		"value": 3680  
-	},  
-	"maxOutputPowerAC": {  
-		"type": "Property",  
-		"value": 4000  
-	},  
-	"nominalVoltageAC": {  
-		"type": "Property",  
-		"value": 230  
-	},  
-	"nominalAmpereAC ": {  
-		"type": "Property",  
-		"value": 16  
-	},  
-	"nominalFrequencyAC": {  
-		"type": "Property",  
-		"value": 50  
-	},  
-	"operatingVoltageAC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 180,  
-			"max": 280  
-		}  
-	},  
-	"operatingAmpereAC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 16,  
-			"max": 22  
-		}  
-	},  
-	"operatingFrequencyAC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 50,  
-			"max": 60  
-		}  
-	},  
-	"powerFactorAC": {  
-		"type": "Property",  
-		"value": 1  
-	},  
-	"moduleYieldRate": {  
-		"type": "Property",  
-		"value": {  
-			"euro": 97.1,  
-			"eta": 96.4  
-		}  
-	},  
-	"noiseLevel": {  
-		"type": "Property",  
-		"value": 29  
-	},  
-	"self-consumption": {  
-		"type": "Property",  
-		"value": 0.5  
-	},  
-	"topology": {  
-		"type": "Property",  
-		"value": "without transformer"  
-	},  
-	"coolingSystem": {  
-			"type": "Property",  
-			"value": "OptiCool"  
-	},  
-	"inverterStatus": {  
-		"type": "Property",  
-		"value": ["00-OnSector", "06-OverVoltage"]  
-	},  
-	"@context": [  
-		"https://smartdatamodels.org/context.jsonld",  
-		"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-	]  
+    "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
+    "type": "InverterDevice",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "FR",  
+            "addressLocality": "Nice",  
+            "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "AirPort \u2013 global Observation"  
+    },  
+    "application": {  
+        "type": "Property",  
+        "value": [  
+            "robotics"  
+        ]  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Aeroport"  
+    },  
+    "brandName": {  
+        "type": "Property",  
+        "value": "KOSTAL ELEC"  
+    },  
+    "coolingSystem": {  
+        "type": "Property",  
+        "value": "OptiCool"  
+    },  
+    "dateLastReported": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-03-17T08:45:00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Description of the Inverter linked to Battery and PhotoVoltaic Devices"  
+    },  
+    "dimension": {  
+        "type": "Property",  
+        "value": {  
+            "length": 52.75,  
+            "depth": 23.5,  
+            "height": 45.25  
+        }  
+    },  
+    "documentation": {  
+        "type": "Property",  
+        "value": "https://www.myInverter.fr"  
+    },  
+    "installationCondition": {  
+        "type": "Property",  
+        "value": [  
+            "extremeClimate"  
+        ]  
+    },  
+    "installationMode": {  
+        "type": "Property",  
+        "value": "wall"  
+    },  
+    "inverterStatus": {  
+        "type": "Property",  
+        "value": [  
+            "00-OnSector",  
+            "06-OverVoltage"  
+        ]  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates ": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "mPPTPVVoltageDC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 188,  
+            "max": 440  
+        }  
+    },  
+    "manufacturerName": {  
+        "type": "Property",  
+        "value": "SOLAR ELECTRIC CPY"  
+    },  
+    "maxInputCurrentParallelAssembly": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "maxOutputPowerAC": {  
+        "type": "Property",  
+        "value": 4000  
+    },  
+    "modelName": {  
+        "type": "Property",  
+        "value": "SB 4000TL-20"  
+    },  
+    "moduleYieldRate": {  
+        "type": "Property",  
+        "value": {  
+            "euro": 97.1,  
+            "eta": 96.4  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "INVDEV-T1-G0-027"  
+    },  
+    "nbInputParallelDC": {  
+        "type": "Property",  
+        "value": "A:2,B:2"  
+    },  
+    "nbMPPTrackersDC": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "noiseLevel": {  
+        "type": "Property",  
+        "value": 29  
+    },  
+    "nominalAmpereAC ": {  
+        "type": "Property",  
+        "value": 16  
+    },  
+    "nominalAmpereDC ": {  
+        "type": "Property",  
+        "value": 17  
+    },  
+    "nominalFrequencyAC": {  
+        "type": "Property",  
+        "value": 50  
+    },  
+    "nominalFrequencyDC": {  
+        "type": "Property",  
+        "value": 50  
+    },  
+    "nominalPowerAC": {  
+        "type": "Property",  
+        "value": 3680  
+    },  
+    "nominalPowerDC": {  
+        "type": "Property",  
+        "value": 4200  
+    },  
+    "nominalVoltageAC": {  
+        "type": "Property",  
+        "value": 230  
+    },  
+    "nominalVoltageDC": {  
+        "type": "Property",  
+        "value": 400  
+    },  
+    "operatingAirHumidity": {  
+        "type": "Property",  
+        "value": {  
+            "min": 0,  
+            "max": 0.95  
+        }  
+    },  
+    "operatingAmpereAC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 16,  
+            "max": 22  
+        }  
+    },  
+    "operatingAmpereDC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 17,  
+            "max": 17  
+        }  
+    },  
+    "operatingFrequencyAC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 50,  
+            "max": 60  
+        }  
+    },  
+    "operatingFrequencyDC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 50,  
+            "max": 50  
+        }  
+    },  
+    "operatingTemperature": {  
+        "type": "Property",  
+        "value": {  
+            "min": -25,  
+            "max": 60  
+        }  
+    },  
+    "operatingVoltageAC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 180,  
+            "max": 280  
+        }  
+    },  
+    "operatingVoltageDC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 125,  
+            "max": 550  
+        }  
+    },  
+    "overVoltageCategory": {  
+        "type": "Property",  
+        "value": "III"  
+    },  
+    "owners": {  
+        "type": "Property",  
+        "value": [  
+            "Airport-Division Maintenance"  
+        ]  
+    },  
+    "phaseType": {  
+        "type": "Property",  
+        "value": "threePhase"  
+    },  
+    "possibilityOfUse": {  
+        "type": "Property",  
+        "value": "stationary"  
+    },  
+    "powerFactorAC": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "protectionClassSLK": {  
+        "type": "Property",  
+        "value": "1"  
+    },  
+    "protectionIK": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "protectionIP": {  
+        "type": "Property",  
+        "value": "55"  
+    },  
+    "self-consumption": {  
+        "type": "Property",  
+        "value": 0.5  
+    },  
+    "serialNumber": {  
+        "type": "Property",  
+        "value": "SEKOPI10327458712"  
+    },  
+    "startingVoltageDC": {  
+        "type": "Property",  
+        "value": 150  
+    },  
+    "supplyPhaseNb": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "topology": {  
+        "type": "Property",  
+        "value": "without transformer"  
+    },  
+    "typeOfUse": {  
+        "type": "Property",  
+        "value": "indoor"  
+    },  
+    "weight": {  
+        "type": "Property",  
+        "value": 34  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+    ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
