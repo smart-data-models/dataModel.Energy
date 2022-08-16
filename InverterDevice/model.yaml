@@ -362,11 +362,12 @@ InverterDevice:
         model: https://schema.org/manufacturer
         type: Property
     maxInputCurrentParallelAssembly:
-      description: 'Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere. Unis:''Ampere'''
+      description: 'Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+        units: Ampere
     maxOutputPowerAC:
       description: 'Maximum Power or Apparent Power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **D46** represents Volt Ampere'
       type: number
@@ -759,4 +760,4 @@ InverterDevice:
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/InverterDevice/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/InverterDevice/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2
