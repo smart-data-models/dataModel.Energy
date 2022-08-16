@@ -1,8 +1,10 @@
-Entity: InverterDevice  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: InverterDevice  
 ======================  
 [Open License](https://github.com/smart-data-models//dataModel.Energy/blob/master/InverterDevice/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **The data model is intended to describe the mechanical, electrical characteristics of an Inverter according to *DC - Direct Current Information* supplied as input and *AC - Alternating Current Information*  returned as output. *Remark*: This Data Model can be used directly as a main entity to describe the device [Inverter] or as a sub-entity of the Data Model {DEVICE] using a reference by the [refDevice] attribute.**  
+version: 0.0.1  
 
 ## List of properties  
 
@@ -378,11 +380,12 @@ InverterDevice:
         model: https://schema.org/manufacturer    
         type: Property    
     maxInputCurrentParallelAssembly:    
-      description: 'Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere. Unis:''Ampere'''    
+      description: 'Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
+        units: Ampere    
     maxOutputPowerAC:    
       description: 'Maximum Power or Apparent Power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **D46** represents Volt Ampere'    
       type: number    
@@ -770,6 +773,12 @@ InverterDevice:
     - dateLastReported    
     - phaseType    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/InverterDevice/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.Energy/InverterDevice/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Example payloads    
@@ -1177,396 +1186,407 @@ InverterDevice:
 Here is an example of a InverterDevice in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
-  "type": "InverterDevice",  
-  "name": "INVDEV-T1-G0-027",  
-  "alternateName": "AirPort â€“ global Observation",  
-  "description": "Description of the Inverter linked to Battery and PhotoVoltaic Devices",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.66481,  
-      7.196545  
+    "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
+    "type": "InverterDevice",  
+    "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
+    },  
+    "alternateName": "AirPort \u2013 global Observation",  
+    "application": [  
+        "robotics"  
+    ],  
+    "areaServed": "Nice Aeroport",  
+    "brandName": "KOSTAL ELEC",  
+    "coolingSystem": "OptiCool",  
+    "dateLastReported": "2020-03-17T08:45:00Z",  
+    "description": "Description of the Inverter linked to Battery and PhotoVoltaic Devices",  
+    "dimension": {  
+        "length": 52.75,  
+        "depth": 23.5,  
+        "height": 45.25  
+    },  
+    "documentation": "https://www.myInverter.fr",  
+    "installationCondition": [  
+        "extremeClimate"  
+    ],  
+    "installationMode": "wall",  
+    "inverterStatus": [  
+        "00-OnSector",  
+        "06-OverVoltage"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.66481,  
+            7.196545  
+        ]  
+    },  
+    "mPPTPVVoltageDC": {  
+        "min": 188,  
+        "max": 440  
+    },  
+    "manufacturerName": "SOLAR ELECTRIC CPY",  
+    "maxInputCurrentParallelAssembly": 25,  
+    "maxOutputPowerAC": 4000,  
+    "modelName": "SB 4000TL-20",  
+    "moduleYieldRate": {  
+        "euro": 97.1,  
+        "eta": 96.4  
+    },  
+    "name": "INVDEV-T1-G0-027",  
+    "nbInputParallelDC": "A:2,B:2",  
+    "nbMPPTrackersDC": 3,  
+    "noiseLevel": 29,  
+    "nominalAmpereAC ": 16,  
+    "nominalAmpereDC ": 17,  
+    "nominalFrequencyAC": 50,  
+    "nominalFrequencyDC": 50,  
+    "nominalPowerAC": 3680,  
+    "nominalPowerDC": 4200,  
+    "nominalVoltageAC": 230,  
+    "nominalVoltageDC": 400,  
+    "operatingAirHumidity": {  
+        "min": 0,  
+        "max": 0.95  
+    },  
+    "operatingAmpereAC": {  
+        "min": 16,  
+        "max": 22  
+    },  
+    "operatingAmpereDC": {  
+        "min": 17,  
+        "max": 17  
+    },  
+    "operatingFrequencyAC": {  
+        "min": 50,  
+        "max": 60  
+    },  
+    "operatingFrequencyDC": {  
+        "min": 50,  
+        "max": 50  
+    },  
+    "operatingTemperature": {  
+        "min": -25,  
+        "max": 60  
+    },  
+    "operatingVoltageAC": {  
+        "min": 180,  
+        "max": 280  
+    },  
+    "operatingVoltageDC": {  
+        "min": 125,  
+        "max": 550  
+    },  
+    "overVoltageCategory": "III",  
+    "owners": [  
+        "Airport-Division Maintenance"  
+    ],  
+    "phaseType": "threePhase",  
+    "possibilityOfUse": "stationary",  
+    "powerFactorAC": 1,  
+    "protectionClassSLK": "1",  
+    "protectionIK": 10,  
+    "protectionIP": "55",  
+    "self-consumption": 0.5,  
+    "serialNumber": "SEKOPI10327458712",  
+    "startingVoltageDC": 150,  
+    "supplyPhaseNb": 3,  
+    "topology": "without transformer",  
+    "typeOfUse": "indoor",  
+    "weight": 34,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
-  },  
-  "areaServed": "Nice Aeroport",  
-  "dateLastReported": "2020-03-17T08:45:00Z",  
-  "brandName": "KOSTAL ELEC",  
-  "modelName": "SB 4000TL-20",  
-  "manufacturerName": "SOLAR ELECTRIC CPY",  
-  "serialNumber": "SEKOPI10327458712",  
-  "application": [  
-    "robotics"  
-  ],  
-  "typeOfUse": "indoor",  
-  "installationMode": "wall",  
-  "installationCondition": [  
-    "extremeClimate"  
-  ],  
-  "possibilityOfUse": "stationary",  
-  "documentation": "https://www.myInverter.fr",  
-  "owners": [  
-    "Airport-Division Maintenance"  
-  ],  
-  "phaseType": "threePhase",  
-  "supplyPhaseNb": 3,  
-  "dimension": {  
-    "length": 52.75,  
-    "depth": 23.5,  
-    "height": 45.25  
-  },  
-  "weight": 34,  
-  "protectionIP": "55",  
-  "protectionIK": 10,  
-  "protectionClassSLK": "1",  
-  "overVoltageCategory": "III",  
-  "operatingTemperature": {  
-    "min": -25,  
-    "max": 60  
-  },  
-  "operatingAirHumidity": {  
-    "min": 0,  
-    "max": 0.95  
-  },  
-  "nominalPowerDC": 4200,  
-  "nominalVoltageDC": 400,  
-  "nominalAmpereDC ": 17,  
-  "nominalFrequencyDC": 50,  
-  "operatingVoltageDC": {  
-    "min": 125,  
-    "max": 550  
-  },  
-  "operatingAmpereDC": {  
-    "min": 17,  
-    "max": 17  
-  },  
-  "operatingFrequencyDC": {  
-    "min": 50,  
-    "max": 50  
-  },  
-  "mPPTPVVoltageDC": {  
-    "min": 188,  
-    "max": 440  
-  },  
-  "startingVoltageDC": 150,  
-  "nbMPPTrackersDC": 3,  
-  "nbInputParallelDC": "A:2,B:2",  
-  "maxInputCurrentParallelAssembly": 25,  
-  "nominalPowerAC": 3680,  
-  "maxOutputPowerAC": 4000,  
-  "nominalVoltageAC": 230,  
-  "nominalAmpereAC ": 16,  
-  "nominalFrequencyAC": 50,  
-  "operatingVoltageAC": {  
-    "min": 180,  
-    "max": 280  
-  },  
-  "operatingAmpereAC": {  
-    "min": 16,  
-    "max": 22  
-  },  
-  "operatingFrequencyAC": {  
-    "min": 50,  
-    "max": 60  
-  },  
-  "powerFactorAC": 1,  
-  "moduleYieldRate": {  
-    "euro": 97.1,  
-    "eta": 96.4  
-  },  
-  "noiseLevel": 29,  
-  "self-consumption": 0.5,  
-  "topology": "without transformer",  
-  "coolingSystem": "OptiCool",  
-  "inverterStatus": [  
-    "00-OnSector",  
-    "06-OverVoltage"  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
 #### InverterDevice NGSI-LD normalized Example    
 Here is an example of a InverterDevice in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
-	"id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
-	"type": "InverterDevice",  
-	"name": {  
-		"type": "Property",  
-		"value": "INVDEV-T1-G0-027"  
-	},  
-	"alternateName": {  
-		"type": "Property",  
-		"value": "AirPort â€“ global Observation"  
-	},  
-	"description": {  
-		"type": "Property",  
-		"value": "Description of the Inverter linked to Battery and PhotoVoltaic Devices"  
-	},  
-	"location": {  
-		"type": "GeoProperty",  
-		"value": {  
-			"type": "Point",  
-			"coordinates ": [43.664810, 7.196545]  
-		}  
-	},  
-	"address": {  
-		"type": "Property",  
-		"value": {  
-			"addressCountry": "FR",  
-			"addressLocality": "Nice",  
-			"streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
-		}  
-	},  
-	"areaServed": {  
-		"type": "Property",  
-		"value": "Nice Aeroport"  
-	},  
-	"dateLastReported": {  
-		"type": "Property",  
-		"value": {  
-			"type": "DateTime",  
-			"value": "2020-03-17T08:45:00Z"  
-		}  
-	},  
-	"brandName": {  
-		"type": "Property",  
-		"value": "KOSTAL ELEC"  
-	},  
-	"modelName": {  
-		"type": "Property",  
-		"value": "SB 4000TL-20"  
-	},  
-	"manufacturerName": {  
-		"type": "Property",  
-		"value": "SOLAR ELECTRIC CPY"  
-	},  
-	"serialNumber": {  
-		"type": "Property",  
-		"value": "SEKOPI10327458712"  
-	},  
-	"application": {  
-		"type": "Property",  
-		"value": ["robotics"]  
-	},  
-	"typeOfUse": {  
-		"type": "Property",  
-		"value": "indoor"  
-	},  
-	"installationMode": {  
-		"type": "Property",  
-		"value": "wall"  
-	},  
-	"installationCondition": {  
-		"type": "Property",  
-		"value": ["extremeClimate"]  
-	},  
-	"possibilityOfUse": {  
-		"type": "Property",  
-		"value": "stationary"  
-	},  
-	"documentation": {  
-		"type": "Property",  
-		"value": "https://www.myInverter.fr"  
-	},  
-	"owners": {  
-		"type": "Property",  
-		"value": ["Airport-Division Maintenance"]  
-	},  
-	"phaseType": {  
-		"type": "Property",  
-		"value": "threePhase"  
-	},  
-	"supplyPhaseNb": {  
-		"type": "Property",  
-		"value": 3  
-	},  
-	"dimension": {  
-		"type": "Property",  
-		"value": {  
-			"length": 52.75,  
-			"depth": 23.5,  
-			"height": 45.25  
-		}  
-	},  
-	"weight": {  
-		"type": "Property",  
-		"value": 34  
-	},  
-	"protectionIP": {  
-		"type": "Property",  
-		"value": "55"  
-	},  
-	"protectionIK": {  
-		"type": "Property",  
-		"value": 10  
-	},  
-	"protectionClassSLK": {  
-		"type": "Property",  
-		"value": "1"  
-	},  
-	"overVoltageCategory": {  
-		"type": "Property",  
-		"value": "III"  
-	},  
-	"operatingTemperature": {  
-		"type": "Property",  
-		"value": {  
-			"min": -25,  
-			"max": 60  
-		}  
-	},  
-	"operatingAirHumidity": {  
-		"type": "Property",  
-		"value": {  
-			"min": 0,  
-			"max": 0.95  
-		}  
-	},  
-	"nominalPowerDC": {  
-		"type": "Property",  
-		"value": 4200  
-	},  
-	"nominalVoltageDC": {  
-		"type": "Property",  
-		"value": 400  
-	},  
-	"nominalAmpereDC ": {  
-		"type": "Property",  
-		"value": 17  
-	},  
-	"nominalFrequencyDC": {  
-		"type": "Property",  
-		"value": 50  
-	},  
-	"operatingVoltageDC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 125,  
-			"max": 550  
-		}  
-	},  
-	"operatingAmpereDC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 17,  
-			"max": 17  
-		}  
-	},  
-	"operatingFrequencyDC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 50,  
-			"max": 50  
-		}  
-	},  
-	"mPPTPVVoltageDC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 188,  
-			"max": 440  
-		}  
-	},  
-	"startingVoltageDC": {  
-		"type": "Property",  
-		"value": 150  
-	},  
-	"nbMPPTrackersDC": {  
-		"type": "Property",  
-		"value": 3  
-	},  
-	"nbInputParallelDC": {  
-		"type": "Property",  
-		"value": "A:2,B:2"  
-	},  
-	"maxInputCurrentParallelAssembly": {  
-		"type": "Property",  
-		"value": 25  
-	},  
-	"nominalPowerAC": {  
-		"type": "Property",  
-		"value": 3680  
-	},  
-	"maxOutputPowerAC": {  
-		"type": "Property",  
-		"value": 4000  
-	},  
-	"nominalVoltageAC": {  
-		"type": "Property",  
-		"value": 230  
-	},  
-	"nominalAmpereAC ": {  
-		"type": "Property",  
-		"value": 16  
-	},  
-	"nominalFrequencyAC": {  
-		"type": "Property",  
-		"value": 50  
-	},  
-	"operatingVoltageAC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 180,  
-			"max": 280  
-		}  
-	},  
-	"operatingAmpereAC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 16,  
-			"max": 22  
-		}  
-	},  
-	"operatingFrequencyAC": {  
-		"type": "Property",  
-		"value": {  
-			"min": 50,  
-			"max": 60  
-		}  
-	},  
-	"powerFactorAC": {  
-		"type": "Property",  
-		"value": 1  
-	},  
-	"moduleYieldRate": {  
-		"type": "Property",  
-		"value": {  
-			"euro": 97.1,  
-			"eta": 96.4  
-		}  
-	},  
-	"noiseLevel": {  
-		"type": "Property",  
-		"value": 29  
-	},  
-	"self-consumption": {  
-		"type": "Property",  
-		"value": 0.5  
-	},  
-	"topology": {  
-		"type": "Property",  
-		"value": "without transformer"  
-	},  
-	"coolingSystem": {  
-			"type": "Property",  
-			"value": "OptiCool"  
-	},  
-	"inverterStatus": {  
-		"type": "Property",  
-		"value": ["00-OnSector", "06-OverVoltage"]  
-	},  
-	"@context": [  
-		"https://smartdatamodels.org/context.jsonld",  
-		"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-	]  
+    "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
+    "type": "InverterDevice",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "FR",  
+            "addressLocality": "Nice",  
+            "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "AirPort \u2013 global Observation"  
+    },  
+    "application": {  
+        "type": "Property",  
+        "value": [  
+            "robotics"  
+        ]  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Aeroport"  
+    },  
+    "brandName": {  
+        "type": "Property",  
+        "value": "KOSTAL ELEC"  
+    },  
+    "coolingSystem": {  
+        "type": "Property",  
+        "value": "OptiCool"  
+    },  
+    "dateLastReported": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-03-17T08:45:00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Description of the Inverter linked to Battery and PhotoVoltaic Devices"  
+    },  
+    "dimension": {  
+        "type": "Property",  
+        "value": {  
+            "length": 52.75,  
+            "depth": 23.5,  
+            "height": 45.25  
+        }  
+    },  
+    "documentation": {  
+        "type": "Property",  
+        "value": "https://www.myInverter.fr"  
+    },  
+    "installationCondition": {  
+        "type": "Property",  
+        "value": [  
+            "extremeClimate"  
+        ]  
+    },  
+    "installationMode": {  
+        "type": "Property",  
+        "value": "wall"  
+    },  
+    "inverterStatus": {  
+        "type": "Property",  
+        "value": [  
+            "00-OnSector",  
+            "06-OverVoltage"  
+        ]  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates ": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "mPPTPVVoltageDC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 188,  
+            "max": 440  
+        }  
+    },  
+    "manufacturerName": {  
+        "type": "Property",  
+        "value": "SOLAR ELECTRIC CPY"  
+    },  
+    "maxInputCurrentParallelAssembly": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "maxOutputPowerAC": {  
+        "type": "Property",  
+        "value": 4000  
+    },  
+    "modelName": {  
+        "type": "Property",  
+        "value": "SB 4000TL-20"  
+    },  
+    "moduleYieldRate": {  
+        "type": "Property",  
+        "value": {  
+            "euro": 97.1,  
+            "eta": 96.4  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "INVDEV-T1-G0-027"  
+    },  
+    "nbInputParallelDC": {  
+        "type": "Property",  
+        "value": "A:2,B:2"  
+    },  
+    "nbMPPTrackersDC": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "noiseLevel": {  
+        "type": "Property",  
+        "value": 29  
+    },  
+    "nominalAmpereAC ": {  
+        "type": "Property",  
+        "value": 16  
+    },  
+    "nominalAmpereDC ": {  
+        "type": "Property",  
+        "value": 17  
+    },  
+    "nominalFrequencyAC": {  
+        "type": "Property",  
+        "value": 50  
+    },  
+    "nominalFrequencyDC": {  
+        "type": "Property",  
+        "value": 50  
+    },  
+    "nominalPowerAC": {  
+        "type": "Property",  
+        "value": 3680  
+    },  
+    "nominalPowerDC": {  
+        "type": "Property",  
+        "value": 4200  
+    },  
+    "nominalVoltageAC": {  
+        "type": "Property",  
+        "value": 230  
+    },  
+    "nominalVoltageDC": {  
+        "type": "Property",  
+        "value": 400  
+    },  
+    "operatingAirHumidity": {  
+        "type": "Property",  
+        "value": {  
+            "min": 0,  
+            "max": 0.95  
+        }  
+    },  
+    "operatingAmpereAC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 16,  
+            "max": 22  
+        }  
+    },  
+    "operatingAmpereDC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 17,  
+            "max": 17  
+        }  
+    },  
+    "operatingFrequencyAC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 50,  
+            "max": 60  
+        }  
+    },  
+    "operatingFrequencyDC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 50,  
+            "max": 50  
+        }  
+    },  
+    "operatingTemperature": {  
+        "type": "Property",  
+        "value": {  
+            "min": -25,  
+            "max": 60  
+        }  
+    },  
+    "operatingVoltageAC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 180,  
+            "max": 280  
+        }  
+    },  
+    "operatingVoltageDC": {  
+        "type": "Property",  
+        "value": {  
+            "min": 125,  
+            "max": 550  
+        }  
+    },  
+    "overVoltageCategory": {  
+        "type": "Property",  
+        "value": "III"  
+    },  
+    "owners": {  
+        "type": "Property",  
+        "value": [  
+            "Airport-Division Maintenance"  
+        ]  
+    },  
+    "phaseType": {  
+        "type": "Property",  
+        "value": "threePhase"  
+    },  
+    "possibilityOfUse": {  
+        "type": "Property",  
+        "value": "stationary"  
+    },  
+    "powerFactorAC": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "protectionClassSLK": {  
+        "type": "Property",  
+        "value": "1"  
+    },  
+    "protectionIK": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "protectionIP": {  
+        "type": "Property",  
+        "value": "55"  
+    },  
+    "self-consumption": {  
+        "type": "Property",  
+        "value": 0.5  
+    },  
+    "serialNumber": {  
+        "type": "Property",  
+        "value": "SEKOPI10327458712"  
+    },  
+    "startingVoltageDC": {  
+        "type": "Property",  
+        "value": 150  
+    },  
+    "supplyPhaseNb": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "topology": {  
+        "type": "Property",  
+        "value": "without transformer"  
+    },  
+    "typeOfUse": {  
+        "type": "Property",  
+        "value": "indoor"  
+    },  
+    "weight": {  
+        "type": "Property",  
+        "value": 34  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+    ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
