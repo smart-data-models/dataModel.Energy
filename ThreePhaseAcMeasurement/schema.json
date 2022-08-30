@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.2",
+    "$schemaVersion": "0.0.3",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/schema.json",
     "title": "Smart Data Models - Energy / Three Phase AC Measurement",
@@ -341,7 +341,7 @@
                 },
                 "phaseToPhaseVoltage": {
                     "type": "object",
-                    "description": "Property. Model:'(http://schema.org/StructuredValue'. Units:'Volts (V)'. Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).",
+                    "description": "Property. Model:'http://schema.org/StructuredValue'. Units:'Volts (V)'. Voltage between phases. A value for each phase pair: phases 1 and 2 (L12), phases 2 and 3 (L32), phases 3 and 1 (L31).",
                     "properties": {
                         "L12": {
                             "type": "number",
