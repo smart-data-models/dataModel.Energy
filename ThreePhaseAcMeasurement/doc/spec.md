@@ -4,7 +4,7 @@
 [Open License](https://github.com/smart-data-models//dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **An electrical  measurement from a system that uses three phase alternating current.**  
-version: 0.0.2  
+version: 0.0.3  
 
 ## List of properties  
 
@@ -420,7 +420,7 @@ ThreePhaseAcMeasurement:
           type: number    
       type: object    
       x-ngsi:    
-        model: (http://schema.org/StructuredValue    
+        model: http://schema.org/StructuredValue    
         type: Property    
         units: 'Volts (V)'    
     phaseVoltage:    
@@ -685,11 +685,11 @@ ThreePhaseAcMeasurement:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
 Text to be included after list of properties  
