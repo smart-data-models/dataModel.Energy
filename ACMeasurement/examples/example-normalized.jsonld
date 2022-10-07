@@ -78,6 +78,7 @@
     "totalReactiveEnergyImport": 20490.3392,
     "totalReactivePower": -7830.332031,
     "@context": [
-        "https://smart-data-models.github.io/data-models/context.jsonld"
+        "https://smart-data-models.github.io/data-models/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"
     ]
 }
