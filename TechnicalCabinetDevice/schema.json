@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.1",
   "modelTags": "Energy",
   "$id": "https://smart-data-models.github.io/data-models.Energy/TechnicalCabinetDevice/schema.json",
   "title": "TechnicalCabinetDevice schema",
