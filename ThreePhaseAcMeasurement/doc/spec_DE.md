@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: ThreePhaseAcMeasurement  
-================================  
+================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Eine elektrische Messung aus einem System, das mit dreiphasigem Wechselstrom arbeitet.**  
-Version: 0.0.2  
+Version: 0.0.3  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `activeEnergyExport`: Exportierte Wirkenergie pro Phase seit dem Startdatum der Messung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  - `activeEnergyImport`: Importierte Wirkenergie, d. h. verbrauchte Energie pro Phase seit dem Startdatum der Messung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  - `activePower`: Die tatsächlichen Werte werden durch Untereigenschaften erfasst, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `apparentEnergyExport`: Scheinbare Energie, die seit Beginn der Messung pro Phase exportiert wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  - `apparentEnergyImport`: Die importierte Scheinenergie, d. h. der Verbrauch pro Phase seit dem Startdatum der Messung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  - `apparentPower`: Scheinleistung, die pro Phase verbraucht wird. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `current`: Elektrischer Strom. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase und den Nullleiter übermittelt: L1, L2, L3 und N.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateEnergyMeteringStarted`: Das Anfangsdatum für die Energiemessung.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `displacementPowerFactor`: Verschiebungsleistungsfaktor für jede Phase. Die Größe basiert auf der Grundfrequenz des Systems. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  - `frequency`: Die Frequenz des Stromkreises.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `phaseToPhaseVoltage`: Spannung zwischen den Phasen. Ein Wert für jedes Phasenpaar: Phasen 1 und 2 (L12), Phasen 2 und 3 (L32), Phasen 3 und 1 (L31).  - `phaseVoltage`: Die Spannung zwischen jeder Phase und dem Neutralleiter. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  - `powerFactor`: Leistungsfaktor für jede Phase. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  - `reactiveEnergyExport`: Grundfrequente Blindenergie, die seit Beginn der Messung pro Phase exportiert wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  - `reactiveEnergyImport`: Grundfrequente Blindenergie, die importiert wurde, d. h. die seit Beginn der Messung pro Phase verbraucht wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  - `reactivePower`: Grundfrequenz-Blindleistung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  - `refDevice`: Gerät(e), mit dem/denen die Messung durchgeführt wurde.  - `refTargetDevice`: Gerät(e), für das/die die Messung durchgeführt wurde.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `thdCurrent`: Gesamte harmonische Verzerrung des elektrischen Stroms. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  - `thdVoltage`: Gesamte harmonische Verzerrung der Spannung für jede Phase. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  - `totalActiveEnergyExport`: Seit Beginn der Messung exportierte Gesamtenergie (seit `dateEnergyMeteringStarted`).  - `totalActiveEnergyImport`: Insgesamt importierte, d. h. verbrauchte Energie seit Beginn der Messung (seit `dateEnergyMeteringStarted`).  - `totalActivePower`: Aufgenommene Wirkleistung (alle Phasen gezählt)  - `totalApparentEnergyExport`: Gesamte exportierte Energie (in Bezug auf die Scheinleistung) seit dem Startdatum der Messung (`dateEnergyMeteringStarted`)  - `totalApparentEnergyImport`: Gesamte importierte, d. h. verbrauchte Energie (in Bezug auf die Scheinleistung) seit dem Datum des Messbeginns (`dateEnergyMeteringStarted`)  - `totalApparentPower`: Verbrauchte Scheinleistung (unter Berücksichtigung aller Phasen).  - `totalDisplacementPowerFactor`: Verschiebungsleistungsfaktor unter Einbeziehung aller Phasen. Die Größe basiert auf der Grundfrequenz des Systems  - `totalPowerFactor`: Leistungsfaktor einschließlich aller Phasen  - `totalReactiveEnergyExport`: Gesamte Grundfrequenz-Blindenergie, die seit Beginn der Messung exportiert wurde (seit `dateEnergyMeteringStarted`).  - `totalReactiveEnergyImport`: Gesamte importierte, d. h. verbrauchte Energie (in Bezug auf die Grundfrequenz-Blindleistung) seit dem Startdatum der Messung (`dateEnergyMeteringStarted`)  - `totalReactivePower`: Verbrauchte Blindleistung (alle Phasen gezählt)  - `type`: Sie muss gleich `ThreePhaseAcMeasurement` sein.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `activeEnergyExport[object]`: Exportierte Wirkenergie pro Phase seit dem Startdatum der Messung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `activeEnergyImport[object]`: Importierte Wirkenergie, d. h. verbrauchte Energie pro Phase seit dem Startdatum der Messung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `activePower[object]`: Die tatsächlichen Werte werden durch Untereigenschaften erfasst, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `apparentEnergyExport[object]`: Scheinbare Energie, die seit Beginn der Messung pro Phase exportiert wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `apparentEnergyImport[object]`: Die importierte Scheinenergie, d. h. der Verbrauch pro Phase seit dem Startdatum der Messung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `apparentPower[object]`: Scheinleistung, die pro Phase verbraucht wird. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: Elektrischer Strom. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase und den Nullleiter übermittelt: L1, L2, L3 und N.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateEnergyMeteringStarted[string]`: Das Startdatum für die Energiemessung.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `displacementPowerFactor[object]`: Verschiebungsleistungsfaktor für jede Phase. Die Größe basiert auf der Grundfrequenz des Systems. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `frequency[number]`: Die Frequenz des Stromkreises.  . Model: [http://schema.org/Number](http://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `phaseToPhaseVoltage[object]`: Spannung zwischen den Phasen. Ein Wert für jedes Phasenpaar: Phasen 1 und 2 (L12), Phasen 2 und 3 (L32), Phasen 3 und 1 (L31).  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `phaseVoltage[object]`: Die Spannung zwischen jeder Phase und dem Neutralleiter. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `powerFactor[object]`: Leistungsfaktor für jede Phase. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactiveEnergyExport[object]`: Grundfrequente Blindenergie, die seit Beginn der Messung pro Phase exportiert wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactiveEnergyImport[object]`: Grundfrequente Blindenergie, die importiert wurde, d. h. die seit Beginn der Messung pro Phase verbraucht wurde. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactivePower[object]`: Grundfrequenz-Blindleistung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `refDevice[array]`: Gerät(e), mit dem/denen die Messung durchgeführt wurde.  - `refTargetDevice[array]`: Gerät(e), für das/die die Messung durchgeführt wurde.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `thdCurrent[object]`: Gesamte harmonische Verzerrung des elektrischen Stroms. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `thdVoltage[object]`: Gesamte harmonische Verzerrung der Spannung für jede Phase. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `totalActiveEnergyExport[number]`: Seit Beginn der Messung exportierte Gesamtenergie (seit `dateEnergyMeteringStarted`).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActiveEnergyImport[number]`: Insgesamt importierte, d. h. verbrauchte Energie seit Beginn der Messung (seit `dateEnergyMeteringStarted`).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActivePower[number]`: Aufgenommene Wirkleistung (alle Phasen gezählt)  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalApparentEnergyExport[number]`: Gesamte exportierte Energie (in Bezug auf die Scheinleistung) seit dem Startdatum der Messung (`dateEnergyMeteringStarted`)  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentEnergyImport[number]`: Gesamte importierte, d. h. verbrauchte Energie (in Bezug auf die Scheinleistung) seit dem Datum des Messbeginns (`dateEnergyMeteringStarted`)  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentPower[number]`: Verbrauchte Scheinleistung (unter Berücksichtigung aller Phasen).  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalDisplacementPowerFactor[number]`: Verschiebungsleistungsfaktor unter Einbeziehung aller Phasen. Die Größe basiert auf der Grundfrequenz des Systems  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalPowerFactor[number]`: Leistungsfaktor einschließlich aller Phasen  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalReactiveEnergyExport[number]`: Gesamte Grundfrequenz-Blindenergie, die seit Beginn der Messung exportiert wurde (seit `dateEnergyMeteringStarted`).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactiveEnergyImport[number]`: Gesamte importierte, d. h. verbrauchte Energie (in Bezug auf die Grundfrequenz-Blindleistung) seit dem Startdatum der Messung (`dateEnergyMeteringStarted`)  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactivePower[number]`: Verbrauchte Blindleistung (alle Phasen gezählt)  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: Sie muss gleich `ThreePhaseAcMeasurement` sein.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Text, der zwischen Gesamttitel und Beschreibung eingefügt werden muss.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ThreePhaseAcMeasurement:    
@@ -420,7 +433,7 @@ ThreePhaseAcMeasurement:
           type: number    
       type: object    
       x-ngsi:    
-        model: (http://schema.org/StructuredValue    
+        model: http://schema.org/StructuredValue    
         type: Property    
         units: 'Volts (V)'    
     phaseVoltage:    
@@ -685,17 +698,22 @@ ThreePhaseAcMeasurement:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
 Text, der nach der Liste der Eigenschaften eingefügt werden soll  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### ThreePhaseAcMeasurement NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel eines ThreePhaseAcMeasurement im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -765,8 +783,10 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
+</details>  
 #### ThreePhaseAcMeasurement NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein ThreePhaseAcMeasurement im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1090,8 +1110,10 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
+</details>  
 #### ThreePhaseAcMeasurement NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für eine ThreePhaseAcMeasurement im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1374,8 +1396,10 @@ ThreePhaseAcMeasurement:
     ]  
 }  
 ```  
+</details>  
 #### ThreePhaseAcMeasurement NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für eine ThreePhaseAcMeasurement im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1449,9 +1473,18 @@ ThreePhaseAcMeasurement:
     "totalReactiveEnergyImport": 20490.3392,  
     "totalReactivePower": -7830.332031,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
 Immerhin Text  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
