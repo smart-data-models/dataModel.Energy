@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: Misurazione trifaseAc  
-=============================  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descrizione globale: **Misura elettrica proveniente da un sistema che utilizza corrente alternata trifase.  
-versione: 0.0.2  
+versione: 0.0.3  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `activeEnergyExport`: Energia attiva esportata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  - `activeEnergyImport`: Energia attiva importata, cioè consumata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  - `activePower`: I valori effettivi saranno rilevati da sottoproprietà il cui nome sarà uguale al nome di ciascuna delle fasi della corrente alternata: L1, L2, L3.  - `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `apparentEnergyExport`: Energia apparente esportata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  - `apparentEnergyImport`: Energia apparente importata, cioè consumata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  - `apparentPower`: Potenza apparente consumata per fase. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna delle fasi della corrente alternata: L1, L2, L3  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `current`: Corrente elettrica. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase di corrente alternata e per il filo neutro: L1, L2, L3 e N.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateEnergyMeteringStarted`: La data di inizio della misurazione dell'energia.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `displacementPowerFactor`: Fattore di potenza di spostamento per ogni fase. La quantità si basa sulla frequenza fondamentale del sistema. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase di corrente alternata: L1, L2 e L3  - `frequency`: La frequenza del circuito.  - `id`: Identificatore univoco dell'entità  - `location`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `phaseToPhaseVoltage`: Tensione tra le fasi. Un valore per ogni coppia di fasi: fasi 1 e 2 (L12), fasi 2 e 3 (L32), fasi 3 e 1 (L31).  - `phaseVoltage`: La tensione tra ogni fase e il conduttore neutro. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase della corrente alternata: L1, L2 e L3  - `powerFactor`: Fattore di potenza per ogni fase. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase della corrente alternata: L1, L2 e L3  - `reactiveEnergyExport`: Energia reattiva a frequenza fondamentale esportata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  - `reactiveEnergyImport`: Energia reattiva a frequenza fondamentale importata, cioè consumata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  - `reactivePower`: Potenza reattiva a frequenza fondamentale. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna delle fasi della corrente alternata: L1, L2, L3.  - `refDevice`: Dispositivo/i utilizzato/i per ottenere la misura.  - `refTargetDevice`: Dispositivo/i per il quale è stata effettuata la misurazione.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `thdCurrent`: Distorsione armonica totale della corrente elettrica. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase della corrente alternata: L1, L2 e L3  - `thdVoltage`: Distorsione armonica totale della tensione per ciascuna fase. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase della corrente alternata: L1, L2 e L3  - `totalActiveEnergyExport`: Energia totale esportata dall'inizio della misurazione (da `dateEnergyMeteringStarted`).  - `totalActiveEnergyImport`: Energia totale importata, cioè consumata dall'inizio della misurazione (da `dateEnergyMeteringStarted`).  - `totalActivePower`: Potenza attiva consumata (contando tutte le fasi)  - `totalApparentEnergyExport`: Energia totale esportata (in termini di potenza apparente) dalla data di inizio della misurazione (`dateEnergyMeteringStarted`).  - `totalApparentEnergyImport`: Energia totale importata, cioè consumata (in termini di potenza apparente) dalla data di inizio della misurazione (`dateEnergyMeteringStarted`).  - `totalApparentPower`: Potenza apparente consumata (contando tutte le fasi).  - `totalDisplacementPowerFactor`: Fattore di potenza di spostamento comprendente tutte le fasi. La quantità si basa sulla frequenza fondamentale del sistema.  - `totalPowerFactor`: Fattore di potenza comprensivo di tutte le fasi  - `totalReactiveEnergyExport`: Energia reattiva totale a frequenza fondamentale esportata dall'inizio della misurazione (da `dateEnergyMeteringStarted`).  - `totalReactiveEnergyImport`: Energia totale importata, cioè consumata (per quanto riguarda la potenza reattiva a frequenza fondamentale) dalla data di inizio della misurazione (`dateEnergyMeteringStarted`).  - `totalReactivePower`: Potenza reattiva consumata (contando tutte le fasi)  - `type`: Deve essere uguale a `ThreePhaseAcMeasurement`.    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `activeEnergyExport[object]`: Energia attiva esportata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `activeEnergyImport[object]`: Energia attiva importata, cioè consumata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `activePower[object]`: I valori effettivi saranno rilevati da sottoproprietà il cui nome sarà uguale al nome di ciascuna delle fasi della corrente alternata: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `apparentEnergyExport[object]`: Energia apparente esportata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `apparentEnergyImport[object]`: Energia apparente importata, cioè consumata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `apparentPower[object]`: Potenza apparente consumata per fase. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna delle fasi della corrente alternata: L1, L2, L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: Corrente elettrica. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase di corrente alternata e per il filo neutro: L1, L2, L3 e N.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateEnergyMeteringStarted[string]`: La data di inizio della misurazione dell'energia.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `displacementPowerFactor[object]`: Fattore di potenza di spostamento per ogni fase. La quantità si basa sulla frequenza fondamentale del sistema. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase di corrente alternata: L1, L2 e L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `frequency[number]`: La frequenza del circuito.  . Model: [http://schema.org/Number](http://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `phaseToPhaseVoltage[object]`: Tensione tra le fasi. Un valore per ogni coppia di fasi: fasi 1 e 2 (L12), fasi 2 e 3 (L32), fasi 3 e 1 (L31).  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `phaseVoltage[object]`: La tensione tra ogni fase e il conduttore neutro. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase della corrente alternata: L1, L2 e L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `powerFactor[object]`: Fattore di potenza per ogni fase. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase della corrente alternata: L1, L2 e L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactiveEnergyExport[object]`: Energia reattiva a frequenza fondamentale esportata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactiveEnergyImport[object]`: Energia reattiva a frequenza fondamentale importata, cioè consumata per fase dalla data di inizio della misurazione. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna fase della corrente alternata: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactivePower[object]`: Potenza reattiva a frequenza fondamentale. I valori effettivi saranno trasmessi da sottoproprietà il cui nome sarà uguale al nome di ciascuna delle fasi della corrente alternata: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `refDevice[array]`: Dispositivo/i utilizzato/i per ottenere la misura.  - `refTargetDevice[array]`: Dispositivo/i per il quale è stata effettuata la misurazione.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `thdCurrent[object]`: Distorsione armonica totale della corrente elettrica. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase della corrente alternata: L1, L2 e L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `thdVoltage[object]`: Distorsione armonica totale della tensione per ciascuna fase. I valori effettivi saranno trasmessi da una sottoproprietà per ogni fase della corrente alternata: L1, L2 e L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `totalActiveEnergyExport[number]`: Energia totale esportata dall'inizio della misurazione (da `dateEnergyMeteringStarted`).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActiveEnergyImport[number]`: Energia totale importata, cioè consumata dall'inizio della misurazione (da `dateEnergyMeteringStarted`).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActivePower[number]`: Potenza attiva consumata (contando tutte le fasi)  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalApparentEnergyExport[number]`: Energia totale esportata (in termini di potenza apparente) dalla data di inizio della misurazione (`dateEnergyMeteringStarted`).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentEnergyImport[number]`: Energia totale importata, cioè consumata (in termini di potenza apparente) dalla data di inizio della misurazione (`dateEnergyMeteringStarted`).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentPower[number]`: Potenza apparente consumata (contando tutte le fasi).  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalDisplacementPowerFactor[number]`: Fattore di potenza di spostamento comprendente tutte le fasi. La quantità si basa sulla frequenza fondamentale del sistema.  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalPowerFactor[number]`: Fattore di potenza comprensivo di tutte le fasi  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalReactiveEnergyExport[number]`: Energia reattiva totale a frequenza fondamentale esportata dall'inizio della misurazione (da `dateEnergyMeteringStarted`).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactiveEnergyImport[number]`: Energia totale importata, cioè consumata (per quanto riguarda la potenza reattiva a frequenza fondamentale) dalla data di inizio della misurazione (`dateEnergyMeteringStarted`).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactivePower[number]`: Potenza reattiva consumata (contando tutte le fasi)  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: Deve essere uguale a `ThreePhaseAcMeasurement`.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Testo da inserire tra il titolo generale e la descrizione.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ThreePhaseAcMeasurement:    
@@ -420,7 +433,7 @@ ThreePhaseAcMeasurement:
           type: number    
       type: object    
       x-ngsi:    
-        model: (http://schema.org/StructuredValue    
+        model: http://schema.org/StructuredValue    
         type: Property    
         units: 'Volts (V)'    
     phaseVoltage:    
@@ -685,17 +698,22 @@ ThreePhaseAcMeasurement:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
 Testo da inserire dopo l'elenco delle proprietà  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Esempi di payload  
 #### Valori-chiave di ThreePhaseAcMeasurement NGSI-v2 Esempio  
 Ecco un esempio di ThreePhaseAcMeasurement in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -765,8 +783,10 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
+</details>  
 #### Misurazione trifaseAc Esempio normalizzato NGSI-v2  
 Ecco un esempio di ThreePhaseAcMeasurement in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1090,8 +1110,10 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
+</details>  
 #### Valori chiave NGSI-LD di ThreePhaseAcMeasurement Esempio  
 Ecco un esempio di ThreePhaseAcMeasurement in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1374,8 +1396,10 @@ ThreePhaseAcMeasurement:
     ]  
 }  
 ```  
+</details>  
 #### Misurazione trifaseAc Esempio normalizzato NGSI-LD  
 Ecco un esempio di ThreePhaseAcMeasurement in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1449,9 +1473,18 @@ ThreePhaseAcMeasurement:
     "totalReactiveEnergyImport": 20490.3392,  
     "totalReactivePower": -7830.332031,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
 Il testo dopo tutto  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
