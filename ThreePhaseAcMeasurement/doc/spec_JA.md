@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティスリーフェーズAcMeasurement  
-==========================  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述。**三相交流電流を使用するシステムからの電気的測定値 **。  
-バージョン: 0.0.2  
+バージョン: 0.0.3  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `activeEnergyExport`: 計測開始日以降に輸出された相ごとの有効電力量。実際の値は、各交流相の名前に等しい名前のサブプロパティによって伝達される。L1、L2、L3。  - `activeEnergyImport`: 測定開始日以降に輸入された有効エネルギー、すなわち相ごとに消費されたエネルギー。実際の値は、各交流相の名前と同じ名前のサブプロパティによって伝達される。L1、L2、L3。  - `activePower`: 実際の値は、交流の各相の名前と同じ名前のサブプロパティによって管理される。L1、L2、L3。  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `apparentEnergyExport`: 計測開始日以降に輸出された相ごとの皮相電力量。実際の値は、各交流相の名前に等しい名前のサブプロパティによって伝達される。L1、L2、L3。  - `apparentEnergyImport`: 計測開始日以降に輸入された皮相電力量、すなわち相ごとの消費電力量。実際の値は、各交流相の名前に等しい名前を持つサブプロパティによって伝達される。L1、L2、L3。  - `apparentPower`: 相あたりの皮相電力消費量。実際の値は、交流の各相の名前に等しい名前を持つサブプロパティによって伝えられる。L1, L2, L3  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `current`: 電流。実際の値は、交流の各相と中性線につき1つのサブプロパティで伝達される。L1、L2、L3、N。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateEnergyMeteringStarted`: エネルギー計測の開始日。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `displacementPowerFactor`: 各相の変位力率。この量は、システムの基本周波数に基づく。実際の値は、交流相ごとに1つのサブプロパティで伝達される。L1、L2、L3  - `frequency`: 回路の周波数です。  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `phaseToPhaseVoltage`: 相間電圧。各相ペアの値：1相と2相（L12）、2相と3相（L32）、3相と1相（L31）。  - `phaseVoltage`: 各相と中性導体間の電圧。実際の値は、交流の各相ごとに1つのサブプロパティで伝えられる。L1、L2、L3  - `powerFactor`: 各相の力率。実際の値は、交流の各相ごとに1つのサブプロパティで伝達される。L1、L2、L3  - `reactiveEnergyExport`: 計測開始日以降に輸出された相ごとの基本周波数無効電力量。実際の値は、各交流相の名称と同じ名称のサブプロパティによって伝達される。L1、L2、L3。  - `reactiveEnergyImport`: 計測開始日以降に輸入された基本周波数無効電力量、すなわち相ごとに消費された電力量。実際の値は、各交流相の名前と同じ名前のサブプロパティによって伝達される。L1、L2、L3。  - `reactivePower`: 基本周波数無効電力。実際の値は、交流の各相の名前と同じ名前のサブプロパティによって伝達される。L1、L2、L3。  - `refDevice`: 測定値を得るために使用した装置。  - `refTargetDevice`: 測定が行われたデバイス（複数可）。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `thdCurrent`: 電流の全高調波歪み。実際の値は、交流の各相ごとに1つのサブプロパティによって伝達される。L1, L2, L3  - `thdVoltage`: 各相の電圧の全高調波歪み。実際の値は、交流の各相ごとに1つのサブプロパティによって伝えられる。L1、L2、L3  - `totalActiveEnergyExport`: 計測を開始してからの総輸出電力量（`dateEnergyMeteringStarted`以降）。  - `totalActiveEnergyImport`: 計測を開始して以来（`dateEnergyMeteringStarted`以降）、インポートされた、すなわち消費されたエネルギーの合計。  - `totalActivePower`: 有効消費電力（全相計数）  - `totalApparentEnergyExport`: 計測開始日（`dateEnergyMeteringStarted`）以降に輸出された総エネルギー量（皮相電力に関して）。  - `totalApparentEnergyImport`: 計測開始日（`dateEnergyMeteringStarted`）以降に輸入された、すなわち消費された（皮相電力に関して）総エネルギー量。  - `totalApparentPower`: 皮相電力消費量（全相をカウント）。  - `totalDisplacementPowerFactor`: 全相を含む変位力率。この量はシステムの基本周波数に基づいています。  - `totalPowerFactor`: 全相を含む力率  - `totalReactiveEnergyExport`: 計測開始以降にエクスポートされた基本周波数無効エネルギーの合計値（`dateEnergyMeteringStarted`以降）。  - `totalReactiveEnergyImport`: 計測開始日（`dateEnergyMeteringStarted`）以降に輸入された、すなわち消費された総エネルギー（基本周波数無効電力に関して）。  - `totalReactivePower`: 無効電力消費量（全相数カウント）  - `type`: ThreePhaseAcMeasurement` と等しくなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `activeEnergyExport[object]`: 計測開始日以降に輸出された相ごとの有効電力量。実際の値は、各交流相の名前に等しい名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `activeEnergyImport[object]`: 測定開始日以降に輸入された有効エネルギー、すなわち相ごとに消費されたエネルギー。実際の値は、各交流相の名前と同じ名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `activePower[object]`: 実際の値は、交流の各相の名前と同じ名前のサブプロパティによって管理される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `apparentEnergyExport[object]`: 計測開始日以降に輸出された相ごとの皮相電力量。実際の値は、各交流相の名前に等しい名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `apparentEnergyImport[object]`: 計測開始日以降に輸入された皮相電力量、すなわち相ごとの消費電力量。実際の値は、各交流相の名前に等しい名前を持つサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `apparentPower[object]`: 相あたりの皮相電力消費量。実際の値は、交流の各相の名前に等しい名前を持つサブプロパティによって伝えられる。L1, L2, L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: 電流。実際の値は、交流の各相と中性線につき1つのサブプロパティで伝達される。L1、L2、L3、N。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateEnergyMeteringStarted[string]`: エネルギー計測の開始日。  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `displacementPowerFactor[object]`: 各相の変位力率。この量は、システムの基本周波数に基づく。実際の値は、交流相ごとに1つのサブプロパティで伝達される。L1、L2、L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `frequency[number]`: 回路の周波数です。  . Model: [http://schema.org/Number](http://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `phaseToPhaseVoltage[object]`: 相間電圧。各相ペアの値：1相と2相（L12）、2相と3相（L32）、3相と1相（L31）。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `phaseVoltage[object]`: 各相と中性導体間の電圧。実際の値は、交流の各相ごとに1つのサブプロパティで伝えられる。L1、L2、L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `powerFactor[object]`: 各相の力率。実際の値は、交流の各相ごとに1つのサブプロパティで伝達される。L1、L2、L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactiveEnergyExport[object]`: 計測開始日以降に輸出された相ごとの基本周波数無効電力量。実際の値は、各交流相の名称と同じ名称のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactiveEnergyImport[object]`: 計測開始日以降に輸入された基本周波数無効電力量、すなわち相ごとに消費された電力量。実際の値は、各交流相の名前と同じ名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactivePower[object]`: 基本周波数無効電力。実際の値は、交流の各相の名前と同じ名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `refDevice[array]`: 測定値を得るために使用した装置。  - `refTargetDevice[array]`: 測定が行われたデバイス（複数可）。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `thdCurrent[object]`: 電流の全高調波歪み。実際の値は、交流の各相ごとに1つのサブプロパティによって伝達される。L1, L2, L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `thdVoltage[object]`: 各相の電圧の全高調波歪み。実際の値は、交流の各相ごとに1つのサブプロパティによって伝えられる。L1、L2、L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `totalActiveEnergyExport[number]`: 計測を開始してからの総輸出電力量（`dateEnergyMeteringStarted`以降）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActiveEnergyImport[number]`: 計測を開始して以来（`dateEnergyMeteringStarted`以降）、インポートされた、すなわち消費されたエネルギーの合計。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActivePower[number]`: 有効消費電力（全相計数）  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalApparentEnergyExport[number]`: 計測開始日（`dateEnergyMeteringStarted`）以降に輸出された総エネルギー量（皮相電力に関して）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentEnergyImport[number]`: 計測開始日（`dateEnergyMeteringStarted`）以降に輸入された、すなわち消費された（皮相電力に関して）総エネルギー量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentPower[number]`: 皮相電力消費量（全相をカウント）。  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalDisplacementPowerFactor[number]`: 全相を含む変位力率。この量はシステムの基本周波数に基づいています。  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalPowerFactor[number]`: 全相を含む力率  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalReactiveEnergyExport[number]`: 計測開始以降にエクスポートされた基本周波数無効エネルギーの合計値（`dateEnergyMeteringStarted`以降）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactiveEnergyImport[number]`: 計測開始日（`dateEnergyMeteringStarted`）以降に輸入された、すなわち消費された総エネルギー（基本周波数無効電力に関して）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactivePower[number]`: 無効電力消費量（全相数カウント）  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: ThreePhaseAcMeasurement` と等しくなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 全体のタイトルと説明文の間に入れるテキスト。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ThreePhaseAcMeasurement:    
@@ -420,7 +433,7 @@ ThreePhaseAcMeasurement:
           type: number    
       type: object    
       x-ngsi:    
-        model: (http://schema.org/StructuredValue    
+        model: http://schema.org/StructuredValue    
         type: Property    
         units: 'Volts (V)'    
     phaseVoltage:    
@@ -685,17 +698,22 @@ ThreePhaseAcMeasurement:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
 プロパティ一覧の後に記載するテキスト  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### ThreePhaseAcMeasurement NGSI-v2 key-value 例  
-以下は、ThreePhaseAcMeasurementをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+以下は、ThreePhaseAcMeasurementをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -765,8 +783,10 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
+</details>  
 #### ThreePhaseAcMeasurement NGSI-v2 正規化例  
 以下は、正規化された JSON-LD 形式の ThreePhaseAcMeasurement の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1090,8 +1110,10 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
+</details>  
 #### ThreePhaseAcMeasurement NGSI-LD key-value 例  
 以下は、ThreePhaseAcMeasurementをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1374,8 +1396,10 @@ ThreePhaseAcMeasurement:
     ]  
 }  
 ```  
+</details>  
 #### ThreePhaseAcMeasurement NGSI-LD 正規化例  
 以下は、ThreePhaseAcMeasurement を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1449,9 +1473,18 @@ ThreePhaseAcMeasurement:
     "totalReactiveEnergyImport": 20490.3392,  
     "totalReactivePower": -7830.332031,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
 結局のところテキスト  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
