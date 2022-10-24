@@ -1,19 +1,35 @@
-Entidad: GabineteTécnicoDispositivo  
-===================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: TechnicalCabinetDevice  
+===============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Energy/blob/master/TechnicalCabinetDevice/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **El Modelo de Datos del Dispositivo de Gabinete Técnico está destinado a describir las características técnicas del Dispositivo, diseñado para ser colocado en un entorno urbano o interurbano. El objetivo principal de estos armarios para este Modelo de Datos es proteger los equipos eléctricos necesarios para el control, la vigilancia, la lectura y la gestión del alumbrado urbano, la señalización, el vídeo y la distribución eléctrica. El ámbito de utilización de algunos de estos armarios puede extenderse a una protección adicional para instalaciones de aparatos modulares de telefonía, tratamiento de datos, estaciones meteorológicas, estaciones fotovoltaicas, estaciones eólicas, telecomunicaciones, redes, datos, bre Óptica , etc. *Remark* : Este modelo de datos puede utilizarse directamente como entidad principal para describir el dispositivo `Gabinete técnico` o como subentidad del modelo de datos `Device` utilizando una referencia mediante el atributo `refDevice`. También puede hacer referencia a la lista de todos los componentes que contiene, con el atributo `refDeviceList`, utilizando el modelo de datos `DEVICE`**.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descripción global: **El Modelo de Datos del Dispositivo de Gabinete Técnico está destinado a describir las características técnicas del Dispositivo, diseñado para ser colocado en un entorno urbano o interurbano. El objetivo principal de estos armarios para este Modelo de Datos es proteger los equipos eléctricos necesarios para el control, la vigilancia, la lectura y la gestión del alumbrado urbano, la señalización, el vídeo y la distribución eléctrica. El ámbito de utilización de algunos de estos armarios puede extenderse a una protección adicional para instalaciones de aparatos modulares de telefonía, tratamiento de datos, estaciones meteorológicas, estaciones fotovoltaicas, estaciones eólicas, telecomunicaciones, redes, datos, bre Óptica , etc. *Remark* : Este Modelo de Datos puede utilizarse directamente como entidad principal para describir el dispositivo `Gabinete Técnico` o como subentidad del Modelo de Datos `DEVICE` utilizando una referencia mediante el atributo `refDevice`. También puede hacer referencia a la lista de todos los componentes que contiene, con el atributo `refDeviceList`, utilizando el Modelo de Datos `DEVICE'**.  
+versión:  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `application`: Objetivo de la aplicación del Dispositivo con respecto al medio ambiente. Una combinación de estos valores. Enum:'comercial, distribuciónServicio, industrial, otros, obras públicas, carretera, terciario, servicio urbano'  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `brandName`: Nombre de la marca  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastReported`: Una marca de tiempo que denota la última vez que el dispositivo comunicó datos con éxito. Fecha y hora en formato ISO8601 UTC  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `designMaterials`: Materiales de diseño para construir el armario. Una combinación de estos valores. Enum:'ABS-Plástico, aluminio, fibra de vidrio, acero galvanizado, otros, poliéster, acero inoxidable'  - `dimension`: El formato está estructurado por una subpropiedad de 3 elementos. El código de la unidad (texto) de medida se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **CMT** representa el centímetro.  - `documentation`: Un enlace a la documentación del dispositivo  - `doorClosingMode`: Modo de cierre de la puerta. Un valor único de estos valores. Enum:'manilla fija, otra, manilla giratoria, manilla triangular'  - `doorCount`: Recuento de puertas del Gabinete técnico.  - `doorOpeningAngle`: Ángulo de apertura de la puerta expresado en grados decimales con un rango de 0 a 180 grados. El código de la unidad (texto) de medida se indica utilizando los [Códigos comunes del UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **DD** representa los grados decimales.  - `doorType`: Tipo de puerta del Gabinete técnico. Un valor único de estos valores. Enum:'mixto, otro, sólido, transparente'  - `exteriorCoating`: Revestimiento interior. Una combinación de estos valores. Enum:'fibra de vidrio, otro, plástico, poliéster, poliésterResina, acero  - `exteriorFinish`: Acabado exterior. Una combinación de estos valores. Enum:'grafitis, otros, en relieve, rugoso, liso, texturizado'  - `id`: Identificador único de la entidad  - `installationCondition`: Condición y posibilidad de uso en los siguientes entornos. Una combinación de estos valores. Enum:'desierto, polvo, frío extremo, clima extremo, calor extremo, humedad extrema, marino, ninguno, otro, salino, sísmico, arena'  - `installationMode`: Posicionamiento del dispositivo en relación con un sistema de referencia de tierra. Enum:'aéreo, tierra, otro, poste, techo, subterráneo, pared'.  - `interiorCoating`: Revestimiento interior. Una combinación de estos valores. Enum:'fibra de vidrio, aislante térmico, otro, plástico, poliéster, resina de poliéster, acero'  - `internalDimension`: Dimensión interna correspondiente al lugar de trabajo dentro del gabinete técnico. El formato está estructurado por una subpropiedad de 3 elementos. El código de la unidad (texto) de medida se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **CMT** representa Centímetro  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `manufacturerName`: Nombre del fabricante  - `maximumSystemVoltage`: Tensión máxima del sistema permitida para el **módulo**. El código de la unidad (texto) se indica utilizando los [Códigos comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **VLT** representa Volt  - `modelName`: Nombre del modelo tal y como lo indica el fabricante.  - `name`: El nombre de este artículo.  - `operatingTemperature`: Rango de temperatura de funcionamiento ambiental. Se trata de la resistencia mínima y máxima al frío y al calor. El formato está estructurado por una subpropiedad de 2 elementos. El código de la unidad (texto) se da utilizando los [Códigos comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **CEL** representa el grado Celsius.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `possibilityOfUse`: Posibilidad de uso. Un valor único. Enum:'mixto, móvil, otro, fijo'  - `protectionIK`: El nivel IK "*Protección Mecánica*" se refiere a la clasificación numérica de los grados de protección que ofrecen las cajas para equipos eléctricos contra impactos mecánicos externos, según la norma de la Comisión Electrotécnica Internacional (EN 62-262). - El IK varía de 0 (resistencia mínima) a 10 (resistencia máxima), lo que representa una energía de impacto (unidad Joule)  - `protectionIP`: IP 'Ingress Protection' para la caja de conexiones. Este es el nivel que clasifica y califica el grado de protección que ofrecen las carcasas mecánicas y los recintos eléctricos contra la intrusión, el polvo, el contacto accidental y el agua según la norma de la Comisión Electrotécnica Internacional (EN 60-529). Primer dígito: Protección contra partículas sólidas (número único: 06 o "X"). Segundo dígito: Protección contra la entrada de líquidos (número único: 09 o "X"): Protección personal contra el acceso a partes peligrosas (letra adicional opcional). Cuarto dígito: Otras protecciones (letra adicional opcional)  - `protectionOthers`: Otros protección del gabinete técnico. Una combinación de estos valores. Enum:'abrasión, sótano, dampProof, pantalla, doorTearing, polvo, forcedOpening, graffiti, insecto, otros, roofOverload, saltSpray, blindaje, solar, vandalismo, agua'  - `refDevice`: El dispositivo utilizado para obtener los datos expresados por este registro  - `refDeviceList`: Una lista de referencia a los [Dispositivos](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) que están dentro del Dispositivo del Gabinete técnico.  - `refPointOfInterest`: Referencia a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) vinculado a la observación.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `serialNumber`: Número de serie del contenedor  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser TechnicalCabinetDevice  - `typeOfUse`: Uso aceptado en cuanto a su posicionamiento en un entorno interior/exterior. Un valor único de estos valores. Enum:'interior, mixto, exterior, otro'  - `ventilationMode`: Modo de ventilación. Una combinación de estos valores. Enum:'acondicionadores de aire, deshumidificador, ninguno, otro, branquias autoventiladas'  - `weight`: Peso del artículo. El código de la unidad (texto) de medida se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **KGM** representa Kilogramos    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `application[array]`: Objetivo de la aplicación del Dispositivo con respecto al medio ambiente. Una combinación de estos valores. Enum:'comercial, distribuciónServicio, industrial, otros, obras públicas, carretera, terciario, servicio urbano'  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Nombre de la marca  . Model: [https://schema.org/brand](https://schema.org/brand)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastReported[string]`: Una marca de tiempo que denota la última vez que el dispositivo comunicó datos con éxito. Fecha y hora en formato ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `designMaterials[array]`: Materiales de diseño para construir el armario. Una combinación de estos valores. Enum:'ABS-Plástico, aluminio, fibra de vidrio, acero galvanizado, otros, poliéster, acero inoxidable'  - `dimension[object]`: El formato está estructurado por una subpropiedad de 3 elementos. El código de la unidad (texto) de medida se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **CMT** representa el centímetro.  - `documentation[string]`: Un enlace a la documentación del dispositivo  . Model: [https://schema.org/URL](https://schema.org/URL)- `doorClosingMode[array]`: Modo de cierre de la puerta. Un valor único de estos valores. Enum:'manilla fija, otra, manilla giratoria, manilla triangular'  - `doorCount[number]`: Recuento de puertas del Gabinete técnico.  - `doorOpeningAngle[number]`: Ángulo de apertura de la puerta expresado en grados decimales con un rango de 0 a 180 grados. El código de la unidad (texto) de medida se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **DD** representa los grados decimales.  - `doorType[string]`: Tipo de puerta del Gabinete técnico. Un valor único de estos valores. Enum:'mixto, otro, sólido, transparente'  - `exteriorCoating[array]`: Revestimiento interior. Una combinación de estos valores. Enum:'fibra de vidrio, otro, plástico, poliéster, poliésterResina, acero  - `exteriorFinish[array]`: Acabado exterior. Una combinación de estos valores. Enum:'grafitis, otros, en relieve, rugoso, liso, texturizado'  - `id[*]`: Identificador único de la entidad  - `installationCondition[array]`: Condición y posibilidad de uso en los siguientes entornos. Una combinación de estos valores. Enum:'desierto, polvo, frío extremo, clima extremo, calor extremo, humedad extrema, marino, ninguno, otro, salino, sísmico, arena'  - `installationMode[string]`: Posicionamiento del dispositivo en relación con un sistema de referencia de tierra. Enum:'aéreo, tierra, otro, poste, techo, subterráneo, pared'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `interiorCoating[array]`: Revestimiento interior. Una combinación de estos valores. Enum:'fibra de vidrio, aislante térmico, otro, plástico, poliéster, resina de poliéster, acero'  - `internalDimension[object]`: Dimensión interna correspondiente al lugar de trabajo dentro del gabinete técnico. El formato está estructurado por una subpropiedad de 3 elementos. El código de la unidad (texto) de medida se da utilizando los [Códigos Comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **CMT** representa Centímetro  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `manufacturerName[string]`: Nombre del fabricante  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumSystemVoltage[number]`: Tensión máxima del sistema permitida para el **módulo**. El código de la unidad (texto) se indica utilizando los [Códigos comunes UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **VLT** representa Volt  - `modelName[string]`: Nombre del modelo tal y como lo indica el fabricante.  - `name[string]`: El nombre de este artículo.  - `operatingTemperature[object]`: Rango de temperatura de funcionamiento ambiental. Se trata de la resistencia mínima y máxima al frío y al calor. El formato está estructurado por una subpropiedad de 2 elementos. El código de la unidad (texto) se indica utilizando los [Códigos comunes UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **CEL** representa el grado Celsius.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `possibilityOfUse[string]`: Posibilidad de uso. Un valor único. Enum:'mixto, móvil, otro, fijo'  - `protectionIK[number]`: El nivel IK "*Protección Mecánica*" se refiere a la clasificación numérica de los grados de protección que ofrecen las cajas para equipos eléctricos contra impactos mecánicos externos, según la norma de la Comisión Electrotécnica Internacional (EN 62-262). - El IK varía de 0 (resistencia mínima) a 10 (resistencia máxima), lo que representa una energía de impacto (unidad Joule)  - `protectionIP[string]`: IP 'Ingress Protection' para la caja de conexiones. Este es el nivel que clasifica y califica el grado de protección que ofrecen las carcasas mecánicas y los recintos eléctricos contra la intrusión, el polvo, el contacto accidental y el agua según la norma de la Comisión Electrotécnica Internacional (EN 60-529). Primer dígito: Protección contra partículas sólidas (número único: 06 o "X"). Segundo dígito: Protección contra la entrada de líquidos (número único: 09 o "X"): Protección personal contra el acceso a partes peligrosas (letra adicional opcional). Cuarto dígito: Otras protecciones (letra adicional opcional)  - `protectionOthers[array]`: Otros protección del gabinete técnico. Una combinación de estos valores. Enum:'abrasión, sótano, dampProof, pantalla, doorTearing, polvo, forcedOpening, graffiti, insecto, otros, roofOverload, saltSpray, blindaje, solar, vandalismo, agua'  - `refDevice[*]`: El dispositivo utilizado para obtener los datos expresados por este registro  - `refDeviceList[array]`: Una lista de referencia a los [Dispositivos](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) que están dentro del Dispositivo del Gabinete técnico.  - `refPointOfInterest[*]`: Referencia a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) vinculado a la observación.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `serialNumber[string]`: Número de serie del contenedor  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser TechnicalCabinetDevice  - `typeOfUse[string]`: Uso aceptado en cuanto a su posicionamiento en un entorno interior/exterior. Un valor único de estos valores. Enum:'interior, mixto, exterior, otro'  - `ventilationMode[array]`: Modo de ventilación. Una combinación de estos valores. Enum:'acondicionadores de aire, deshumidificador, ninguno, otro, branquias autoventiladas'  - `weight[number]`: Peso del artículo. El código de la unidad (texto) de medida se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **KGM** representa Kilogramos  . Model: [https://schema.org/weigth](https://schema.org/weigth)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `dateLastReported`  - `dimension`  - `id`  - `location`  - `type`  - `typeOfUse`  ## Descripción del modelo de datos de las propiedades  
+- `dateLastReported`  - `dimension`  - `id`  - `location`  - `type`  - `typeOfUse`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 TechnicalCabinetDevice:    
-  description: 'Technical Cabinet Device Data Model is intended to to describe the technical characteristics of the Device, designed to be placed in an urban or interurban environment. The main objective of these cabinets for this Data Model is to protect the electrical equipment necessary for the control, surveillance, reading and management of urban lighting, signaling, video and electrical distribution. The scope of use of some of these cabinets can extend to an additional protection for installations of modular apparatuses of telephony, data processing, meteorological stations, photo-voltaic stations, wind turbines stations, telecommunications, networks, data, bre Optics , etc. *Remark* : This Data Model can be used directly as a main entity to describe the device `Technical Cabinet`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. It can also refer to the list of all the components it contains, with the `refDeviceList` attribute, using the Data Model  `DEVICE`'    
+  description: 'Technical Cabinet Device Data Model is intended to to describe the technical characteristics of the Device, designed to be placed in an urban or interurban environment. The main objective of these cabinets for this Data Model is to protect the electrical equipment necessary for the control, surveillance, reading and management of urban lighting, signaling, video and electrical distribution. The scope of use of some of these cabinets can extend to an additional protection for installations of modular apparatuses of telephony, data processing, meteorological stations, photo-voltaic stations, wind turbines stations, telecommunications, networks, data, bre Optics , etc. *Remark* : This Data Model can be used directly as a main entity to describe the device `Technical Cabinet`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. It can also refer to the list of all the components it contains, with the `refDeviceList` attribute, using the Data Model ''DEVICE'''    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -628,11 +644,22 @@ TechnicalCabinetDevice:
     - typeOfUse    
     - dimension    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/TechnicalCabinetDevice/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.Energy/TechnicalCabinetDevice/schema.json    
+  x-model-tags: Energy    
+  x-version: ""    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### TechnicalCabinetDevice NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un TechnicalCabinetDevice en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
@@ -728,8 +755,10 @@ TechnicalCabinetDevice:
   ]  
 }  
 ```  
+</details>  
 #### TechnicalCabinetDevice NGSI-v2 normalizado Ejemplo  
 Este es un ejemplo de un TechnicalCabinetDevice en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
@@ -931,315 +960,328 @@ TechnicalCabinetDevice:
   }  
 }  
 ```  
+</details>  
 #### TechnicalCabinetDevice NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un TechnicalCabinetDevice en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
-  "type": "TechnicalCabinetDevice",  
-  "name": "MNCA-TCD-AP-T2-F1-022",  
-  "alternateName": "AirPort â€“ global Observation",  
-  "description": "Technical Cabinet description",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      7.196545,  
-      43.664810  
+    "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
+    "type": "TechnicalCabinetDevice",  
+    "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "Airport Terminal 2 - Floor 1"  
+    },  
+    "alternateName": "AirPort \u2013 global Observation",  
+    "application": [  
+        "industrial",  
+        "distributionService"  
+    ],  
+    "areaServed": "Nice Aeroport",  
+    "brandName": "EATON",  
+    "dateLastReported": "2020-03-17T08:45:00Z",  
+    "description": "Technical Cabinet description",  
+    "designMaterials": [  
+        "stainlessSteel",  
+        "polyester"  
+    ],  
+    "deviceOwner": [  
+        "Airport-Division Maintenance"  
+    ],  
+    "dimension": {  
+        "width": 150,  
+        "height": 175,  
+        "depth": 75  
+    },  
+    "documentation": "https://www.myTechnicalCabinet.fr",  
+    "doorClosingMode": [  
+        "fixedHandle"  
+    ],  
+    "doorCount": 2,  
+    "doorOpeningAngle": 180,  
+    "doorType": "solid",  
+    "exteriorCoating": [  
+        "polyesterResin"  
+    ],  
+    "exteriorFinish": [  
+        "roughcast"  
+    ],  
+    "installationCondition": [  
+        "none"  
+    ],  
+    "installationMode": "ground",  
+    "interiorCoating": [  
+        "heatInsulating",  
+        "polyesterResin"  
+    ],  
+    "internalDimension": {  
+        "width": 140,  
+        "height": 165,  
+        "depth": 70  
+    },  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            7.196545,  
+            43.66481  
+        ]  
+    },  
+    "manufacturerName": "ElDorado",  
+    "maximumSystemVoltage": 1000,  
+    "modelName": "xEnergy L",  
+    "name": "MNCA-TCD-AP-T2-F1-022",  
+    "operatingTemperature": {  
+        "min": -40,  
+        "max": 100  
+    },  
+    "possibilityOfUsed": "stationary",  
+    "protectionIK": 10,  
+    "protectionIP": "65",  
+    "protectionOthers": [  
+        "dust",  
+        "forcedOpening",  
+        "saltSpray",  
+        "abrasion",  
+        "doorTearing",  
+        "vandalism"  
+    ],  
+    "refDeviceList": [  
+        "urn:ngsi-ld:Device:NCE-CE-025",  
+        "urn:ngsi-ld:Device:NCE-FU-048",  
+        "urn:ngsi-ld:Device:NCE-CE-058"  
+    ],  
+    "serialNumber": "L257589A4587J56",  
+    "typeOfUse": "outdoor",  
+    "ventilationMode": [  
+        "selfVentilatedGills"  
+    ],  
+    "weight": 60,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "Airport Terminal 2 - Floor 1"  
-  },  
-  "areaServed": "Nice Aeroport",  
-  "refDeviceList": [  
-    "urn:ngsi-ld:Device:NCE-CE-025",  
-    "urn:ngsi-ld:Device:NCE-FU-048",  
-    "urn:ngsi-ld:Device:NCE-CE-058"  
-  ],  
-  "dateLastReported": "2020-03-17T08:45:00Z",  
-  "brandName": "EATON",  
-  "modelName": "xEnergy L",  
-  "manufacturerName": "ElDorado",  
-  "serialNumber": "L257589A4587J56",  
-  "application": [  
-    "industrial",  
-    "distributionService"  
-  ],  
-  "typeOfUse": "outdoor",  
-  "installationMode": "ground",  
-  "installationCondition": [  
-    "none"  
-  ],  
-  "possibilityOfUsed": "stationary",  
-  "documentation": "https://www.myTechnicalCabinet.fr",  
-  "deviceOwner": [  
-    "Airport-Division Maintenance"  
-  ],  
-  "dimension": {  
-    "width": 150,  
-    "height": 175,  
-    "depth": 75  
-  },  
-  "weight": 60,  
-  "internalDimension": {  
-    "width": 140,  
-    "height": 165,  
-    "depth": 70  
-  },  
-  "protectionIP": "65",  
-  "protectionIK": 10,  
-  "maximumSystemVoltage": 1000,  
-  "operatingTemperature": {  
-    "min": -40,  
-    "max": 100  
-  },  
-  "protectionOthers": [  
-    "dust",  
-    "forcedOpening",  
-    "saltSpray",  
-    "abrasion",  
-    "doorTearing",  
-    "vandalism"  
-  ],  
-  "doorCount": 2,  
-  "doorType": "solid",  
-  "doorOpeningAngle": 180,  
-  "doorClosingMode": [  
-    "fixedHandle"  
-  ],  
-  "designMaterials": [  
-    "stainlessSteel",  
-    "polyester"  
-  ],  
-  "interiorCoating": [  
-    "heatInsulating",  
-    "polyesterResin"  
-  ],  
-  "exteriorCoating": [  
-    "polyesterResin"  
-  ],  
-  "exteriorFinish": [  
-    "roughcast"  
-  ],  
-  "ventilationMode": [  
-    "selfVentilatedGills"  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### TechnicalCabinetDevice Ejemplo normalizado de NGSI-LD  
 Este es un ejemplo de un TechnicalCabinetDevice en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
-  "type": "TechnicalCabinetDevice",  
-  "name": {  
-    "type": "Property",  
-    "value": "MNCA-TCD-AP-T2-F1-022"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "AirPort â€“ global Observation"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Technical Cabinet description"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "point",  
-      "coordinates": [  
-        7.196545,  
-        43.664810  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressCountry": "FR",  
-      "addressLocality": "Nice",  
-      "streetAddress": "Airport Terminal 2 - Floor 1"  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice Aeroport"  
-  },  
-  "refDeviceList": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:Device:NCE-CE-025",  
-      "urn:ngsi-ld:Device:NCE-FU-048",  
-      "urn:ngsi-ld:Device:NCE-CE-058"  
+    "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
+    "type": "TechnicalCabinetDevice",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "FR",  
+            "addressLocality": "Nice",  
+            "streetAddress": "Airport Terminal 2 - Floor 1"  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "AirPort \u2013 global Observation"  
+    },  
+    "application": {  
+        "type": "Property",  
+        "value": [  
+            "industrial",  
+            "distributionService"  
+        ]  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Aeroport"  
+    },  
+    "brandName": {  
+        "type": "Property",  
+        "value": "EATON"  
+    },  
+    "dateLastReported": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-03-17T08:45:00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Technical Cabinet description"  
+    },  
+    "designMaterials": {  
+        "type": "Property",  
+        "value": [  
+            "stainlessSteel",  
+            "polyester"  
+        ]  
+    },  
+    "dimension": {  
+        "type": "Property",  
+        "value": {  
+            "width": 150,  
+            "height": 175,  
+            "depth": 75  
+        }  
+    },  
+    "documentation": {  
+        "type": "Property",  
+        "value": "https://www.myTechnicalCabinet.fr"  
+    },  
+    "doorClosingMode": {  
+        "type": "Property",  
+        "value": "fixedHandle"  
+    },  
+    "doorCount": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "doorOpeningAngle": {  
+        "type": "Property",  
+        "value": 180  
+    },  
+    "doorType": {  
+        "type": "Property",  
+        "value": "solid"  
+    },  
+    "exteriorCoating": {  
+        "type": "Property",  
+        "value": [  
+            "polyesterResin"  
+        ]  
+    },  
+    "exteriorFinish": {  
+        "type": "Property",  
+        "value": [  
+            "roughcast"  
+        ]  
+    },  
+    "installationCondition": {  
+        "type": "Property",  
+        "value": [  
+            "none"  
+        ]  
+    },  
+    "installationMode": {  
+        "type": "Property",  
+        "value": "ground"  
+    },  
+    "interiorCoating": {  
+        "type": "Property",  
+        "value": [  
+            "heatInsulating",  
+            "polyesterResin"  
+        ]  
+    },  
+    "internalDimension": {  
+        "type": "Property",  
+        "value": {  
+            "width": 140,  
+            "height": 165,  
+            "depth": 70  
+        }  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "point",  
+            "coordinates": [  
+                7.196545,  
+                43.66481  
+            ]  
+        }  
+    },  
+    "manufacturerName": {  
+        "type": "Property",  
+        "value": "ElDorado"  
+    },  
+    "maximumSystemVoltage": {  
+        "type": "Property",  
+        "value": 1000  
+    },  
+    "modelName": {  
+        "type": "Property",  
+        "value": "xEnergy L"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "MNCA-TCD-AP-T2-F1-022"  
+    },  
+    "operatingTemperature": {  
+        "type": "Property",  
+        "value": {  
+            "min": -40,  
+            "max": 100  
+        }  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "Airport-Division Maintenance"  
+        ]  
+    },  
+    "possibilityOfUsed": {  
+        "type": "Property",  
+        "value": "stationary"  
+    },  
+    "protectionIK": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "protectionIP": {  
+        "type": "Property",  
+        "value": "65"  
+    },  
+    "protectionOthers": {  
+        "type": "Property",  
+        "value": [  
+            "dust",  
+            "forcedOpening",  
+            "saltSpray",  
+            "abrasion",  
+            "doorTearing",  
+            "vandalism"  
+        ]  
+    },  
+    "refDeviceList": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:Device:NCE-CE-025",  
+            "urn:ngsi-ld:Device:NCE-FU-048",  
+            "urn:ngsi-ld:Device:NCE-CE-058"  
+        ]  
+    },  
+    "serialNumber": {  
+        "type": "Property",  
+        "value": "L257589A4587J56"  
+    },  
+    "typeOfUse": {  
+        "type": "Property",  
+        "value": "outDoor"  
+    },  
+    "ventilationMode": {  
+        "type": "Property",  
+        "value": [  
+            "selfVentilatedGills"  
+        ]  
+    },  
+    "weight": {  
+        "type": "Property",  
+        "value": 60  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "dateLastReported": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-03-17T08:45:00Z"  
-    }  
-  },  
-  "brandName": {  
-    "type": "Property",  
-    "value": "EATON"  
-  },  
-  "modelName": {  
-    "type": "Property",  
-    "value": "xEnergy L"  
-  },  
-  "manufacturerName": {  
-    "type": "Property",  
-    "value": "ElDorado"  
-  },  
-  "serialNumber": {  
-    "type": "Property",  
-    "value": "L257589A4587J56"  
-  },  
-  "application": {  
-    "type": "Property",  
-    "value": [  
-      "industrial",  
-      "distributionService"  
-    ]  
-  },  
-  "typeOfUse": {  
-    "type": "Property",  
-    "value": "outDoor"  
-  },  
-  "installationMode": {  
-    "type": "Property",  
-    "value": "ground"  
-  },  
-  "installationCondition": {  
-    "type": "Property",  
-    "value": [  
-      "none"  
-    ]  
-  },  
-  "possibilityOfUsed": {  
-    "type": "Property",  
-    "value": "stationary"  
-  },  
-  "documentation": {  
-    "type": "Property",  
-    "value": "https://www.myTechnicalCabinet.fr"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "Airport-Division Maintenance"  
-    ]  
-  },  
-  "dimension": {  
-    "type": "Property",  
-    "value": {  
-      "width": 150,  
-      "height": 175,  
-      "depth": 75  
-    }  
-  },  
-  "weight": {  
-    "type": "Property",  
-    "value": 60  
-  },  
-  "internalDimension": {  
-    "type": "Property",  
-    "value": {  
-      "width": 140,  
-      "height": 165,  
-      "depth": 70  
-    }  
-  },  
-  "protectionIP": {  
-    "type": "Property",  
-    "value": "65"  
-  },  
-  "protectionIK": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "maximumSystemVoltage": {  
-    "type": "Property",  
-    "value": 1000  
-  },  
-  "operatingTemperature": {  
-    "type": "Property",  
-    "value": {  
-      "min": -40,  
-      "max": 100  
-    }  
-  },  
-  "protectionOthers": {  
-    "type": "Property",  
-    "value": [  
-      "dust",  
-      "forcedOpening",  
-      "saltSpray",  
-      "abrasion",  
-      "doorTearing",  
-      "vandalism"  
-    ]  
-  },  
-  "doorCount": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "doorType": {  
-    "type": "Property",  
-    "value": "solid"  
-  },  
-  "doorOpeningAngle": {  
-    "type": "Property",  
-    "value": 180  
-  },  
-  "doorClosingMode": {  
-    "type": "Property",  
-    "value": "fixedHandle"  
-  },  
-  "designMaterials": {  
-    "type": "Property",  
-    "value": [  
-      "stainlessSteel",  
-      "polyester"  
-    ]  
-  },  
-  "interiorCoating": {  
-    "type": "Property",  
-    "value": [  
-      "heatInsulating",  
-      "polyesterResin"  
-    ]  
-  },  
-  "exteriorCoating": {  
-    "type": "Property",  
-    "value": [  
-      "polyesterResin"  
-    ]  
-  },  
-  "exteriorFinish": {  
-    "type": "Property",  
-    "value": [  
-      "roughcast"  
-    ]  
-  },  
-  "ventilationMode": {  
-    "type": "Property",  
-    "value": [  
-      "selfVentilatedGills"  
-    ]  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
