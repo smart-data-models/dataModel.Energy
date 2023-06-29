@@ -2,9 +2,9 @@
   "id": "urn:ngsi-ld:SolarEnergy:id:BHDU:88967916",
   "type": "SolarEnergy",
   "activePower": {
-    "L1": 17.3,
-    "L2": 19.5,
-    "L3": 20.4
+    "L1": 36,
+    "L2": 35.1,
+    "L3": 35.6
   },
   "address": {
     "addressCountry": "India",
@@ -69,6 +69,6 @@
   "source": "",
   "totalActivePower": 873.9,
   "totalEnergyGenerated": 527.6,
-  "totalReactivePower": 110.8,
+  "totalReactivePower": 8690,
   "voltage": 122.0
 }

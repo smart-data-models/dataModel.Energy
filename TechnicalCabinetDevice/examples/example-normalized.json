@@ -14,7 +14,7 @@
     "value": "Technical Cabinet description"
   },
   "location": {
-    "type": "GeoProperty",
+    "type": "geo:json",
     "value": {
       "type": "point",
       "coordinates": [

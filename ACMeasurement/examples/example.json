@@ -12,16 +12,13 @@
     ]
   },
   "areaServed": "Nice Aeroport",
-  "dateObserved": "2020-03-17T08:45:00Z"
-  ,
+  "dateObserved": "2020-03-17T08:45:00Z",
   "refDevice": [
-      "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"
-    ]
-  ,
+    "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"
+  ],
   "phaseType": "threePhase",
   "frequency": 50.020672,
-  "dateEnergyMeteringStarted":  "2020-07-07T15:05:59.408Z"
-  ,
+  "dateEnergyMeteringStarted": "2020-07-07T15:05:59.408Z",
   "totalActiveEnergyImport": 150781.96448,
   "totalReactiveEnergyImport": 20490.3392,
   "totalActiveEnergyExport": 1059.80176,

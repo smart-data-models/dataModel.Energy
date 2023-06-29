@@ -1,12 +1,14 @@
 {
+  "id": "urn:ngsi-ld:SolarEnergy:id:BHDU:88967916",
+  "type": "SolarEnergy",
   "location": {
-    "type": "Property",
+    "type": "GeoProperty",
     "value": {
       "type": "Point",
-      "coordinates": [
+      "coordinates": [[
         -35.589575,
         -78.339812
-      ]
+      ]]
     }
   },
   "address": {
@@ -24,7 +26,6 @@
     "type": "Property",
     "value": ""
   },
-  "id": "urn:ngsi-ld:SolarEnergy:id:BHDU:88967916",
   "dateCreated": {
     "type": "Property",
     "value": {
@@ -72,7 +73,6 @@
       "urn:ngsi-ld:SolarEnergy:items:XREG:08856151"
     ]
   },
-  "type": "SolarEnergy",
   "totalActivePower": {
     "type": "Property",
     "value": 873.9
@@ -135,8 +135,8 @@
     }
   },
   "dataDescriptor": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SolarEnergy:dataDescriptor:TTTK:11491249"
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SolarEnergy:dataDescriptor:TTTK:11491249"
   },
   "energyGenerated": {
     "type": "Property",
