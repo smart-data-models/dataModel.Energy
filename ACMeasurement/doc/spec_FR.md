@@ -1,18 +1,32 @@
-Entité : ACMeasurement  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : ACMeasurement  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Energy/blob/master/ACMeasurement/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Le Modèle de Données destiné à mesurer les énergies électriques consommées par un système électrique qui utilise un Courant Alternatif (CA) pour un système triphasé (L1, L2, L3) ou monophasé (L) et neutre (N). Il intègre la version initiale du modem de données [THREEPHASEMEASUREMENT], étendu pour effectuer également des mesures monophasées. Il comprend des attributs pour diverses mesures électriques telles que la puissance, la fréquence, le courant et la tension**.  
-version :  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Description globale : **Le Modèle de Données destiné à mesurer les énergies électriques consommées par un système électrique qui utilise un Courant Alternatif (CA) pour un système triphasé (L1, L2, L3) ou monophasé (L) et neutre (N). Il intègre la version initiale du modem de données [THREEPHASEMEASUREMENT], étendue pour effectuer également des mesures monophasées. Il comprend des attributs pour diverses mesures électriques telles que la puissance, la fréquence, le courant et la tension**.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `activeEnergyExport`: Énergie active exportée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `activeEnergyImport`: Énergie active importée, c'est-à-dire consommée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `activePower`: Puissance active consommée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `apparentEnergyExport`: Énergie apparente exportée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `apparentEnergyImport`: Énergie apparente importée, c'est-à-dire consommée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `apparentPower`: Puissance apparente consommée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `current`: Courant électrique. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateEnergyMeteringStarted`: La date de début du comptage de l'énergie dans un format ISO8601 UTC.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved`: Date et heure de cette observation représentées par un format ISO8601 UTC. Elle peut être représentée par un instant précis ou par un intervalle ISO8601 pour séparer les attributs `dateObservedFrom`, `dateObservedTo`.  - `dateObservedFrom`: Période d'observation : Date et heure de début dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut `dateObserved` lorsqu'il correspond à un intervalle de temps à mettre en évidence.  - `dateObservedTo`: Période d'observation : Date et heure de fin dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut `dateObserved` lorsqu'il correspond à un intervalle de temps à mettre en évidence.  - `description`: Une description de cet article  - `displacementPowerFactor`: Facteur de puissance de déplacement pour chaque phase. Cette quantité est basée sur la fréquence fondamentale du système.  - `frequency`: La fréquence du circuit. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phaseToPhaseVoltage`: Tension entre phases. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `phaseType`: Type de phase. Une valeur unique. Enum : "singlePhase, threePhase  - `phaseVoltage`: La tension entre chaque phase et le conducteur neutre. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `powerFactor`: Facteur de puissance pour chaque phase.  - `reactiveEnergyExport`: Énergie réactive à fréquence fondamentale exportée par phase. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `reactiveEnergyImport`: Énergie réactive à fréquence fondamentale importée, c'est-à-dire consommée par phase. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `reactivePower`: Puissance réactive à fréquence fondamentale. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `refDevice`: Référence aux dispositifs qui ont permis de saisir cette observation  - `refTargetDevice`: Référence à une liste des dispositifs pour lesquels la mesure a été effectuée  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `thdCurrent`: Distorsion harmonique totale du courant pour chaque phase.  - `thdVoltage`: Distorsion harmonique totale de la tension pour chaque phase.  - `totalActiveEnergyExport`: Énergie totale importée, c'est-à-dire consommée . Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `totalActiveEnergyImport`: Énergie totale importée, c'est-à-dire consommée. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `totalActivePower`: Puissance active totale consommée. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `totalApparentEnergyExport`: Énergie totale exportée (par rapport à la puissance apparente). Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `totalApparentEnergyImport`: Énergie totale importée, c'est-à-dire consommée (par rapport à la puissance apparente). Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `totalApparentPower`: Puissance apparente totale consommée. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `totalDisplacementPowerFactor`: Somme du facteur de puissance de déplacement incluant toutes les phases. Cette quantité est basée sur la fréquence fondamentale du système.  - `totalPowerFactor`: Somme du facteur de puissance incluant toutes les phases.  - `totalReactiveEnergyExport`: Énergie réactive totale à fréquence fondamentale exportée. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `totalReactiveEnergyImport`: Énergie totale importée, c'est-à-dire consommée (en ce qui concerne la puissance réactive à fréquence fondamentale). Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `totalReactivePower`: Puissance réactive totale consommée. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  - `type`: Type de propriété NGSI. Il doit s'agir de ACMeasurement    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `activeEnergyExport[object]`: Énergie active exportée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `activeEnergyImport[object]`: Énergie active importée, c'est-à-dire consommée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `activePower[object]`: Puissance active consommée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `apparentEnergyExport[object]`: Énergie apparente exportée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `apparentEnergyImport[object]`: Énergie apparente importée, c'est-à-dire consommée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `apparentPower[object]`: Puissance apparente consommée par phase. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: Courant électrique. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateEnergyMeteringStarted[string]`: La date de début du comptage de l'énergie dans un format ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObserved[string]`: Date et heure de cette observation représentées par un format ISO8601 UTC. Elle peut être représentée par un instant précis ou par un intervalle ISO8601 pour séparer les attributs `dateObservedFrom`, `dateObservedTo`.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: Période d'observation : Date et heure de début dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut `dateObserved` lorsqu'il correspond à un intervalle de temps à mettre en évidence.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: Période d'observation : Date et heure de fin dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut `dateObserved` lorsqu'il correspond à un intervalle de temps à mettre en évidence.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Une description de cet article  - `displacementPowerFactor[object]`: Facteur de puissance de déplacement pour chaque phase. Cette quantité est basée sur la fréquence fondamentale du système.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `frequency[number]`: La fréquence du circuit. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phaseToPhaseVoltage[object]`: Tension entre phases. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `phaseType[string]`: Type de phase. Une valeur unique. Enum : "singlePhase, threePhase  . Model: [https://schema.org/Text](https://schema.org/Text)- `phaseVoltage[object]`: La tension entre chaque phase et le conducteur neutre. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `powerFactor[object]`: Facteur de puissance pour chaque phase.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `reactiveEnergyExport[object]`: Énergie réactive à fréquence fondamentale exportée par phase. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `reactiveEnergyImport[object]`: Énergie réactive à fréquence fondamentale importée, c'est-à-dire consommée par phase. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `reactivePower[object]`: Puissance réactive à fréquence fondamentale. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `refDevice[array]`: Référence aux dispositifs qui ont permis de saisir cette observation  . Model: [https://schema.org/URL](https://schema.org/URL)- `refTargetDevice[array]`: Référence à une liste des appareils pour lesquels la mesure a été effectuée  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `thdCurrent[object]`: Distorsion harmonique totale du courant pour chaque phase.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `thdVoltage[object]`: Distorsion harmonique totale de la tension pour chaque phase.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalActiveEnergyExport[number]`: Énergie totale importée, c'est-à-dire consommée . Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActiveEnergyImport[number]`: Énergie totale importée, c'est-à-dire consommée. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActivePower[number]`: Puissance active totale consommée. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentEnergyExport[number]`: Énergie totale exportée (par rapport à la puissance apparente). Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalApparentEnergyImport[number]`: Énergie totale importée, c'est-à-dire consommée (par rapport à la puissance apparente). Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentPower[number]`: Puissance apparente totale consommée. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalDisplacementPowerFactor[number]`: Somme du facteur de puissance de déplacement incluant toutes les phases. Cette quantité est basée sur la fréquence fondamentale du système.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalPowerFactor[number]`: Somme du facteur de puissance incluant toutes les phases.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalReactiveEnergyExport[number]`: Énergie réactive totale à fréquence fondamentale exportée. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalReactiveEnergyImport[number]`: Énergie totale importée, c'est-à-dire consommée (en ce qui concerne la puissance réactive à fréquence fondamentale). Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactivePower[number]`: Puissance réactive totale consommée. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type de propriété NGSI. Il doit s'agir de ACMeasurement  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `phaseType`  - `type`    
-Informations supplémentaires sur les attributs.  Pour certains attributs tels que le courant et la tension, la valeur est une valeur structurée avec des propriétés pour la phase unique (L) ou trois phases différentes (L1, L2 et L3). Pour certaines mesures telles que les différents types de puissance (active, réactive et apparente), il existe un attribut pour le total de toutes les phases. Les règles sont définies comme suit : Triphasé - Total = L1 + L2 + L3 - Monophasé - Total = L. Pour la plupart des attributs, il existe plusieurs façons de les mesurer réellement. À cette fin, l'attribut de métadonnées measurementType peut être utilisé. Il peut avoir les valeurs suivantes : moyenne, rms, minimum, maximum. Lorsque vous utilisez les valeurs [moyenne, rms, minimum, maximum], un autre attribut de métadonnées appelé measurementInterval doit être utilisé pour indiquer la durée de la période de mesure en secondes. Un attribut d'horodatage doit également être utilisé pour indiquer l'heure de fin de la période de mesure.  
+- `dateObserved`  - `id`  - `location`  - `phaseType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Informations supplémentaires sur les attributs.  Pour certains attributs tels que le courant et la tension, la valeur est une valeur structurée avec des propriétés pour la phase unique (L) ou trois phases différentes (L1, L2 et L3). Pour certaines mesures telles que les différents types de puissance (active, réactive et apparente), il existe un attribut pour le total de toutes les phases. Les règles sont définies comme suit : Triphasé - Total = L1 + L2 + L3 - Monophasé - Total = L. Pour la plupart des attributs, il existe plusieurs façons de les mesurer. À cette fin, l'attribut de métadonnées measurementType peut être utilisé. Il peut avoir les valeurs suivantes : moyenne, rms, minimum, maximum. Lorsque vous utilisez les valeurs [moyenne, rms, minimum, maximum], un autre attribut de métadonnées appelé measurementInterval doit être utilisé pour indiquer la durée de la période de mesure en secondes. Il faut également utiliser un attribut d'horodatage pour indiquer l'heure de fin de la période de mesure.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ACMeasurement:    
@@ -265,7 +279,7 @@ ACMeasurement:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -286,7 +300,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -310,7 +324,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -336,7 +350,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -359,7 +373,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -385,7 +399,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -414,7 +428,7 @@ ACMeasurement:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: 'The name of this item.'    
       type: string    
@@ -710,15 +724,27 @@ ACMeasurement:
   required:    
     - id    
     - type    
+    - location    
+    - dateObserved    
     - phaseType    
   type: object    
-  version: ""    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/ACMeasurement/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.Energy/ACMeasurement/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
 Note. Les valeurs seront véhiculées par 1 ou 3 sous-propriétés selon le type de phase pour chaque phase Monophasé. Valeurs individuelles L. Triphasé. Somme des valeurs individuelles. L1, L2, L3. Toutes les valeurs sont calculées à partir de la date de début de la mesure [dateEnergyMeteringStarted].  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### ACMeasurement NGSI-v2 key-values Exemple  
 Voici un exemple d'une ACMeasurement au format JSON-LD en tant que key-values. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
@@ -804,8 +830,10 @@ ACMeasurement:
   }  
 }  
 ```  
+</details>  
 #### ACMeasurement NGSI-v2 normalisé Exemple  
 Voici un exemple d'une ACMeasurement au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
@@ -1113,404 +1141,417 @@ ACMeasurement:
   }  
 }  
 ```  
+</details>  
 #### ACMeasurement Valeurs-clés NGSI-LD Exemple  
 Voici un exemple d'une ACMeasurement au format JSON-LD en tant que key-values. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
-  "type": "ACMeasurement",  
-  "name": {  
-    "type": "Property",  
-    "value": " AirPort-NCE-T1-F01-TR05-ACTP"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "AirPort  global Observation"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1  Floor 01  Technical Room 05 for Triphase alternating current."  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        43.66481,  
-        7.196545  
-      ]  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice Aeroport"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-03-17TT08:45:00Z"  
-    }  
-  },  
-  "refDevice": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"  
+    "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
+    "type": "ACMeasurement",  
+    "activePower": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 11996.416016,  
+            "L2": 9461.501953,  
+            "L3": 10242.351562  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "AirPort  global Observation"  
+    },  
+    "apparentPower": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 13201.412109,  
+            "L2": 10755.304688,  
+            "L3": 11941.094727  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Aeroport"  
+    },  
+    "current": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 56.126038,  
+            "L2": 45.894356,  
+            "L3": 50.872452,  
+            "N": 0.0  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "rms"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "dateEnergyMeteringStarted": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-07-07T15:05:59.408Z"  
+        }  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-03-17TT08:45:00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1  Floor 01  Technical Room 05 for Triphase alternating current."  
+    },  
+    "displacementPowerFactor": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.978013,  
+            "L2": 0.973317,  
+            "L3": 0.960382  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        },  
+        "onlyPositive": {  
+            "type": "Property",  
+            "value": true  
+        }  
+    },  
+    "frequency": {  
+        "type": "Property",  
+        "value": 50.020672,  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": " AirPort-NCE-T1-F01-TR05-ACTP"  
+    },  
+    "phaseToPhaseVoltage": {  
+        "type": "Property",  
+        "value": {  
+            "L12": 406.769196,  
+            "L23": 407.081238,  
+            "L31": 407.734558  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "rms"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "phaseType": {  
+        "type": "Property",  
+        "value": "threePhase"  
+    },  
+    "phaseVoltage": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 234.961304,  
+            "L2": 234.563477,  
+            "L3": 235.354034  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "rms"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "powerFactor": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.908817,  
+            "L2": 0.879906,  
+            "L3": 0.859293  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        },  
+        "onlyPositive": {  
+            "type": "Property",  
+            "value": true  
+        }  
+    },  
+    "reactivePower": {  
+        "type": "Property",  
+        "value": {  
+            "L1": -2612.606934,  
+            "L2": -2209.906006,  
+            "L3": -3007.81958  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"  
+        ]  
+    },  
+    "thdCurrent": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.38497337,  
+            "L2": 0.45807529,  
+            "L3": 0.4938652  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "thdVoltage": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.01471114,  
+            "L2": 0.01600046,  
+            "L3": 0.01541459  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "totalActiveEnergyExport": {  
+        "type": "Property",  
+        "value": 1059.80176,  
+        "observedAt": "2020-02-24T22:00:00.173Z"  
+    },  
+    "totalActiveEnergyImport": {  
+        "type": "Property",  
+        "value": 150781.96448,  
+        "observedAt": "2020-02-24T22:00:00.173Z"  
+    },  
+    "totalActivePower": {  
+        "type": "Property",  
+        "value": 31700.269531,  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "totalApparentPower": {  
+        "type": "Property",  
+        "value": 36019.089844,  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "totalReactiveEnergyExport": {  
+        "type": "Property",  
+        "value": 93275.02176,  
+        "observedAt": "2020-02-24T22:00:00.173Z"  
+    },  
+    "totalReactiveEnergyImport": {  
+        "type": "Property",  
+        "value": 20490.3392,  
+        "observedAt": "2020-02-24T22:00:00.173Z"  
+    },  
+    "totalReactivePower": {  
+        "type": "Property",  
+        "value": -7830.332031,  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "phaseType": {  
-    "type": "Property",  
-    "value": "threePhase"  
-  },  
-  "frequency": {  
-    "type": "Property",  
-    "value": 50.020672,  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "dateEnergyMeteringStarted": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-07-07T15:05:59.408Z"  
-    }  
-  },  
-  "totalActiveEnergyImport": {  
-    "type": "Property",  
-    "value": 150781.96448,  
-    "observedAt": "2020-02-24T22:00:00.173Z"  
-  },  
-  "totalReactiveEnergyImport": {  
-    "type": "Property",  
-    "value": 20490.3392,  
-    "observedAt": "2020-02-24T22:00:00.173Z"  
-  },  
-  "totalActiveEnergyExport": {  
-    "type": "Property",  
-    "value": 1059.80176,  
-    "observedAt": "2020-02-24T22:00:00.173Z"  
-  },  
-  "totalReactiveEnergyExport": {  
-    "type": "Property",  
-    "value": 93275.02176,  
-    "observedAt": "2020-02-24T22:00:00.173Z"  
-  },  
-  "activePower": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 11996.416016,  
-      "L2": 9461.501953,  
-      "L3": 10242.351562  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "reactivePower": {  
-    "type": "Property",  
-    "value": {  
-      "L1": -2612.606934,  
-      "L2": -2209.906006,  
-      "L3": -3007.81958  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "apparentPower": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 13201.412109,  
-      "L2": 10755.304688,  
-      "L3": 11941.094727  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "totalActivePower": {  
-    "type": "Property",  
-    "value": 31700.269531,  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "totalReactivePower": {  
-    "type": "Property",  
-    "value": -7830.332031,  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "totalApparentPower": {  
-    "type": "Property",  
-    "value": 36019.089844,  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "powerFactor": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.908817,  
-      "L2": 0.879906,  
-      "L3": 0.859293  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    },  
-    "onlyPositive": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "displacementPowerFactor": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.978013,  
-      "L2": 0.973317,  
-      "L3": 0.960382  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    },  
-    "onlyPositive": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "current": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 56.126038,  
-      "L2": 45.894356,  
-      "L3": 50.872452,  
-      "N": 0.0  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "rms"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "phaseVoltage": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 234.961304,  
-      "L2": 234.563477,  
-      "L3": 235.354034  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "rms"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "phaseToPhaseVoltage": {  
-    "type": "Property",  
-    "value": {  
-      "L12": 406.769196,  
-      "L23": 407.081238,  
-      "L31": 407.734558  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "rms"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "thdVoltage": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.01471114,  
-      "L2": 0.01600046,  
-      "L3": 0.01541459  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "thdCurrent": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.38497337,  
-      "L2": 0.45807529,  
-      "L3": 0.4938652  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### ACMeasurement NGSI-LD normalisé Exemple  
 Voici un exemple d'une ACMeasurement au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
-  "type": "ACMeasurement",  
-  "name": " AirPort-NCE-T1-F01-TR05-ACTP",  
-  "alternateName": "AirPort global Observation",  
-  "description": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1 Floor 01 Technical Room 05 for Triphase alternating current.",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.66481,  
-      7.196545  
+    "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
+    "type": "ACMeasurement",  
+    "activePower": {  
+        "L1": 11996.416016,  
+        "L2": 9461.501953,  
+        "L3": 10242.351562  
+    },  
+    "alternateName": "AirPort global Observation",  
+    "apparentPower": {  
+        "L1": 13201.412109,  
+        "L2": 10755.304688,  
+        "L3": 11941.094727  
+    },  
+    "areaServed": "Nice Aeroport",  
+    "current": {  
+        "L1": 56.126038,  
+        "L2": 45.894356,  
+        "L3": 50.872452,  
+        "N": 0.0  
+    },  
+    "dateEnergyMeteringStarted": "2020-07-07T15:05:59.408Z",  
+    "dateObserved": "2020-03-17T08:45:00Z",  
+    "description": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1 Floor 01 Technical Room 05 for Triphase alternating current.",  
+    "displacementPowerFactor": {  
+        "L1": 0.978013,  
+        "L2": 0.973317,  
+        "L3": 0.960382  
+    },  
+    "frequency": 50.020672,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.66481,  
+            7.196545  
+        ]  
+    },  
+    "name": " AirPort-NCE-T1-F01-TR05-ACTP",  
+    "phaseToPhaseVoltage": {  
+        "L12": 406.769196,  
+        "L23": 407.081238,  
+        "L31": 407.734558  
+    },  
+    "phaseType": "threePhase",  
+    "phaseVoltage": {  
+        "L1": 234.961304,  
+        "L2": 234.563477,  
+        "L3": 235.354034  
+    },  
+    "powerFactor": {  
+        "L1": 0.908817,  
+        "L2": 0.879906,  
+        "L3": 0.859293  
+    },  
+    "reactivePower": {  
+        "L1": -2612.606934,  
+        "L2": -2209.906006,  
+        "L3": -3007.81958  
+    },  
+    "refDevice": [  
+        "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"  
+    ],  
+    "thdCurrent": {  
+        "L1": 0.38497337,  
+        "L2": 0.45807529,  
+        "L3": 0.4938652  
+    },  
+    "thdVoltage": {  
+        "L1": 0.01471114,  
+        "L2": 0.01600046,  
+        "L3": 0.01541459  
+    },  
+    "totalActiveEnergyExport": 1059.80176,  
+    "totalActiveEnergyImport": 150781.96448,  
+    "totalActivePower": 31700.269531,  
+    "totalApparentPower": 36019.089844,  
+    "totalReactiveEnergyExport": 93275.02176,  
+    "totalReactiveEnergyImport": 20490.3392,  
+    "totalReactivePower": -7830.332031,  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "areaServed": "Nice Aeroport",  
-  "dateObserved": "2020-03-17T08:45:00Z",  
-  "refDevice": [  
-    "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"  
-  ],  
-  "phaseType": "threePhase",  
-  "frequency": 50.020672,  
-  "dateEnergyMeteringStarted": "2020-07-07T15:05:59.408Z",  
-  "totalActiveEnergyImport": 150781.96448,  
-  "totalReactiveEnergyImport": 20490.3392,  
-  "totalActiveEnergyExport": 1059.80176,  
-  "totalReactiveEnergyExport": 93275.02176,  
-  "activePower": {  
-    "L1": 11996.416016,  
-    "L2": 9461.501953,  
-    "L3": 10242.351562  
-  },  
-  "reactivePower": {  
-    "L1": -2612.606934,  
-    "L2": -2209.906006,  
-    "L3": -3007.81958  
-  },  
-  "apparentPower": {  
-    "L1": 13201.412109,  
-    "L2": 10755.304688,  
-    "L3": 11941.094727  
-  },  
-  "totalActivePower": 31700.269531,  
-  "totalReactivePower": -7830.332031,  
-  "totalApparentPower": 36019.089844,  
-  "powerFactor": {  
-    "L1": 0.908817,  
-    "L2": 0.879906,  
-    "L3": 0.859293  
-  },  
-  "displacementPowerFactor": {  
-    "L1": 0.978013,  
-    "L2": 0.973317,  
-    "L3": 0.960382  
-  },  
-  "current": {  
-    "L1": 56.126038,  
-    "L2": 45.894356,  
-    "L3": 50.872452,  
-    "N": 0.0  
-  },  
-  "phaseVoltage": {  
-    "L1": 234.961304,  
-    "L2": 234.563477,  
-    "L3": 235.354034  
-  },  
-  "phaseToPhaseVoltage": {  
-    "L12": 406.769196,  
-    "L23": 407.081238,  
-    "L31": 407.734558  
-  },  
-  "thdVoltage": {  
-    "L1": 0.01471114,  
-    "L2": 0.01600046,  
-    "L3": 0.01541459  
-  },  
-  "thdCurrent": {  
-    "L1": 0.38497337,  
-    "L2": 0.45807529,  
-    "L3": 0.4938652  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
-  ]  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

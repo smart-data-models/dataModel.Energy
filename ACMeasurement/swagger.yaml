@@ -1,5 +1,5 @@
 ---
-# Copyleft (c) 2021 Contributors to Smart Data Models initiative
+# Copyleft (c) 2022 Contributors to Smart Data Models initiative
 # 
 
 
@@ -11,7 +11,7 @@ info:
   description:  |
     The Data Model intended to measure the electrical energies consumed by an electrical system which uses an Alternating Current (AC) for a three-phase (L1, L2, L3) or single-phase (L) and neutral (N). It integrates the initial version of the data Modem [THREEPHASEMEASUREMENT], extended to also perform single-phase measurements. It includes attributes for various electrical measurements such as power, frequency, current and voltage.
   title: ACMeasurement
-  version: ""
+  version: "0.0.1"
 openapi: "3.0.0"
 
 paths: 

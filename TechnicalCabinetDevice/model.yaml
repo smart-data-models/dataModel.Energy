@@ -2,7 +2,7 @@ TechnicalCabinetDevice:
   description: 'Technical Cabinet Device Data Model is intended to to describe the technical characteristics of the Device, designed to be placed in an urban or interurban environment. The main objective of these cabinets for this Data Model is to protect the electrical equipment necessary for the control, surveillance, reading and management of urban lighting, signaling, video and electrical distribution. The scope of use of some of these cabinets can extend to an additional protection for installations of modular apparatuses of telephony, data processing, meteorological stations, photo-voltaic stations, wind turbines stations, telecommunications, networks, data, bre Optics , etc. *Remark* : This Data Model can be used directly as a main entity to describe the device `Technical Cabinet`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. It can also refer to the list of all the components it contains, with the `refDeviceList` attribute, using the Data Model ''DEVICE'''
   properties:
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -13,6 +13,9 @@ TechnicalCabinetDevice:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -22,12 +25,15 @@ TechnicalCabinetDevice:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
       type: object
       x-ngsi:
         model: https://schema.org/address
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
@@ -48,43 +54,43 @@ TechnicalCabinetDevice:
       x-ngsi:
         type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     brandName:
-      description: 'Name of the brand'
+      description: Name of the brand
       type: string
       x-ngsi:
         model: https://schema.org/brand
         type: Property
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateLastReported:
-      description: 'A timestamp which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat'
+      description: A timestamp which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
@@ -121,7 +127,7 @@ TechnicalCabinetDevice:
       x-ngsi:
         type: Property
     documentation:
-      description: 'A link to device''s documentation'
+      description: A link to device's documentation
       format: uri
       type: string
       x-ngsi:
@@ -140,7 +146,7 @@ TechnicalCabinetDevice:
       x-ngsi:
         type: Property
     doorCount:
-      description: 'Count of doors of the technical Cabinet.'
+      description: Count of doors of the technical Cabinet.
       type: number
       x-ngsi:
         type: Property
@@ -190,15 +196,15 @@ TechnicalCabinetDevice:
         type: Property
     id:
       anyOf: &technicalcabinetdevice_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     installationCondition:
@@ -269,7 +275,7 @@ TechnicalCabinetDevice:
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: 'Geoproperty. Geojson reference to the item. Point'
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -288,9 +294,9 @@ TechnicalCabinetDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Point'
+          title: GeoJSON Point
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. LineString'
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -312,9 +318,9 @@ TechnicalCabinetDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON LineString'
+          title: GeoJSON LineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -338,9 +344,9 @@ TechnicalCabinetDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Polygon'
+          title: GeoJSON Polygon
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -361,9 +367,9 @@ TechnicalCabinetDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPoint'
+          title: GeoJSON MultiPoint
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -387,9 +393,9 @@ TechnicalCabinetDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiLineString'
+          title: GeoJSON MultiLineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -415,12 +421,12 @@ TechnicalCabinetDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPolygon'
+          title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     manufacturerName:
-      description: 'Name of the manufacturer'
+      description: Name of the manufacturer
       type: string
       x-ngsi:
         model: https://schema.org/manufacturer
@@ -432,12 +438,12 @@ TechnicalCabinetDevice:
       x-ngsi:
         type: Property
     modelName:
-      description: 'Name of the model as given by the manufacturer.'
+      description: Name of the model as given by the manufacturer.
       type: string
       x-ngsi:
         type: Property
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
@@ -454,10 +460,10 @@ TechnicalCabinetDevice:
       x-ngsi:
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *technicalcabinetdevice_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
@@ -507,27 +513,27 @@ TechnicalCabinetDevice:
         type: Property
     refDevice:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'The device used to obtain the data expressed by this record'
+      description: The device used to obtain the data expressed by this record
       x-ngsi:
         type: Relationship
     refDeviceList:
       description: 'A list of reference to the [Devices](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which are inside the technical Cabinet Device.'
       items:
         anyOf:
-          - description: 'Property. Identifier format of any NGSI entity'
+          - description: Property. Identifier format of any NGSI entity
             maxLength: 256
             minLength: 1
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
             type: string
-          - description: 'Property. Identifier format of any NGSI entity'
+          - description: Property. Identifier format of any NGSI entity
             format: uri
             type: string
       type: array
@@ -535,19 +541,19 @@ TechnicalCabinetDevice:
         type: Relationship
     refPointOfInterest:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
       description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation.'
       x-ngsi:
         type: Relationship
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -559,7 +565,7 @@ TechnicalCabinetDevice:
       x-ngsi:
         type: Property
     serialNumber:
-      description: 'Serial number of the container'
+      description: Serial number of the container
       type: string
       x-ngsi:
         model: https://schema.org/serialNumber
@@ -570,7 +576,7 @@ TechnicalCabinetDevice:
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI Entity type. It has to be TechnicalCabinetDevice'
+      description: NGSI Entity type. It has to be TechnicalCabinetDevice
       enum:
         - TechnicalCabinetDevice
       type: string
@@ -615,8 +621,8 @@ TechnicalCabinetDevice:
     - dimension
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/TechnicalCabinetDevice/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/TechnicalCabinetDevice/schema.json
   x-model-tags: Energy
-  x-version: ""
+  x-version: 0.0.1

@@ -1,17 +1,32 @@
-エンティティ三相信号の測定  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティスリーフェーズAcMeasurement  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**三相交流を利用したシステムからの電気的測定値。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**三相交流電流を使用するシステムからの電気的測定値 **。  
+バージョン: 0.0.3  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `activeEnergyExport`: 計量開始日以降、各相ごとに輸出された有効エネルギー。実際の値はサブプロパティによって伝達され、その名前は交流の各相の名前と同じになります。L1、L2、L3。  - `activeEnergyImport`: 取り込まれた有効電力量。すなわち、計測開始日以降の相ごとの消費電力量。実際の値はサブプロパティによって伝達され、その名前は交流の各相の名前と同じになります。L1、L2、L3。  - `activePower`: 実際の値はサブプロパティで管理され、その名前は交流の各相の名前と同じになります。L1、L2、L3。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `apparentEnergyExport`: 計量開始日以降、各相ごとに輸出された見掛けのエネルギー。実際の値はサブプロパティによって伝達され、その名前は交流の各相の名前と同じである。L1、L2、L3。  - `apparentEnergyImport`: 計量開始日以降に輸入された見掛けのエネルギー、すなわち相ごとの消費量。実際の値はサブプロパティによって伝達され、その名前は交流の各相の名前と同じになります。L1、L2、L3。  - `apparentPower`: 相ごとに消費される見かけ上の電力。実際の値はサブプロパティによって伝達され、その名前は交流の各相の名前と同じです。L1、L2、L3  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `current`: 電気の流れ。実際の値は、交流の各相と中性線ごとに1つのサブプロパティで伝えられる。L1、L2、L3、N。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateEnergyMeteringStarted`: エネルギーの計測を開始する日。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `displacementPowerFactor`: 各相の変位力率。この量は、システムの基本周波数に基づいている。実際の値は、交流相ごとに1つのサブプロパティで伝えられる。L1、L2、L3  - `frequency`: 回路の周波数です。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `phaseToPhaseVoltage`: 相間の電圧。各相ペアの値：相1と2（L12）、相2と3（L32）、相3と1（L31）。  - `phaseVoltage`: 各相とニュートラル導体間の電圧。実際の値は、交流相ごとに1つのサブプロパティで伝えられます。L1、L2、L3  - `powerFactor`: 各相の力率。実際の値は、交流相ごとに1つのサブプロパティで伝えられます。L1、L2、L3  - `reactiveEnergyExport`: 計量開始日以降に相ごとに輸出された基本周波数無効エネルギー。実際の値はサブプロパティによって伝えられ、その名前は交流の各相の名前と同じである。L1、L2、L3。  - `reactiveEnergyImport`: 計量開始日以降に消費された各相の基本周波数無効電力量のこと。実際の値はサブプロパティによって伝達され、その名前は交流の各相の名前と同じである。L1、L2、L3。  - `reactivePower`: 基本周波数無効電力。実際の値は、交流の各相の名前と同じ名前を持つサブプロパティによって伝えられます。L1、L2、L3。  - `refDevice`: 測定値を得るために使用したデバイス（複数可  - `refTargetDevice`: 測定が行われたデバイス（複数可）。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `thdCurrent`: 電流の全高調波歪み。実際の値は、交流相ごとに1つのサブプロパティで伝えられる。L1、L2、L3  - `thdVoltage`: 各相の電圧の全高調波歪み。実際の値は、交流の各相ごとに1つのサブプロパティで伝えられる。L1、L2、L3  - `totalActiveEnergyExport`: 計測を開始してからの総輸出電力量（`dateEnergyMeteringStarted`以降）。  - `totalActiveEnergyImport`: 計量開始以降（`dateEnergyMeteringStarted`以降）に輸入された、すなわち消費されたエネルギーの総量。  - `totalActivePower`: 稼動時の消費電力（全相をカウント）  - `totalApparentEnergyExport`: 計量開始日（`dateEnergyMeteringStarted`）以降の総輸出エネルギー（皮相電力）。  - `totalApparentEnergyImport`: 計量開始日（`dateEnergyMeteringStarted`）以降に輸入された、すなわち消費された（皮相電力に関する）エネルギーの総量。  - `totalApparentPower`: 見かけ上の消費電力（全相をカウント）。  - `totalDisplacementPowerFactor`: 全相を含む変位力率。この量は、システムの基本周波数に基づいています。  - `totalPowerFactor`: 全相を含む力率  - `totalReactiveEnergyExport`: 計量開始以降に輸出された基本周波数無効エネルギーの合計（`dateEnergyMeteringStarted`以降）。  - `totalReactiveEnergyImport`: 計量開始日（`dateEnergyMeteringStarted`）以降に輸入された、すなわち消費された（基本周波数無効電力に関する）エネルギーの総量。  - `totalReactivePower`: 消費された無効電力（全相をカウント）  - `type`: これは、`ThreePhaseAcMeasurement`と等しくなければなりません。    
-必須項目  
-- `id`  - `type`    
-全体のタイトルと説明文の間に入れるテキストです。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `activeEnergyExport[object]`: 計測開始日以降に輸出された相ごとの有効電力量。実際の値は、各交流相の名前に等しい名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `activeEnergyImport[object]`: 測定開始日以降に輸入された有効エネルギー、すなわち相ごとに消費されたエネルギー。実際の値は、各交流相の名前と同じ名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `activePower[object]`: 実際の値は、交流の各相の名前と同じ名前のサブプロパティによって管理される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `apparentEnergyExport[object]`: 計測開始日以降に輸出された相ごとの皮相電力量。実際の値は、各交流相の名前に等しい名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `apparentEnergyImport[object]`: 計測開始日以降に輸入された皮相電力量、すなわち相ごとの消費電力量。実際の値は、各交流相の名前に等しい名前を持つサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `apparentPower[object]`: 相あたりの皮相電力消費量。実際の値は、交流の各相の名前に等しい名前を持つサブプロパティによって伝えられる。L1, L2, L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: 電流。実際の値は、交流の各相と中性線につき1つのサブプロパティで伝達される。L1、L2、L3、N。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateEnergyMeteringStarted[string]`: エネルギー計測の開始日。  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `displacementPowerFactor[object]`: 各相の変位力率。この量は、システムの基本周波数に基づく。実際の値は、交流相ごとに1つのサブプロパティで伝達される。L1、L2、L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `frequency[number]`: 回路の周波数です。  . Model: [http://schema.org/Number](http://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `phaseToPhaseVoltage[object]`: 相間電圧。各相ペアの値：1相と2相（L12）、2相と3相（L32）、3相と1相（L31）。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `phaseVoltage[object]`: 各相と中性導体間の電圧。実際の値は、交流の各相ごとに1つのサブプロパティで伝えられる。L1、L2、L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `powerFactor[object]`: 各相の力率。実際の値は、交流の各相ごとに1つのサブプロパティで伝達される。L1、L2、L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactiveEnergyExport[object]`: 計測開始日以降に輸出された相ごとの基本周波数無効電力量。実際の値は、各交流相の名称と同じ名称のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactiveEnergyImport[object]`: 計測開始日以降に輸入された基本周波数無効電力量、すなわち相ごとに消費された電力量。実際の値は、各交流相の名前と同じ名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactivePower[object]`: 基本周波数無効電力。実際の値は、交流の各相の名前と同じ名前のサブプロパティによって伝達される。L1、L2、L3。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `refDevice[array]`: 測定値を得るために使用した装置。  - `refTargetDevice[array]`: 測定が行われたデバイス（複数可）。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `thdCurrent[object]`: 電流の全高調波歪み。実際の値は、交流の各相ごとに1つのサブプロパティによって伝達される。L1, L2, L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `thdVoltage[object]`: 各相の電圧の全高調波歪み。実際の値は、交流の各相ごとに1つのサブプロパティによって伝えられる。L1、L2、L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `totalActiveEnergyExport[number]`: 計測を開始してからの総輸出電力量（`dateEnergyMeteringStarted`以降）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActiveEnergyImport[number]`: 計測を開始して以来（`dateEnergyMeteringStarted`以降）、インポートされた、すなわち消費されたエネルギーの合計。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActivePower[number]`: 有効消費電力（全相計数）  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalApparentEnergyExport[number]`: 計測開始日（`dateEnergyMeteringStarted`）以降に輸出された総エネルギー量（皮相電力に関して）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentEnergyImport[number]`: 計測開始日（`dateEnergyMeteringStarted`）以降に輸入された、すなわち消費された（皮相電力に関して）総エネルギー量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentPower[number]`: 皮相電力消費量（全相をカウント）。  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalDisplacementPowerFactor[number]`: 全相を含む変位力率。この量はシステムの基本周波数に基づいています。  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalPowerFactor[number]`: 全相を含む力率  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalReactiveEnergyExport[number]`: 計測開始以降にエクスポートされた基本周波数無効エネルギーの合計値（`dateEnergyMeteringStarted`以降）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactiveEnergyImport[number]`: 計測開始日（`dateEnergyMeteringStarted`）以降に輸入された、すなわち消費された総エネルギー（基本周波数無効電力に関して）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactivePower[number]`: 無効電力消費量（全相数カウント）  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: ThreePhaseAcMeasurement` と等しくなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+全体のタイトルと説明文の間に入れるテキスト。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ThreePhaseAcMeasurement:    
@@ -241,7 +256,7 @@ ThreePhaseAcMeasurement:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -262,7 +277,7 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -286,7 +301,7 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -312,7 +327,7 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -335,7 +350,7 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -361,7 +376,7 @@ ThreePhaseAcMeasurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -390,7 +405,7 @@ ThreePhaseAcMeasurement:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: 'The name of this item.'    
       type: string    
@@ -418,7 +433,7 @@ ThreePhaseAcMeasurement:
           type: number    
       type: object    
       x-ngsi:    
-        model: (http://schema.org/StructuredValue    
+        model: http://schema.org/StructuredValue    
         type: Property    
         units: 'Volts (V)'    
     phaseVoltage:    
@@ -489,9 +504,9 @@ ThreePhaseAcMeasurement:
           type: number    
       type: object    
       x-ngsi:    
-        model: 'kilovolt-ampere-reactive-hour (kVArh)'    
+        model: http://schema.org/StructuredValue    
         type: Property    
-        units: http://schema.org/StructuredValue    
+        units: 'kilovolt-ampere-reactive-hour (kVArh)'    
     reactivePower:    
       description: 'Fundamental frequency reactive power. The actual values will be conveyed by subproperties whose names will be equal to the name of each of the alternating current phases: L1, L2, L3.'    
       properties:    
@@ -683,17 +698,22 @@ ThreePhaseAcMeasurement:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/ThreePhaseAcMeasurement/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.3    
 ```  
 </details>    
-物件一覧の後に記載される文章  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+プロパティ一覧の後に記載するテキスト  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### ThreePhaseAcMeasurement NGSI-v2 key-valuesの例。  
-ThreePhaseAcMeasurementをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### ThreePhaseAcMeasurement NGSI-v2 key-value 例  
+以下は、ThreePhaseAcMeasurementをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -763,8 +783,10 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
-#### ThreePhaseAcMeasurement NGSI-v2の正規化例。  
-ここでは、正規化されたJSON-LD形式のThreePhaseAcMeasurementの例を示す。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ThreePhaseAcMeasurement NGSI-v2 正規化例  
+以下は、正規化された JSON-LD 形式の ThreePhaseAcMeasurement の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",  
@@ -1088,369 +1110,381 @@ ThreePhaseAcMeasurement:
   }  
 }  
 ```  
-#### ThreePhaseAcMeasurement NGSI-LD key-valuesの例。  
-ThreePhaseAcMeasurementをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ThreePhaseAcMeasurement NGSI-LD key-value 例  
+以下は、ThreePhaseAcMeasurementをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
-  "type": "ThreePhaseAcMeasurement",  
-  "dateEnergyMeteringStarted": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-07-07T15:05:59.408Z"  
-    }  
-  },  
-  "refDevice": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"  
+    "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
+    "type": "ThreePhaseAcMeasurement",  
+    "activePower": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 11996.416016,  
+            "L2": 9461.501953,  
+            "L3": 10242.351562  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "apparentPower": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 13201.412109,  
+            "L2": 10755.304688,  
+            "L3": 11941.094727  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "current": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 56.126038,  
+            "L2": 45.894356,  
+            "L3": 50.872452,  
+            "N": 0.0  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "rms"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "dateEnergyMeteringStarted": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-07-07T15:05:59.408Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "measurement corresponding to the ventilation machine rooms"  
+    },  
+    "displacementPowerFactor": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.978013,  
+            "L2": 0.973317,  
+            "L3": 0.960382  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        },  
+        "onlyPositive": {  
+            "type": "Property",  
+            "value": true  
+        }  
+    },  
+    "frequency": {  
+        "type": "Property",  
+        "value": 50.020672,  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "HKAPK0200"  
+    },  
+    "phaseToPhaseVoltage": {  
+        "type": "Property",  
+        "value": {  
+            "L12": 406.769196,  
+            "L23": 407.081238,  
+            "L31": 407.734558  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "rms"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "phaseVoltage": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 234.961304,  
+            "L2": 234.563477,  
+            "L3": 235.354034  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "rms"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "powerFactor": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.908817,  
+            "L2": 0.879906,  
+            "L3": 0.859293  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        },  
+        "onlyPositive": {  
+            "type": "Property",  
+            "value": true  
+        }  
+    },  
+    "reactivePower": {  
+        "type": "Property",  
+        "value": {  
+            "L1": -2612.606934,  
+            "L2": -2209.906006,  
+            "L3": -3007.81958  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"  
+        ]  
+    },  
+    "thdCurrent": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.38497337,  
+            "L2": 0.45807529,  
+            "L3": 0.4938652  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "thdVoltage": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.01471114,  
+            "L2": 0.01600046,  
+            "L3": 0.01541459  
+        },  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "totalActiveEnergyExport": {  
+        "type": "Property",  
+        "value": 1059.80176,  
+        "observedAt": "2019-01-24T22:00:00.173Z"  
+    },  
+    "totalActiveEnergyImport": {  
+        "type": "Property",  
+        "value": 150781.96448,  
+        "observedAt": "2019-01-24T22:00:00.173Z"  
+    },  
+    "totalActivePower": {  
+        "type": "Property",  
+        "value": 31700.269531,  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "totalApparentPower": {  
+        "type": "Property",  
+        "value": 36019.089844,  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "totalReactiveEnergyExport": {  
+        "type": "Property",  
+        "value": 93275.02176,  
+        "observedAt": "2019-01-24T22:00:00.173Z"  
+    },  
+    "totalReactiveEnergyImport": {  
+        "type": "Property",  
+        "value": 20490.3392,  
+        "observedAt": "2019-01-24T22:00:00.173Z"  
+    },  
+    "totalReactivePower": {  
+        "type": "Property",  
+        "value": -7830.332031,  
+        "observedAt": "2019-01-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "HKAPK0200"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "measurement corresponding to the ventilation machine rooms"  
-  },  
-  "totalActiveEnergyImport": {  
-    "type": "Property",  
-    "value": 150781.96448,  
-    "observedAt": "2019-01-24T22:00:00.173Z"  
-  },  
-  "totalReactiveEnergyImport": {  
-    "type": "Property",  
-    "value": 20490.3392,  
-    "observedAt": "2019-01-24T22:00:00.173Z"  
-  },  
-  "totalActiveEnergyExport": {  
-    "type": "Property",  
-    "value": 1059.80176,  
-    "observedAt": "2019-01-24T22:00:00.173Z"  
-  },  
-  "totalReactiveEnergyExport": {  
-    "type": "Property",  
-    "value": 93275.02176,  
-    "observedAt": "2019-01-24T22:00:00.173Z"  
-  },  
-  "totalActivePower": {  
-    "type": "Property",  
-    "value": 31700.269531,  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "activePower": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 11996.416016,  
-      "L2": 9461.501953,  
-      "L3": 10242.351562  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "totalReactivePower": {  
-    "type": "Property",  
-    "value": -7830.332031,  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "reactivePower": {  
-    "type": "Property",  
-    "value": {  
-      "L1": -2612.606934,  
-      "L2": -2209.906006,  
-      "L3": -3007.81958  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "totalApparentPower": {  
-    "type": "Property",  
-    "value": 36019.089844,  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "apparentPower": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 13201.412109,  
-      "L2": 10755.304688,  
-      "L3": 11941.094727  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "powerFactor": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.908817,  
-      "L2": 0.879906,  
-      "L3": 0.859293  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    },  
-    "onlyPositive": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "displacementPowerFactor": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.978013,  
-      "L2": 0.973317,  
-      "L3": 0.960382  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    },  
-    "onlyPositive": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "frequency": {  
-    "type": "Property",  
-    "value": 50.020672,  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "current": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 56.126038,  
-      "L2": 45.894356,  
-      "L3": 50.872452,  
-      "N": 0.0  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "rms"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "phaseVoltage": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 234.961304,  
-      "L2": 234.563477,  
-      "L3": 235.354034  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "rms"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "phaseToPhaseVoltage": {  
-    "type": "Property",  
-    "value": {  
-      "L12": 406.769196,  
-      "L23": 407.081238,  
-      "L31": 407.734558  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "rms"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "thdVoltage": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.01471114,  
-      "L2": 0.01600046,  
-      "L3": 0.01541459  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "thdCurrent": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.38497337,  
-      "L2": 0.45807529,  
-      "L3": 0.4938652  
-    },  
-    "observedAt": "2019-01-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### ThreePhaseAcMeasurement NGSI-LD normalized Example  
-ここでは、正規化されたJSON-LD形式のThreePhaseAcMeasurementの例を示す。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ThreePhaseAcMeasurement NGSI-LD 正規化例  
+以下は、ThreePhaseAcMeasurement を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "activePower": {  
-    "L1": 11996.416016,  
-    "L2": 9461.501953,  
-    "L3": 10242.351562  
-  },  
-  "apparentPower": {  
-    "L1": 13201.412109,  
-    "L2": 10755.304688,  
-    "L3": 11941.094727  
-  },  
-  "current": {  
-    "L1": 56.126038,  
-    "L2": 45.894356,  
-    "L3": 50.872452,  
-    "N": 0.0  
-  },  
-  "dateEnergyMeteringStarted": {  
-    "@type": "DateTime",  
-    "@value": "2018-07-07T15:05:59.408Z"  
-  },  
-  "description": "measurement corresponding to the ventilation machine rooms",  
-  "displacementPowerFactor": {  
-    "L1": 0.978013,  
-    "L2": 0.973317,  
-    "L3": 0.960382  
-  },  
-  "frequency": 50.020672,  
-  "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
-  "name": "HKAPK0200",  
-  "phaseToPhaseVoltage": {  
-    "L12": 406.769196,  
-    "L23": 407.081238,  
-    "L31": 407.734558  
-  },  
-  "phaseVoltage": {  
-    "L1": 234.961304,  
-    "L2": 234.563477,  
-    "L3": 235.354034  
-  },  
-  "powerFactor": {  
-    "L1": 0.908817,  
-    "L2": 0.879906,  
-    "L3": 0.859293  
-  },  
-  "reactivePower": {  
-    "L1": -2612.606934,  
-    "L2": -2209.906006,  
-    "L3": -3007.81958  
-  },  
-  "refDevice": [  
-    "urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"  
-  ],  
-  "thdCurrent": {  
-    "L1": 0.38497337,  
-    "L2": 0.45807529,  
-    "L3": 0.4938652  
-  },  
-  "thdVoltage": {  
-    "L1": 0.01471114,  
-    "L2": 0.01600046,  
-    "L3": 0.01541459  
-  },  
-  "totalActiveEnergyExport": 1059.80176,  
-  "totalActiveEnergyImport": 150781.96448,  
-  "totalActivePower": 31700.269531,  
-  "totalApparentPower": 36019.089844,  
-  "totalReactiveEnergyExport": 93275.02176,  
-  "totalReactiveEnergyImport": 20490.3392,  
-  "totalReactivePower": -7830.332031,  
-  "type": "ThreePhaseAcMeasurement"  
+    "id": "urn:ngsi-ld:ThreePhaseAcMeasurement:ThreePhaseAcMeasurement:LV3_Ventilation",  
+    "type": "ThreePhaseAcMeasurement",  
+    "activePower": {  
+        "L1": 11996.416016,  
+        "L2": 9461.501953,  
+        "L3": 10242.351562  
+    },  
+    "apparentPower": {  
+        "L1": 13201.412109,  
+        "L2": 10755.304688,  
+        "L3": 11941.094727  
+    },  
+    "current": {  
+        "L1": 56.126038,  
+        "L2": 45.894356,  
+        "L3": 50.872452,  
+        "N": 0.0  
+    },  
+    "dateEnergyMeteringStarted": {  
+        "@type": "DateTime",  
+        "@value": "2018-07-07T15:05:59.408Z"  
+    },  
+    "description": "measurement corresponding to the ventilation machine rooms",  
+    "displacementPowerFactor": {  
+        "L1": 0.978013,  
+        "L2": 0.973317,  
+        "L3": 0.960382  
+    },  
+    "frequency": 50.020672,  
+    "name": "HKAPK0200",  
+    "phaseToPhaseVoltage": {  
+        "L12": 406.769196,  
+        "L23": 407.081238,  
+        "L31": 407.734558  
+    },  
+    "phaseVoltage": {  
+        "L1": 234.961304,  
+        "L2": 234.563477,  
+        "L3": 235.354034  
+    },  
+    "powerFactor": {  
+        "L1": 0.908817,  
+        "L2": 0.879906,  
+        "L3": 0.859293  
+    },  
+    "reactivePower": {  
+        "L1": -2612.606934,  
+        "L2": -2209.906006,  
+        "L3": -3007.81958  
+    },  
+    "refDevice": [  
+        "urn:ngsi-ld:Device:Device:eQL-EDF3GL-2006201705"  
+    ],  
+    "thdCurrent": {  
+        "L1": 0.38497337,  
+        "L2": 0.45807529,  
+        "L3": 0.4938652  
+    },  
+    "thdVoltage": {  
+        "L1": 0.01471114,  
+        "L2": 0.01600046,  
+        "L3": 0.01541459  
+    },  
+    "totalActiveEnergyExport": 1059.80176,  
+    "totalActiveEnergyImport": 150781.96448,  
+    "totalActivePower": 31700.269531,  
+    "totalApparentPower": 36019.089844,  
+    "totalReactiveEnergyExport": 93275.02176,  
+    "totalReactiveEnergyImport": 20490.3392,  
+    "totalReactivePower": -7830.332031,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
+    ]  
 }  
 ```  
-結局テキスト  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+結局のところテキスト  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

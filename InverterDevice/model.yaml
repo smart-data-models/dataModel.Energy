@@ -2,7 +2,7 @@ InverterDevice:
   description: 'The data model is intended to describe the mechanical, electrical characteristics of an Inverter according to *DC - Direct Current Information* supplied as input and *AC - Alternating Current Information*  returned as output. *Remark*: This Data Model can be used directly as a main entity to describe the device [Inverter] or as a sub-entity of the Data Model {DEVICE] using a reference by the [refDevice] attribute.'
   properties:
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -13,6 +13,9 @@ InverterDevice:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -22,12 +25,15 @@ InverterDevice:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
       type: object
       x-ngsi:
         model: https://schema.org/address
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
@@ -49,13 +55,13 @@ InverterDevice:
       x-ngsi:
         type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     brandName:
-      description: 'Brand Name of the item'
+      description: Brand Name of the item
       type: string
       x-ngsi:
         model: https://schema.org/brand
@@ -71,31 +77,31 @@ InverterDevice:
       x-ngsi:
         type: Property
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateLastReported:
-      description: 'A timestamps which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat'
+      description: A timestamps which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
@@ -116,7 +122,7 @@ InverterDevice:
         type: Property
         units: Centimeters
     documentation:
-      description: 'Technical Documentation (Installation / maintenance / used)'
+      description: Technical Documentation (Installation / maintenance / used)
       format: uri
       type: string
       x-ngsi:
@@ -124,15 +130,15 @@ InverterDevice:
         type: Property
     id:
       anyOf: &inverterdevice_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     installationCondition:
@@ -168,7 +174,7 @@ InverterDevice:
       x-ngsi:
         type: Property
     inverterStatus:
-      description: 'Status of the inverter. A combination of values.'
+      description: Status of the inverter. A combination of values.
       items:
         enum:
           - 00-OnSector
@@ -191,7 +197,7 @@ InverterDevice:
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: 'Geoproperty. Geojson reference to the item. Point'
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -210,9 +216,9 @@ InverterDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Point'
+          title: GeoJSON Point
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. LineString'
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -234,9 +240,9 @@ InverterDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON LineString'
+          title: GeoJSON LineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -260,9 +266,9 @@ InverterDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Polygon'
+          title: GeoJSON Polygon
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -283,9 +289,9 @@ InverterDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPoint'
+          title: GeoJSON MultiPoint
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -309,9 +315,9 @@ InverterDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiLineString'
+          title: GeoJSON MultiLineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -337,10 +343,10 @@ InverterDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPolygon'
+          title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     mPPTPVVoltageDC:
       description: 'Minimum and Maximum Photo-voltaic voltage range, MPPT allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt'
       properties:
@@ -356,26 +362,27 @@ InverterDevice:
         type: Property
         units: Volt
     manufacturerName:
-      description: 'Manufacturer Name of the item'
+      description: Manufacturer Name of the item
       type: string
       x-ngsi:
         model: https://schema.org/manufacturer
         type: Property
     maxInputCurrentParallelAssembly:
-      description: 'Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere. Unis:''Ampere'''
+      description: 'Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+        units: Ampere
     maxOutputPowerAC:
       description: 'Maximum Power or Apparent Power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **D46** represents Volt Ampere'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-        units: 'Volt Ampere'
+        units: Volt Ampere
     modelName:
-      description: 'Model name of the item'
+      description: Model name of the item
       type: string
       x-ngsi:
         model: https://schema.org/model
@@ -392,18 +399,18 @@ InverterDevice:
         model: http://schema.org/StructuredValue
         type: Property
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
     nbInputParallelDC:
-      description: 'Maximum Number of inputs (in parallel)'
+      description: Maximum Number of inputs (in parallel)
       type: string
       x-ngsi:
         model: https://schema.org/Number.
         type: Property
     nbMPPTrackersDC:
-      description: 'Number of MPP trackers'
+      description: Number of MPP trackers
       type: number
       x-ngsi:
         model: https://schema.org/Number.
@@ -592,10 +599,10 @@ InverterDevice:
       x-ngsi:
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *inverterdevice_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
@@ -618,7 +625,7 @@ InverterDevice:
       x-ngsi:
         type: Property
     powerFactorAC:
-      description: 'Power factor for cos phi'
+      description: Power factor for cos phi
       maximum: 1
       minimum: 0
       type: number
@@ -649,12 +656,12 @@ InverterDevice:
         type: Property
     refDevice:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
       description: 'Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link.'
@@ -662,19 +669,19 @@ InverterDevice:
         type: Relationship
     refPointOfInterest:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
       description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation.'
       x-ngsi:
         type: Relationship
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -693,7 +700,7 @@ InverterDevice:
         type: Property
         units: Watt
     serialNumber:
-      description: 'Serial numbers of the item'
+      description: Serial numbers of the item
       type: string
       x-ngsi:
         model: https://schema.org/brand
@@ -711,19 +718,19 @@ InverterDevice:
         type: Property
         units: Volt
     supplyPhaseNb:
-      description: 'Number of power supply phases'
+      description: Number of power supply phases
       minimum: 0
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
     topology:
-      description: 'Description of the topology of the installation.'
+      description: Description of the topology of the installation.
       type: string
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI Entity type. It has to be InverterDevice'
+      description: NGSI Entity type. It has to be InverterDevice
       enum:
         - InverterDevice
       type: string
@@ -755,8 +762,8 @@ InverterDevice:
     - phaseType
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/InverterDevice/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/InverterDevice/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2

@@ -17,7 +17,7 @@ ACMeasurement:
       x-ngsi:
         model: https://schema.org/StructuredValue
         type: Property
-        units: 'kilowatt hour'
+        units: kilowatt hour
     activeEnergyImport:
       description: 'Active energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'
       properties:
@@ -34,7 +34,7 @@ ACMeasurement:
       x-ngsi:
         model: https://schema.org/StructuredValue
         type: Property
-        units: 'kilowatt hour'
+        units: kilowatt hour
     activePower:
       description: 'Active power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'
       properties:
@@ -53,7 +53,7 @@ ACMeasurement:
         type: Property
         units: Watt
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -64,6 +64,9 @@ ACMeasurement:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -73,12 +76,15 @@ ACMeasurement:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
       type: object
       x-ngsi:
         model: https://schema.org/address
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
@@ -134,7 +140,7 @@ ACMeasurement:
         type: Property
         units: Watt
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -156,25 +162,25 @@ ACMeasurement:
         type: Property
         units: Ampere
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateEnergyMeteringStarted:
-      description: 'The starting date for metering energy in an ISO8601 UTC format.'
+      description: The starting date for metering energy in an ISO8601 UTC format.
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
@@ -201,12 +207,12 @@ ACMeasurement:
         model: https://schema.org/DateTime
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
     displacementPowerFactor:
-      description: 'Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system.'
+      description: Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system.
       properties:
         L1:
           maximum: 1
@@ -234,21 +240,21 @@ ACMeasurement:
         units: Hertz
     id:
       anyOf: &acmeasurement_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: 'Geoproperty. Geojson reference to the item. Point'
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -267,9 +273,9 @@ ACMeasurement:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Point'
+          title: GeoJSON Point
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. LineString'
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -291,9 +297,9 @@ ACMeasurement:
           required:
             - type
             - coordinates
-          title: 'GeoJSON LineString'
+          title: GeoJSON LineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -317,9 +323,9 @@ ACMeasurement:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Polygon'
+          title: GeoJSON Polygon
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -340,9 +346,9 @@ ACMeasurement:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPoint'
+          title: GeoJSON MultiPoint
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -366,9 +372,9 @@ ACMeasurement:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiLineString'
+          title: GeoJSON MultiLineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -394,20 +400,20 @@ ACMeasurement:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPolygon'
+          title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *acmeasurement_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
@@ -455,7 +461,7 @@ ACMeasurement:
         type: Property
         units: Volts
     powerFactor:
-      description: 'Power factor for each phase.'
+      description: Power factor for each phase.
       properties:
         L1:
           maximum: 1
@@ -522,10 +528,10 @@ ACMeasurement:
         type: Property
         units: volts-ampere-reactive
     refDevice:
-      description: 'Reference to the devices which captured this observation'
+      description: Reference to the devices which captured this observation
       items:
         anyOf: *acmeasurement_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       minItems: 1
       type: array
       uniqueItems: true
@@ -533,17 +539,17 @@ ACMeasurement:
         model: https://schema.org/URL
         type: Property
     refTargetDevice:
-      description: 'Reference to a list of the devices for which the measurement was taken'
+      description: Reference to a list of the devices for which the measurement was taken
       items:
         anyOf: *acmeasurement_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       minItems: 1
       type: array
       uniqueItems: true
       x-ngsi:
         type: Relationship
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -560,7 +566,7 @@ ACMeasurement:
       x-ngsi:
         type: Property
     thdCurrent:
-      description: 'Total harmonic distortion of current for each phase.'
+      description: Total harmonic distortion of current for each phase.
       properties:
         L1:
           maximum: 1
@@ -579,7 +585,7 @@ ACMeasurement:
         model: https://schema.org/StructuredValue
         type: Property
     thdVoltage:
-      description: 'Total harmonic distortion of voltage for each phase.'
+      description: Total harmonic distortion of voltage for each phase.
       properties:
         L1:
           maximum: 1
@@ -604,7 +610,7 @@ ACMeasurement:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-        units: 'kilowatt hour'
+        units: kilowatt hour
     totalActiveEnergyImport:
       description: 'Total energy imported i.e. consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'
       minimum: 0
@@ -612,7 +618,7 @@ ACMeasurement:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-        units: 'kilowatt hour'
+        units: kilowatt hour
     totalActivePower:
       description: 'Total Active Power consumed. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'
       type: number
@@ -645,7 +651,7 @@ ACMeasurement:
         type: Property
         units: volt-ampere
     totalDisplacementPowerFactor:
-      description: 'Sum of Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system.'
+      description: Sum of Displacement power factor including all phases. The quantity is based on the fundamental frequency of the system.
       maximum: 1
       minimum: -1
       type: number
@@ -653,7 +659,7 @@ ACMeasurement:
         model: https://schema.org/StructuredValue
         type: Property
     totalPowerFactor:
-      description: 'Sum of Power factor including all phases.'
+      description: Sum of Power factor including all phases.
       maximum: 1
       minimum: -1
       type: number
@@ -684,7 +690,7 @@ ACMeasurement:
         type: Property
         units: volt-ampere-reactive
     type:
-      description: 'NGSI property type. It has to be ACMeasurement'
+      description: NGSI property type. It has to be ACMeasurement
       enum:
         - ACMeasurement
       type: string
@@ -698,7 +704,7 @@ ACMeasurement:
     - phaseType
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/ACMeasurement/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/ACMeasurement/schema.json
   x-model-tags: ""

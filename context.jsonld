@@ -1,5 +1,10 @@
 {
     "@context": {
+        "ACMeasurement": "https://smartdatamodels.org/dataModel.Energy/ACMeasurement",
+        "InverterDevice": "https://smartdatamodels.org/dataModel.Energy/InverterDevice",
+        "SolarEnergy": "https://smartdatamodels.org/dataModel.Energy/SolarEnergy",
+        "TechnicalCabinetDevice": "https://smartdatamodels.org/dataModel.Energy/TechnicalCabinetDevice",
+        "ThreePhaseAcMeasurement": "https://smartdatamodels.org/dataModel.Energy/ThreePhaseAcMeasurement",
         "activeEnergyExport": "https://smartdatamodels.org/dataModel.Energy/activeEnergyExport",
         "activeEnergyImport": "https://smartdatamodels.org/dataModel.Energy/activeEnergyImport",
         "activePower": "https://smartdatamodels.org/dataModel.Energy/activePower",

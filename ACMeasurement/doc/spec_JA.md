@@ -1,17 +1,32 @@
-エンティティACMeasurement  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティACMeasurement  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Energy/blob/master/ACMeasurement/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明。**三相（L1、L2、L3）または単相（L）とニュートラル（N）の交流電流（AC）を使用する電気システムで消費される電気エネルギーを測定するためのデータモデル。データモデムの初期バージョン[THREEPHASEMEASUREMENT]を統合し、単相の測定も行えるように拡張したものです。電力、周波数、電流、電圧など、さまざまな電気的測定のための属性が含まれています。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**三相（L1、L2、L3）または単相（L）および中性（N）の交流（AC）を使用する電気システムによって消費される電気エネルギーを測定することを目的としたデータモデルです。これは、単相測定も実行できるように拡張されたデータモデム（THREEPHASEMEASUREMENT）の初期バージョンを統合したものです。電力、周波数、電流、電圧など、さまざまな電気計測のための属性が含まれています**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `activeEnergyExport`: フェーズごとに輸出される有効エネルギー。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `activeEnergyImport`: フェーズごとに消費された、すなわち輸入された活動エネルギー。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `activePower`: 相ごとに消費される有効電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `apparentEnergyExport`: フェーズごとに輸出される見かけのエネルギー。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `apparentEnergyImport`: フェーズごとに消費された、すなわち輸入された見かけのエネルギー。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `apparentPower`: フェーズごとに消費される見かけ上の電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `current`: 電流のこと。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateEnergyMeteringStarted`: ISO8601 UTC形式のエネルギー計測の開始日。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: ISO8601 UTCフォーマットで表現された、この観測の日付と時間。これは特定の時間の瞬間、またはISO8601のインターバルで表現され、属性`dateObservedFrom`、`dateObservedTo`を分けることができます。  - `dateObservedFrom`: 観測期間。ISO8601 UTC形式の開始日時が設定されています。この属性は、ハイライトされる時間間隔に対応する場合、`dateObserved`属性に加えて使用することができます。  - `dateObservedTo`: 観測期間。ISO8601 UTC形式の終了日時です。この属性は、ハイライトされる時間間隔に対応する場合、`dateObserved`属性に加えて使用することができます。  - `description`: このアイテムの説明  - `displacementPowerFactor`: 各相の変位力率。この量は、システムの基本周波数に基づいています。  - `frequency`: 回路の周波数です。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `phaseToPhaseVoltage`: 相間の電圧。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `phaseType`: フェーズの種類。ユニークな値です。Enum:'singlePhase, threePhase' (シングルフェーズ、スリーフェーズ)  - `phaseVoltage`: 各相とニュートラル導体間の電圧をいう。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `powerFactor`: 各相の力率。  - `reactiveEnergyExport`: フェーズごとに輸出される基本周波数無効エネルギー。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `reactiveEnergyImport`: 基本周波数の無効電力を取り込んだ、すなわち相ごとに消費された電力量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `reactivePower`: 基本周波数無効電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `refDevice`: この観測を行った機器について  - `refTargetDevice`: 測定対象となった機器のリストへの参照  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `thdCurrent`: 各相の電流の全高調波歪み。  - `thdVoltage`: 各相の電圧の全高調波歪み。  - `totalActiveEnergyExport`: 輸入された、すなわち消費されたエネルギーの総量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `totalActiveEnergyImport`: 輸入された、すなわち消費されたエネルギーの総量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `totalActivePower`: 消費された総アクティブ電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `totalApparentEnergyExport`: 総輸出エネルギー（皮相電力に関して）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `totalApparentEnergyImport`: 輸入された、すなわち消費された総エネルギー（皮相電力に関して）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `totalApparentPower`: 消費された総皮相電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `totalDisplacementPowerFactor`: 全相を含む変位力率の和。この量は、システムの基本周波数に基づいています。  - `totalPowerFactor`: 全相を含む力率の合計。  - `totalReactiveEnergyExport`: 輸出される基本周波数の無効エネルギーの合計。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `totalReactiveEnergyImport`: 輸入された、すなわち消費されたエネルギーの総量（基本周波数の無効電力に関して）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `totalReactivePower`: 消費された総無効電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  - `type`: NGSIのプロパティタイプ。ACMeasurementでなければならない。    
-必須項目  
-- `dateObserved`  - `id`  - `location`  - `phaseType`  - `type`    
-属性に関する追加情報。  電流や電圧などの一部の属性では、値は単相（L）または3つの異なる相（L1、L2、L3）のプロパティを持つ構造化された値です。異なる電力タイプ（有効電力、無効電力、皮相電力）などの一部の測定値については、すべての相の合計値の属性がある。規則は次のように定義されています - 三相 - 合計 = L1 + L2 + L3 - 単相 - 合計 = L ほとんどの属性には、実際に測定できるさまざまな方法があります。この目的のために、measurementTypeメタデータ属性を使用できます。メタデータ属性には、以下の平均値、実効値、最小値、最大値があります。値[average, rms, minimum, maximum]を使用する場合は、測定期間の長さを秒単位で指定するために、measurementIntervalという別のメタデータ属性を使用する必要があります。また、タイムスタンプ属性には、測定期間の終了時間を指定します。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `activeEnergyExport[object]`: 1相あたり輸出される有効エネルギー。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `activeEnergyImport[object]`: アクティブエネルギー 輸入されたエネルギー、すなわち位相ごとに消費されたエネルギー。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `activePower[object]`: 1相あたりの消費有効電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `apparentEnergyExport[object]`: 1相あたり輸出される皮相電力量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `apparentEnergyImport[object]`: 見かけの輸入エネルギー、すなわち、相ごとに消費されるエネルギー。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `apparentPower[object]`: 1相あたりの皮相電力消費量。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: 電流。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateEnergyMeteringStarted[string]`: ISO8601 UTCフォーマットでのエネルギー計測の開始日。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: ISO8601 UTCフォーマットで表現された、この観測の日付と時間。これは特定の時間の瞬間、または ISO8601 のインターバルで表すことができ、 `dateObservedFrom`,`dateObservedTo` 属性を分離することができる。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[string]`: 観測期間。ISO8601 UTC フォーマットによる開始日時。この属性は、ハイライトする時間間隔に対応する場合、 `dateObserved` 属性に加えて使用することができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: 観測期間。ISO8601 UTC フォーマットによる終了日時。この属性は、ハイライトする時間間隔に対応する場合、 `dateObserved` 属性に加えて使用することができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: このアイテムの説明  - `displacementPowerFactor[object]`: 各相の変位力率。この量は、システムの基本周波数に基づいています。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `frequency[number]`: 回路の周波数。単位コード（テキスト）は、[UN/CEFACT共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `phaseToPhaseVoltage[object]`: 相間電圧。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用し て示される。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `phaseType[string]`: 位相の種類。一意の値。Enum:'singlePhase, threePhase'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `phaseVoltage[object]`: 各相と中性導体間の電圧。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `powerFactor[object]`: 各相の力率。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `reactiveEnergyExport[object]`: 1 相あたり輸出される基本周波数無効電力量。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `reactiveEnergyImport[object]`: 基本周波数無効電力輸入、すなわち相あたり消費される電力量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `reactivePower[object]`: 基本周波数無効電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `refDevice[array]`: この観測をとらえたデバイスを参照  . Model: [https://schema.org/URL](https://schema.org/URL)- `refTargetDevice[array]`: 測定対象機器のリストへの参照  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `thdCurrent[object]`: 各相の電流の全高調波歪み。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `thdVoltage[object]`: 各相の電圧の全高調波歪み。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalActiveEnergyExport[number]`: 輸入されたエネルギー、すなわち消費されたエネルギーの合計。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用しています。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActiveEnergyImport[number]`: 輸入された、すなわち消費されたエネルギーの総量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用しています。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActivePower[number]`: 消費された総活動電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentEnergyExport[number]`: 輸出されたエネルギーの総量（皮相電力に関して）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalApparentEnergyImport[number]`: 輸入された、すなわち消費されたエネルギーの合計（皮相電力に関して）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用し て与えられる。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentPower[number]`: 消費された総見掛電力。単位コード（テキスト）は、[UN/CEFACT共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalDisplacementPowerFactor[number]`: 全相を含む変位力率の総和。この量は、システムの基本周波数に基づいています。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalPowerFactor[number]`: 全相を含む力率の総和。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalReactiveEnergyExport[number]`: 基本周波数無効電力の総輸出量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalReactiveEnergyImport[number]`: 輸入すなわち消費されたエネルギーの合計（基本周波数無効電力に関して）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用し て与えられる。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactivePower[number]`: 消費された総反応電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI プロパティタイプ。ACMeasurement である必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `dateObserved`  - `id`  - `location`  - `phaseType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+属性に関する追加情報。  電流や電圧などの一部の属性では、値は単相（L）または3つの異なる相（L1、L2、L3）のプロパティを持つ構造化された値である。異なる電力タイプ（有効電力、無効電力、皮相電力）のようないくつかの測定値については、すべての相からの合計の属性がある。ルールは次のように定義される： 三相-合計＝L1＋L2＋L3 - 単相-合計＝L ほとんどの属性について、それらを実際に測定することができるさまざまな方法が存在する。この目的のために、measurementTypeメタデータ属性を使用することができる。これは、平均、rms、最小、最大という値を持つことができる。平均値、実効値、最小値、最大値]を使用する場合は、計測期間の長さを秒単位で表す measurementInterval というメタデータ属性を使用する必要がある。また、測定期間の終了時刻を timestamp 属性で指定する。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ACMeasurement:    
@@ -264,7 +279,7 @@ ACMeasurement:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -285,7 +300,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -309,7 +324,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -335,7 +350,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -358,7 +373,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -384,7 +399,7 @@ ACMeasurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -413,7 +428,7 @@ ACMeasurement:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: 'The name of this item.'    
       type: string    
@@ -721,10 +736,15 @@ ACMeasurement:
   x-version: 0.0.1    
 ```  
 </details>    
-備考値は、各相の「相の種類」に応じて、1つまたは3つのサブプロパティによって伝達される Single-Phase.個々の値 L. ThreePhase.個々の値の合計。L1、L2、L3。すべての値は、測定の開始日（dateEnergyMeteringStarted）から計算されます。  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+注各相の「位相の種類」に応じて、1つまたは3つのサブプロパティで値を伝達する。 単相。個々の値 L. ThreePhase.個々の値の合計。L1、L2、L3。全ての値は、測定開始日[dateEnergyMeteringStarted]から算出される。  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### ACMeasurement NGSI-v2 key-values の例。  
-ACMeasurementをkey-valuesとしてJSON-LD形式で出力した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### ACMeasurement NGSI-v2 key-value の例。  
+以下は、ACMeasurementをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
@@ -810,8 +830,10 @@ ACMeasurement:
   }  
 }  
 ```  
-#### ACMeasurement NGSI-v2の正規化例  
-ここでは、正規化されたJSON-LD形式のACMeasurementの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ACMeasurement NGSI-v2 正規化例  
+以下は、ACMeasurement を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
@@ -1119,404 +1141,417 @@ ACMeasurement:
   }  
 }  
 ```  
-#### ACMeasurement NGSI-LD key-values の例。  
-ACMeasurementをkey-valuesとしてJSON-LD形式で出力した例を示します。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ACMeasurement NGSI-LD key-value 例  
+ACMeasurementをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
-  "type": "ACMeasurement",  
-  "name": {  
-    "type": "Property",  
-    "value": " AirPort-NCE-T1-F01-TR05-ACTP"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "AirPort  global Observation"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1  Floor 01  Technical Room 05 for Triphase alternating current."  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        43.66481,  
-        7.196545  
-      ]  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice Aeroport"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-03-17TT08:45:00Z"  
-    }  
-  },  
-  "refDevice": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"  
+    "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
+    "type": "ACMeasurement",  
+    "activePower": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 11996.416016,  
+            "L2": 9461.501953,  
+            "L3": 10242.351562  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "AirPort  global Observation"  
+    },  
+    "apparentPower": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 13201.412109,  
+            "L2": 10755.304688,  
+            "L3": 11941.094727  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Aeroport"  
+    },  
+    "current": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 56.126038,  
+            "L2": 45.894356,  
+            "L3": 50.872452,  
+            "N": 0.0  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "rms"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "dateEnergyMeteringStarted": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-07-07T15:05:59.408Z"  
+        }  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-03-17TT08:45:00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1  Floor 01  Technical Room 05 for Triphase alternating current."  
+    },  
+    "displacementPowerFactor": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.978013,  
+            "L2": 0.973317,  
+            "L3": 0.960382  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        },  
+        "onlyPositive": {  
+            "type": "Property",  
+            "value": true  
+        }  
+    },  
+    "frequency": {  
+        "type": "Property",  
+        "value": 50.020672,  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": " AirPort-NCE-T1-F01-TR05-ACTP"  
+    },  
+    "phaseToPhaseVoltage": {  
+        "type": "Property",  
+        "value": {  
+            "L12": 406.769196,  
+            "L23": 407.081238,  
+            "L31": 407.734558  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "rms"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "phaseType": {  
+        "type": "Property",  
+        "value": "threePhase"  
+    },  
+    "phaseVoltage": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 234.961304,  
+            "L2": 234.563477,  
+            "L3": 235.354034  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "rms"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "powerFactor": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.908817,  
+            "L2": 0.879906,  
+            "L3": 0.859293  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        },  
+        "onlyPositive": {  
+            "type": "Property",  
+            "value": true  
+        }  
+    },  
+    "reactivePower": {  
+        "type": "Property",  
+        "value": {  
+            "L1": -2612.606934,  
+            "L2": -2209.906006,  
+            "L3": -3007.81958  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"  
+        ]  
+    },  
+    "thdCurrent": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.38497337,  
+            "L2": 0.45807529,  
+            "L3": 0.4938652  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "thdVoltage": {  
+        "type": "Property",  
+        "value": {  
+            "L1": 0.01471114,  
+            "L2": 0.01600046,  
+            "L3": 0.01541459  
+        },  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "totalActiveEnergyExport": {  
+        "type": "Property",  
+        "value": 1059.80176,  
+        "observedAt": "2020-02-24T22:00:00.173Z"  
+    },  
+    "totalActiveEnergyImport": {  
+        "type": "Property",  
+        "value": 150781.96448,  
+        "observedAt": "2020-02-24T22:00:00.173Z"  
+    },  
+    "totalActivePower": {  
+        "type": "Property",  
+        "value": 31700.269531,  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "totalApparentPower": {  
+        "type": "Property",  
+        "value": 36019.089844,  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "totalReactiveEnergyExport": {  
+        "type": "Property",  
+        "value": 93275.02176,  
+        "observedAt": "2020-02-24T22:00:00.173Z"  
+    },  
+    "totalReactiveEnergyImport": {  
+        "type": "Property",  
+        "value": 20490.3392,  
+        "observedAt": "2020-02-24T22:00:00.173Z"  
+    },  
+    "totalReactivePower": {  
+        "type": "Property",  
+        "value": -7830.332031,  
+        "observedAt": "2020-02-24T22:00:00.173Z",  
+        "measurementType": {  
+            "type": "Property",  
+            "value": "average"  
+        },  
+        "measurementInterval": {  
+            "type": "Property",  
+            "value": 1  
+        }  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "phaseType": {  
-    "type": "Property",  
-    "value": "threePhase"  
-  },  
-  "frequency": {  
-    "type": "Property",  
-    "value": 50.020672,  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "dateEnergyMeteringStarted": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-07-07T15:05:59.408Z"  
-    }  
-  },  
-  "totalActiveEnergyImport": {  
-    "type": "Property",  
-    "value": 150781.96448,  
-    "observedAt": "2020-02-24T22:00:00.173Z"  
-  },  
-  "totalReactiveEnergyImport": {  
-    "type": "Property",  
-    "value": 20490.3392,  
-    "observedAt": "2020-02-24T22:00:00.173Z"  
-  },  
-  "totalActiveEnergyExport": {  
-    "type": "Property",  
-    "value": 1059.80176,  
-    "observedAt": "2020-02-24T22:00:00.173Z"  
-  },  
-  "totalReactiveEnergyExport": {  
-    "type": "Property",  
-    "value": 93275.02176,  
-    "observedAt": "2020-02-24T22:00:00.173Z"  
-  },  
-  "activePower": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 11996.416016,  
-      "L2": 9461.501953,  
-      "L3": 10242.351562  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "reactivePower": {  
-    "type": "Property",  
-    "value": {  
-      "L1": -2612.606934,  
-      "L2": -2209.906006,  
-      "L3": -3007.81958  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "apparentPower": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 13201.412109,  
-      "L2": 10755.304688,  
-      "L3": 11941.094727  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "totalActivePower": {  
-    "type": "Property",  
-    "value": 31700.269531,  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "totalReactivePower": {  
-    "type": "Property",  
-    "value": -7830.332031,  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "totalApparentPower": {  
-    "type": "Property",  
-    "value": 36019.089844,  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "powerFactor": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.908817,  
-      "L2": 0.879906,  
-      "L3": 0.859293  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    },  
-    "onlyPositive": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "displacementPowerFactor": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.978013,  
-      "L2": 0.973317,  
-      "L3": 0.960382  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    },  
-    "onlyPositive": {  
-      "type": "Property",  
-      "value": true  
-    }  
-  },  
-  "current": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 56.126038,  
-      "L2": 45.894356,  
-      "L3": 50.872452,  
-      "N": 0.0  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "rms"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "phaseVoltage": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 234.961304,  
-      "L2": 234.563477,  
-      "L3": 235.354034  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "rms"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "phaseToPhaseVoltage": {  
-    "type": "Property",  
-    "value": {  
-      "L12": 406.769196,  
-      "L23": 407.081238,  
-      "L31": 407.734558  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "rms"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "thdVoltage": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.01471114,  
-      "L2": 0.01600046,  
-      "L3": 0.01541459  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "thdCurrent": {  
-    "type": "Property",  
-    "value": {  
-      "L1": 0.38497337,  
-      "L2": 0.45807529,  
-      "L3": 0.4938652  
-    },  
-    "observedAt": "2020-02-24T22:00:00.173Z",  
-    "measurementType": {  
-      "type": "Property",  
-      "value": "average"  
-    },  
-    "measurementInterval": {  
-      "type": "Property",  
-      "value": 1  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### ACMeasurement NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のACMeasurementの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### ACMeasurement NGSI-LD 正規化例  
+以下は、ACMeasurement を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
-  "type": "ACMeasurement",  
-  "name": " AirPort-NCE-T1-F01-TR05-ACTP",  
-  "alternateName": "AirPort global Observation",  
-  "description": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1 Floor 01 Technical Room 05 for Triphase alternating current.",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.66481,  
-      7.196545  
+    "id": "urn:ngsi-ld:ACMeasurement:ACMeasurement:MNCA-ACM-001",  
+    "type": "ACMeasurement",  
+    "activePower": {  
+        "L1": 11996.416016,  
+        "L2": 9461.501953,  
+        "L3": 10242.351562  
+    },  
+    "alternateName": "AirPort global Observation",  
+    "apparentPower": {  
+        "L1": 13201.412109,  
+        "L2": 10755.304688,  
+        "L3": 11941.094727  
+    },  
+    "areaServed": "Nice Aeroport",  
+    "current": {  
+        "L1": 56.126038,  
+        "L2": 45.894356,  
+        "L3": 50.872452,  
+        "N": 0.0  
+    },  
+    "dateEnergyMeteringStarted": "2020-07-07T15:05:59.408Z",  
+    "dateObserved": "2020-03-17T08:45:00Z",  
+    "description": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1 Floor 01 Technical Room 05 for Triphase alternating current.",  
+    "displacementPowerFactor": {  
+        "L1": 0.978013,  
+        "L2": 0.973317,  
+        "L3": 0.960382  
+    },  
+    "frequency": 50.020672,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.66481,  
+            7.196545  
+        ]  
+    },  
+    "name": " AirPort-NCE-T1-F01-TR05-ACTP",  
+    "phaseToPhaseVoltage": {  
+        "L12": 406.769196,  
+        "L23": 407.081238,  
+        "L31": 407.734558  
+    },  
+    "phaseType": "threePhase",  
+    "phaseVoltage": {  
+        "L1": 234.961304,  
+        "L2": 234.563477,  
+        "L3": 235.354034  
+    },  
+    "powerFactor": {  
+        "L1": 0.908817,  
+        "L2": 0.879906,  
+        "L3": 0.859293  
+    },  
+    "reactivePower": {  
+        "L1": -2612.606934,  
+        "L2": -2209.906006,  
+        "L3": -3007.81958  
+    },  
+    "refDevice": [  
+        "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"  
+    ],  
+    "thdCurrent": {  
+        "L1": 0.38497337,  
+        "L2": 0.45807529,  
+        "L3": 0.4938652  
+    },  
+    "thdVoltage": {  
+        "L1": 0.01471114,  
+        "L2": 0.01600046,  
+        "L3": 0.01541459  
+    },  
+    "totalActiveEnergyExport": 1059.80176,  
+    "totalActiveEnergyImport": 150781.96448,  
+    "totalActivePower": 31700.269531,  
+    "totalApparentPower": 36019.089844,  
+    "totalReactiveEnergyExport": 93275.02176,  
+    "totalReactiveEnergyImport": 20490.3392,  
+    "totalReactivePower": -7830.332031,  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "areaServed": "Nice Aeroport",  
-  "dateObserved": "2020-03-17T08:45:00Z",  
-  "refDevice": [  
-    "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"  
-  ],  
-  "phaseType": "threePhase",  
-  "frequency": 50.020672,  
-  "dateEnergyMeteringStarted": "2020-07-07T15:05:59.408Z",  
-  "totalActiveEnergyImport": 150781.96448,  
-  "totalReactiveEnergyImport": 20490.3392,  
-  "totalActiveEnergyExport": 1059.80176,  
-  "totalReactiveEnergyExport": 93275.02176,  
-  "activePower": {  
-    "L1": 11996.416016,  
-    "L2": 9461.501953,  
-    "L3": 10242.351562  
-  },  
-  "reactivePower": {  
-    "L1": -2612.606934,  
-    "L2": -2209.906006,  
-    "L3": -3007.81958  
-  },  
-  "apparentPower": {  
-    "L1": 13201.412109,  
-    "L2": 10755.304688,  
-    "L3": 11941.094727  
-  },  
-  "totalActivePower": 31700.269531,  
-  "totalReactivePower": -7830.332031,  
-  "totalApparentPower": 36019.089844,  
-  "powerFactor": {  
-    "L1": 0.908817,  
-    "L2": 0.879906,  
-    "L3": 0.859293  
-  },  
-  "displacementPowerFactor": {  
-    "L1": 0.978013,  
-    "L2": 0.973317,  
-    "L3": 0.960382  
-  },  
-  "current": {  
-    "L1": 56.126038,  
-    "L2": 45.894356,  
-    "L3": 50.872452,  
-    "N": 0.0  
-  },  
-  "phaseVoltage": {  
-    "L1": 234.961304,  
-    "L2": 234.563477,  
-    "L3": 235.354034  
-  },  
-  "phaseToPhaseVoltage": {  
-    "L12": 406.769196,  
-    "L23": 407.081238,  
-    "L31": 407.734558  
-  },  
-  "thdVoltage": {  
-    "L1": 0.01471114,  
-    "L2": 0.01600046,  
-    "L3": 0.01541459  
-  },  
-  "thdCurrent": {  
-    "L1": 0.38497337,  
-    "L2": 0.45807529,  
-    "L3": 0.4938652  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

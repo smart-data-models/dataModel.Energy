@@ -1,29 +1,29 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entität: SolarEnergy  
-====================<!-- /10-Header -->  
+实体。太阳能发电公司  
+==========<!-- /10-Header -->  
 <!-- 15-License -->  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.Energy/blob/master/SolarEnergy/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可](https://github.com/smart-data-models//dataModel.Energy/blob/master/SolarEnergy/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Globale Beschreibung: **Ein Datenmodell für die Solarenergieerzeugung.**  
-Version: 0.0.1  
+全球描述。**太阳能发电的数据模型**。  
+版本：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## Liste der Eigenschaften  
+##属性列表  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `activePower[object]`: Die tatsächlichen Werte werden durch Untereigenschaften erfasst, deren Namen den Namen der einzelnen Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: Elektrischer Strom. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase und den Nullleiter übermittelt: L1, L2, L3 und N.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `dataDescriptor[string]`: URI, die auf die Daten-Deskriptor-Entität verweist  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `energyGenerated[number]`: Energie, die über einen bestimmten Zeitraum aus der dieser Beobachtung entsprechenden Energieressource erzeugt wird.  - `frequency[number]`: Von der Entität beobachtete Frequenz, die dieser Beobachtung entspricht.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxSolarPowerMeasure[number]`: Ein Maß für die maximale Sonnenenergie, die erzeugt werden kann.  - `name[string]`: Der Name dieses Artikels.  - `observationDateTime[string]`: Letzter gemeldeter Zeitpunkt der Beobachtung.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `phaseCurrent[object]`: Strom pro Phase. Geordnetes Dreifach, bestehend aus der Wirkleistung von drei Phasen in folgender Reihenfolge: [R Y B]  - `phaseVoltage[object]`: Die Spannung zwischen jeder Phase und dem Neutralleiter. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `powerFactor[object]`: Leistungsfaktor für jede Phase. Die tatsächlichen Werte werden durch eine Untereigenschaft pro Wechselstromphase übermittelt: L1, L2 und L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactivePower[object]`: Grundfrequenz-Blindleistung. Die tatsächlichen Werte werden durch Untereigenschaften übermittelt, deren Namen dem Namen jeder der Wechselstromphasen entsprechen: L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `totalActivePower[number]`: Gesamtwirkleistung, die von allen Phasen verbraucht wird.  - `totalEnergyGenerated[number]`: Gesamtenergie, die von der Energieressource erzeugt wird, die dieser Beobachtung entspricht.  - `totalReactivePower[number]`: Gesamtblindleistung für alle Phasen.  - `type[string]`: NGSI-Entitätstyp. Es muss SolarEnergy sein  - `voltage[number]`: Der Wert der Spannung in der Entität, die dieser Beobachtung entspricht.  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `activePower[object]`: 实际值将由子属性来测量，子属性的名称将等同于每个交流电相的名称。L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: 电流。实际数值将由每个交流电相位和中性线的一个子属性来传达。L1、L2、L3和N。  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `dataDescriptor[string]`: 指向数据描述器实体的URI  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `energyGenerated[number]`: 在特定的时间范围内，从与该观察对应的能源资源中产生的能量。  - `frequency[number]`: 从该观察对应的实体观察到的频率。  - `id[*]`: 实体的唯一标识符  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `maxSolarPowerMeasure[number]`: 可产生的最大太阳能的衡量标准。  - `name[string]`: 这个项目的名称。  - `observationDateTime[string]`: 最后报告的观察时间。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `phaseCurrent[object]`: 每相电流。由三相有功功率组成的有序三相，其顺序如下。[R Y B]  - `phaseVoltage[object]`: 每一相和中性线之间的电压。实际值将由每个交流电相的一个子属性来传达。L1、L2和L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `powerFactor[object]`: 每相的功率因素。实际值将由每个交流相的一个子属性来传达。L1、L2和L3  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `reactivePower[object]`: 基频无功功率。实际值将由子属性来传达，子属性的名称将等同于每个交流电相的名称。L1, L2, L3.  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `totalActivePower[number]`: 所有阶段所消耗的总有功功率。  - `totalEnergyGenerated[number]`: 与此观察相对应的能源资源产生的总能量。  - `totalReactivePower[number]`: 所有阶段的总无功功率。  - `type[string]`: NGSI实体类型。它必须是SolarEnergy  - `voltage[number]`: 与此观察相对应的实体中的电压值。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Erforderliche Eigenschaften  
+所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -447,9 +447,9 @@ SolarEnergy:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Beispiel-Nutzlasten  
-#### SolarEnergy NGSI-v2 Schlüssel-Werte Beispiel  
-Hier ist ein Beispiel für eine SolarEnergie im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+## ＃＃＃＃有效载荷的例子  
+#### SolarEnergy NGSI-v2 关键值示例  
+下面是一个以JSON-LD格式作为关键值的SolarEnergy的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -528,8 +528,8 @@ SolarEnergy:
 }  
 ```  
 </details>  
-#### SolarEnergy NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für eine SolarEnergie im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### SolarEnergy NGSI-v2规范化示例  
+下面是一个以JSON-LD格式规范化的SolarEnergy的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -692,8 +692,8 @@ SolarEnergy:
 }  
 ```  
 </details>  
-#### SolarEnergy NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für eine SolarEnergie im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+#### SolarEnergy NGSI-LD关键值示例  
+这里有一个JSON-LD格式的SolarEnergy的例子，作为key-values。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -776,8 +776,8 @@ SolarEnergy:
 }  
 ```  
 </details>  
-#### SolarEnergie NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für eine SolarEnergie im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### SolarEnergy NGSI-LD 归一化实例  
+下面是一个以JSON-LD格式规范化的SolarEnergy的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -953,7 +953,7 @@ SolarEnergy:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

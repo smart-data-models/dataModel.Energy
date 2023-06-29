@@ -1,15 +1,31 @@
-エンティティTechnicalCabinetDevice  
-============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティTechnicalCabinetDevice（テクニカルキャビネットデバイス  
+============================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Energy/blob/master/TechnicalCabinetDevice/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**テクニカルキャビネットデバイスデータモデルは、都市または都市間の環境に配置されるように設計されたデバイスの技術的特性を記述することを目的としています。本データモデルにおけるこれらのキャビネットの主な目的は、都市の照明、信号、映像、配電の制御、監視、読み取り、管理に必要な電気機器を保護することである。これらのキャビネットの一部の使用範囲は、電話、データ処理、気象観測所、光発電所、風力発電所、通信、ネットワーク、データ、ブレオプティックスなどのモジュラー装置の設置のための追加の保護に拡張することができます。*Remark* :このデータモデルは、デバイス `Technical Cabinet` を記述するメインエンティティとして直接使用することも、`refDevice` 属性による参照を使用してデータモデル `DEVICE` のサブエンティティとして使用することもできます。また、データモデル'DEVICE'**を使用して、`refDeviceList`属性で、それが含むすべてのコンポーネントのリストを参照することができます。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**技術キャビネットのデータモデルは、都市や郊外の環境に配置されるように設計されたデバイスの技術的な特性を記述することを目的としています。このデータモデルのこれらのキャビネットの主な目的は、都市の照明、信号、ビデオ、配電の制御、監視、読み取り、管理に必要な電気機器を保護することである。これらのキャビネットのいくつかの使用範囲は、テレフォニー、データ処理、気象観測所、光発電所、風力発電所、通信、ネットワーク、データ、ブレオプティクスなどのモジュラー装置のインストールのための追加の保護に拡張することができますなどです。*備考このデータモデルは、デバイス `Technical Cabinet` を記述するためのメインエンティティとして直接使用することも、`refDevice` 属性による参照を使用してデータモデル `DEVICE` のサブエンティティとして使用することも可能である。また、データモデル 'DEVICE'** を使用して、`refDeviceList` 属性で、それが含むすべてのコンポーネントのリストを参照することができます。  
+のバージョンです。  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `application`: 環境に関する本デバイスの適用対象。これらの値の組み合わせである。Enum:'commercial, distributionService, industrial, other, publicWorks, road, tertiary, urbanService'.  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `brandName`: ブランド名  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastReported`: デバイスがデータの報告に成功した最後の時間を示すタイムスタンプ。ISO8601 UTC形式の日付と時刻  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `designMaterials`: キャビネットを作るためのデザイン素材。これらの値の組み合わせである。Enum:'ABS-Plastic, aluminum, fiberGlass, galvanizedSteel, other, polyester, stainlessSteel' (ABS-Plastic, aluminum, fiberGlass, galvanizedSteel, other, polyester, stainlessSteel)  - `dimension`: フォーマットは3項目のサブプロパティで構成されています。測定の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**CMT**はCentimeterを表します。  - `documentation`: デバイスのドキュメントへのリンク  - `doorClosingMode`: ドアの開閉モード。これらの値のユニークな値。Enum:'fixedHandle, other, revolvingHandle, triangleHandle' (固定ハンドル、その他、回転ハンドル、三角ハンドル)  - `doorCount`: テクニカルキャビネットのドアの数  - `doorOpeningAngle`: ドア開口部の角度を0～180度の範囲で10進数で表したもの。測定の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**DD**はDecimal Degreesを表します。  - `doorType`: テクニカルキャビネットのドアのタイプ。これらの値のうち、一意の値。Enum:'混合、その他、無垢、透明'  - `exteriorCoating`: インテリアコーティング。これらの値の組み合わせです。Enum:'fiberGlass, other, plastic, polyester, polyesterResin, steel  - `exteriorFinish`: エクステリア・フィニッシュ。これらの値を組み合わせたもの。Enum:'graffiti, other, raised, roughcast, smooth, textured'.  - `id`: エンティティのユニークな識別子  - `installationCondition`: 以下の環境下での使用可能な状態とその可能性。これらの値の組み合わせである。Enum:'desert, dust, extremeCold, extremeClimate, extremeHeat, extremeHumidity, marine, none, other, saline, seismic, sand'.  - `installationMode`: 地面の基準となるシステムに対するデバイスの位置決め。Enum:'aerial, ground, other, pole, roofing, underground, wall'.  - `interiorCoating`: インテリアコーティング。これらの値の組み合わせです。Enum:'fiberGlass, heatInsulating, other, plastic, polyester, polyesterResin, steel'.  - `internalDimension`: テクニカルキャビネット内の作業場所に対応する内寸。フォーマットは3項目のサブプロパティで構成されている。測定の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**CMT**はCentimeter（センチメートル）を表します。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `manufacturerName`: メーカー名  - `maximumSystemVoltage`: モジュール**に許容される最大システム電圧です。単位コード(テキスト)は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられます。例えば、**VLT**はVoltを表します。  - `modelName`: メーカーが定めた機種名。  - `name`: このアイテムの名前です。  - `operatingTemperature`: 使用周囲温度の範囲。寒さや暑さに対する耐性の最小値と最大値を表しています。フォーマットは、2項目のサブプロパティで構成されています。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**CEL**はDegree Celsiusを表します。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `possibilityOfUse`: 使用の可能性。固有の値。Enum:'mixed, mobile, other, stationary'.  - `protectionIK`: IK「*Mecanic Protection*」レベルは、国際電気技術委員会規格(EN 62-262)に基づき、外部からの機械的衝撃に対する電気機器の筐体の保護程度を数値で分類したものです。- IKは0（最小抵抗）から10（最大抵抗）まであり、衝撃エネルギー（単位ジュール）を表します。  - `protectionIP`: ジャンクションボックスのIP「Ingress Protection」。これは、国際電気標準会議の規格（EN 60-529）に基づいて、機械的な筐体や電気的な筐体が、侵入、埃、偶発的な接触、および水に対して提供する保護の度合いを分類し、評価するものです。1桁目1桁目：固体粒子に対する保護（単一の数字：06または'X'）。2桁目2桁目：液体の侵入に対する保護（数字1つ：09または「X」）、3桁目：危険な部品へのアクセスに対する個人の保護（数字1つ：09または「X」）。3桁目：危険な部品へのアクセスに対する個人保護（オプションの追加文字）。4桁目4桁目：その他の保護機能（オプションで追加文字あり）  - `protectionOthers`: その他、テクニカルキャビネットの保護。これらの値の組み合わせである。Enum:'摩耗、地下室、防湿、ディスプレイ、ドアテアリング、埃、強制開錠、落書き、昆虫、その他、屋根過負荷、塩水噴霧、遮蔽、太陽、破壊行為、水'  - `refDevice`: このレコードで表現されたデータを得るために使用されたデバイス  - `refDeviceList`: テクニカルキャビネット・デバイスの内部にある[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への参照リストです。  - `refPointOfInterest`: 観測データに関連する[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `serialNumber`: 容器のシリアル番号  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ。TechnicalCabinetDeviceでなければならない。  - `typeOfUse`: 屋内外の環境での配置に関して、使用を認められていること。これらの値のうち、一意の値。Enum:'屋内、混合、屋外、その他'  - `ventilationMode`: 換気モード。これらの値の組み合わせです。Enum:'airConditioners, dehumidifier, none, other, selfVentilatedGills'.  - `weight`: アイテムの重量です。測定の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**KGM**はキログラムを表します。    
-必須項目  
-- `dateLastReported`  - `dimension`  - `id`  - `location`  - `type`  - `typeOfUse`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `application[array]`: 環境に関する本装置の目標用途。これらの値の組み合わせ。Enum:'commercial, distributionService, industrial, other, publicWorks, road, tertiary, urbanService' （商業、流通サービス、工業、その他、公共事業、道路、第三次、都市サービス  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: ブランド名  . Model: [https://schema.org/brand](https://schema.org/brand)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateLastReported[string]`: デバイスが正常にデータを報告した最後の時刻を示すタイムスタンプ。ISO8601 UTCフォーマットでの日付と時間  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `designMaterials[array]`: キャビネットを作るためのデザイン素材。これらの値の組み合わせ。Enum:'ABS-Plastic, アルミニウム, fiberGlass, galvanizedSteel, その他, ポリエステル, stainlessSteel'.  - `dimension[object]`: フォーマットは、3 項目のサブプロパティで構成される。計測の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与える。例えば、**CMT** はセンチメートルを表す。  - `documentation[string]`: デバイスのドキュメントへのリンク  . Model: [https://schema.org/URL](https://schema.org/URL)- `doorClosingMode[array]`: ドアクロージングモード。これらの値のうち一意の値。Enum:'fixedHandle, other, revolvingHandle, triangleHandle'.  - `doorCount[number]`: テクニカルキャビネットの扉数。  - `doorOpeningAngle[number]`: ドア開口角度を 0 度から 180 度までの 10 進数で表したもの。計測の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**DD**はDecimal Degreesを表します。  - `doorType[string]`: 技術キャビネットのドアのタイプ。これらの値のうちユニークな値。Enum:'混合、その他、ソリッド、透明'  - `exteriorCoating[array]`: 内装のコーティング。これらの値の組み合わせ。Enum:'fiberGlass, other, plastic, polyester, polyesterResin, steel.  - `exteriorFinish[array]`: 外装仕上げ。これらの値の組み合わせ。Enum:'graffiti, other, raised, roughcast, smooth, textured'.  - `id[*]`: エンティティの一意な識別子  - `installationCondition[array]`: 以下の環境下での使用状態、可能性。これらの値の組み合わせ。Enum:'desert, dust, extremeCold, extremeClimate, extremeHeat, extremeHumidity, marine, none, other, saline, seismic, sand' （砂漠、塵、極寒、極端な気候、極端な熱、極端な湿度、海洋、なし、その他、塩害、地震、砂  - `installationMode[string]`: 地上基準システムに対するデバイスの位置決め。Enum:'aerial, ground, other, pole, roofing, underground, wall'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `interiorCoating[array]`: 内装のコーティング。これらの値の組み合わせ。Enum:'fiberGlass, heatInsulating, other, plastic, polyester, polyesterResin, steel' （ガラス繊維、断熱材、その他、プラスチック、ポリエステル樹脂、スチール  - `internalDimension[object]`: テクニカルキャビネット内の作業する場所に対応する内寸。フォーマットは、3 項目のサブプロパティで構成される。計測の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与える。例えば、**CMT** はセンチメートルを表す。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `manufacturerName[string]`: メーカー名  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumSystemVoltage[number]`: モジュール**に許容される最大システム電圧です。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**VLT**はVolt（ボルト）を表します。  - `modelName[string]`: メーカーから提示された機種名。  - `name[string]`: このアイテムの名称です。  - `operatingTemperature[object]`: 動作周囲温度範囲。寒さや暑さに対する耐性の最小値と最大値を示す。フォーマットは 2 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与える。例えば、**CEL** は摂氏を表す。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `possibilityOfUse[string]`: 活用の可能性。ユニークな値。Enum:'mixed, mobile, other, stationary'.  - `protectionIK[number]`: IK '*Mecanic Protection*' レベルは、国際電気技術委員会規格（EN 62-262）に基づき、電気機器の筐体が外部の機械的衝撃に対してどの程度保護されているかを数値で分類したものである。- IKは0（最小抵抗）から10（最大抵抗）まであり、これは衝撃エネルギー（単位ジュール）を表しています。  - `protectionIP[string]`: ジャンクションボックスのIP 'Ingress Protection'。国際電気標準会議規格（EN 60-529）に基づき、機械筐体や電気筐体の侵入、粉塵、偶発的な接触、水に対する保護の度合いを分類・評価したレベルです。1桁目1桁目：固体粒子に対する保護（一桁の数字：06または'X'）。2桁目3桁目：液体侵入保護（一桁目：09または'X'）。3桁目：危険箇所への立ち入りに対する個人保護（オプションの追加文字）。4桁目その他の保護（オプションで追加可能な文字）  - `protectionOthers[array]`: その他 技術筐体の保護。これらの値の組み合わせ。Enum:'abrasion, basement, dampProof, display, doorTearing, dust, forcedOpening, graffiti, insect, other, roofOverload, saltSpray, shielding, solar, vandalism, water' （擦過傷、地下室、防湿、ディスプレイ、ドア破り、ほこり、強制開錠、落書き、虫、その他  - `refDevice[*]`: このレコードで表現されたデータを取得するために使用された装置  - `refDeviceList[array]`: テクニカルキャビネットデバイスの内部にある[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)の参照先リストです。  - `refPointOfInterest[*]`: PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)の参照は、観測とリンクしている。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `serialNumber[string]`: 容器のシリアル番号  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI エンティティタイプ。これは TechnicalCabinetDevice でなければなりません。  - `typeOfUse[string]`: 屋内・屋外環境での位置づけを考慮した使用方法。これらの値のうち一意の値。Enum:'indoor, mixed, outdoor, other'.  - `ventilationMode[array]`: 換気モード。これらの値の組み合わせ。Enum:'airConditioners, dehumidifier, none, other, selfVentilatedGills' （エアコン、除湿機、なし、その他、自己換気口  - `weight[number]`: 品目の重量。計測の単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使って与えられます。例えば、**KGM**はキログラムを表します。  . Model: [https://schema.org/weigth](https://schema.org/weigth)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `dateLastReported`  - `dimension`  - `id`  - `location`  - `type`  - `typeOfUse`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 TechnicalCabinetDevice:    
@@ -283,7 +299,7 @@ TechnicalCabinetDevice:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -304,7 +320,7 @@ TechnicalCabinetDevice:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -328,7 +344,7 @@ TechnicalCabinetDevice:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -354,7 +370,7 @@ TechnicalCabinetDevice:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -377,7 +393,7 @@ TechnicalCabinetDevice:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -403,7 +419,7 @@ TechnicalCabinetDevice:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -432,7 +448,7 @@ TechnicalCabinetDevice:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     manufacturerName:    
       description: 'Name of the manufacturer'    
       type: string    
@@ -636,9 +652,14 @@ TechnicalCabinetDevice:
   x-version: ""    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### TechnicalCabinetDevice NGSI-v2 key-valuesの例。  
-TechnicalCabinetDeviceをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### TechnicalCabinetDevice NGSI-v2 key-value の例。  
+TechnicalCabinetDeviceをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
@@ -734,8 +755,10 @@ TechnicalCabinetDevice:
   ]  
 }  
 ```  
-#### TechnicalCabinetDevice NGSI-v2 正規化された例  
-ここでは、TechnicalCabinetDeviceを正規化したJSON-LD形式の例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### TechnicalCabinetDevice NGSI-v2 正規化例  
+TechnicalCabinetDevice を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
@@ -937,315 +960,328 @@ TechnicalCabinetDevice:
   }  
 }  
 ```  
-#### TechnicalCabinetDevice NGSI-LDのキーバリューの例  
-TechnicalCabinetDeviceをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### TechnicalCabinetDevice NGSI-LD key-value の例。  
+TechnicalCabinetDeviceをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
-  "type": "TechnicalCabinetDevice",  
-  "name": "MNCA-TCD-AP-T2-F1-022",  
-  "alternateName": "AirPort â€“ global Observation",  
-  "description": "Technical Cabinet description",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      7.196545,  
-      43.664810  
+    "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
+    "type": "TechnicalCabinetDevice",  
+    "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "Airport Terminal 2 - Floor 1"  
+    },  
+    "alternateName": "AirPort \u2013 global Observation",  
+    "application": [  
+        "industrial",  
+        "distributionService"  
+    ],  
+    "areaServed": "Nice Aeroport",  
+    "brandName": "EATON",  
+    "dateLastReported": "2020-03-17T08:45:00Z",  
+    "description": "Technical Cabinet description",  
+    "designMaterials": [  
+        "stainlessSteel",  
+        "polyester"  
+    ],  
+    "deviceOwner": [  
+        "Airport-Division Maintenance"  
+    ],  
+    "dimension": {  
+        "width": 150,  
+        "height": 175,  
+        "depth": 75  
+    },  
+    "documentation": "https://www.myTechnicalCabinet.fr",  
+    "doorClosingMode": [  
+        "fixedHandle"  
+    ],  
+    "doorCount": 2,  
+    "doorOpeningAngle": 180,  
+    "doorType": "solid",  
+    "exteriorCoating": [  
+        "polyesterResin"  
+    ],  
+    "exteriorFinish": [  
+        "roughcast"  
+    ],  
+    "installationCondition": [  
+        "none"  
+    ],  
+    "installationMode": "ground",  
+    "interiorCoating": [  
+        "heatInsulating",  
+        "polyesterResin"  
+    ],  
+    "internalDimension": {  
+        "width": 140,  
+        "height": 165,  
+        "depth": 70  
+    },  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            7.196545,  
+            43.66481  
+        ]  
+    },  
+    "manufacturerName": "ElDorado",  
+    "maximumSystemVoltage": 1000,  
+    "modelName": "xEnergy L",  
+    "name": "MNCA-TCD-AP-T2-F1-022",  
+    "operatingTemperature": {  
+        "min": -40,  
+        "max": 100  
+    },  
+    "possibilityOfUsed": "stationary",  
+    "protectionIK": 10,  
+    "protectionIP": "65",  
+    "protectionOthers": [  
+        "dust",  
+        "forcedOpening",  
+        "saltSpray",  
+        "abrasion",  
+        "doorTearing",  
+        "vandalism"  
+    ],  
+    "refDeviceList": [  
+        "urn:ngsi-ld:Device:NCE-CE-025",  
+        "urn:ngsi-ld:Device:NCE-FU-048",  
+        "urn:ngsi-ld:Device:NCE-CE-058"  
+    ],  
+    "serialNumber": "L257589A4587J56",  
+    "typeOfUse": "outdoor",  
+    "ventilationMode": [  
+        "selfVentilatedGills"  
+    ],  
+    "weight": 60,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "Airport Terminal 2 - Floor 1"  
-  },  
-  "areaServed": "Nice Aeroport",  
-  "refDeviceList": [  
-    "urn:ngsi-ld:Device:NCE-CE-025",  
-    "urn:ngsi-ld:Device:NCE-FU-048",  
-    "urn:ngsi-ld:Device:NCE-CE-058"  
-  ],  
-  "dateLastReported": "2020-03-17T08:45:00Z",  
-  "brandName": "EATON",  
-  "modelName": "xEnergy L",  
-  "manufacturerName": "ElDorado",  
-  "serialNumber": "L257589A4587J56",  
-  "application": [  
-    "industrial",  
-    "distributionService"  
-  ],  
-  "typeOfUse": "outdoor",  
-  "installationMode": "ground",  
-  "installationCondition": [  
-    "none"  
-  ],  
-  "possibilityOfUsed": "stationary",  
-  "documentation": "https://www.myTechnicalCabinet.fr",  
-  "deviceOwner": [  
-    "Airport-Division Maintenance"  
-  ],  
-  "dimension": {  
-    "width": 150,  
-    "height": 175,  
-    "depth": 75  
-  },  
-  "weight": 60,  
-  "internalDimension": {  
-    "width": 140,  
-    "height": 165,  
-    "depth": 70  
-  },  
-  "protectionIP": "65",  
-  "protectionIK": 10,  
-  "maximumSystemVoltage": 1000,  
-  "operatingTemperature": {  
-    "min": -40,  
-    "max": 100  
-  },  
-  "protectionOthers": [  
-    "dust",  
-    "forcedOpening",  
-    "saltSpray",  
-    "abrasion",  
-    "doorTearing",  
-    "vandalism"  
-  ],  
-  "doorCount": 2,  
-  "doorType": "solid",  
-  "doorOpeningAngle": 180,  
-  "doorClosingMode": [  
-    "fixedHandle"  
-  ],  
-  "designMaterials": [  
-    "stainlessSteel",  
-    "polyester"  
-  ],  
-  "interiorCoating": [  
-    "heatInsulating",  
-    "polyesterResin"  
-  ],  
-  "exteriorCoating": [  
-    "polyesterResin"  
-  ],  
-  "exteriorFinish": [  
-    "roughcast"  
-  ],  
-  "ventilationMode": [  
-    "selfVentilatedGills"  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### TechnicalCabinetDevice NGSI-LDの正規化例  
-ここでは、TechnicalCabinetDeviceを正規化したJSON-LD形式の例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### TechnicalCabinetDevice NGSI-LD 正規化例  
+TechnicalCabinetDevice を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
-  "type": "TechnicalCabinetDevice",  
-  "name": {  
-    "type": "Property",  
-    "value": "MNCA-TCD-AP-T2-F1-022"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "AirPort â€“ global Observation"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Technical Cabinet description"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "point",  
-      "coordinates": [  
-        7.196545,  
-        43.664810  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressCountry": "FR",  
-      "addressLocality": "Nice",  
-      "streetAddress": "Airport Terminal 2 - Floor 1"  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice Aeroport"  
-  },  
-  "refDeviceList": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:Device:NCE-CE-025",  
-      "urn:ngsi-ld:Device:NCE-FU-048",  
-      "urn:ngsi-ld:Device:NCE-CE-058"  
+    "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
+    "type": "TechnicalCabinetDevice",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "FR",  
+            "addressLocality": "Nice",  
+            "streetAddress": "Airport Terminal 2 - Floor 1"  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "AirPort \u2013 global Observation"  
+    },  
+    "application": {  
+        "type": "Property",  
+        "value": [  
+            "industrial",  
+            "distributionService"  
+        ]  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Aeroport"  
+    },  
+    "brandName": {  
+        "type": "Property",  
+        "value": "EATON"  
+    },  
+    "dateLastReported": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-03-17T08:45:00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Technical Cabinet description"  
+    },  
+    "designMaterials": {  
+        "type": "Property",  
+        "value": [  
+            "stainlessSteel",  
+            "polyester"  
+        ]  
+    },  
+    "dimension": {  
+        "type": "Property",  
+        "value": {  
+            "width": 150,  
+            "height": 175,  
+            "depth": 75  
+        }  
+    },  
+    "documentation": {  
+        "type": "Property",  
+        "value": "https://www.myTechnicalCabinet.fr"  
+    },  
+    "doorClosingMode": {  
+        "type": "Property",  
+        "value": "fixedHandle"  
+    },  
+    "doorCount": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "doorOpeningAngle": {  
+        "type": "Property",  
+        "value": 180  
+    },  
+    "doorType": {  
+        "type": "Property",  
+        "value": "solid"  
+    },  
+    "exteriorCoating": {  
+        "type": "Property",  
+        "value": [  
+            "polyesterResin"  
+        ]  
+    },  
+    "exteriorFinish": {  
+        "type": "Property",  
+        "value": [  
+            "roughcast"  
+        ]  
+    },  
+    "installationCondition": {  
+        "type": "Property",  
+        "value": [  
+            "none"  
+        ]  
+    },  
+    "installationMode": {  
+        "type": "Property",  
+        "value": "ground"  
+    },  
+    "interiorCoating": {  
+        "type": "Property",  
+        "value": [  
+            "heatInsulating",  
+            "polyesterResin"  
+        ]  
+    },  
+    "internalDimension": {  
+        "type": "Property",  
+        "value": {  
+            "width": 140,  
+            "height": 165,  
+            "depth": 70  
+        }  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "point",  
+            "coordinates": [  
+                7.196545,  
+                43.66481  
+            ]  
+        }  
+    },  
+    "manufacturerName": {  
+        "type": "Property",  
+        "value": "ElDorado"  
+    },  
+    "maximumSystemVoltage": {  
+        "type": "Property",  
+        "value": 1000  
+    },  
+    "modelName": {  
+        "type": "Property",  
+        "value": "xEnergy L"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "MNCA-TCD-AP-T2-F1-022"  
+    },  
+    "operatingTemperature": {  
+        "type": "Property",  
+        "value": {  
+            "min": -40,  
+            "max": 100  
+        }  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "Airport-Division Maintenance"  
+        ]  
+    },  
+    "possibilityOfUsed": {  
+        "type": "Property",  
+        "value": "stationary"  
+    },  
+    "protectionIK": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "protectionIP": {  
+        "type": "Property",  
+        "value": "65"  
+    },  
+    "protectionOthers": {  
+        "type": "Property",  
+        "value": [  
+            "dust",  
+            "forcedOpening",  
+            "saltSpray",  
+            "abrasion",  
+            "doorTearing",  
+            "vandalism"  
+        ]  
+    },  
+    "refDeviceList": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:Device:NCE-CE-025",  
+            "urn:ngsi-ld:Device:NCE-FU-048",  
+            "urn:ngsi-ld:Device:NCE-CE-058"  
+        ]  
+    },  
+    "serialNumber": {  
+        "type": "Property",  
+        "value": "L257589A4587J56"  
+    },  
+    "typeOfUse": {  
+        "type": "Property",  
+        "value": "outDoor"  
+    },  
+    "ventilationMode": {  
+        "type": "Property",  
+        "value": [  
+            "selfVentilatedGills"  
+        ]  
+    },  
+    "weight": {  
+        "type": "Property",  
+        "value": 60  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
-  },  
-  "dateLastReported": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-03-17T08:45:00Z"  
-    }  
-  },  
-  "brandName": {  
-    "type": "Property",  
-    "value": "EATON"  
-  },  
-  "modelName": {  
-    "type": "Property",  
-    "value": "xEnergy L"  
-  },  
-  "manufacturerName": {  
-    "type": "Property",  
-    "value": "ElDorado"  
-  },  
-  "serialNumber": {  
-    "type": "Property",  
-    "value": "L257589A4587J56"  
-  },  
-  "application": {  
-    "type": "Property",  
-    "value": [  
-      "industrial",  
-      "distributionService"  
-    ]  
-  },  
-  "typeOfUse": {  
-    "type": "Property",  
-    "value": "outDoor"  
-  },  
-  "installationMode": {  
-    "type": "Property",  
-    "value": "ground"  
-  },  
-  "installationCondition": {  
-    "type": "Property",  
-    "value": [  
-      "none"  
-    ]  
-  },  
-  "possibilityOfUsed": {  
-    "type": "Property",  
-    "value": "stationary"  
-  },  
-  "documentation": {  
-    "type": "Property",  
-    "value": "https://www.myTechnicalCabinet.fr"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "Airport-Division Maintenance"  
-    ]  
-  },  
-  "dimension": {  
-    "type": "Property",  
-    "value": {  
-      "width": 150,  
-      "height": 175,  
-      "depth": 75  
-    }  
-  },  
-  "weight": {  
-    "type": "Property",  
-    "value": 60  
-  },  
-  "internalDimension": {  
-    "type": "Property",  
-    "value": {  
-      "width": 140,  
-      "height": 165,  
-      "depth": 70  
-    }  
-  },  
-  "protectionIP": {  
-    "type": "Property",  
-    "value": "65"  
-  },  
-  "protectionIK": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "maximumSystemVoltage": {  
-    "type": "Property",  
-    "value": 1000  
-  },  
-  "operatingTemperature": {  
-    "type": "Property",  
-    "value": {  
-      "min": -40,  
-      "max": 100  
-    }  
-  },  
-  "protectionOthers": {  
-    "type": "Property",  
-    "value": [  
-      "dust",  
-      "forcedOpening",  
-      "saltSpray",  
-      "abrasion",  
-      "doorTearing",  
-      "vandalism"  
-    ]  
-  },  
-  "doorCount": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "doorType": {  
-    "type": "Property",  
-    "value": "solid"  
-  },  
-  "doorOpeningAngle": {  
-    "type": "Property",  
-    "value": 180  
-  },  
-  "doorClosingMode": {  
-    "type": "Property",  
-    "value": "fixedHandle"  
-  },  
-  "designMaterials": {  
-    "type": "Property",  
-    "value": [  
-      "stainlessSteel",  
-      "polyester"  
-    ]  
-  },  
-  "interiorCoating": {  
-    "type": "Property",  
-    "value": [  
-      "heatInsulating",  
-      "polyesterResin"  
-    ]  
-  },  
-  "exteriorCoating": {  
-    "type": "Property",  
-    "value": [  
-      "polyesterResin"  
-    ]  
-  },  
-  "exteriorFinish": {  
-    "type": "Property",  
-    "value": [  
-      "roughcast"  
-    ]  
-  },  
-  "ventilationMode": {  
-    "type": "Property",  
-    "value": [  
-      "selfVentilatedGills"  
-    ]  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
