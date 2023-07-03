@@ -7,15 +7,6 @@
       "L1": 11996.416016,
       "L2": 9461.501953,
       "L3": 10242.351562
-    },
-    "observedAt": "2019-01-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "average"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
     }
   },
   "apparentPower": {
@@ -43,15 +34,7 @@
       "L3": 50.872452,
       "N": 0.0
     },
-    "observedAt": "2019-01-24T22:00:00.173Z",
-    "measurementType": {
-      "type": "Property",
-      "value": "rms"
-    },
-    "measurementInterval": {
-      "type": "Property",
-      "value": 1
-    }
+    "observedAt": "2019-01-24T22:00:00.173Z"
   },
   "dateEnergyMeteringStarted": {
     "type": "Property",
