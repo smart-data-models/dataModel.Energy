@@ -60,7 +60,9 @@
   },
   "doorClosingMode": {
     "type": "Property",
-    "value": "fixedHandle"
+    "value": [
+      "fixedHandle"
+    ]
   },
   "doorCount": {
     "type": "Property",
@@ -187,7 +189,7 @@
   },
   "typeOfUse": {
     "type": "Property",
-    "value": "outDoor"
+    "value": "outdoor"
   },
   "ventilationMode": {
     "type": "Property",
