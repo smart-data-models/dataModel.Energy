@@ -16,7 +16,7 @@
   "location": {
     "type": "geo:json",
     "value": {
-      "type": "point",
+      "type": "Point",
       "coordinates": [
         7.196545,
         43.664810
@@ -72,7 +72,7 @@
   },
   "typeOfUse": {
     "type": "Text",
-    "value": "outDoor"
+    "value": "outdoor"
   },
   "installationMode": {
     "type": "Text",
@@ -161,8 +161,10 @@
     "value": 180
   },
   "doorClosingMode": {
-    "type": "Text",
-    "value": "fixedHandle"
+    "type": "array",
+    "value": [
+      "fixedHandle"
+    ]
   },
   "designMaterials": {
     "type": "array",
