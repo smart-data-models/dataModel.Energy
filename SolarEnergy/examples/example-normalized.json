@@ -151,8 +151,5 @@
   "observationDateTime": {
     "type": "DateTime",
     "value": "2022-01-20T20:02:52Z"
-  },
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.Energy/context.jsonld"
-  ]
+  }
 }
