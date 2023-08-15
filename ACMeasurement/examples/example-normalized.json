@@ -7,11 +7,11 @@
   },
   "alternateName": {
     "type": "Text",
-    "value": "AirPort  global Observation"
+    "value": "AirPort global Observation"
   },
   "description": {
     "type": "Text",
-    "value": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1  Floor 01  Technical Room 05 for Triphase alternating current."
+    "value": " Measurement corresponding to the ventilation machine of the technical rooms Terminal 1 T1 Floor 01 Technical Room 05 for Triphase alternating current."
   },
   "location": {
     "type": "geo:json",
@@ -29,7 +29,7 @@
   },
   "dateObserved": {
     "type": "DateTime",
-    "value": "2020-03-17TT08:45:00Z"
+    "value": "2020-03-17T08:45:00Z"
   },
   "refDevice": {
     "type": "URI",
