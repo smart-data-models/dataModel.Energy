@@ -37,7 +37,7 @@
                             "description": "Property. Identifier format of any NGSI entity"
                         }
                     ],
-                    "description": "Relationship. Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link."
+                    "description": "Relationship. Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link"
                 },
                 "refPointOfInterest": {
                     "anyOf": [
@@ -54,7 +54,7 @@
                             "description": "Property. Identifier format of any NGSI entity"
                         }
                     ],
-                    "description": "Relationship. Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation."
+                    "description": "Relationship. Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation"
                 },
                 "dateLastReported": {
                     "type": "string",
@@ -120,7 +120,7 @@
                 },
                 "installationCondition": {
                     "type": "array",
-                    "description": "Property. Condition and possibility of use in the following environments. Enum:'extremeHeat, extremeCold, extremeHumidity, extremeClimate, desert, sand, marine, saline, dust, seismic, other'.",
+                    "description": "Property. Condition and possibility of use in the following environments. Enum:'extremeHeat, extremeCold, extremeHumidity, extremeClimate, desert, sand, marine, saline, dust, seismic, other'",
                     "items": {
                         "type": "string",
                         "enum": [
@@ -191,7 +191,7 @@
                 },
                 "protectionIP": {
                     "type": "string",
-                    "description": "Property. IP '*Ingress Protection*' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). - First digit: Solid particle protection (Single numeral: 0\u20136 or 'X'). - Second digit: Liquid ingress protection (Single numeral: 0\u20139 or 'X' ).- Third digit: Personal Protection  against access to dangerous parts (optional additional letter).- Fourth digit: Other protections (optional additional letter)."
+                    "description": "Property. IP '*Ingress Protection*' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). - First digit: Solid particle protection (Single numeral: 0\u20136 or 'X'). - Second digit: Liquid ingress protection (Single numeral: 0\u20139 or 'X' ).- Third digit: Personal Protection  against access to dangerous parts (optional additional letter).- Fourth digit: Other protections (optional additional letter)"
                 },
                 "protectionIK": {
                     "type": "number",
@@ -205,11 +205,11 @@
                         "2",
                         "3"
                     ],
-                    "description": "Property. Protection class (SKL). - 0 : main insulation without earth connection. - 1 : main insulation and additional insulation (earth terminal). - 2 : double or reinforced insulation (equivalent to twice the main insulation) without accessible metal part. - 3 : operating in very low safety voltage (SELV) (50V maximum)."
+                    "description": "Property. Protection class (SKL). - 0 : main insulation without earth connection. - 1 : main insulation and additional insulation (earth terminal). - 2 : double or reinforced insulation (equivalent to twice the main insulation) without accessible metal part. - 3 : operating in very low safety voltage (SELV) (50V maximum)"
                 },
                 "overVoltageCategory": {
                     "type": "string",
-                    "description": "Property. Over voltage category. - I : connection to circuits with transient over voltages at an appropriate low level. - II : main insulation and additional insulation (earth terminal). - III : fixed installations with reliability and availability making subject to specific specifications. - IV : materials at the origin of the electrical installation such as electric meters and main materials over current protection.",
+                    "description": "Property. Over voltage category. - I : connection to circuits with transient over voltages at an appropriate low level. - II : main insulation and additional insulation (earth terminal). - III : fixed installations with reliability and availability making subject to specific specifications. - IV : materials at the origin of the electrical installation such as electric meters and main materials over current protection",
                     "enum": [
                         "I",
                         "II",
@@ -219,7 +219,7 @@
                 },
                 "operatingTemperature": {
                     "type": "object",
-                    "description": "Property. Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius.",
+                    "description": "Property. Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius",
                     "properties": {
                         "min": {
                             "type": "number",
@@ -233,7 +233,7 @@
                 },
                 "operatingAirHumidity": {
                     "type": "object",
-                    "description": "Property. Ambient operating Air Humidity range. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent.",
+                    "description": "Property. Ambient operating Air Humidity range. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent",
                     "properties": {
                         "min": {
                             "type": "number",
@@ -325,11 +325,11 @@
                 },
                 "nbMPPTrackersDC": {
                     "type": "number",
-                    "description": "Property. Number of MPP trackers. Model:'https://schema.org/Number'."
+                    "description": "Property. Number of MPP trackers. Model:'https://schema.org/Number'"
                 },
                 "nbInputParallelDC": {
                     "type": "string",
-                    "description": "Property. Maximum Number of inputs (in parallel). Model:'https://schema.org/Number'."
+                    "description": "Property. Maximum Number of inputs (in parallel). Model:'https://schema.org/Number'"
                 },
                 "maxInputCurrentParallelAssembly": {
                     "type": "number",
@@ -425,7 +425,7 @@
                 },
                 "topology": {
                     "type": "string",
-                    "description": "Property. Description of the topology of the installation."
+                    "description": "Property. Description of the topology of the installation"
                 },
                 "coolingSystem": {
                     "type": "string",
@@ -439,7 +439,7 @@
                 },
                 "inverterStatus": {
                     "type": "array",
-                    "description": "Property. Status of the inverter. A combination of values.",
+                    "description": "Property. Status of the inverter. A combination of values",
                     "items": {
                         "type": "string",
                         "enum": [
