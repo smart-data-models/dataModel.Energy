@@ -1,44 +1,83 @@
 TechnicalCabinetDevice:
+
   description: 'Technical Cabinet Device Data Model is intended to to describe the technical characteristics of the Device, designed to be placed in an urban or interurban environment. The main objective of these cabinets for this Data Model is to protect the electrical equipment necessary for the control, surveillance, reading and management of urban lighting, signaling, video and electrical distribution. The scope of use of some of these cabinets can extend to an additional protection for installations of modular apparatuses of telephony, data processing, meteorological stations, photo-voltaic stations, wind turbines stations, telecommunications, networks, data, bre Optics , etc. *Remark* : This Data Model can be used directly as a main entity to describe the device `Technical Cabinet`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. It can also refer to the list of all the components it contains, with the `refDeviceList` attribute, using the Data Model ''DEVICE'''
+
   properties:
+
     address:
+
       description: The mailing address
+
       properties:
+
         addressCountry:
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
+          description: The country. For example, Spain
           type: string
+          x-ngsi:
+            model: https://schema.org/addressCountry
+            type: Property
+
         addressLocality:
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
+          description: The locality in which the street address is, and which is in the region
           type: string
+          x-ngsi:
+            model: https://schema.org/addressLocality
+            type: Property
+
         addressRegion:
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
+          description: The region in which the locality is, and which is in the country
           type: string
+          x-ngsi:
+            model: https://schema.org/addressRegion
+            type: Property
+
         district:
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
           type: string
+          x-ngsi:
+            type: Property
+
         postOfficeBoxNumber:
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
+          description: The post office box number for PO box addresses. For example, 03578
           type: string
+          x-ngsi:
+            model: https://schema.org/postOfficeBoxNumber
+            type: Property
+
         postalCode:
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''
+          description: The postal code. For example, 24004
           type: string
+          x-ngsi:
+            model: https://schema.org/https://schema.org/postalCode
+            type: Property
+
         streetAddress:
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
+          description: The street address
           type: string
+          x-ngsi:
+            model: https://schema.org/streetAddress
+            type: Property
+
         streetNr:
-          description: Number identifying a specific property on a public street.
+          description: Number identifying a specific property on a public street
           type: string
+          x-ngsi:
+            type: Property
+
       type: object
+
       x-ngsi:
         model: https://schema.org/address
         type: Property
+
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
+
     application:
-      description: 'Target application of the Device regarding the environment. A combination of these values. Enum:''commercial, distributionService, industrial, other, publicWorks, road, tertiary, urbanService'''
+      description: Target application of the Device regarding the environment. A combination of these values. Enum:'commercial, distributionService, industrial, other, publicWorks, road, tertiary, urbanService'
       items:
         enum:
           - commercial
@@ -53,29 +92,34 @@ TechnicalCabinetDevice:
       type: array
       x-ngsi:
         type: Property
+
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+
     brandName:
       description: Name of the brand
       type: string
       x-ngsi:
         model: https://schema.org/brand
         type: Property
+
     dataProvider:
-      description: A sequence of characters identifying the provider of the harmonised data entity.
+      description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
+
     dateCreated:
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     dateLastReported:
       description: A timestamp which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat
       format: date-time
@@ -83,19 +127,22 @@ TechnicalCabinetDevice:
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
+
     dateModified:
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
+
     designMaterials:
-      description: 'Design materials to build the cabinet. A combination of  these values. Enum:''ABS-Plastic, aluminum, fiberGlass, galvanizedSteel, other, polyester, stainlessSteel'''
+      description: Design materials to build the cabinet. A combination of  these values. Enum:'ABS-Plastic, aluminum, fiberGlass, galvanizedSteel, other, polyester, stainlessSteel'
       items:
         enum:
           - ABS-Plastic
@@ -109,23 +156,29 @@ TechnicalCabinetDevice:
       type: array
       x-ngsi:
         type: Property
+
     dimension:
-      description: 'The format is structured by a sub-property of 3 items. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter.'
+      description: The format is structured by a sub-property of 3 items. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter
       properties:
         depth:
-          description: 'Property. '
+          description: ''
           minimum: 0
           type: number
+          x-ngsi:
+            type: Property
         height:
           minimum: 0
           type: number
         width:
-          description: 'Property. '
+          description: ''
           minimum: 0
           type: number
+          x-ngsi:
+            type: Property
       type: object
       x-ngsi:
         type: Property
+
     documentation:
       description: A link to device's documentation
       format: uri
@@ -133,8 +186,9 @@ TechnicalCabinetDevice:
       x-ngsi:
         model: https://schema.org/URL
         type: Property
+
     doorClosingMode:
-      description: 'Door closing mode. A unique value of these values. Enum:''fixedHandle, other, revolvingHandle, triangleHandle'''
+      description: Door closing mode. A unique value of these values. Enum:'fixedHandle, other, revolvingHandle, triangleHandle'
       items:
         enum:
           - fixedHandle
@@ -145,19 +199,22 @@ TechnicalCabinetDevice:
       type: array
       x-ngsi:
         type: Property
+
     doorCount:
-      description: Count of doors of the technical Cabinet.
+      description: Count of doors of the technical Cabinet
       type: number
       x-ngsi:
         type: Property
+
     doorOpeningAngle:
-      description: 'Door opening angle expressed in decimal degrees with a range from 0 to 180 degree. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **DD** represents Decimal Degrees.'
+      description: Door opening angle expressed in decimal degrees with a range from 0 to 180 degree. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **DD** represents Decimal Degrees
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     doorType:
-      description: 'Type of door of the technical Cabinet. A unique value of these values. Enum:''mixed, other, solid, transparent'''
+      description: Type of door of the technical Cabinet. A unique value of these values. Enum:'mixed, other, solid, transparent'
       enum:
         - mixed
         - other
@@ -166,8 +223,9 @@ TechnicalCabinetDevice:
       type: string
       x-ngsi:
         type: Property
+
     exteriorCoating:
-      description: 'Interior Coating. A combination of these values. Enum:''fiberGlass, other, plastic, polyester, polyesterResin, steel'
+      description: Interior Coating. A combination of these values. Enum:'fiberGlass, other, plastic, polyester, polyesterResin, steel
       items:
         enum:
           - fiberGlass
@@ -180,8 +238,9 @@ TechnicalCabinetDevice:
       type: array
       x-ngsi:
         type: Property
+
     exteriorFinish:
-      description: 'Exterior finish. A combination of these values. Enum:''graffiti, other, raised, roughcast, smooth, textured'''
+      description: Exterior finish. A combination of these values. Enum:'graffiti, other, raised, roughcast, smooth, textured'
       items:
         enum:
           - graffiti
@@ -194,21 +253,27 @@ TechnicalCabinetDevice:
       type: array
       x-ngsi:
         type: Property
+
     id:
-      anyOf: &technicalcabinetdevice_-_properties_-_owner_-_items_-_anyof
-        - description: Property. Identifier format of any NGSI entity
+      anyOf:
+        - description: Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: Property. Identifier format of any NGSI entity
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
           format: uri
           type: string
+          x-ngsi:
+            type: Property
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
+
     installationCondition:
-      description: 'Condition and possibility of use in the following environments. A combination of these values. Enum:''desert, dust, extremeCold, extremeClimate, extremeHeat, extremeHumidity, marine, none, other, saline, seismic, sand'''
+      description: Condition and possibility of use in the following environments. A combination of these values. Enum:'desert, dust, extremeCold, extremeClimate, extremeHeat, extremeHumidity, marine, none, other, saline, seismic, sand'
       items:
         enum:
           - desert
@@ -227,8 +292,9 @@ TechnicalCabinetDevice:
       type: array
       x-ngsi:
         type: Property
+
     installationMode:
-      description: 'Positioning of the device in relation to a ground reference system. Enum:''aerial, ground, other, pole, roofing, underground, wall'''
+      description: Positioning of the device in relation to a ground reference system. Enum:'aerial, ground, other, pole, roofing, underground, wall'
       enum:
         - aerial
         - ground
@@ -241,8 +307,9 @@ TechnicalCabinetDevice:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+
     interiorCoating:
-      description: 'Interior Coating. A combination of these values. Enum:''fiberGlass, heatInsulating, other, plastic, polyester, polyesterResin, steel'''
+      description: Interior Coating. A combination of these values. Enum:'fiberGlass, heatInsulating, other, plastic, polyester, polyesterResin, steel'
       items:
         enum:
           - fiberGlass
@@ -256,8 +323,9 @@ TechnicalCabinetDevice:
       type: array
       x-ngsi:
         type: Property
+
     internalDimension:
-      description: 'Internal dimension corresponding to the place to work inside the technical cabinet. The format is structured by a sub-property of 3 items. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter'
+      description: Internal dimension corresponding to the place to work inside the technical cabinet. The format is structured by a sub-property of 3 items. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter
       properties:
         depth:
           minimum: 0
@@ -272,10 +340,14 @@ TechnicalCabinetDevice:
       x-ngsi:
         model: https://schema.org/StructuredValue
         type: Property
+
     location:
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+
       oneOf:
-        - description: GeoProperty. Geojson reference to the item. Point
+
+        - description: Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -296,7 +368,10 @@ TechnicalCabinetDevice:
             - coordinates
           title: GeoJSON Point
           type: object
-        - description: GeoProperty. Geojson reference to the item. LineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -320,7 +395,10 @@ TechnicalCabinetDevice:
             - coordinates
           title: GeoJSON LineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. Polygon
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -346,7 +424,10 @@ TechnicalCabinetDevice:
             - coordinates
           title: GeoJSON Polygon
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiPoint
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -369,7 +450,10 @@ TechnicalCabinetDevice:
             - coordinates
           title: GeoJSON MultiPoint
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -395,7 +479,10 @@ TechnicalCabinetDevice:
             - coordinates
           title: GeoJSON MultiLineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -423,32 +510,40 @@ TechnicalCabinetDevice:
             - coordinates
           title: GeoJSON MultiPolygon
           type: object
+          x-ngsi:
+            type: GeoProperty
+
       x-ngsi:
         type: GeoProperty
+
     manufacturerName:
       description: Name of the manufacturer
       type: string
       x-ngsi:
         model: https://schema.org/manufacturer
         type: Property
+
     maximumSystemVoltage:
-      description: 'Maximum system voltage permitted for the **module**. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt'
+      description: Maximum system voltage permitted for the **module**. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     modelName:
-      description: Name of the model as given by the manufacturer.
+      description: Name of the model as given by the manufacturer
       type: string
       x-ngsi:
         type: Property
+
     name:
-      description: The name of this item.
+      description: The name of this item
       type: string
       x-ngsi:
         type: Property
+
     operatingTemperature:
-      description: 'Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius.'
+      description: Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius
       properties:
         max:
           minimum: 0
@@ -459,16 +554,32 @@ TechnicalCabinetDevice:
       type: object
       x-ngsi:
         type: Property
+
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
-        anyOf: *technicalcabinetdevice_-_properties_-_owner_-_items_-_anyof
-        description: Property. Unique identifier of the entity
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
         type: Property
+
     possibilityOfUse:
-      description: 'Possibility of use. A unique value. Enum:''mixed, mobile, other, stationary'''
+      description: Possibility of use. A unique value. Enum:'mixed, mobile, other, stationary'
       enum:
         - mixed
         - mobile
@@ -477,18 +588,21 @@ TechnicalCabinetDevice:
       type: string
       x-ngsi:
         type: Property
+
     protectionIK:
-      description: 'IK ''*Mecanic Protection*'' level relating to numeric classification for the degrees of protection provided by enclosures for electrical equipment against external mechanical impacts, according to International Electro technical Commission standard (EN 62-262). - IK varies from 0 (minimum resistance) to 10 (maximum resistance) which represents an Impact Energy (Unit Joule)'
+      description: IK '*Mecanic Protection*' level relating to numeric classification for the degrees of protection provided by enclosures for electrical equipment against external mechanical impacts, according to International Electro technical Commission standard (EN 62-262). - IK varies from 0 (minimum resistance) to 10 (maximum resistance) which represents an Impact Energy (Unit Joule)
       type: number
       x-ngsi:
         type: Property
+
     protectionIP:
       description: 'IP ''Ingress Protection'' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). First digit: Solid particle protection (Single numeral: 06 or ''X''). Second digit: Liquid ingress protection (Single numeral: 09 or ''X'' ).Third digit: Personal Protection against access to dangerous parts (optional additional letter). Fourth digit: Other protections (optional additional letter)'
       type: string
       x-ngsi:
         type: Property
+
     protectionOthers:
-      description: 'Others protection of the technical cabinet. A combination of these values. Enum:''abrasion, basement, dampProof, display, doorTearing, dust, forcedOpening, graffiti, insect, other, roofOverload, saltSpray, shielding, solar, vandalism, water'''
+      description: Others protection of the technical cabinet. A combination of these values. Enum:'abrasion, basement, dampProof, display, doorTearing, dust, forcedOpening, graffiti, insect, other, roofOverload, saltSpray, shielding, solar, vandalism, water'
       items:
         enum:
           - abrasion
@@ -511,47 +625,63 @@ TechnicalCabinetDevice:
       type: array
       x-ngsi:
         type: Property
+
     refDevice:
       anyOf:
-        - description: Property. Identifier format of any NGSI entity
+        - description: Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: Property. Identifier format of any NGSI entity
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
           format: uri
           type: string
+          x-ngsi:
+            type: Property
       description: The device used to obtain the data expressed by this record
       x-ngsi:
         type: Relationship
+
     refDeviceList:
-      description: 'A list of reference to the [Devices](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which are inside the technical Cabinet Device.'
+      description: A list of reference to the [Devices](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which are inside the technical Cabinet Device
       items:
         anyOf:
-          - description: Property. Identifier format of any NGSI entity
+          - description: Identifier format of any NGSI entity
             maxLength: 256
             minLength: 1
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
             type: string
-          - description: Property. Identifier format of any NGSI entity
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
             format: uri
             type: string
+            x-ngsi:
+              type: Property
       type: array
       x-ngsi:
         type: Relationship
+
     refPointOfInterest:
       anyOf:
-        - description: Property. Identifier format of any NGSI entity
+        - description: Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: Property. Identifier format of any NGSI entity
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation.'
+          x-ngsi:
+            type: Property
+      description: Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation
       x-ngsi:
         type: Relationship
+
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -564,17 +694,20 @@ TechnicalCabinetDevice:
           type: string
       x-ngsi:
         type: Property
+
     serialNumber:
       description: Serial number of the container
       type: string
       x-ngsi:
         model: https://schema.org/serialNumber
         type: Property
+
     source:
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
       type: string
       x-ngsi:
         type: Property
+
     type:
       description: NGSI Entity type. It has to be TechnicalCabinetDevice
       enum:
@@ -582,8 +715,9 @@ TechnicalCabinetDevice:
       type: string
       x-ngsi:
         type: Property
+
     typeOfUse:
-      description: 'Accepted use regarding its positioning in an indoor / outdoor environment. A unique value of these values. Enum:''indoor, mixed, outdoor, other'''
+      description: Accepted use regarding its positioning in an indoor / outdoor environment. A unique value of these values. Enum:'indoor, mixed, outdoor, other'
       enum:
         - indoor
         - mixed
@@ -592,8 +726,9 @@ TechnicalCabinetDevice:
       type: string
       x-ngsi:
         type: Property
+
     ventilationMode:
-      description: 'Ventilation mode. A combination of these values. Enum:''airConditioners, dehumidifier, none, other, selfVentilatedGills'''
+      description: Ventilation mode. A combination of these values. Enum:'airConditioners, dehumidifier, none, other, selfVentilatedGills'
       items:
         enum:
           - airConditioners
@@ -605,13 +740,15 @@ TechnicalCabinetDevice:
       type: array
       x-ngsi:
         type: Property
+
     weight:
-      description: 'Weight of the item. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **KGM** represents Kilograms'
+      description: Weight of the item. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **KGM** represents Kilograms
       minimum: 0
       type: number
       x-ngsi:
         model: https://schema.org/weigth
         type: Property
+
   required:
     - id
     - type
@@ -619,10 +756,17 @@ TechnicalCabinetDevice:
     - dateLastReported
     - typeOfUse
     - dimension
+
   type: object
-  x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+
+  x-derived-from: ''
+
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
+
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/TechnicalCabinetDevice/LICENSE.md
+
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/TechnicalCabinetDevice/schema.json
+
   x-model-tags: Energy
+
   x-version: 0.0.1
