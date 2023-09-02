@@ -1,83 +1,66 @@
 InverterDevice:
-
   description: 'The data model is intended to describe the mechanical, electrical characteristics of an Inverter according to *DC - Direct Current Information* supplied as input and *AC - Alternating Current Information*  returned as output. *Remark*: This Data Model can be used directly as a main entity to describe the device [Inverter] or as a sub-entity of the Data Model {DEVICE] using a reference by the [refDevice] attribute.'
-
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     application:
-      description: Target application of the Device regarding the environment. A unique value. Enum:'electricMobility, energyStorage, emergencyStorage, lighting, industrialStorage, houseHoldStorage, robotics, production, other'
+      description: 'Target application of the Device regarding the environment. A unique value. Enum:''electricMobility, energyStorage, emergencyStorage, lighting, industrialStorage, houseHoldStorage, robotics, production, other'''
       items:
         enum:
           - electricMobility
@@ -93,21 +76,18 @@ InverterDevice:
       type: array
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     brandName:
       description: Brand Name of the item
       type: string
       x-ngsi:
         model: https://schema.org/brand
         type: Property
-
     coolingSystem:
       description: ' Cooling System of the Device. Enum:''Convection, OptiCool, Regulated-fan, Other'''
       enum:
@@ -118,20 +98,17 @@ InverterDevice:
       type: string
       x-ngsi:
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateLastReported:
       description: A timestamps which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat
       format: date-time
@@ -139,22 +116,19 @@ InverterDevice:
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     dimension:
-      description: External dimension of a Panel. The format is structured by a sub-property of 3 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter
+      description: 'External dimension of a Panel. The format is structured by a sub-property of 3 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter'
       properties:
         depth:
           minimum: 0
@@ -169,7 +143,6 @@ InverterDevice:
       x-ngsi:
         type: Property
         units: Centimeters
-
     documentation:
       description: Technical Documentation (Installation / maintenance / used)
       format: uri
@@ -177,7 +150,6 @@ InverterDevice:
       x-ngsi:
         model: https://schema.org/URL
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -195,9 +167,8 @@ InverterDevice:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     installationCondition:
-      description: Condition and possibility of use in the following environments. Enum:'extremeHeat, extremeCold, extremeHumidity, extremeClimate, desert, sand, marine, saline, dust, seismic, other'
+      description: 'Condition and possibility of use in the following environments. Enum:''extremeHeat, extremeCold, extremeHumidity, extremeClimate, desert, sand, marine, saline, dust, seismic, other'''
       items:
         enum:
           - extremeHeat
@@ -215,9 +186,8 @@ InverterDevice:
       type: array
       x-ngsi:
         type: Property
-
     installationMode:
-      description: Positioning of the device in relation to a ground reference system. A unique value. Enum:'aerial, ground, pole, roofing, underGround, wall, other'
+      description: 'Positioning of the device in relation to a ground reference system. A unique value. Enum:''aerial, ground, pole, roofing, underGround, wall, other'''
       enum:
         - aerial
         - ground
@@ -229,7 +199,6 @@ InverterDevice:
       type: string
       x-ngsi:
         type: Property
-
     inverterStatus:
       description: Status of the inverter. A combination of values
       items:
@@ -251,13 +220,9 @@ InverterDevice:
       type: array
       x-ngsi:
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -281,7 +246,6 @@ InverterDevice:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -308,7 +272,6 @@ InverterDevice:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -337,7 +300,6 @@ InverterDevice:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -363,7 +325,6 @@ InverterDevice:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -392,7 +353,6 @@ InverterDevice:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -423,12 +383,10 @@ InverterDevice:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     mPPTPVVoltageDC:
-      description: Minimum and Maximum Photo-voltaic voltage range, MPPT allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt
+      description: 'Minimum and Maximum Photo-voltaic voltage range, MPPT allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt'
       properties:
         max:
           minimum: 0
@@ -441,39 +399,34 @@ InverterDevice:
         model: https://schema.org/Number
         type: Property
         units: Volt
-
     manufacturerName:
       description: Manufacturer Name of the item
       type: string
       x-ngsi:
         model: https://schema.org/manufacturer
         type: Property
-
     maxInputCurrentParallelAssembly:
-      description: Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere
+      description: 'Max. Current Input with an Parallel Assembly. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Ampere
-
     maxOutputPowerAC:
-      description: Maximum Power or Apparent Power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **D46** represents Volt Ampere
+      description: 'Maximum Power or Apparent Power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **D46** represents Volt Ampere'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Volt Ampere
-
     modelName:
       description: Model name of the item
       type: string
       x-ngsi:
         model: https://schema.org/model
         type: Property
-
     moduleYieldRate:
-      description: Yield Rate of the Device. The format is structured by a sub-property of 2 items (European Standard - Manufacturer Standard). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent
+      description: 'Yield Rate of the Device. The format is structured by a sub-property of 2 items (European Standard - Manufacturer Standard). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent'
       properties:
         eta:
           type: number
@@ -483,59 +436,51 @@ InverterDevice:
       x-ngsi:
         model: http://schema.org/StructuredValue
         type: Property
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     nbInputParallelDC:
       description: Maximum Number of inputs (in parallel)
       type: string
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     nbMPPTrackersDC:
       description: Number of MPP trackers
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     noiseLevel:
-      description: Sound Power level of the Device. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **2N** represents Decibel
+      description: 'Sound Power level of the Device. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **2N** represents Decibel'
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: dB
-
     nominalAmpereAC:
-      description: Nominal Amperage *(Code I)*. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere
+      description: 'Nominal Amperage *(Code I)*. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Ampere
-
     nominalAmpereDC:
-      description: Nominal Amperage. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere
+      description: 'Nominal Amperage. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Ampere
-
     nominalFrequencyAC:
-      description: Nominal Frequency. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz
+      description: 'Nominal Frequency. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Hertz
-
     nominalFrequencyDC:
       description: ' Nominal Frequency. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz'
       type: number
@@ -543,41 +488,36 @@ InverterDevice:
         model: https://schema.org/Number
         type: Property
         units: Hertz
-
     nominalPowerAC:
-      description: Nominal Power . The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt
+      description: 'Nominal Power . The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Watt
-
     nominalPowerDC:
-      description: Nominal Power or Maximum Power factor for cos phi=1. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt
+      description: 'Nominal Power or Maximum Power factor for cos phi=1. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Watt
-
     nominalVoltageAC:
-      description: Nominal battery voltage *(Code U)*. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt
+      description: 'Nominal battery voltage *(Code U)*. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Volt
-
     nominalVoltageDC:
-      description: Nominal voltage. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt
+      description: 'Nominal voltage. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Volt
-
     operatingAirHumidity:
-      description: Ambient operating Air Humidity range. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent
+      description: 'Ambient operating Air Humidity range. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent'
       properties:
         max:
           maximum: 1
@@ -590,9 +530,8 @@ InverterDevice:
       type: object
       x-ngsi:
         type: Property
-
     operatingAmpereAC:
-      description: Minimum and Maximum Ampere allowed.. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere
+      description: 'Minimum and Maximum Ampere allowed.. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere'
       properties:
         max:
           minimum: 0
@@ -605,9 +544,8 @@ InverterDevice:
         model: http://schema.org/Number
         type: Property
         units: Ampere
-
     operatingAmpereDC:
-      description: Minimum and Maximum Ampere allowed.. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere
+      description: 'Minimum and Maximum Ampere allowed.. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **AMP** represents Ampere'
       properties:
         max:
           minimum: 0
@@ -620,9 +558,8 @@ InverterDevice:
         model: https://schema.org/Number
         type: Property
         units: Ampere
-
     operatingFrequencyAC:
-      description: Minimum and Maximum Frequency allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz
+      description: 'Minimum and Maximum Frequency allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz'
       properties:
         max:
           minimum: 0
@@ -635,9 +572,8 @@ InverterDevice:
         model: http://schema.org/StructuredValue
         type: Property
         units: Hertz
-
     operatingFrequencyDC:
-      description: Minimum and Maximum Frequency allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz
+      description: 'Minimum and Maximum Frequency allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HTZ** represents Hertz'
       properties:
         max:
           minimum: 0
@@ -650,9 +586,8 @@ InverterDevice:
         model: https://schema.org/Number
         type: Property
         units: Hertz
-
     operatingTemperature:
-      description: Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius
+      description: 'Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius'
       properties:
         max:
           minimum: 0
@@ -663,9 +598,8 @@ InverterDevice:
       type: object
       x-ngsi:
         type: Property
-
     operatingVoltageAC:
-      description: Minimum and Maximum voltage allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt
+      description: 'Minimum and Maximum voltage allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt'
       properties:
         max:
           minimum: 0
@@ -678,9 +612,8 @@ InverterDevice:
         model: http://schema.org/StructuredValue
         type: Property
         units: Volt
-
     operatingVoltageDC:
-      description: Minimum and Maximum voltage allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt.
+      description: 'Minimum and Maximum voltage allowed. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt.'
       properties:
         max:
           minimum: 0
@@ -693,7 +626,6 @@ InverterDevice:
         model: https://schema.org/Number
         type: Property
         units: Volt
-
     overVoltageCategory:
       description: 'Over voltage category. - I : connection to circuits with transient over voltages at an appropriate low level. - II : main insulation and additional insulation (earth terminal). - III : fixed installations with reliability and availability making subject to specific specifications. - IV : materials at the origin of the electrical installation such as electric meters and main materials over current protection'
       enum:
@@ -704,7 +636,6 @@ InverterDevice:
       type: string
       x-ngsi:
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -727,18 +658,16 @@ InverterDevice:
       type: array
       x-ngsi:
         type: Property
-
     phaseType:
-      description: Type of Phase. A unique value. Enum:'singlePhase,threePhase'
+      description: 'Type of Phase. A unique value. Enum:''singlePhase,threePhase'''
       enum:
         - singlePhase
         - threePhase
       type: string
       x-ngsi:
         type: Property
-
     possibilityOfUse:
-      description: Possibility of use. Enum:'mixed, mobile, stationary, other'
+      description: 'Possibility of use. Enum:''mixed, mobile, stationary, other'''
       enum:
         - mixed
         - mobile
@@ -747,7 +676,6 @@ InverterDevice:
       type: string
       x-ngsi:
         type: Property
-
     powerFactorAC:
       description: Power factor for cos phi
       maximum: 1
@@ -756,32 +684,28 @@ InverterDevice:
       x-ngsi:
         model: http://schema.org/Number
         type: Property
-        units: A value between [0,1] Volt
-
+        units: 'A value between [0,1] Volt'
     protectionClassSLK:
       description: 'Protection class (SKL). - 0 : main insulation without earth connection. - 1 : main insulation and additional insulation (earth terminal). - 2 : double or reinforced insulation (equivalent to twice the main insulation) without accessible metal part. - 3 : operating in very low safety voltage (SELV) (50V maximum)'
       enum:
-        - '0'
-        - '1'
-        - '2'
-        - '3'
+        - 0
+        - 1
+        - 2
+        - 3
       type: string
       x-ngsi:
         type: Property
-
     protectionIK:
-      description: IK '*Mecanic Protection*' level relating to numeric classification for the degrees of protection provided by enclosures for electrical equipment against external mechanical impacts, according to International Electro technical Commission standard (EN 62-262). - IK varies from 0 (minimum resistance) to 10 (maximum resistance) which represents an Impact Energy (Unit Joule)
+      description: 'IK ''*Mecanic Protection*'' level relating to numeric classification for the degrees of protection provided by enclosures for electrical equipment against external mechanical impacts, according to International Electro technical Commission standard (EN 62-262). - IK varies from 0 (minimum resistance) to 10 (maximum resistance) which represents an Impact Energy (Unit Joule)'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     protectionIP:
       description: 'IP ''*Ingress Protection*'' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). - First digit: Solid particle protection (Single numeral: 0–6 or ''X''). - Second digit: Liquid ingress protection (Single numeral: 0–9 or ''X'' ).- Third digit: Personal Protection  against access to dangerous parts (optional additional letter).- Fourth digit: Other protections (optional additional letter)'
       type: string
       x-ngsi:
         type: Property
-
     refDevice:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -796,10 +720,9 @@ InverterDevice:
           type: string
           x-ngsi:
             type: Property
-      description: Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link
+      description: 'Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link'
       x-ngsi:
         type: Relationship
-
     refPointOfInterest:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -814,10 +737,9 @@ InverterDevice:
           type: string
           x-ngsi:
             type: Property
-      description: Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation
+      description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation'
       x-ngsi:
         type: Relationship
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -830,36 +752,31 @@ InverterDevice:
           type: string
       x-ngsi:
         type: Property
-
     self-consumption:
-      description: Self-consumption during nigth. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  For instance, **WTT** represents Watt
+      description: 'Self-consumption during nigth. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  For instance, **WTT** represents Watt'
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: Watt
-
     serialNumber:
       description: Serial numbers of the item
       type: string
       x-ngsi:
         model: https://schema.org/brand
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     startingVoltageDC:
-      description: Starting voltage. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt
+      description: 'Starting voltage. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Volt
-
     supplyPhaseNb:
       description: Number of power supply phases
       minimum: 0
@@ -867,13 +784,11 @@ InverterDevice:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     topology:
       description: Description of the topology of the installation
       type: string
       x-ngsi:
         type: Property
-
     type:
       description: NGSI Entity type. It has to be InverterDevice
       enum:
@@ -881,9 +796,8 @@ InverterDevice:
       type: string
       x-ngsi:
         type: Property
-
     typeOfUse:
-      description: Accepted use regarding its positioning in an indoor / outdoor environment.. Enum:'indoor, outdoor, mixed, other'
+      description: 'Accepted use regarding its positioning in an indoor / outdoor environment.. Enum:''indoor, outdoor, mixed, other'''
       enum:
         - indoor
         - outdoor
@@ -892,33 +806,24 @@ InverterDevice:
       type: string
       x-ngsi:
         type: Property
-
     weight:
-      description: Weight. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **KGM** represents Kilogram
+      description: 'Weight. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **KGM** represents Kilogram'
       minimum: 0
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Kilograms
-
   required:
     - id
     - type
     - location
     - dateLastReported
     - phaseType
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/InverterDevice/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/InverterDevice/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.2
