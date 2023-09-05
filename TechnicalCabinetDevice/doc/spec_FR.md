@@ -7,22 +7,34 @@
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Description globale : **Le modèle de données des armoires techniques est destiné à décrire les caractéristiques techniques de l'appareil, conçu pour être placé dans un environnement urbain ou interurbain. L'objectif principal de ces armoires pour ce Modèle de Données est de protéger les équipements électriques nécessaires au contrôle, à la surveillance, à la lecture et à la gestion de l'éclairage urbain, de la signalisation, de la vidéo et de la distribution électrique. Le champ d'application de certaines de ces armoires peut s'étendre à une protection supplémentaire pour des installations d'appareils modulaires de téléphonie, d'informatique, de stations météorologiques, de stations photo-voltaïques, de stations d'éoliennes, de télécommunications, de réseaux, de données, d'optique, etc. *Remarque* : Ce modèle de données peut être utilisé directement comme entité principale pour décrire le dispositif `Cabinet technique` ou comme sous-entité du modèle de données `DEVICE` en utilisant une référence par l'attribut `refDevice`. Il peut également faire référence à la liste de tous les composants qu'il contient, avec l'attribut `refDeviceList`, en utilisant le modèle de données 'DEVICE'**.  
-version :  
+Description globale : **Le modèle de données de l'armoire technique est destiné à décrire les caractéristiques techniques de l'appareil, conçu pour être placé dans un environnement urbain ou interurbain. L'objectif principal de ces armoires pour ce Modèle de Données est de protéger les équipements électriques nécessaires au contrôle, à la surveillance, à la lecture et à la gestion de l'éclairage urbain, de la signalisation, de la vidéo et de la distribution électrique. Le champ d'utilisation de certaines de ces armoires peut s'étendre à une protection complémentaire pour des installations d'appareils modulaires de téléphonie, d'informatique, de stations météorologiques, de stations photo-voltaïques, de stations d'éoliennes, de télécommunications, de réseaux, de données, de bre Optics, etc. *Remarque* : Ce modèle de données peut être utilisé directement comme entité principale pour décrire le dispositif `Technical Cabinet` ou comme sous-entité du modèle de données `DEVICE` en utilisant une référence par l'attribut `refDevice`. Il peut également faire référence à la liste de tous les composants qu'il contient, avec l'attribut `refDeviceList`, en utilisant le modèle de données 'DEVICE'**.  
+version : 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `application[array]`: Application cible du dispositif concernant l'environnement. Une combinaison de ces valeurs. Enum : 'commercial, distributionService, industriel, autre, travaux publics, route, tertiaire, service urbain'.  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Nom de la marque  . Model: [https://schema.org/brand](https://schema.org/brand)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateLastReported[string]`: Un horodatage qui indique la dernière fois que le dispositif a transmis des données avec succès. Date et heure dans le format ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `designMaterials[array]`: Concevoir les matériaux pour construire l'armoire. Une combinaison de ces valeurs. Enum : 'ABS-Plastique, aluminium, fibre de verre, acier galvanisé, autre, polyester, acier inoxydable'.  - `dimension[object]`: Le format est structuré par une sous-propriété de 3 éléments. Le code d'unité (texte) de mesure est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **CMT** représente le centimètre.  - `documentation[string]`: Un lien vers la documentation de l'appareil  . Model: [https://schema.org/URL](https://schema.org/URL)- `doorClosingMode[array]`: Mode de fermeture de la porte. Une valeur unique de ces valeurs. Enum : 'fixedHandle, other, revolvingHandle, triangleHandle' (poignée fixe, autre, poignée tournante, triangle)  - `doorCount[number]`: Nombre de portes de l'armoire technique.  - `doorOpeningAngle[number]`: Angle d'ouverture de la porte exprimé en degrés décimaux avec une plage de 0 à 180 degrés. Le code d'unité (texte) de mesure est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **DD** représente les degrés décimaux.  - `doorType[string]`: Type de porte de l'armoire technique. Une valeur unique parmi ces valeurs. Enum : 'mixte, autre, pleine, transparente'.  - `exteriorCoating[array]`: Revêtement intérieur. Une combinaison de ces valeurs. Enum : "fibreGlass, autre, plastique, polyester, polyesterResin, acier  - `exteriorFinish[array]`: Finition extérieure. Une combinaison de ces valeurs. Enum : 'graffiti, autre, surélevé, crépi, lisse, texturé'.  - `id[*]`: Identifiant unique de l'entité  - `installationCondition[array]`: État et possibilité d'utilisation dans les environnements suivants. Une combinaison de ces valeurs. Enum : 'desert, dust, extremeCold, extremeClimate, extremeHeat, extremeHumidity, marine, none, other, saline, seismic, sand'.  - `installationMode[string]`: Positionnement de l'appareil par rapport à un système de référence au sol. Enum : 'aérien, sol, autre, poteau, toiture, souterrain, mur'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `interiorCoating[array]`: Revêtement intérieur. Une combinaison de ces valeurs. Enum : 'fibre de verre, isolant thermique, autre, plastique, polyester, résine polyester, acier'.  - `internalDimension[object]`: Dimension interne correspondant à l'emplacement de travail à l'intérieur de l'armoire technique. Le format est structuré par une sous-propriété de 3 éléments. Le code d'unité (texte) de mesure est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **CMT** représente Centimètre  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `manufacturerName[string]`: Nom du fabricant  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumSystemVoltage[number]`: Tension maximale du système autorisée pour le **module**. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **VLT** représente Volt  - `modelName[string]`: Nom du modèle tel qu'indiqué par le fabricant.  - `name[string]`: Le nom de cet élément.  - `operatingTemperature[object]`: Plage de températures de fonctionnement ambiantes. Il s'agit de la résistance minimale et maximale au froid et à la chaleur. Le format est structuré par une sous-propriété de 2 éléments. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **CEL** représente le degré Celsius.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `possibilityOfUse[string]`: Possibilité d'utilisation. Une valeur unique. Enum : 'mixte, mobile, autre, stationnaire'.  - `protectionIK[number]`: Niveau IK "*Protection mécanique*" relatif à la classification numérique des degrés de protection fournis par les boîtiers d'équipements électriques contre les impacts mécaniques externes, conformément à la norme de la Commission électrotechnique internationale (EN 62-262). - L'IK varie de 0 (résistance minimale) à 10 (résistance maximale), ce qui représente une énergie d'impact (unité Joule).  - `protectionIP[string]`: IP "Ingress Protection" pour la boîte de jonction. Il s'agit du niveau qui classe et évalue le degré de protection offert par les boîtiers mécaniques et les enveloppes électriques contre les intrusions, la poussière, les contacts accidentels et l'eau, conformément à la norme de la Commission électrotechnique internationale (EN 60-529). Premier chiffre : Protection contre les particules solides (chiffre unique : 06 ou "X"). Deuxième chiffre : Protection contre la pénétration de liquides (chiffre unique : 09 ou 'X'). 3 : Troisième chiffre : protection personnelle contre l'accès aux parties dangereuses (lettre supplémentaire facultative). Quatrième chiffre : Autres protections (lettre supplémentaire facultative)  - `protectionOthers[array]`: Autres protection de l'armoire technique. Une combinaison de ces valeurs. Enum : 'abrasion, sous-sol, anti-humidité, affichage, arrachage de porte, poussière, ouverture forcée, graffiti, insecte, autre, surcharge du toit, brouillard salin, blindage, solaire, vandalisme, eau'.  - `refDevice[*]`: Le dispositif utilisé pour obtenir les données exprimées par cet enregistrement  - `refDeviceList[array]`: Une liste de référence aux [Dispositifs] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) qui se trouvent à l'intérieur du dispositif de l'armoire technique.  - `refPointOfInterest[*]`: Référence à un [PointOfInterest] (https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) lié à l'observation.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `serialNumber[string]`: Numéro de série du conteneur  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit être TechnicalCabinetDevice.  - `typeOfUse[string]`: Une utilisation acceptée quant à son positionnement dans un environnement intérieur / extérieur. Une valeur unique de ces valeurs. Enum : 'indoor, mixed, outdoor, other' (intérieur, mixte, extérieur, autre)  - `ventilationMode[array]`: Mode de ventilation. Une combinaison de ces valeurs. Enum : 'airConditioners, dehumidifier, none, other, selfVentilatedGills' (climatiseurs, déshumidificateurs, aucun, autres, branchages auto-ventilés)  - `weight[number]`: Poids de l'article. Le code d'unité (texte) de mesure est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **KGM** représente les kilogrammes.  . Model: [https://schema.org/weigth](https://schema.org/weigth)<!-- /30-PropertiesList -->  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nom alternatif pour ce poste  - `application[array]`: Application cible du dispositif en ce qui concerne l'environnement. Une combinaison de ces valeurs. Enum : "commercial, distributionService, industrial, other, publicWorks, road, tertiary, urbanService  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Nom de la marque  . Model: [https://schema.org/brand](https://schema.org/brand)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateLastReported[date-time]`: Un horodatage qui indique la dernière fois que l'appareil a transmis des données avec succès. Date et heure au format ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `designMaterials[array]`: Concevoir les matériaux nécessaires à la construction de l'armoire. Une combinaison de ces valeurs. Enum : "ABS-Plastique, aluminium, fibre de verre, acier galvanisé, autre, polyester, acier inoxydable".  - `dimension[object]`: Le format est structuré par une sous-propriété de 3 éléments. Le code d'unité (texte) de mesure est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **CMT** représente le centimètre.  	- `depth[number]`:     
+	- `height`:     
+- `documentation[uri]`: Un lien vers la documentation de l'appareil  . Model: [https://schema.org/URL](https://schema.org/URL)- `doorClosingMode[array]`: Mode de fermeture de la porte. Une valeur unique de ces valeurs. Enum : "poignée fixe, autre, poignée tournante, poignée triangulaire  - `doorCount[number]`: Nombre de portes du cabinet technique  - `doorOpeningAngle[number]`: Angle d'ouverture de la porte exprimé en degrés décimaux dans une fourchette de 0 à 180 degrés. Le code d'unité (texte) de mesure est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **DD** représente les degrés décimaux.  - `doorType[string]`: Type de porte de l'armoire technique. Une valeur unique parmi ces valeurs. Enum : "mixte, autre, pleine, transparente  - `exteriorCoating[array]`: Revêtement intérieur. Une combinaison de ces valeurs. Enum : "fibre de verre, autre, plastique, polyester, polyesterRésine, acier  - `exteriorFinish[array]`: Finition extérieure. Une combinaison de ces valeurs. Enum : "graffiti, autre, relief, crépi, lisse, texturé  - `id[*]`: Identifiant unique de l'entité  - `installationCondition[array]`: État et possibilité d'utilisation dans les environnements suivants. Une combinaison de ces valeurs. Enum : "désert, poussière, froid extrême, climat extrême, chaleur extrême, humidité extrême, marin, aucun, autre, salin, sismique, sable  - `installationMode[string]`: Positionnement de l'appareil par rapport à un système de référence au sol. Enum : "aérien, sol, autre, poteau, toiture, souterrain, mur  . Model: [https://schema.org/Text](https://schema.org/Text)- `interiorCoating[array]`: Revêtement intérieur. Une combinaison de ces valeurs. Enum : 'fibre de verre, isolant thermique, autre, plastique, polyester, résine polyester, acier'  - `internalDimension[object]`: Dimension interne correspondant au lieu de travail à l'intérieur de l'armoire technique. Le format est structuré par une sous-propriété de 3 éléments. Le code d'unité (texte) de mesure est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **CMT** représente le centimètre.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `depth`:     
+	- `height`:     
+- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `manufacturerName[string]`: Nom du fabricant  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumSystemVoltage[number]`: Tension maximale du système autorisée pour le **module**. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **VLT** représente Volt  - `modelName[string]`: Nom du modèle tel qu'indiqué par le fabricant  - `name[string]`: Le nom de cet élément  - `operatingTemperature[object]`: Plage de température ambiante de fonctionnement. Il s'agit de la résistance minimale et maximale au froid et à la chaleur. Le format est structuré par une sous-propriété de 2 éléments. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **CEL** représente le degré Celsius.  	- `max`:     
+- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `possibilityOfUse[string]`: Possibilité d'utilisation. Une valeur unique. Enum : "mixte, mobile, autre, stationnaire  - `protectionIK[number]`: Niveau IK "*Protection mécanique*" relatif à la classification numérique des degrés de protection fournis par les enveloppes des équipements électriques contre les impacts mécaniques externes, conformément à la norme de la Commission électrotechnique internationale (EN 62-262). - IK varie de 0 (résistance minimale) à 10 (résistance maximale), ce qui représente une énergie d'impact (unité Joule).  - `protectionIP[string]`: IP "Ingress Protection" pour la boîte de jonction. Il s'agit du niveau de classification et d'évaluation du degré de protection offert par les boîtiers mécaniques et les boîtiers électriques contre l'intrusion, la poussière, le contact accidentel et l'eau, conformément à la norme de la Commission électrotechnique internationale (EN 60-529). Premier chiffre : Protection contre les particules solides (chiffre unique : 06 ou "X"). Deuxième chiffre : Protection contre la pénétration de liquides (chiffre unique : 09 ou "X") : Troisième chiffre : protection individuelle contre l'accès aux parties dangereuses (lettre supplémentaire en option). Quatrième chiffre : Autres protections (lettre supplémentaire facultative)  - `protectionOthers[array]`: Autres protections de l'armoire technique. Une combinaison de ces valeurs. Enum : 'abrasion, sous-sol, protection contre l'humidité, affichage, arrachage de porte, poussière, ouverture forcée, graffiti, insecte, autre, surcharge du toit, brouillard salin, blindage, solaire, vandalisme, eau'  - `refDevice[*]`: Le dispositif utilisé pour obtenir les données exprimées dans cet enregistrement  - `refDeviceList[array]`: Une liste de références aux [dispositifs] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) qui se trouvent à l'intérieur de l'armoire technique Dispositif  - `refPointOfInterest[*]`: Référence à un [PointOfInterest] (https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) lié à l'observation  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `serialNumber[string]`: Numéro de série du conteneur  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de TechnicalCabinetDevice  - `typeOfUse[string]`: Utilisation acceptée concernant son positionnement dans un environnement intérieur/extérieur. Une valeur unique de ces valeurs. Enum : "intérieur, mixte, extérieur, autre  - `ventilationMode[array]`: Mode de ventilation. Une combinaison de ces valeurs. Enum : "airConditioners, dehumidifier, none, other, selfVentilatedGills" (climatiseurs, déshumidificateurs, aucun, autre, branchies auto-ventilées)  - `weight[number]`: Poids de l'article. Le code d'unité (texte) de mesure est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **KGM** représente les kilogrammes.  . Model: [https://schema.org/weigth](https://schema.org/weigth)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `dateLastReported`  - `dimension`  - `id`  - `location`  - `type`  - `typeOfUse`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Description des propriétés du modèle de données  
+## Modèle de données description des propriétés  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
@@ -32,32 +44,60 @@ TechnicalCabinetDevice:
   description: 'Technical Cabinet Device Data Model is intended to to describe the technical characteristics of the Device, designed to be placed in an urban or interurban environment. The main objective of these cabinets for this Data Model is to protect the electrical equipment necessary for the control, surveillance, reading and management of urban lighting, signaling, video and electrical distribution. The scope of use of some of these cabinets can extend to an additional protection for installations of modular apparatuses of telephony, data processing, meteorological stations, photo-voltaic stations, wind turbines stations, telecommunications, networks, data, bre Optics , etc. *Remark* : This Data Model can be used directly as a main entity to describe the device `Technical Cabinet`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. It can also refer to the list of all the components it contains, with the `refDeviceList` attribute, using the Data Model ''DEVICE'''    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -78,43 +118,43 @@ TechnicalCabinetDevice:
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     brandName:    
-      description: 'Name of the brand'    
+      description: Name of the brand    
       type: string    
       x-ngsi:    
         model: https://schema.org/brand    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateLastReported:    
-      description: 'A timestamp which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat'    
+      description: A timestamp which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -134,24 +174,28 @@ TechnicalCabinetDevice:
       x-ngsi:    
         type: Property    
     dimension:    
-      description: 'The format is structured by a sub-property of 3 items. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter.'    
+      description: 'The format is structured by a sub-property of 3 items. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CMT** represents Centimeter'    
       properties:    
         depth:    
-          description: 'Property. '    
+          description: ""    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         height:    
           minimum: 0    
           type: number    
         width:    
-          description: 'Property. '    
+          description: ""    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     documentation:    
-      description: 'A link to device''s documentation'    
+      description: A link to device's documentation    
       format: uri    
       type: string    
       x-ngsi:    
@@ -170,12 +214,12 @@ TechnicalCabinetDevice:
       x-ngsi:    
         type: Property    
     doorCount:    
-      description: 'Count of doors of the technical Cabinet.'    
+      description: Count of doors of the technical Cabinet    
       type: number    
       x-ngsi:    
         type: Property    
     doorOpeningAngle:    
-      description: 'Door opening angle expressed in decimal degrees with a range from 0 to 180 degree. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **DD** represents Decimal Degrees.'    
+      description: 'Door opening angle expressed in decimal degrees with a range from 0 to 180 degree. The unit code (text) of measurement  is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **DD** represents Decimal Degrees'    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -219,16 +263,20 @@ TechnicalCabinetDevice:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &technicalcabinetdevice_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     installationCondition:    
@@ -299,7 +347,7 @@ TechnicalCabinetDevice:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -318,9 +366,11 @@ TechnicalCabinetDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -342,9 +392,11 @@ TechnicalCabinetDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -368,9 +420,11 @@ TechnicalCabinetDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -391,9 +445,11 @@ TechnicalCabinetDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -417,9 +473,11 @@ TechnicalCabinetDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -445,12 +503,14 @@ TechnicalCabinetDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     manufacturerName:    
-      description: 'Name of the manufacturer'    
+      description: Name of the manufacturer    
       type: string    
       x-ngsi:    
         model: https://schema.org/manufacturer    
@@ -462,17 +522,17 @@ TechnicalCabinetDevice:
       x-ngsi:    
         type: Property    
     modelName:    
-      description: 'Name of the model as given by the manufacturer.'    
+      description: Name of the model as given by the manufacturer    
       type: string    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     operatingTemperature:    
-      description: 'Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius.'    
+      description: 'Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius'    
       properties:    
         max:    
           minimum: 0    
@@ -484,10 +544,24 @@ TechnicalCabinetDevice:
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *technicalcabinetdevice_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -537,47 +611,59 @@ TechnicalCabinetDevice:
         type: Property    
     refDevice:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'The device used to obtain the data expressed by this record'    
+          x-ngsi:    
+            type: Property    
+      description: The device used to obtain the data expressed by this record    
       x-ngsi:    
         type: Relationship    
     refDeviceList:    
-      description: 'A list of reference to the [Devices](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which are inside the technical Cabinet Device.'    
+      description: 'A list of reference to the [Devices](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) which are inside the technical Cabinet Device'    
       items:    
         anyOf:    
-          - description: 'Property. Identifier format of any NGSI entity'    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: 'Property. Identifier format of any NGSI entity'    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
+            x-ngsi:    
+              type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     refPointOfInterest:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation.'    
+          x-ngsi:    
+            type: Property    
+      description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation'    
       x-ngsi:    
         type: Relationship    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -589,18 +675,18 @@ TechnicalCabinetDevice:
       x-ngsi:    
         type: Property    
     serialNumber:    
-      description: 'Serial number of the container'    
+      description: Serial number of the container    
       type: string    
       x-ngsi:    
         model: https://schema.org/serialNumber    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity type. It has to be TechnicalCabinetDevice'    
+      description: NGSI Entity type. It has to be TechnicalCabinetDevice    
       enum:    
         - TechnicalCabinetDevice    
       type: string    
@@ -645,11 +731,11 @@ TechnicalCabinetDevice:
     - dimension    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/TechnicalCabinetDevice/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/TechnicalCabinetDevice/schema.json    
   x-model-tags: Energy    
-  x-version: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -657,8 +743,8 @@ TechnicalCabinetDevice:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Exemples de charges utiles  
-#### TechnicalCabinetDevice Valeurs-clés NGSI-v2 Exemple  
-Voici un exemple d'un TechnicalCabinetDevice au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### TechnicalCabinetDevice Valeurs clés NGSI-v2 Exemple  
+Voici un exemple d'un TechnicalCabinetDevice au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -757,7 +843,7 @@ TechnicalCabinetDevice:
 ```  
 </details>  
 #### TechnicalCabinetDevice NGSI-v2 normalisé Exemple  
-Voici un exemple d'un TechnicalCabinetDevice au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un TechnicalCabinetDevice au format JSON-LD tel que normalisé. Ce format est compatible avec les NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -776,9 +862,9 @@ TechnicalCabinetDevice:
     "value": "Technical Cabinet description"  
   },  
   "location": {  
-    "type": "GeoProperty",  
+    "type": "geo:json",  
     "value": {  
-      "type": "point",  
+      "type": "Point",  
       "coordinates": [  
         7.196545,  
         43.664810  
@@ -834,7 +920,7 @@ TechnicalCabinetDevice:
   },  
   "typeOfUse": {  
     "type": "Text",  
-    "value": "outDoor"  
+    "value": "outdoor"  
   },  
   "installationMode": {  
     "type": "Text",  
@@ -923,8 +1009,10 @@ TechnicalCabinetDevice:
     "value": 180  
   },  
   "doorClosingMode": {  
-    "type": "Text",  
-    "value": "fixedHandle"  
+    "type": "array",  
+    "value": [  
+      "fixedHandle"  
+    ]  
   },  
   "designMaterials": {  
     "type": "array",  
@@ -961,8 +1049,8 @@ TechnicalCabinetDevice:
 }  
 ```  
 </details>  
-#### TechnicalCabinetDevice Valeurs-clés NGSI-LD Exemple  
-Voici un exemple d'un TechnicalCabinetDevice au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### TechnicalCabinetDevice Valeurs clés NGSI-LD Exemple  
+Voici un exemple d'un TechnicalCabinetDevice au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -1058,7 +1146,6 @@ TechnicalCabinetDevice:
     ],  
     "weight": 60,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
     ]  
 }  
@@ -1069,218 +1156,218 @@ TechnicalCabinetDevice:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
-    "type": "TechnicalCabinetDevice",  
-    "address": {  
-        "type": "Property",  
-        "value": {  
-            "addressCountry": "FR",  
-            "addressLocality": "Nice",  
-            "streetAddress": "Airport Terminal 2 - Floor 1"  
-        }  
-    },  
-    "alternateName": {  
-        "type": "Property",  
-        "value": "AirPort \u2013 global Observation"  
-    },  
-    "application": {  
-        "type": "Property",  
-        "value": [  
-            "industrial",  
-            "distributionService"  
-        ]  
-    },  
-    "areaServed": {  
-        "type": "Property",  
-        "value": "Nice Aeroport"  
-    },  
-    "brandName": {  
-        "type": "Property",  
-        "value": "EATON"  
-    },  
-    "dateLastReported": {  
-        "type": "Property",  
-        "value": {  
-            "type": "DateTime",  
-            "value": "2020-03-17T08:45:00Z"  
-        }  
-    },  
-    "description": {  
-        "type": "Property",  
-        "value": "Technical Cabinet description"  
-    },  
-    "designMaterials": {  
-        "type": "Property",  
-        "value": [  
-            "stainlessSteel",  
-            "polyester"  
-        ]  
-    },  
-    "dimension": {  
-        "type": "Property",  
-        "value": {  
-            "width": 150,  
-            "height": 175,  
-            "depth": 75  
-        }  
-    },  
-    "documentation": {  
-        "type": "Property",  
-        "value": "https://www.myTechnicalCabinet.fr"  
-    },  
-    "doorClosingMode": {  
-        "type": "Property",  
-        "value": "fixedHandle"  
-    },  
-    "doorCount": {  
-        "type": "Property",  
-        "value": 2  
-    },  
-    "doorOpeningAngle": {  
-        "type": "Property",  
-        "value": 180  
-    },  
-    "doorType": {  
-        "type": "Property",  
-        "value": "solid"  
-    },  
-    "exteriorCoating": {  
-        "type": "Property",  
-        "value": [  
-            "polyesterResin"  
-        ]  
-    },  
-    "exteriorFinish": {  
-        "type": "Property",  
-        "value": [  
-            "roughcast"  
-        ]  
-    },  
-    "installationCondition": {  
-        "type": "Property",  
-        "value": [  
-            "none"  
-        ]  
-    },  
-    "installationMode": {  
-        "type": "Property",  
-        "value": "ground"  
-    },  
-    "interiorCoating": {  
-        "type": "Property",  
-        "value": [  
-            "heatInsulating",  
-            "polyesterResin"  
-        ]  
-    },  
-    "internalDimension": {  
-        "type": "Property",  
-        "value": {  
-            "width": 140,  
-            "height": 165,  
-            "depth": 70  
-        }  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "point",  
-            "coordinates": [  
-                7.196545,  
-                43.66481  
-            ]  
-        }  
-    },  
-    "manufacturerName": {  
-        "type": "Property",  
-        "value": "ElDorado"  
-    },  
-    "maximumSystemVoltage": {  
-        "type": "Property",  
-        "value": 1000  
-    },  
-    "modelName": {  
-        "type": "Property",  
-        "value": "xEnergy L"  
-    },  
-    "name": {  
-        "type": "Property",  
-        "value": "MNCA-TCD-AP-T2-F1-022"  
-    },  
-    "operatingTemperature": {  
-        "type": "Property",  
-        "value": {  
-            "min": -40,  
-            "max": 100  
-        }  
-    },  
-    "owner": {  
-        "type": "Property",  
-        "value": [  
-            "Airport-Division Maintenance"  
-        ]  
-    },  
-    "possibilityOfUsed": {  
-        "type": "Property",  
-        "value": "stationary"  
-    },  
-    "protectionIK": {  
-        "type": "Property",  
-        "value": 10  
-    },  
-    "protectionIP": {  
-        "type": "Property",  
-        "value": "65"  
-    },  
-    "protectionOthers": {  
-        "type": "Property",  
-        "value": [  
-            "dust",  
-            "forcedOpening",  
-            "saltSpray",  
-            "abrasion",  
-            "doorTearing",  
-            "vandalism"  
-        ]  
-    },  
-    "refDeviceList": {  
-        "type": "Relationship",  
-        "object": [  
-            "urn:ngsi-ld:Device:NCE-CE-025",  
-            "urn:ngsi-ld:Device:NCE-FU-048",  
-            "urn:ngsi-ld:Device:NCE-CE-058"  
-        ]  
-    },  
-    "serialNumber": {  
-        "type": "Property",  
-        "value": "L257589A4587J56"  
-    },  
-    "typeOfUse": {  
-        "type": "Property",  
-        "value": "outDoor"  
-    },  
-    "ventilationMode": {  
-        "type": "Property",  
-        "value": [  
-            "selfVentilatedGills"  
-        ]  
-    },  
-    "weight": {  
-        "type": "Property",  
-        "value": 60  
-    },  
-    "@context": [  
-        "https://smart-data-models.github.io/data-models/context.jsonld",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
+  "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",  
+  "type": "TechnicalCabinetDevice",  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "addressCountry": "FR",  
+      "addressLocality": "Nice",  
+      "streetAddress": "Airport Terminal 2 - Floor 1"  
+    }  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": "AirPort \u2013 global Observation"  
+  },  
+  "application": {  
+    "type": "Property",  
+    "value": [  
+      "industrial",  
+      "distributionService"  
     ]  
+  },  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Nice Aeroport"  
+  },  
+  "brandName": {  
+    "type": "Property",  
+    "value": "EATON"  
+  },  
+  "dateLastReported": {  
+    "type": "Property",  
+    "value": {  
+      "type": "DateTime",  
+      "value": "2020-03-17T08:45:00Z"  
+    }  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Technical Cabinet description"  
+  },  
+  "designMaterials": {  
+    "type": "Property",  
+    "value": [  
+      "stainlessSteel",  
+      "polyester"  
+    ]  
+  },  
+  "dimension": {  
+    "type": "Property",  
+    "value": {  
+      "width": 150,  
+      "height": 175,  
+      "depth": 75  
+    }  
+  },  
+  "documentation": {  
+    "type": "Property",  
+    "value": "https://www.myTechnicalCabinet.fr"  
+  },  
+  "doorClosingMode": {  
+    "type": "Property",  
+    "value": [  
+      "fixedHandle"  
+    ]  
+  },  
+  "doorCount": {  
+    "type": "Property",  
+    "value": 2  
+  },  
+  "doorOpeningAngle": {  
+    "type": "Property",  
+    "value": 180  
+  },  
+  "doorType": {  
+    "type": "Property",  
+    "value": "solid"  
+  },  
+  "exteriorCoating": {  
+    "type": "Property",  
+    "value": [  
+      "polyesterResin"  
+    ]  
+  },  
+  "exteriorFinish": {  
+    "type": "Property",  
+    "value": [  
+      "roughcast"  
+    ]  
+  },  
+  "installationCondition": {  
+    "type": "Property",  
+    "value": [  
+      "none"  
+    ]  
+  },  
+  "installationMode": {  
+    "type": "Property",  
+    "value": "ground"  
+  },  
+  "interiorCoating": {  
+    "type": "Property",  
+    "value": [  
+      "heatInsulating",  
+      "polyesterResin"  
+    ]  
+  },  
+  "internalDimension": {  
+    "type": "Property",  
+    "value": {  
+      "width": 140,  
+      "height": 165,  
+      "depth": 70  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        7.196545,  
+        43.66481  
+      ]  
+    }  
+  },  
+  "manufacturerName": {  
+    "type": "Property",  
+    "value": "ElDorado"  
+  },  
+  "maximumSystemVoltage": {  
+    "type": "Property",  
+    "value": 1000  
+  },  
+  "modelName": {  
+    "type": "Property",  
+    "value": "xEnergy L"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "MNCA-TCD-AP-T2-F1-022"  
+  },  
+  "operatingTemperature": {  
+    "type": "Property",  
+    "value": {  
+      "min": -40,  
+      "max": 100  
+    }  
+  },  
+  "owner": {  
+    "type": "Property",  
+    "value": [  
+      "Airport-Division Maintenance"  
+    ]  
+  },  
+  "possibilityOfUsed": {  
+    "type": "Property",  
+    "value": "stationary"  
+  },  
+  "protectionIK": {  
+    "type": "Property",  
+    "value": 10  
+  },  
+  "protectionIP": {  
+    "type": "Property",  
+    "value": "65"  
+  },  
+  "protectionOthers": {  
+    "type": "Property",  
+    "value": [  
+      "dust",  
+      "forcedOpening",  
+      "saltSpray",  
+      "abrasion",  
+      "doorTearing",  
+      "vandalism"  
+    ]  
+  },  
+  "refDeviceList": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Device:NCE-CE-025",  
+      "urn:ngsi-ld:Device:NCE-FU-048",  
+      "urn:ngsi-ld:Device:NCE-CE-058"  
+    ]  
+  },  
+  "serialNumber": {  
+    "type": "Property",  
+    "value": "L257589A4587J56"  
+  },  
+  "typeOfUse": {  
+    "type": "Property",  
+    "value": "outdoor"  
+  },  
+  "ventilationMode": {  
+    "type": "Property",  
+    "value": [  
+      "selfVentilatedGills"  
+    ]  
+  },  
+  "weight": {  
+    "type": "Property",  
+    "value": 60  
+  },  
+  "@context": [  
+    "https://smart-data-models.github.io/data-models/context.jsonld"  
+  ]  
 }  
 ```  
 </details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
