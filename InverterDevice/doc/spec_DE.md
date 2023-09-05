@@ -14,8 +14,27 @@
 
 ## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `application[array]`: Zielanwendung des Geräts in Bezug auf die Umwelt. Ein eindeutiger Wert. Enum:'electricMobility, energyStorage, emergencyStorage, lighting, industrialStorage, houseHoldStorage, robotics, production, other'  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Markenname des Artikels  . Model: [https://schema.org/brand](https://schema.org/brand)- `coolingSystem[string]`:  Kühlsystem des Geräts. Enum:'Konvektion, OptiCool, Geregelter-Lüfter, Andere'  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateLastReported[string]`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, zu dem das Gerät erfolgreich Daten gemeldet hat. Datum und Uhrzeit im ISO8601 UTC-Format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `dimension[object]`: Externe Dimension eines Panels. Das Format ist durch eine Untereigenschaft mit 3 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **CMT** für Zentimeter  - `documentation[string]`: Technische Dokumentation (Installation / Wartung / Gebrauch)  . Model: [https://schema.org/URL](https://schema.org/URL)- `id[*]`: Eindeutiger Bezeichner der Entität  - `installationCondition[array]`: Bedingung und Möglichkeit der Verwendung in den folgenden Umgebungen. Enum:'extremeHitze, extremeKälte, extremeFeuchtigkeit, extremesKlima, Wüste, Sand, Meer, salzhaltig, Staub, seismisch, andere'.  - `installationMode[string]`: Positionierung des Geräts in Bezug auf ein Bodenreferenzsystem. Ein eindeutiger Wert. Enum:'Antenne, Boden, Mast, Überdachung, Unterboden, Wand, andere'  - `inverterStatus[array]`: Status des Wechselrichters. Eine Kombination von Werten.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mPPTPVVoltageDC[object]`: Minimaler und maximaler Photovoltaik-Spannungsbereich, MPPT erlaubt. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [https://schema.org/Number](https://schema.org/Number)- `manufacturerName[string]`: Hersteller Name des Artikels  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maxInputCurrentParallelAssembly[number]`: Max. Stromeingang mit einer parallelen Baugruppe. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxOutputPowerAC[number]`: Maximale Leistung oder Scheinleistung. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **D46** für Volt-Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `modelName[string]`: Modellbezeichnung des Artikels  . Model: [https://schema.org/model](https://schema.org/model)- `moduleYieldRate[object]`: Ausbeutesatz des Geräts. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert (Europäische Norm - Herstellernorm). Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **P1** für Prozent  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `name[string]`: Der Name dieses Artikels.  - `nbInputParallelDC[string]`: Maximale Anzahl von Eingängen (parallel)  . Model: [https://schema.org/Number.](https://schema.org/Number.)- `nbMPPTrackersDC[number]`: Anzahl der MPP-Tracker  . Model: [https://schema.org/Number.](https://schema.org/Number.)- `noiseLevel[number]`: Schallleistungspegel des Geräts. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **2N** für Dezibel  . Model: [http://schema.org/Number](http://schema.org/Number)- `nominalAmpereAC[number]`: Nennstromstärke *(Code I)*. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalAmpereDC[number]`: Nennstromstärke. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalFrequencyAC[number]`: Nennfrequenz. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **HTZ** für Hertz  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalFrequencyDC[number]`:  Nennfrequenz. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **HTZ** für Hertz  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalPowerAC[number]`: Nennleistung . Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **WTT** für Watt  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalPowerDC[number]`: Nennleistung oder maximaler Leistungsfaktor für cos phi=1. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **WTT** für Watt  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalVoltageAC[number]`: Nennspannung der Batterie *(Code U)*. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalVoltageDC[number]`: Nennspannung. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatingAirHumidity[object]`: Bereich der Luftfeuchtigkeit in der Betriebsumgebung. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **P1** für Prozent.  - `operatingAmpereAC[object]`: Erlaubte minimale und maximale Ampere. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [http://schema.org/Number](http://schema.org/Number)- `operatingAmpereDC[object]`: Erlaubte minimale und maximale Ampere. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatingFrequencyAC[object]`: Zulässige Mindest- und Höchstfrequenz. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **HTZ** für Hertz  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `operatingFrequencyDC[object]`: Zulässige Mindest- und Höchstfrequenz. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **HTZ** für Hertz  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatingTemperature[object]`: Betriebstemperaturbereich. Dies ist der minimale und maximale Widerstand gegen Kälte und Hitze. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **CEL** für Grad Celsius.  - `operatingVoltageAC[object]`: Zulässige Mindest- und Höchstspannung. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)- `operatingVoltageDC[object]`: Zulässige Mindest- und Höchstspannung. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt.  . Model: [https://schema.org/Number](https://schema.org/Number)- `overVoltageCategory[string]`: Überspannungskategorie. - I : Anschluss an Stromkreise mit transienten Überspannungen auf einem angemessen niedrigen Niveau. - II : Hauptisolierung und zusätzliche Isolierung (Erdungsklemme). - III : Feste Installationen, deren Zuverlässigkeit und Verfügbarkeit spezifischen Spezifikationen unterliegt. - IV : Materialien am Ursprung der Elektroinstallation wie Stromzähler und Hauptmaterialien mit Überstromschutz.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `phaseType[string]`: Typ der Phase. Ein eindeutiger Wert. Enum:'singlePhase,threePhase'  - `possibilityOfUse[string]`: Möglichkeit der Verwendung. Enum:'gemischt, mobil, stationär, andere'  - `powerFactorAC[number]`: Leistungsfaktor für cos phi  . Model: [http://schema.org/Number](http://schema.org/Number)- `protectionClassSLK[string]`: Schutzklasse (SKL). - 0 : Hauptisolierung ohne Erdungsanschluss. - 1 : Hauptisolierung und zusätzliche Isolierung (Erdungsanschluss). - 2 : doppelte oder verstärkte Isolierung (entspricht dem Doppelten der Hauptisolierung) ohne zugängliches Metallteil. - 3 : Betrieb mit sehr niedriger Sicherheitsspannung (SELV) (maximal 50 V).  - `protectionIK[number]`: IK '*Mecanic Protection*'-Stufe, die sich auf die numerische Klassifizierung des Schutzgrades bezieht, den Gehäuse für elektrische Geräte gegen äußere mechanische Einwirkungen gemäß der Norm der Internationalen Elektrotechnischen Kommission (EN 62-262) bieten. - IK variiert von 0 (minimaler Widerstand) bis 10 (maximaler Widerstand), was einer Aufprallenergie (Einheit Joule) entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `protectionIP[string]`: IP '*Eindringschutz*' für die Anschlussdose. Diese Stufe klassifiziert und bewertet den Grad des Schutzes, den mechanische und elektrische Gehäuse gegen Eindringen, Staub, versehentliche Berührung und Wasser gemäß der Norm der Internationalen Elektrotechnischen Kommission (EN 60-529) bieten. - Erste Ziffer: Schutz gegen feste Partikel (einzelne Ziffer: 0-6 oder 'X'). - Zweite Ziffer: Schutz gegen das Eindringen von Flüssigkeiten (Einzelne Ziffer: 0-9 oder 'X') - Dritte Ziffer: Personenschutz gegen den Zugang zu gefährlichen Teilen (optionaler Zusatzbuchstabe).- Vierte Ziffer: Sonstige Schutzmaßnahmen (optionaler Zusatzbuchstabe).  - `refDevice[*]`: Verweis auf die Haupteinheit [Gerät] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) bei Verwendung als zweite Verbindung.  - `refPointOfInterest[*]`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit der Beobachtung verknüpft ist.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `self-consumption[number]`: Selbstverbrauch während der Nacht. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben.  Zum Beispiel steht **WTT** für Watt  . Model: [http://schema.org/Number](http://schema.org/Number)- `serialNumber[string]`: Seriennummern des Artikels  . Model: [https://schema.org/brand](https://schema.org/brand)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `startingVoltageDC[number]`: Startspannung. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [https://schema.org/Number](https://schema.org/Number)- `supplyPhaseNb[number]`: Anzahl der Stromversorgungsphasen  . Model: [https://schema.org/Number](https://schema.org/Number)- `topology[string]`: Beschreibung der Topologie der Anlage.  - `type[string]`: NGSI-Entitätstyp. Es muss InverterDevice sein  - `typeOfUse[string]`: Akzeptierte Verwendung hinsichtlich der Positionierung in einer Innen-/Außenumgebung. Enum:'innen, außen, gemischt, andere'  - `weight[number]`: Gewicht. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **KGM** für Kilogramm  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `application[array]`: Zielanwendung des Geräts in Bezug auf die Umwelt. Ein eindeutiger Wert. Enum:'electricMobility, energyStorage, emergencyStorage, lighting, industrialStorage, houseHoldStorage, robotics, production, other'  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Markenname des Artikels  . Model: [https://schema.org/brand](https://schema.org/brand)- `coolingSystem[string]`:  Kühlsystem des Geräts. Enum:'Konvektion, OptiCool, Geregelter-Lüfter, Andere'  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateLastReported[date-time]`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, zu dem das Gerät erfolgreich Daten gemeldet hat. Datum und Uhrzeit im ISO8601 UTC-Format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `dimension[object]`: Externe Dimension eines Panels. Das Format ist durch eine Untereigenschaft mit 3 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **CMT** für Zentimeter  	- `depth`:     
+	- `height`:     
+- `documentation[uri]`: Technische Dokumentation (Installation / Wartung / Gebrauch)  . Model: [https://schema.org/URL](https://schema.org/URL)- `id[*]`: Eindeutiger Bezeichner der Entität  - `installationCondition[array]`: Bedingung und Möglichkeit der Verwendung in den folgenden Umgebungen. Enum:'extremeHitze, extremeKälte, extremeFeuchtigkeit, extremesKlima, Wüste, Sand, Meer, salzhaltig, Staub, seismisch, andere'  - `installationMode[string]`: Positionierung des Geräts in Bezug auf ein Bodenreferenzsystem. Ein eindeutiger Wert. Enum:'Antenne, Boden, Mast, Überdachung, Unterboden, Wand, andere'  - `inverterStatus[array]`: Status des Wechselrichters. Eine Kombination von Werten  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mPPTPVVoltageDC[object]`: Minimaler und maximaler Photovoltaik-Spannungsbereich, MPPT erlaubt. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [https://schema.org/Number](https://schema.org/Number)	- `max`:     
+- `manufacturerName[string]`: Hersteller Name des Artikels  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maxInputCurrentParallelAssembly[number]`: Max. Stromeingang mit einer parallelen Baugruppe. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxOutputPowerAC[number]`: Maximale Leistung oder Scheinleistung. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **D46** für Volt-Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `modelName[string]`: Modellbezeichnung des Artikels  . Model: [https://schema.org/model](https://schema.org/model)- `moduleYieldRate[object]`: Ausbeutesatz des Geräts. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert (Europäische Norm - Herstellernorm). Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **P1** für Prozent  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)	- `eta`:     
+- `name[string]`: Der Name dieses Artikels  - `nbInputParallelDC[string]`: Maximale Anzahl von Eingängen (parallel)  . Model: [https://schema.org/Number](https://schema.org/Number)- `nbMPPTrackersDC[number]`: Anzahl der MPP-Tracker  . Model: [https://schema.org/Number](https://schema.org/Number)- `noiseLevel[number]`: Schallleistungspegel des Geräts. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **2N** für Dezibel  . Model: [http://schema.org/Number](http://schema.org/Number)- `nominalAmpereAC[number]`: Nennstromstärke *(Code I)*. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalAmpereDC[number]`: Nennstromstärke. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalFrequencyAC[number]`: Nennfrequenz. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **HTZ** für Hertz  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalFrequencyDC[number]`:  Nennfrequenz. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **HTZ** für Hertz  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalPowerAC[number]`: Nennleistung . Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **WTT** für Watt  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalPowerDC[number]`: Nennleistung oder maximaler Leistungsfaktor für cos phi=1. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **WTT** für Watt  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalVoltageAC[number]`: Nennspannung der Batterie *(Code U)*. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalVoltageDC[number]`: Nennspannung. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatingAirHumidity[object]`: Bereich der Luftfeuchtigkeit in der Betriebsumgebung. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **P1** für Prozent  	- `max`:     
+- `operatingAmpereAC[object]`: Erlaubte minimale und maximale Ampere. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [http://schema.org/Number](http://schema.org/Number)	- `max`:     
+- `operatingAmpereDC[object]`: Erlaubte minimale und maximale Ampere. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  . Model: [https://schema.org/Number](https://schema.org/Number)	- `max`:     
+- `operatingFrequencyAC[object]`: Zulässige Mindest- und Höchstfrequenz. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **HTZ** für Hertz  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)	- `max`:     
+- `operatingFrequencyDC[object]`: Zulässige Mindest- und Höchstfrequenz. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **HTZ** für Hertz  . Model: [https://schema.org/Number](https://schema.org/Number)	- `max`:     
+- `operatingTemperature[object]`: Betriebstemperaturbereich. Dies ist der minimale und maximale Widerstand gegen Kälte und Hitze. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **CEL** für Grad Celsius  	- `max`:     
+- `operatingVoltageAC[object]`: Zulässige Mindest- und Höchstspannung. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [http://schema.org/StructuredValue](http://schema.org/StructuredValue)	- `max`:     
+- `operatingVoltageDC[object]`: Zulässige Mindest- und Höchstspannung. Das Format ist durch eine Untereigenschaft mit 2 Elementen strukturiert. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt.  . Model: [https://schema.org/Number](https://schema.org/Number)	- `max`:     
+- `overVoltageCategory[string]`: Überspannungskategorie. - I : Anschluss an Stromkreise mit transienten Überspannungen auf einem angemessen niedrigen Niveau. - II : Hauptisolierung und zusätzliche Isolierung (Erdungsklemme). - III : Feste Installationen, deren Zuverlässigkeit und Verfügbarkeit spezifischen Spezifikationen unterliegt. - IV : Materialien am Ursprung der Elektroinstallation wie Stromzähler und Hauptmaterialien Überstromschutz  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `phaseType[string]`: Typ der Phase. Ein eindeutiger Wert. Enum:'singlePhase,threePhase'  - `possibilityOfUse[string]`: Möglichkeit der Verwendung. Enum:'gemischt, mobil, stationär, andere'  - `powerFactorAC[number]`: Leistungsfaktor für cos phi  . Model: [http://schema.org/Number](http://schema.org/Number)- `protectionClassSLK[string]`: Schutzklasse (SKL). - 0 : Hauptisolierung ohne Erdungsanschluss. - 1 : Hauptisolierung und zusätzliche Isolierung (Erdungsanschluss). - 2 : doppelte oder verstärkte Isolierung (entspricht dem Doppelten der Hauptisolierung) ohne zugängliches Metallteil. - 3 : Betrieb mit sehr niedriger Sicherheitsspannung (SELV) (maximal 50 V)  - `protectionIK[number]`: IK '*Mecanic Protection*'-Stufe, die sich auf die numerische Klassifizierung des Schutzgrades bezieht, den Gehäuse für elektrische Geräte gegen äußere mechanische Einwirkungen gemäß der Norm der Internationalen Elektrotechnischen Kommission (EN 62-262) bieten. - IK variiert von 0 (minimaler Widerstand) bis 10 (maximaler Widerstand), was einer Schlagenergie (Einheit Joule) entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `protectionIP[string]`: IP '*Eindringschutz*' für die Anschlussdose. Diese Stufe klassifiziert und bewertet den Grad des Schutzes, den mechanische und elektrische Gehäuse gegen Eindringen, Staub, versehentliche Berührung und Wasser gemäß der Norm der Internationalen Elektrotechnischen Kommission (EN 60-529) bieten. - Erste Ziffer: Schutz gegen feste Partikel (einzelne Ziffer: 0-6 oder 'X'). - Zweite Ziffer: Schutz gegen das Eindringen von Flüssigkeiten (Einzelne Ziffer: 0-9 oder 'X') - Dritte Ziffer: Personenschutz gegen den Zugang zu gefährlichen Teilen (optionaler Zusatzbuchstabe).- Vierte Ziffer: Sonstige Schutzmaßnahmen (optionaler Zusatzbuchstabe)  - `refDevice[*]`: Verweis auf die Haupteinheit [Gerät] (https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) bei Verwendung als zweite Verbindung  - `refPointOfInterest[*]`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit der Beobachtung verknüpft ist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `self-consumption[number]`: Selbstverbrauch in der Nacht. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben.  Zum Beispiel steht **WTT** für Watt  . Model: [http://schema.org/Number](http://schema.org/Number)- `serialNumber[string]`: Seriennummern des Artikels  . Model: [https://schema.org/brand](https://schema.org/brand)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startingVoltageDC[number]`: Startspannung. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **VLT** für Volt  . Model: [https://schema.org/Number](https://schema.org/Number)- `supplyPhaseNb[number]`: Anzahl der Stromversorgungsphasen  . Model: [https://schema.org/Number](https://schema.org/Number)- `topology[string]`: Beschreibung der Topologie der Anlage  - `type[string]`: NGSI-Entitätstyp. Es muss InverterDevice sein  - `typeOfUse[string]`: Akzeptierte Verwendung hinsichtlich der Positionierung in einer Innen-/Außenumgebung. Enum:'innen, außen, gemischt, andere'  - `weight[number]`: Gewicht. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **KGM** für Kilogramm  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `dateLastReported`  - `id`  - `location`  - `phaseType`  - `type`  <!-- /35-RequiredProperties -->  
@@ -33,32 +52,60 @@ InverterDevice:
   description: 'The data model is intended to describe the mechanical, electrical characteristics of an Inverter according to *DC - Direct Current Information* supplied as input and *AC - Alternating Current Information*  returned as output. *Remark*: This Data Model can be used directly as a main entity to describe the device [Inverter] or as a sub-entity of the Data Model {DEVICE] using a reference by the [refDevice] attribute.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -80,13 +127,13 @@ InverterDevice:
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     brandName:    
-      description: 'Brand Name of the item'    
+      description: Brand Name of the item    
       type: string    
       x-ngsi:    
         model: https://schema.org/brand    
@@ -102,31 +149,31 @@ InverterDevice:
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateLastReported:    
-      description: 'A timestamps which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat'    
+      description: A timestamps which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -147,27 +194,31 @@ InverterDevice:
         type: Property    
         units: Centimeters    
     documentation:    
-      description: 'Technical Documentation (Installation / maintenance / used)'    
+      description: Technical Documentation (Installation / maintenance / used)    
       format: uri    
       type: string    
       x-ngsi:    
         model: https://schema.org/URL    
         type: Property    
     id:    
-      anyOf: &inverterdevice_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     installationCondition:    
-      description: 'Condition and possibility of use in the following environments. Enum:''extremeHeat, extremeCold, extremeHumidity, extremeClimate, desert, sand, marine, saline, dust, seismic, other''.'    
+      description: 'Condition and possibility of use in the following environments. Enum:''extremeHeat, extremeCold, extremeHumidity, extremeClimate, desert, sand, marine, saline, dust, seismic, other'''    
       items:    
         enum:    
           - extremeHeat    
@@ -199,7 +250,7 @@ InverterDevice:
       x-ngsi:    
         type: Property    
     inverterStatus:    
-      description: 'Status of the inverter. A combination of values.'    
+      description: Status of the inverter. A combination of values    
       items:    
         enum:    
           - 00-OnSector    
@@ -222,7 +273,7 @@ InverterDevice:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -241,9 +292,11 @@ InverterDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -265,9 +318,11 @@ InverterDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -291,9 +346,11 @@ InverterDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -314,9 +371,11 @@ InverterDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -340,9 +399,11 @@ InverterDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -368,8 +429,10 @@ InverterDevice:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mPPTPVVoltageDC:    
@@ -387,7 +450,7 @@ InverterDevice:
         type: Property    
         units: Volt    
     manufacturerName:    
-      description: 'Manufacturer Name of the item'    
+      description: Manufacturer Name of the item    
       type: string    
       x-ngsi:    
         model: https://schema.org/manufacturer    
@@ -405,9 +468,9 @@ InverterDevice:
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
-        units: 'Volt Ampere'    
+        units: Volt Ampere    
     modelName:    
-      description: 'Model name of the item'    
+      description: Model name of the item    
       type: string    
       x-ngsi:    
         model: https://schema.org/model    
@@ -424,21 +487,21 @@ InverterDevice:
         model: http://schema.org/StructuredValue    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     nbInputParallelDC:    
-      description: 'Maximum Number of inputs (in parallel)'    
+      description: Maximum Number of inputs (in parallel)    
       type: string    
       x-ngsi:    
-        model: https://schema.org/Number.    
+        model: https://schema.org/Number    
         type: Property    
     nbMPPTrackersDC:    
-      description: 'Number of MPP trackers'    
+      description: Number of MPP trackers    
       type: number    
       x-ngsi:    
-        model: https://schema.org/Number.    
+        model: https://schema.org/Number    
         type: Property    
     noiseLevel:    
       description: 'Sound Power level of the Device. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **2N** represents Decibel'    
@@ -504,7 +567,7 @@ InverterDevice:
         type: Property    
         units: Volt    
     operatingAirHumidity:    
-      description: 'Ambient operating Air Humidity range. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent.'    
+      description: 'Ambient operating Air Humidity range. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent'    
       properties:    
         max:    
           maximum: 1    
@@ -574,7 +637,7 @@ InverterDevice:
         type: Property    
         units: Hertz    
     operatingTemperature:    
-      description: 'Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius.'    
+      description: 'Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius'    
       properties:    
         max:    
           minimum: 0    
@@ -614,7 +677,7 @@ InverterDevice:
         type: Property    
         units: Volt    
     overVoltageCategory:    
-      description: 'Over voltage category. - I : connection to circuits with transient over voltages at an appropriate low level. - II : main insulation and additional insulation (earth terminal). - III : fixed installations with reliability and availability making subject to specific specifications. - IV : materials at the origin of the electrical installation such as electric meters and main materials over current protection.'    
+      description: 'Over voltage category. - I : connection to circuits with transient over voltages at an appropriate low level. - II : main insulation and additional insulation (earth terminal). - III : fixed installations with reliability and availability making subject to specific specifications. - IV : materials at the origin of the electrical installation such as electric meters and main materials over current protection'    
       enum:    
         - I    
         - II    
@@ -624,10 +687,24 @@ InverterDevice:
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *inverterdevice_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -650,7 +727,7 @@ InverterDevice:
       x-ngsi:    
         type: Property    
     powerFactorAC:    
-      description: 'Power factor for cos phi'    
+      description: Power factor for cos phi    
       maximum: 1    
       minimum: 0    
       type: number    
@@ -659,7 +736,7 @@ InverterDevice:
         type: Property    
         units: 'A value between [0,1] Volt'    
     protectionClassSLK:    
-      description: 'Protection class (SKL). - 0 : main insulation without earth connection. - 1 : main insulation and additional insulation (earth terminal). - 2 : double or reinforced insulation (equivalent to twice the main insulation) without accessible metal part. - 3 : operating in very low safety voltage (SELV) (50V maximum).'    
+      description: 'Protection class (SKL). - 0 : main insulation without earth connection. - 1 : main insulation and additional insulation (earth terminal). - 2 : double or reinforced insulation (equivalent to twice the main insulation) without accessible metal part. - 3 : operating in very low safety voltage (SELV) (50V maximum)'    
       enum:    
         - 0    
         - 1    
@@ -675,38 +752,46 @@ InverterDevice:
         model: https://schema.org/Number    
         type: Property    
     protectionIP:    
-      description: 'IP ''*Ingress Protection*'' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). - First digit: Solid particle protection (Single numeral: 0–6 or ''X''). - Second digit: Liquid ingress protection (Single numeral: 0–9 or ''X'' ).- Third digit: Personal Protection  against access to dangerous parts (optional additional letter).- Fourth digit: Other protections (optional additional letter).'    
+      description: 'IP ''*Ingress Protection*'' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). - First digit: Solid particle protection (Single numeral: 0–6 or ''X''). - Second digit: Liquid ingress protection (Single numeral: 0–9 or ''X'' ).- Third digit: Personal Protection  against access to dangerous parts (optional additional letter).- Fourth digit: Other protections (optional additional letter)'    
       type: string    
       x-ngsi:    
         type: Property    
     refDevice:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link.'    
+          x-ngsi:    
+            type: Property    
+      description: 'Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link'    
       x-ngsi:    
         type: Relationship    
     refPointOfInterest:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation.'    
+          x-ngsi:    
+            type: Property    
+      description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the observation'    
       x-ngsi:    
         type: Relationship    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -725,13 +810,13 @@ InverterDevice:
         type: Property    
         units: Watt    
     serialNumber:    
-      description: 'Serial numbers of the item'    
+      description: Serial numbers of the item    
       type: string    
       x-ngsi:    
         model: https://schema.org/brand    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -743,19 +828,19 @@ InverterDevice:
         type: Property    
         units: Volt    
     supplyPhaseNb:    
-      description: 'Number of power supply phases'    
+      description: Number of power supply phases    
       minimum: 0    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     topology:    
-      description: 'Description of the topology of the installation.'    
+      description: Description of the topology of the installation    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity type. It has to be InverterDevice'    
+      description: NGSI Entity type. It has to be InverterDevice    
       enum:    
         - InverterDevice    
       type: string    
@@ -787,7 +872,7 @@ InverterDevice:
     - phaseType    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/InverterDevice/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/InverterDevice/schema.json    
   x-model-tags: ""    
@@ -800,7 +885,7 @@ InverterDevice:
 <!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### InverterDevice NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für ein InverterDevice im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein InverterDevice im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -940,7 +1025,7 @@ InverterDevice:
     "type": "GeoProperty",  
     "value": {  
       "type": "Point",  
-      "coordinates ": [  
+      "coordinates": [  
         43.664810,  
         7.196545  
       ]  
@@ -1204,7 +1289,7 @@ InverterDevice:
 ```  
 </details>  
 #### InverterDevice NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für ein InverterDevice im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein InverterDevice im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -1330,288 +1415,289 @@ InverterDevice:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
-    "type": "InverterDevice",  
-    "address": {  
-        "type": "Property",  
-        "value": {  
-            "addressCountry": "FR",  
-            "addressLocality": "Nice",  
-            "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
-        }  
-    },  
-    "alternateName": {  
-        "type": "Property",  
-        "value": "AirPort \u2013 global Observation"  
-    },  
-    "application": {  
-        "type": "Property",  
-        "value": [  
-            "robotics"  
-        ]  
-    },  
-    "areaServed": {  
-        "type": "Property",  
-        "value": "Nice Aeroport"  
-    },  
-    "brandName": {  
-        "type": "Property",  
-        "value": "KOSTAL ELEC"  
-    },  
-    "coolingSystem": {  
-        "type": "Property",  
-        "value": "OptiCool"  
-    },  
-    "dateLastReported": {  
-        "type": "Property",  
-        "value": {  
-            "type": "DateTime",  
-            "value": "2020-03-17T08:45:00Z"  
-        }  
-    },  
-    "description": {  
-        "type": "Property",  
-        "value": "Description of the Inverter linked to Battery and PhotoVoltaic Devices"  
-    },  
-    "dimension": {  
-        "type": "Property",  
-        "value": {  
-            "length": 52.75,  
-            "depth": 23.5,  
-            "height": 45.25  
-        }  
-    },  
-    "documentation": {  
-        "type": "Property",  
-        "value": "https://www.myInverter.fr"  
-    },  
-    "installationCondition": {  
-        "type": "Property",  
-        "value": [  
-            "extremeClimate"  
-        ]  
-    },  
-    "installationMode": {  
-        "type": "Property",  
-        "value": "wall"  
-    },  
-    "inverterStatus": {  
-        "type": "Property",  
-        "value": [  
-            "00-OnSector",  
-            "06-OverVoltage"  
-        ]  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates ": [  
-                43.66481,  
-                7.196545  
-            ]  
-        }  
-    },  
-    "mPPTPVVoltageDC": {  
-        "type": "Property",  
-        "value": {  
-            "min": 188,  
-            "max": 440  
-        }  
-    },  
-    "manufacturerName": {  
-        "type": "Property",  
-        "value": "SOLAR ELECTRIC CPY"  
-    },  
-    "maxInputCurrentParallelAssembly": {  
-        "type": "Property",  
-        "value": 25  
-    },  
-    "maxOutputPowerAC": {  
-        "type": "Property",  
-        "value": 4000  
-    },  
-    "modelName": {  
-        "type": "Property",  
-        "value": "SB 4000TL-20"  
-    },  
-    "moduleYieldRate": {  
-        "type": "Property",  
-        "value": {  
-            "euro": 97.1,  
-            "eta": 96.4  
-        }  
-    },  
-    "name": {  
-        "type": "Property",  
-        "value": "INVDEV-T1-G0-027"  
-    },  
-    "nbInputParallelDC": {  
-        "type": "Property",  
-        "value": "A:2,B:2"  
-    },  
-    "nbMPPTrackersDC": {  
-        "type": "Property",  
-        "value": 3  
-    },  
-    "noiseLevel": {  
-        "type": "Property",  
-        "value": 29  
-    },  
-    "nominalAmpereAC ": {  
-        "type": "Property",  
-        "value": 16  
-    },  
-    "nominalAmpereDC ": {  
-        "type": "Property",  
-        "value": 17  
-    },  
-    "nominalFrequencyAC": {  
-        "type": "Property",  
-        "value": 50  
-    },  
-    "nominalFrequencyDC": {  
-        "type": "Property",  
-        "value": 50  
-    },  
-    "nominalPowerAC": {  
-        "type": "Property",  
-        "value": 3680  
-    },  
-    "nominalPowerDC": {  
-        "type": "Property",  
-        "value": 4200  
-    },  
-    "nominalVoltageAC": {  
-        "type": "Property",  
-        "value": 230  
-    },  
-    "nominalVoltageDC": {  
-        "type": "Property",  
-        "value": 400  
-    },  
-    "operatingAirHumidity": {  
-        "type": "Property",  
-        "value": {  
-            "min": 0,  
-            "max": 0.95  
-        }  
-    },  
-    "operatingAmpereAC": {  
-        "type": "Property",  
-        "value": {  
-            "min": 16,  
-            "max": 22  
-        }  
-    },  
-    "operatingAmpereDC": {  
-        "type": "Property",  
-        "value": {  
-            "min": 17,  
-            "max": 17  
-        }  
-    },  
-    "operatingFrequencyAC": {  
-        "type": "Property",  
-        "value": {  
-            "min": 50,  
-            "max": 60  
-        }  
-    },  
-    "operatingFrequencyDC": {  
-        "type": "Property",  
-        "value": {  
-            "min": 50,  
-            "max": 50  
-        }  
-    },  
-    "operatingTemperature": {  
-        "type": "Property",  
-        "value": {  
-            "min": -25,  
-            "max": 60  
-        }  
-    },  
-    "operatingVoltageAC": {  
-        "type": "Property",  
-        "value": {  
-            "min": 180,  
-            "max": 280  
-        }  
-    },  
-    "operatingVoltageDC": {  
-        "type": "Property",  
-        "value": {  
-            "min": 125,  
-            "max": 550  
-        }  
-    },  
-    "overVoltageCategory": {  
-        "type": "Property",  
-        "value": "III"  
-    },  
-    "owners": {  
-        "type": "Property",  
-        "value": [  
-            "Airport-Division Maintenance"  
-        ]  
-    },  
-    "phaseType": {  
-        "type": "Property",  
-        "value": "threePhase"  
-    },  
-    "possibilityOfUse": {  
-        "type": "Property",  
-        "value": "stationary"  
-    },  
-    "powerFactorAC": {  
-        "type": "Property",  
-        "value": 1  
-    },  
-    "protectionClassSLK": {  
-        "type": "Property",  
-        "value": "1"  
-    },  
-    "protectionIK": {  
-        "type": "Property",  
-        "value": 10  
-    },  
-    "protectionIP": {  
-        "type": "Property",  
-        "value": "55"  
-    },  
-    "self-consumption": {  
-        "type": "Property",  
-        "value": 0.5  
-    },  
-    "serialNumber": {  
-        "type": "Property",  
-        "value": "SEKOPI10327458712"  
-    },  
-    "startingVoltageDC": {  
-        "type": "Property",  
-        "value": 150  
-    },  
-    "supplyPhaseNb": {  
-        "type": "Property",  
-        "value": 3  
-    },  
-    "topology": {  
-        "type": "Property",  
-        "value": "without transformer"  
-    },  
-    "typeOfUse": {  
-        "type": "Property",  
-        "value": "indoor"  
-    },  
-    "weight": {  
-        "type": "Property",  
-        "value": 34  
-    },  
-    "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/context.jsonld"  
+  "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",  
+  "type": "InverterDevice",  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "addressCountry": "FR",  
+      "addressLocality": "Nice",  
+      "streetAddress": "Airport - Terminal 1 - Ground 0 - Local  27"  
+    }  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": "AirPort \u2013 global Observation"  
+  },  
+  "application": {  
+    "type": "Property",  
+    "value": [  
+      "robotics"  
     ]  
+  },  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Nice Aeroport"  
+  },  
+  "brandName": {  
+    "type": "Property",  
+    "value": "KOSTAL ELEC"  
+  },  
+  "coolingSystem": {  
+    "type": "Property",  
+    "value": "OptiCool"  
+  },  
+  "dateLastReported": {  
+    "type": "Property",  
+    "value": {  
+      "type": "DateTime",  
+      "value": "2020-03-17T08:45:00Z"  
+    }  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Description of the Inverter linked to Battery and PhotoVoltaic Devices"  
+  },  
+  "dimension": {  
+    "type": "Property",  
+    "value": {  
+      "length": 52.75,  
+      "depth": 23.5,  
+      "height": 45.25  
+    }  
+  },  
+  "documentation": {  
+    "type": "Property",  
+    "value": "https://www.myInverter.fr"  
+  },  
+  "installationCondition": {  
+    "type": "Property",  
+    "value": [  
+      "extremeClimate"  
+    ]  
+  },  
+  "installationMode": {  
+    "type": "Property",  
+    "value": "wall"  
+  },  
+  "inverterStatus": {  
+    "type": "Property",  
+    "value": [  
+      "00-OnSector",  
+      "06-OverVoltage"  
+    ]  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        [  
+          43.66481,  
+          7.196545  
+        ]  
+      ]  
+    }  
+  },  
+  "mPPTPVVoltageDC": {  
+    "type": "Property",  
+    "value": {  
+      "min": 188,  
+      "max": 440  
+    }  
+  },  
+  "manufacturerName": {  
+    "type": "Property",  
+    "value": "SOLAR ELECTRIC CPY"  
+  },  
+  "maxInputCurrentParallelAssembly": {  
+    "type": "Property",  
+    "value": 25  
+  },  
+  "maxOutputPowerAC": {  
+    "type": "Property",  
+    "value": 4000  
+  },  
+  "modelName": {  
+    "type": "Property",  
+    "value": "SB 4000TL-20"  
+  },  
+  "moduleYieldRate": {  
+    "type": "Property",  
+    "value": {  
+      "euro": 97.1,  
+      "eta": 96.4  
+    }  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "INVDEV-T1-G0-027"  
+  },  
+  "nbInputParallelDC": {  
+    "type": "Property",  
+    "value": "A:2,B:2"  
+  },  
+  "nbMPPTrackersDC": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "noiseLevel": {  
+    "type": "Property",  
+    "value": 29  
+  },  
+  "nominalAmpereAC ": {  
+    "type": "Property",  
+    "value": 16  
+  },  
+  "nominalAmpereDC ": {  
+    "type": "Property",  
+    "value": 17  
+  },  
+  "nominalFrequencyAC": {  
+    "type": "Property",  
+    "value": 50  
+  },  
+  "nominalFrequencyDC": {  
+    "type": "Property",  
+    "value": 50  
+  },  
+  "nominalPowerAC": {  
+    "type": "Property",  
+    "value": 3680  
+  },  
+  "nominalPowerDC": {  
+    "type": "Property",  
+    "value": 4200  
+  },  
+  "nominalVoltageAC": {  
+    "type": "Property",  
+    "value": 230  
+  },  
+  "nominalVoltageDC": {  
+    "type": "Property",  
+    "value": 400  
+  },  
+  "operatingAirHumidity": {  
+    "type": "Property",  
+    "value": {  
+      "min": 0,  
+      "max": 0.95  
+    }  
+  },  
+  "operatingAmpereAC": {  
+    "type": "Property",  
+    "value": {  
+      "min": 16,  
+      "max": 22  
+    }  
+  },  
+  "operatingAmpereDC": {  
+    "type": "Property",  
+    "value": {  
+      "min": 17,  
+      "max": 17  
+    }  
+  },  
+  "operatingFrequencyAC": {  
+    "type": "Property",  
+    "value": {  
+      "min": 50,  
+      "max": 60  
+    }  
+  },  
+  "operatingFrequencyDC": {  
+    "type": "Property",  
+    "value": {  
+      "min": 50,  
+      "max": 50  
+    }  
+  },  
+  "operatingTemperature": {  
+    "type": "Property",  
+    "value": {  
+      "min": -25,  
+      "max": 60  
+    }  
+  },  
+  "operatingVoltageAC": {  
+    "type": "Property",  
+    "value": {  
+      "min": 180,  
+      "max": 280  
+    }  
+  },  
+  "operatingVoltageDC": {  
+    "type": "Property",  
+    "value": {  
+      "min": 125,  
+      "max": 550  
+    }  
+  },  
+  "overVoltageCategory": {  
+    "type": "Property",  
+    "value": "III"  
+  },  
+  "owners": {  
+    "type": "Property",  
+    "value": [  
+      "Airport-Division Maintenance"  
+    ]  
+  },  
+  "phaseType": {  
+    "type": "Property",  
+    "value": "threePhase"  
+  },  
+  "possibilityOfUse": {  
+    "type": "Property",  
+    "value": "stationary"  
+  },  
+  "powerFactorAC": {  
+    "type": "Property",  
+    "value": 1  
+  },  
+  "protectionClassSLK": {  
+    "type": "Property",  
+    "value": "1"  
+  },  
+  "protectionIK": {  
+    "type": "Property",  
+    "value": 10  
+  },  
+  "protectionIP": {  
+    "type": "Property",  
+    "value": "55"  
+  },  
+  "self-consumption": {  
+    "type": "Property",  
+    "value": 0.5  
+  },  
+  "serialNumber": {  
+    "type": "Property",  
+    "value": "SEKOPI10327458712"  
+  },  
+  "startingVoltageDC": {  
+    "type": "Property",  
+    "value": 150  
+  },  
+  "supplyPhaseNb": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "topology": {  
+    "type": "Property",  
+    "value": "without transformer"  
+  },  
+  "typeOfUse": {  
+    "type": "Property",  
+    "value": "indoor"  
+  },  
+  "weight": {  
+    "type": "Property",  
+    "value": 34  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
 </details><!-- /80-Examples -->  
