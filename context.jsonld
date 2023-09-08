@@ -25,8 +25,16 @@
         "apparentPower": "https://smartdatamodels.org/dataModel.Energy/apparentPower",
         "application": "https://smartdatamodels.org/dataModel.Energy/application",
         "areaServed": "https://smartdatamodels.org/areaServed",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "brandName": "https://smartdatamodels.org/dataModel.Energy/brandName",
         "coolingSystem": "https://smartdatamodels.org/dataModel.Energy/coolingSystem",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "current": "https://smartdatamodels.org/dataModel.Energy/current",
         "dataDescriptor": "https://smartdatamodels.org/dataModel.Energy/dataDescriptor",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
