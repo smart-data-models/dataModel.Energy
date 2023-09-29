@@ -17,10 +17,13 @@
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
 - `activeEnergyExport[object]`: Énergie active exportée par phase. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `activeEnergyImport[object]`: Énergie active importée, c'est-à-dire consommée par phase. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `activePower[object]`: Puissance active consommée par phase. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
@@ -28,33 +31,47 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
 - `alternateName[string]`: Un nom alternatif pour ce poste  - `apparentEnergyExport[object]`: Énergie apparente exportée par phase. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `apparentEnergyImport[object]`: Énergie apparente importée, c'est-à-dire consommée par phase. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `apparentPower[object]`: Puissance apparente consommée par phase. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: Courant électrique. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
 	- `L3`:     
+	- `N`:     
 - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateEnergyMeteringStarted[date-time]`: Date de début du comptage de l'énergie au format ISO8601 UTC  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `dateObserved[date-time]`: Date et heure de cette observation représentées par un format ISO8601 UTC. Elle peut être représentée par un instant spécifique ou par un intervalle ISO8601 pour séparer les attributs `dateObservedFrom`, `dateObservedTo`, `dateObservedTo`, `dateObservedTo` et `dateObservedTo`.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[date-time]`: Période d'observation : Date et heure de début au format ISO8601 UTC. Cet attribut peut être utilisé en plus de l'attribut `dateObserved` lorsqu'il correspond à un intervalle de temps à mettre en évidence.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[date-time]`: Période d'observation : Date et heure de fin au format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut `dateObserved` lorsqu'il correspond à un intervalle de temps à mettre en évidence.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Une description de l'article  - `displacementPowerFactor[object]`: Facteur de puissance de déplacement pour chaque phase. La quantité est basée sur la fréquence fondamentale du système.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `frequency[number]`: La fréquence du circuit. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `phaseToPhaseVoltage[object]`: Tension entre phases. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L12`:     
 	- `L23`:     
+	- `L31`:     
 - `phaseType[string]`: Type de phase. Une valeur unique. Enum : "monophasé, triphasé  . Model: [https://schema.org/Text](https://schema.org/Text)- `phaseVoltage[object]`: La tension entre chaque phase et le conducteur neutre. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `powerFactor[object]`: Facteur de puissance pour chaque phase  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `reactiveEnergyExport[object]`: Énergie réactive de fréquence fondamentale exportée par phase. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `reactiveEnergyImport[object]`: Énergie réactive à la fréquence fondamentale importée, c'est-à-dire consommée par phase. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `reactivePower[object]`: Puissance réactive à la fréquence fondamentale. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `refDevice[array]`: Référence aux dispositifs qui ont permis de recueillir cette observation  . Model: [https://schema.org/URL](https://schema.org/URL)- `refTargetDevice[array]`: Référence à une liste des dispositifs pour lesquels la mesure a été effectuée  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `thdCurrent[object]`: Distorsion harmonique totale du courant pour chaque phase  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `thdVoltage[object]`: Distorsion harmonique totale de la tension pour chaque phase  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
 	- `L2`:     
+	- `L3`:     
 - `totalActiveEnergyExport[number]`: Énergie totale importée, c'est-à-dire consommée. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActiveEnergyImport[number]`: Énergie totale importée, c'est-à-dire consommée. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActivePower[number]`: Puissance active totale consommée. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentEnergyExport[number]`: Énergie totale exportée (en termes de puissance apparente). Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalApparentEnergyImport[number]`: Énergie totale importée, c'est-à-dire consommée (en termes de puissance apparente). Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentPower[number]`: Puissance apparente totale consommée. Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalDisplacementPowerFactor[number]`: Somme des facteurs de puissance de déplacement incluant toutes les phases. La quantité est basée sur la fréquence fondamentale du système.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalPowerFactor[number]`: Somme des facteurs de puissance incluant toutes les phases  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalReactiveEnergyExport[number]`: Total de l'énergie réactive à la fréquence fondamentale exportée. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalReactiveEnergyImport[number]`: Énergie totale importée, c'est-à-dire consommée (en ce qui concerne la puissance réactive à la fréquence fondamentale). Le code de l'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactivePower[number]`: Puissance réactive totale consommée. Le code d'unité (texte) est donné en utilisant les [codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type de propriété NGSI. Il doit s'agir d'ACMeasurement  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
@@ -76,14 +93,23 @@ ACMeasurement:
       description: 'Active energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the active Energy Export    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the active Energy Export    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the active Energy Export    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -93,14 +119,23 @@ ACMeasurement:
       description: 'Active energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the active Energy Import    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the active Energy Import    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the active Energy Import    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -110,14 +145,23 @@ ACMeasurement:
       description: 'Active power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the active power    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the active power    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the active power    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -185,14 +229,23 @@ ACMeasurement:
       description: 'Apparent energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the apparent Energy Export    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the apparent Energy Export    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the apparent Energy Export    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -202,14 +255,23 @@ ACMeasurement:
       description: 'Apparent energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the apparent Energy Import    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the apparent Energy Import    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the apparent Energy Import    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -219,14 +281,23 @@ ACMeasurement:
       description: 'Apparent power consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the apparent power    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the apparent power    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the apparent power    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -242,13 +313,25 @@ ACMeasurement:
       description: 'Electrical current. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the current    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the current    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the current    
           type: number    
+          x-ngsi:    
+            type: Property    
         N:    
+          description: Value for phase neutral of the current    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -308,17 +391,26 @@ ACMeasurement:
       description: Displacement power factor for each phase. The quantity is based on the fundamental frequency of the system    
       properties:    
         L1:    
+          description: Value for phase 1 of the displacement Power Factor    
           maximum: 1    
           minimum: -1    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the displacement Power Factor    
           maximum: 1    
           minimum: -1    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the displacement Power Factor    
           maximum: 1    
           minimum: -1    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -544,14 +636,23 @@ ACMeasurement:
       description: 'Voltage between phases. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L12:    
+          description: Value for phase 1 to phase 2 voltage    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L23:    
+          description: Value for phase 2 to phase 3 voltage    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L31:    
+          description: Value for phase 3 to phase 1 voltage    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -570,14 +671,23 @@ ACMeasurement:
       description: 'The voltage between each phase and neutral conductor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the voltage    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the voltage    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the voltage    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -587,17 +697,26 @@ ACMeasurement:
       description: Power factor for each phase    
       properties:    
         L1:    
+          description: Value for phase 1 of the power factor    
           maximum: 1    
           minimum: -1    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the power factor    
           maximum: 1    
           minimum: -1    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the power factor    
           maximum: 1    
           minimum: -1    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -606,14 +725,23 @@ ACMeasurement:
       description: 'Fundamental frequency reactive energy exported per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the reactive Energy Export    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the reactive Energy Export    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the reactive Energy Export    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -623,14 +751,23 @@ ACMeasurement:
       description: 'Fundamental frequency reactive energy imported i.e. consumed per phase. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the reactive Energy Import    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the reactive Energy Import    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the reactive Energy Import    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -640,11 +777,20 @@ ACMeasurement:
       description: 'Fundamental frequency reactive power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)'    
       properties:    
         L1:    
+          description: Value for phase 1 of the reactive power    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the reactive power    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the reactive power    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -720,17 +866,26 @@ ACMeasurement:
       description: Total harmonic distortion of current for each phase    
       properties:    
         L1:    
+          description: Value for phase 1 of the thd current    
           maximum: 1    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the thd current    
           maximum: 1    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the thd current    
           maximum: 1    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
@@ -739,17 +894,26 @@ ACMeasurement:
       description: Total harmonic distortion of voltage for each phase    
       properties:    
         L1:    
+          description: Value for phase 1 of the thd voltage    
           maximum: 1    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L2:    
+          description: Value for phase 2 of the thd voltage    
           maximum: 1    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
         L3:    
+          description: Value for phase 3 of the thd voltage    
           maximum: 1    
           minimum: 0    
           type: number    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
