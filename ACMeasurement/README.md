@@ -20,6 +20,8 @@ Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataMode
 Link alla [specifica](https://github.com/smart-data-models/dataModel.Energy/blob/master/ACMeasurement/doc/spec_IT.md)
 
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.Energy/blob/master/ACMeasurement/doc/spec_JA.md)
+
+[链接到规范](https://github.com/smart-data-models/dataModel.Energy/blob/master/ACMeasurement/doc/spec_ZH.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Energy/ACMeasurement/examples/example.json) (keyvalues) for NGSI v2
@@ -29,8 +31,6 @@ Link to the [example](https://smart-data-models.github.io/dataModel.Energy/ACMea
 Link to the [example](https://smart-data-models.github.io/dataModel.Energy/ACMeasurement/examples/example-normalized.json) (normalized) for NGSI-V2
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Energy/ACMeasurement/examples/example-normalized.jsonld) (normalized) for NGSI-LD
-
-Link to the [example](https://smart-data-models.github.io/dataModel.Energy/ACMeasurement/examples/example-geojsonfeature.json) (geojson feature) for NGSI-LD
 ### Dynamic Examples generation
 
 Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.Energy/master/ACMeasurement/schema.json&email=info@smartdatamodels.org) of NGSI-LD normalized payloads compliant with this data model. Refresh for new values
