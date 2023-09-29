@@ -79,15 +79,18 @@
                     "properties": {
                         "L1": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 of the active Energy Import"
                         },
                         "L2": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 of the active Energy Import"
                         },
                         "L3": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 of the active Energy Import"
                         }
                     }
                 },
@@ -97,15 +100,18 @@
                     "properties": {
                         "L1": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 of the reactive Energy Import"
                         },
                         "L2": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 of the reactive Energy Import"
                         },
                         "L3": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 of the reactive Energy Import"
                         }
                     }
                 },
@@ -115,15 +121,18 @@
                     "properties": {
                         "L1": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 of the apparent Energy Import"
                         },
                         "L2": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 of the apparent Energy Import"
                         },
                         "L3": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 of the apparent Energy Import"
                         }
                     }
                 },
@@ -133,15 +142,18 @@
                     "properties": {
                         "L1": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 of the active Energy Export"
                         },
                         "L2": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 of the active Energy Export"
                         },
                         "L3": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 of the active Energy Export"
                         }
                     }
                 },
@@ -151,15 +163,18 @@
                     "properties": {
                         "L1": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 of the reactive Energy Export"
                         },
                         "L2": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 of the reactive Energy Export"
                         },
                         "L3": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 of the reactive Energy Export"
                         }
                     }
                 },
@@ -169,15 +184,18 @@
                     "properties": {
                         "L1": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 of the apparent Energy Export"
                         },
                         "L2": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 of the apparent Energy Export"
                         },
                         "L3": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 of the apparent Energy Export"
                         }
                     }
                 },
@@ -217,15 +235,18 @@
                     "properties": {
                         "L1": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 of the active power"
                         },
                         "L2": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 of the active power"
                         },
                         "L3": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 of the active power"
                         }
                     }
                 },
@@ -234,13 +255,16 @@
                     "description": "Property. Model:'https://schema.org/StructuredValue'. Fundamental frequency reactive power. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'volts-ampere-reactive'",
                     "properties": {
                         "L1": {
-                            "type": "number"
+                            "type": "number",
+                            "description": "Property. Value for phase 1 of the reactive power"
                         },
                         "L2": {
-                            "type": "number"
+                            "type": "number",
+                            "description": "Property. Value for phase 2 of the reactive power"
                         },
                         "L3": {
-                            "type": "number"
+                            "type": "number",
+                            "description": "Property. Value for phase 3 of the reactive power"
                         }
                     }
                 },
@@ -250,15 +274,18 @@
                     "properties": {
                         "L1": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 of the apparent power"
                         },
                         "L2": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 of the apparent power"
                         },
                         "L3": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 of the apparent power"
                         }
                     }
                 },
@@ -282,17 +309,20 @@
                         "L1": {
                             "type": "number",
                             "minimum": -1,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 1 of the power factor"
                         },
                         "L2": {
                             "type": "number",
                             "minimum": -1,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 2 of the power factor"
                         },
                         "L3": {
                             "type": "number",
                             "minimum": -1,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 3 of the power factor"
                         }
                     }
                 },
@@ -303,17 +333,20 @@
                         "L1": {
                             "type": "number",
                             "minimum": -1,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 1 of the displacement Power Factor"
                         },
                         "L2": {
                             "type": "number",
                             "minimum": -1,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 2 of the displacement Power Factor"
                         },
                         "L3": {
                             "type": "number",
                             "minimum": -1,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 3 of the displacement Power Factor"
                         }
                     }
                 },
@@ -334,16 +367,20 @@
                     "description": "Property. Model:'https://schema.org/StructuredValue'. Electrical current. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Units:'Ampere'",
                     "properties": {
                         "L1": {
-                            "type": "number"
+                            "type": "number",
+                            "description": "Property. Value for phase 1 of the current"
                         },
                         "L2": {
-                            "type": "number"
+                            "type": "number",
+                            "description": "Property. Value for phase 2 of the current"
                         },
                         "L3": {
-                            "type": "number"
+                            "type": "number",
+                            "description": "Property. Value for phase 3 of the current"
                         },
                         "N": {
-                            "type": "number"
+                            "type": "number",
+                            "description": "Property. Value for phase neutral of the current"
                         }
                     }
                 },
@@ -353,15 +390,18 @@
                     "properties": {
                         "L1": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 of the voltage"
                         },
                         "L2": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 of the voltage"
                         },
                         "L3": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 of the voltage"
                         }
                     }
                 },
@@ -372,17 +412,20 @@
                         "L1": {
                             "type": "number",
                             "minimum": 0,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 1 of the thd voltage"
                         },
                         "L2": {
                             "type": "number",
                             "minimum": 0,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 2 of the thd voltage"
                         },
                         "L3": {
                             "type": "number",
                             "minimum": 0,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 3 of the thd voltage"
                         }
                     }
                 },
@@ -393,17 +436,20 @@
                         "L1": {
                             "type": "number",
                             "minimum": 0,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 1 of the thd current"
                         },
                         "L2": {
                             "type": "number",
                             "minimum": 0,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 2 of the thd current"
                         },
                         "L3": {
                             "type": "number",
                             "minimum": 0,
-                            "maximum": 1
+                            "maximum": 1,
+                            "description": "Property. Value for phase 3 of the thd current"
                         }
                     }
                 },
@@ -413,15 +459,18 @@
                     "properties": {
                         "L12": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 1 to phase 2 voltage"
                         },
                         "L23": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 2 to phase 3 voltage"
                         },
                         "L31": {
                             "type": "number",
-                            "minimum": 0
+                            "minimum": 0,
+                            "description": "Property. Value for phase 3 to phase 1 voltage"
                         }
                     }
                 }
