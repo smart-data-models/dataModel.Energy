@@ -7,7 +7,7 @@
 [文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述：**三相(L1、L2、L3)または単相(L)とニュートラル(N)の交流(AC)を使用する電気システムで消費される電気エネルギーを測定するためのデータモデル。これは、単相測定も実行できるように拡張されたデータモデム[THREEPHASEMEASUREMENT]の初期バージョンを統合したものです。電力、周波数、電流、電圧など、さまざまな電気測定の属性が含まれています。  
+グローバルな記述：**三相(L1, L2, L3)または単相(L)とニュートラル(N)の交流(AC)を使用する電気システムで消費される電気エネルギーを測定するためのデータモデル。これは、単相測定も実行できるように拡張されたデータモデム[THREEPHASEMEASUREMENT]の初期バージョンを統合したものです。電力、周波数、電流、電圧など、さまざまな電気測定の属性が含まれています。  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -15,15 +15,15 @@
 ## プロパティのリスト  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-- `activeEnergyExport[object]`: フェーズごとに輸出されるアクティブエネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `activeEnergyImport[object]`: 輸入された能動エネルギー、すなわち相ごとに消費されたエネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `activePower[object]`: 相あたりの消費有効電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
+- `activeEnergyExport[object]`: フェーズごとに輸出されるアクティブエネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: エネルギー輸出の第1段階の値    
+	- `L2[number]`: エネルギー輸出アクティブ・フェーズ2の価値    
+	- `L3[number]`: エネルギー輸出アクティブ・フェーズ3の価値    
+- `activeEnergyImport[object]`: 輸入された能動エネルギー、すなわち相ごとに消費されたエネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: エネルギー輸入の第1段階の値    
+	- `L2[number]`: アクティブ・エネルギー・インポートのフェーズ2の値    
+	- `L3[number]`: アクティブ・エネルギー・インポートの第3段階の値    
+- `activePower[object]`: 相あたりの消費有効電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: 有効電力の第1相の値    
+	- `L2[number]`: 有効電力の第2相の値    
+	- `L3[number]`: 有効電力の第3相の値    
 - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
@@ -32,46 +32,46 @@
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
-- `alternateName[string]`: この項目の別名  - `apparentEnergyExport[object]`: フェーズごとに輸出される見かけのエネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `apparentEnergyImport[object]`: 輸入された見かけのエネルギー、すなわち相ごとに消費されたエネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `apparentPower[object]`: 相あたりの皮相消費電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: 電流。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-	- `N`:     
-- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateEnergyMeteringStarted[date-time]`: ISO8601 UTCフォーマットでのエネルギー計測開始日  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[date-time]`: ISO8601 UTCフォーマットで表現された観測日時。これは、特定の時間インスタンス、または ISO8601 間隔で表すことができ、属性 `dateObservedFrom`,`dateObservedTo` を区切ります。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[date-time]`: 観測期間：ISO8601 UTCフォーマットでの開始日時。この属性は、`dateObserved`属性に加えて、ハイライトする時間間隔に対応する場合に使用することができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[date-time]`: 観測期間：ISO8601 UTCフォーマットでの終了日時。この属性は、`dateObserved`属性に加えて、ハイライトする時間間隔に対応する場合に使用することができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: この商品の説明  - `displacementPowerFactor[object]`: 各相の変位力率。この量はシステムの基本周波数に基づく。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `frequency[number]`: 回路の周波数。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `phaseToPhaseVoltage[object]`: 相間電圧。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L12`:     
-	- `L23`:     
-	- `L31`:     
-- `phaseType[string]`: フェーズのタイプ。一意の値。Enum：「singlePhase、threePhase」。  . Model: [https://schema.org/Text](https://schema.org/Text)- `phaseVoltage[object]`: 各相と中性導体間の電圧。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `powerFactor[object]`: 各相の力率  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `reactiveEnergyExport[object]`: 相あたりの基本周波数無効エネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `reactiveEnergyImport[object]`: 基本周波数無効エネルギー輸入量。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `reactivePower[object]`: 基本周波数無効電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `refDevice[array]`: この観測を捕らえた機器への言及  . Model: [https://schema.org/URL](https://schema.org/URL)- `refTargetDevice[array]`: 測定が行われた機器のリストへの参照  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `thdCurrent[object]`: 各相電流の全高調波歪み  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
-- `thdVoltage[object]`: 各相電圧の全高調波歪み  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1`:     
-	- `L2`:     
-	- `L3`:     
+- `alternateName[string]`: この項目の別名  - `apparentEnergyExport[object]`: フェーズごとに輸出される見かけのエネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: 見かけのエネルギー輸出の第1段階の価値    
+	- `L2[number]`: 見かけのエネルギー輸出の第2段階の価値    
+	- `L3[number]`: 見かけのエネルギー輸出の第3段階の価値    
+- `apparentEnergyImport[object]`: 輸入された見かけのエネルギー、すなわち相ごとに消費されたエネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: 見かけのエネルギー輸入の第1段階の値    
+	- `L2[number]`: 見かけのエネルギー輸入の第2段階の値    
+	- `L3[number]`: 見かけのエネルギー輸入の第3段階の値    
+- `apparentPower[object]`: 相あたりの皮相消費電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: 皮相電力の第1相の値    
+	- `L2[number]`: 皮相電力のフェーズ2の値    
+	- `L3[number]`: 皮相電力の第3相の値    
+- `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[object]`: 電流。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: 現在のフェーズ1の値    
+	- `L2[number]`: 現在のフェーズ2の値    
+	- `L3[number]`: 現在のフェーズ3の値    
+	- `N[number]`: 電流の中性相の値    
+- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateEnergyMeteringStarted[date-time]`: ISO8601 UTCフォーマットでのエネルギー計測開始日  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[date-time]`: ISO8601 UTCフォーマットで表現された観測日時。これは、特定の時間インスタンス、または ISO8601 間隔で表すことができ、`dateObservedFrom`,`dateObservedTo` 属性を区切ります。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedFrom[date-time]`: 観測期間：ISO8601 UTCフォーマットでの開始日時。この属性は、`dateObserved`属性に加えて、ハイライトする時間間隔に対応する場合に使用することができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[date-time]`: 観測期間：ISO8601 UTCフォーマットでの終了日時。この属性は、`dateObserved`属性に加えて、ハイライトする時間間隔に対応する場合に使用することができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: この商品の説明  - `displacementPowerFactor[object]`: 各相の変位力率。この量はシステムの基本周波数に基づく。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: 変位第1相の値 力率    
+	- `L2[number]`: 変位第2相の値 力率    
+	- `L3[number]`: 変位の第3相の値 力率    
+- `frequency[number]`: 回路の周波数。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `phaseToPhaseVoltage[object]`: 相間電圧。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L12[number]`: 第1相対第2相電圧の値    
+	- `L23[number]`: 2相対3相電圧の値    
+	- `L31[number]`: 第3相対第1相電圧の値    
+- `phaseType[string]`: フェーズのタイプ。一意の値。Enum：「singlePhase、threePhase」。  . Model: [https://schema.org/Text](https://schema.org/Text)- `phaseVoltage[object]`: 各相と中性導体間の電圧。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: 電圧第1相の値    
+	- `L2[number]`: 電圧第2相の値    
+	- `L3[number]`: 電圧第3相の値    
+- `powerFactor[object]`: 各相の力率  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: 力率の第1相の値    
+	- `L2[number]`: 力率第2相の値    
+	- `L3[number]`: 力率第3相の値    
+- `reactiveEnergyExport[object]`: 相あたりの基本周波数無効エネルギー。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: リアクティブ・エネルギー輸出の第1段階の価値    
+	- `L2[number]`: リアクティブ・エネルギー輸出のフェーズ2の価値    
+	- `L3[number]`: リアクティブ・エネルギー輸出の第3段階の価値    
+- `reactiveEnergyImport[object]`: 基本周波数無効エネルギー輸入量。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: リアクティブ・エネルギー輸入の第1段階の値    
+	- `L2[number]`: リアクティブ・エネルギー輸入のフェーズ2の値    
+	- `L3[number]`: リアクティブ・エネルギー輸入の第3段階の値    
+- `reactivePower[object]`: 基本周波数無効電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: 無効電力の第1相の値    
+	- `L2[number]`: 無効電力の第2相の値    
+	- `L3[number]`: 無効電力の第3相の値    
+- `refDevice[array]`: この観測を捕らえた機器への言及  . Model: [https://schema.org/URL](https://schema.org/URL)- `refTargetDevice[array]`: 測定が行われた機器のリストへの参照  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `thdCurrent[object]`: 各相電流の全高調波歪み  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: thd電流の第1相の値    
+	- `L2[number]`: thd電流のフェーズ2の値    
+	- `L3[number]`: thd電流の第3相の値    
+- `thdVoltage[object]`: 各相電圧の全高調波歪み  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)	- `L1[number]`: thd電圧の第1相の値    
+	- `L2[number]`: thd 電圧のフェーズ 2 の値    
+	- `L3[number]`: thd電圧の第3相の値    
 - `totalActiveEnergyExport[number]`: 輸入された、すなわち消費されたエネルギーの合計。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられている。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActiveEnergyImport[number]`: 輸入された、すなわち消費されたエネルギーの合計。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を使用する。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalActivePower[number]`: 消費される総活動電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentEnergyExport[number]`: 総輸出エネルギー（皮相電力に関して）。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalApparentEnergyImport[number]`: 輸入された、すなわち消費されたエネルギーの合計（皮相電力に関して）。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalApparentPower[number]`: 総消費皮相電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalDisplacementPowerFactor[number]`: 全相を含む変位力率の和。この量はシステムの基本周波数に基づく。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalPowerFactor[number]`: 全相を含む力率の合計  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalReactiveEnergyExport[number]`: 基本周波数無効エネルギーの総輸出量。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `totalReactiveEnergyImport[number]`: 基本周波数無効電力に関して）輸入すなわち消費されたエネルギーの合計。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactivePower[number]`: 総消費無効電力。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI プロパティタイプ。ACMeasurement である必要があります。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
