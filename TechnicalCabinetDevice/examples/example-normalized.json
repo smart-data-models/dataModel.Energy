@@ -37,7 +37,7 @@
   },
   "refDeviceList": {
     "type": "Relationship",
-    "object": [
+    "value": [
       "urn:ngsi-ld:Device:NCE-CE-025",
       "urn:ngsi-ld:Device:NCE-FU-048",
       "urn:ngsi-ld:Device:NCE-CE-058"
