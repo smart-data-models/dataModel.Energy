@@ -55,14 +55,14 @@
     "value": ""
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:SolarEnergy:items:DACI:25767721",
       "urn:ngsi-ld:SolarEnergy:items:YVQJ:55840840"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:SolarEnergy:items:XREG:08856151"
     ]
@@ -129,7 +129,7 @@
     }
   },
   "dataDescriptor": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:SolarEnergy:dataDescriptor:TTTK:11491249"
   },
   "energyGenerated": {
