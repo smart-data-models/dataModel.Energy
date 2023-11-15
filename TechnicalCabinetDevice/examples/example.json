@@ -2,13 +2,13 @@
   "id": "urn:ngsi-TechnicalCabinetDevice:MNCA-TCD-AP-T2-F1-022",
   "type": "TechnicalCabinetDevice",
   "name": "MNCA-TCD-AP-T2-F1-022",
-  "alternateName": "AirPort – global Observation",
+  "alternateName": "AirPort \u2013 global Observation",
   "description": "Technical Cabinet description",
   "location": {
     "type": "Point",
     "coordinates": [
       7.196545,
-      43.664810
+      43.66481
     ]
   },
   "address": {
