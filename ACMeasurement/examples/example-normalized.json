@@ -18,7 +18,7 @@
     "value": {
       "type": "Point",
       "coordinates": [
-        43.664810,
+        43.66481,
         7.196545
       ]
     }
@@ -32,7 +32,7 @@
     "value": "2020-03-17T08:45:00Z"
   },
   "refDevice": {
-    "type": "URI",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Device:T1-F01-TR05-ACTP"
     ]
@@ -46,8 +46,8 @@
     "value": 50.020672
   },
   "measurementInterval": {
-    "type": "Number",
-    "value": 1
+    "type": "Boolean",
+    "value": true
   },
   "dateEnergyMeteringStarted": {
     "type": "DateTime",
