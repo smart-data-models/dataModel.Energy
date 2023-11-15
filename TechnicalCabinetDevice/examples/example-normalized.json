@@ -7,7 +7,7 @@
   },
   "alternateName": {
     "type": "Text",
-    "value": "AirPort – global Observation"
+    "value": "AirPort \u2013 global Observation"
   },
   "description": {
     "type": "Text",
@@ -19,7 +19,7 @@
       "type": "Point",
       "coordinates": [
         7.196545,
-        43.664810
+        43.66481
       ]
     }
   },
@@ -36,7 +36,7 @@
     "value": "Nice Aeroport"
   },
   "refDeviceList": {
-    "type": "Relationship",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Device:NCE-CE-025",
       "urn:ngsi-ld:Device:NCE-FU-048",
@@ -64,7 +64,7 @@
     "value": "L257589A4587J56"
   },
   "application": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "industrial",
       "distributionService"
@@ -79,7 +79,7 @@
     "value": "ground"
   },
   "installationCondition": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "none"
     ]
@@ -89,17 +89,17 @@
     "value": "stationary"
   },
   "documentation": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://www.myTechnicalCabinet.fr"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "Airport-Division Maintenance"
     ]
   },
   "dimension": {
-    "type": "StructuredObject",
+    "type": "StructuredValue",
     "value": {
       "width": 150,
       "height": 175,
@@ -111,7 +111,7 @@
     "value": 60
   },
   "internalDimension": {
-    "type": "StructuredObject",
+    "type": "StructuredValue",
     "value": {
       "width": 140,
       "height": 165,
@@ -131,14 +131,14 @@
     "value": 1000
   },
   "operatingTemperature": {
-    "type": "StructuredObject",
+    "type": "StructuredValue",
     "value": {
       "min": -40,
       "max": 100
     }
   },
   "protectionOthers": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "dust",
       "forcedOpening",
@@ -161,39 +161,39 @@
     "value": 180
   },
   "doorClosingMode": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "fixedHandle"
     ]
   },
   "designMaterials": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "stainlessSteel",
       "polyester"
     ]
   },
   "interiorCoating": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "heatInsulating",
       "polyesterResin"
     ]
   },
   "exteriorCoating": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "polyesterResin"
     ]
   },
   "exteriorFinish": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "roughcast"
     ]
   },
   "ventilationMode": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "selfVentilatedGills"
     ]
