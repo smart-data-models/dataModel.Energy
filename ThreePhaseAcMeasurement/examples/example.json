@@ -2,7 +2,9 @@
   "id": "ThreePhaseAcMeasurement:LV3_Ventilation",
   "type": "ThreePhaseAcMeasurement",
   "dateEnergyMeteringStarted": "2018-07-07T15:05:59.408Z",
-  "refDevice": ["Device:eQL-EDF3GL-2006201705"],
+  "refDevice": [
+    "Device:eQL-EDF3GL-2006201705"
+  ],
   "name": "HKAPK0200",
   "description": "measurement corresponding to the ventilation machine rooms",
   "totalActiveEnergyImport": 150781.96448,
