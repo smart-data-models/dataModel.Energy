@@ -2,29 +2,29 @@
   "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",
   "type": "InverterDevice",
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "INVDEV-T1-G0-027"
   },
   "alternateName": {
-    "type": "Property",
-    "value": "AirPort – global Observation"
+    "type": "Text",
+    "value": "AirPort \u2013 global Observation"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "Description of the Inverter linked to Battery and PhotoVoltaic Devices"
   },
   "location": {
-    "type": "GeoProperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
-        43.664810,
+        43.66481,
         7.196545
       ]
     }
   },
   "address": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "addressCountry": "FR",
       "addressLocality": "Nice",
@@ -32,76 +32,73 @@
     }
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": "Nice Aeroport"
   },
   "dateLastReported": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2020-03-17T08:45:00Z"
-    }
+    "type": "DateTime",
+    "value": "2020-03-17T08:45:00Z"
   },
   "brandName": {
-    "type": "Property",
+    "type": "Text",
     "value": "KOSTAL ELEC"
   },
   "modelName": {
-    "type": "Property",
+    "type": "Text",
     "value": "SB 4000TL-20"
   },
   "manufacturerName": {
-    "type": "Property",
+    "type": "Text",
     "value": "SOLAR ELECTRIC CPY"
   },
   "serialNumber": {
-    "type": "Property",
+    "type": "Text",
     "value": "SEKOPI10327458712"
   },
   "application": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "robotics"
     ]
   },
   "typeOfUse": {
-    "type": "Property",
+    "type": "Text",
     "value": "indoor"
   },
   "installationMode": {
-    "type": "Property",
+    "type": "Text",
     "value": "wall"
   },
   "installationCondition": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "extremeClimate"
     ]
   },
   "possibilityOfUse": {
-    "type": "Property",
+    "type": "Text",
     "value": "stationary"
   },
   "documentation": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://www.myInverter.fr"
   },
   "owners": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "Airport-Division Maintenance"
     ]
   },
   "phaseType": {
-    "type": "Property",
+    "type": "Text",
     "value": "threePhase"
   },
   "supplyPhaseNb": {
-    "type": "Property",
+    "type": "Number",
     "value": 3
   },
   "dimension": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "length": 52.75,
       "depth": 23.5,
@@ -109,169 +106,169 @@
     }
   },
   "weight": {
-    "type": "Property",
+    "type": "Number",
     "value": 34
   },
   "protectionIP": {
-    "type": "Property",
+    "type": "Text",
     "value": "55"
   },
   "protectionIK": {
-    "type": "Property",
+    "type": "Number",
     "value": 10
   },
   "protectionClassSLK": {
-    "type": "Property",
+    "type": "Text",
     "value": "1"
   },
   "overVoltageCategory": {
-    "type": "Property",
+    "type": "Text",
     "value": "III"
   },
   "operatingTemperature": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": -25,
       "max": 60
     }
   },
   "operatingAirHumidity": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 0,
       "max": 0.95
     }
   },
   "nominalPowerDC": {
-    "type": "Property",
+    "type": "Number",
     "value": 4200
   },
   "nominalVoltageDC": {
-    "type": "Property",
+    "type": "Number",
     "value": 400
   },
   "nominalAmpereDC ": {
-    "type": "Property",
+    "type": "Number",
     "value": 17
   },
   "nominalFrequencyDC": {
-    "type": "Property",
+    "type": "Number",
     "value": 50
   },
   "operatingVoltageDC": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 125,
       "max": 550
     }
   },
   "operatingAmpereDC": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 17,
       "max": 17
     }
   },
   "operatingFrequencyDC": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 50,
       "max": 50
     }
   },
   "mPPTPVVoltageDC": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 188,
       "max": 440
     }
   },
   "startingVoltageDC": {
-    "type": "Property",
+    "type": "Number",
     "value": 150
   },
   "nbMPPTrackersDC": {
-    "type": "Property",
+    "type": "Number",
     "value": 3
   },
   "nbInputParallelDC": {
-    "type": "Property",
+    "type": "Text",
     "value": "A:2,B:2"
   },
   "maxInputCurrentParallelAssembly": {
-    "type": "Property",
+    "type": "Number",
     "value": 25
   },
   "nominalPowerAC": {
-    "type": "Property",
+    "type": "Number",
     "value": 3680
   },
   "maxOutputPowerAC": {
-    "type": "Property",
+    "type": "Number",
     "value": 4000
   },
   "nominalVoltageAC": {
-    "type": "Property",
+    "type": "Number",
     "value": 230
   },
   "nominalAmpereAC ": {
-    "type": "Property",
+    "type": "Number",
     "value": 16
   },
   "nominalFrequencyAC": {
-    "type": "Property",
+    "type": "Number",
     "value": 50
   },
   "operatingVoltageAC": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 180,
       "max": 280
     }
   },
   "operatingAmpereAC": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 16,
       "max": 22
     }
   },
   "operatingFrequencyAC": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 50,
       "max": 60
     }
   },
   "powerFactorAC": {
-    "type": "Property",
-    "value": 1
+    "type": "Boolean",
+    "value": true
   },
   "moduleYieldRate": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "euro": 97.1,
       "eta": 96.4
     }
   },
   "noiseLevel": {
-    "type": "Property",
+    "type": "Number",
     "value": 29
   },
   "self-consumption": {
-    "type": "Property",
+    "type": "Number",
     "value": 0.5
   },
   "topology": {
-    "type": "Property",
+    "type": "Text",
     "value": "without transformer"
   },
   "coolingSystem": {
-    "type": "Property",
+    "type": "Text",
     "value": "OptiCool"
   },
   "inverterStatus": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "00-OnSector",
       "06-OverVoltage"
