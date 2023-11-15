@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:InverterDevice:InverterDevice:MNCA-INVDEV-T1-G0-027",
   "type": "InverterDevice",
   "name": "INVDEV-T1-G0-027",
-  "alternateName": "AirPort – global Observation",
+  "alternateName": "AirPort \u2013 global Observation",
   "description": "Description of the Inverter linked to Battery and PhotoVoltaic Devices",
   "location": {
     "type": "Point",
