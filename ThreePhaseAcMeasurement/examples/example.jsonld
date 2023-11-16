@@ -17,10 +17,7 @@
     "L3": 50.872452,
     "N": 0.0
   },
-  "dateEnergyMeteringStarted": {
-    "@type": "DateTime",
-    "@value": "2018-07-07T15:05:59.408Z"
-  },
+  "dateEnergyMeteringStarted": "2018-07-07T15:05:59.408Z",
   "description": "measurement corresponding to the ventilation machine rooms",
   "displacementPowerFactor": {
     "L1": 0.978013,
