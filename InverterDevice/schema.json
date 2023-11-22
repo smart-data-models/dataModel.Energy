@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "modelTags": "",
+    "modelTags": "greenEnergyProduction",
     "$id": "https://smart-data-models.github.io/data-models.Energy/InverterDevice/schema.json",
     "title": "InverterDevice schema",
     "description": "The data model is intended to describe the mechanical, electrical characteristics of an Inverter according to *DC - Direct Current Information* supplied as input and *AC - Alternating Current Information*  returned as output. *Remark*: This Data Model can be used directly as a main entity to describe the device [Inverter] or as a sub-entity of the Data Model {DEVICE] using a reference by the [refDevice] attribute.",
