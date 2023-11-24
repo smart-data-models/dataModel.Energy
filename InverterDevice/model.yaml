@@ -822,8 +822,8 @@ InverterDevice:
     - phaseType
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Energy/blob/master/InverterDevice/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/InverterDevice/schema.json
-  x-model-tags: ""
+  x-model-tags: greenEnergyProduction
   x-version: 0.0.2
