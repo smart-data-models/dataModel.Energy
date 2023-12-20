@@ -45,10 +45,6 @@
     "type": "Number",
     "value": 50.020672
   },
-  "measurementInterval": {
-    "type": "Boolean",
-    "value": true
-  },
   "dateEnergyMeteringStarted": {
     "type": "DateTime",
     "value": "2020-07-07T15:05:59.408Z"
