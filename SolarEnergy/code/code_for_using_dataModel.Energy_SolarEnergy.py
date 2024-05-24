@@ -24,33 +24,38 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "SolarEnergy"
 subject = "dataModel.Energy"
-totalActivePower = {'type': 'Property', 'value': 873.9}
-attribute = "totalActivePower"
-value = totalActivePower
+activePower = {'L1': 17.3, 'L2': 19.5, 'L3': 20.4}
+attribute = "activePower"
+value = activePower
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-phaseCurrent = {'type': 'Property', 'value': {'L1': 111.5, 'L2': 109.3, 'L3': 111.0}}
-attribute = "phaseCurrent"
-value = phaseCurrent
+current = {'L1': 1.2, 'L2': 1.2, 'L3': 1.3, 'N': 0.7}
+attribute = "current"
+value = current
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-reactivePower = {'type': 'Property', 'value': {'L1': 108.1, 'L2': 107.0, 'L3': 106.5}}
-attribute = "reactivePower"
-value = reactivePower
+dataDescriptor = "urn:ngsi-ld:SolarEnergy:dataDescriptor:TTTK:11491249"
+attribute = "dataDescriptor"
+value = dataDescriptor
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-voltage = {'type': 'Property', 'value': 122.0}
-attribute = "voltage"
-value = voltage
+energyGenerated = 766.1
+attribute = "energyGenerated"
+value = energyGenerated
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
