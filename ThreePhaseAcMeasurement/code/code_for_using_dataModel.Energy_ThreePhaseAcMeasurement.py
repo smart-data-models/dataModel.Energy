@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "ThreePhaseAcMeasurement"
 subject = "dataModel.Energy"
-activePower = {'type': 'Property', 'value': {'L1': 11996.416016, 'L2': 9461.501953, 'L3': 10242.351562}}
+activePower = {'L1': 11996.416016, 'L2': 9461.501953, 'L3': 10242.351562}
 attribute = "activePower"
 value = activePower
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-apparentPower = {'type': 'Property', 'value': {'L1': 13201.412109, 'L2': 10755.304688, 'L3': 11941.094727}, 'observedAt': '2019-01-24T22:00:00.173Z', 'measurementType': {'type': 'Property', 'value': 'average'}, 'measurementInterval': {'type': 'Property', 'value': 1}}
+apparentPower = {'L1': 13201.412109, 'L2': 10755.304688, 'L3': 11941.094727}
 attribute = "apparentPower"
 value = apparentPower
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-current = {'type': 'Property', 'value': {'L1': 56.126038, 'L2': 45.894356, 'L3': 50.872452, 'N': 0.0}, 'observedAt': '2019-01-24T22:00:00.173Z'}
+current = {'L1': 56.126038, 'L2': 45.894356, 'L3': 50.872452, 'N': 0.0}
 attribute = "current"
 value = current
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dateEnergyMeteringStarted = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2018-07-07T15:05:59.408Z'}}"
+dateEnergyMeteringStarted = "2018-07-07T15:05:59.408Z"
 attribute = "dateEnergyMeteringStarted"
 value = dateEnergyMeteringStarted
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
