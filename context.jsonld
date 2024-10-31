@@ -27,13 +27,13 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "brandName": "https://smartdatamodels.org/dataModel.Energy/brandName",
         "coolingSystem": "https://smartdatamodels.org/dataModel.Energy/coolingSystem",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "current": "https://smartdatamodels.org/dataModel.Energy/current",
         "dataDescriptor": "https://smartdatamodels.org/dataModel.Energy/dataDescriptor",
@@ -70,12 +70,12 @@
         "internalDimension": "https://smartdatamodels.org/dataModel.Energy/internalDimension",
         "inverterStatus": "https://smartdatamodels.org/dataModel.Energy/inverterStatus",
         "length": "https://smartdatamodels.org/dataModel.Energy/length",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "mPPTPVVoltageDC": "https://smartdatamodels.org/dataModel.Energy/mPPTPVVoltageDC",
         "manufacturerName": "https://smartdatamodels.org/dataModel.Energy/manufacturerName",
         "max": {
             "@container": "@list",
-            "@id": "ngsi-ld:max"
+            "@id": "https://uri.etsi.org/ngsi-ld/max"
         },
         "maxInputCurrentParallelAssembly": "https://smartdatamodels.org/dataModel.Energy/maxInputCurrentParallelAssembly",
         "maxOutputPowerAC": "https://smartdatamodels.org/dataModel.Energy/maxOutputPowerAC",
@@ -83,7 +83,7 @@
         "maximumSystemVoltage": "https://smartdatamodels.org/dataModel.Energy/maximumSystemVoltage",
         "min": {
             "@container": "@list",
-            "@id": "ngsi-ld:min"
+            "@id": "https://uri.etsi.org/ngsi-ld/min"
         },
         "modelName": "https://smartdatamodels.org/dataModel.Energy/modelName",
         "moduleYieldRate": "https://smartdatamodels.org/dataModel.Energy/moduleYieldRate",
