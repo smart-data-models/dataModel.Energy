@@ -1,9 +1,9 @@
 /* (Beta) Export of data model TechnicalCabinetDevice of the subject dataModel.Energy for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE doorType_type AS ENUM ('mixed', 'other', 'solid', 'transparent');
-CREATE TYPE installationMode_type AS ENUM ('aerial', 'ground', 'other', 'pole', 'roofing', 'underground', 'wall');
-CREATE TYPE possibilityOfUse_type AS ENUM ('mixed', 'mobile', 'other', 'stationary');
+CREATE TYPE TechnicalCabinetDevice_doorType_type AS ENUM ('mixed', 'other', 'solid', 'transparent');
+CREATE TYPE TechnicalCabinetDevice_installationMode_type AS ENUM ('aerial', 'ground', 'other', 'pole', 'roofing', 'underground', 'wall');
+CREATE TYPE TechnicalCabinetDevice_possibilityOfUse_type AS ENUM ('mixed', 'mobile', 'other', 'stationary');
 CREATE TYPE TechnicalCabinetDevice_type AS ENUM ('TechnicalCabinetDevice');
-CREATE TYPE typeOfUse_type AS ENUM ('indoor', 'mixed', 'outdoor', 'other');
+CREATE TYPE TechnicalCabinetDevice_typeOfUse_type AS ENUM ('indoor', 'mixed', 'outdoor', 'other');
 CREATE TABLE TechnicalCabinetDevice (
   "address" JSON,
   "alternateName" TEXT,
@@ -21,12 +21,12 @@ CREATE TABLE TechnicalCabinetDevice (
   "doorClosingMode" JSON,
   "doorCount" NUMERIC,
   "doorOpeningAngle" NUMERIC,
-  "doorType" doorType_type,
+  "doorType" TechnicalCabinetDevice_doorType_type,
   "exteriorCoating" JSON,
   "exteriorFinish" JSON,
   "id" TEXT PRIMARY KEY,
   "installationCondition" JSON,
-  "installationMode" installationMode_type,
+  "installationMode" TechnicalCabinetDevice_installationMode_type,
   "interiorCoating" JSON,
   "internalDimension" JSON,
   "location" JSON,
@@ -36,7 +36,7 @@ CREATE TABLE TechnicalCabinetDevice (
   "name" TEXT,
   "operatingTemperature" JSON,
   "owner" JSON,
-  "possibilityOfUse" possibilityOfUse_type,
+  "possibilityOfUse" TechnicalCabinetDevice_possibilityOfUse_type,
   "protectionIK" NUMERIC,
   "protectionIP" TEXT,
   "protectionOthers" JSON,
@@ -47,7 +47,7 @@ CREATE TABLE TechnicalCabinetDevice (
   "serialNumber" TEXT,
   "source" TEXT,
   "type" TechnicalCabinetDevice_type,
-  "typeOfUse" typeOfUse_type,
+  "typeOfUse" TechnicalCabinetDevice_typeOfUse_type,
   "ventilationMode" JSON,
   "weight" NUMERIC
 );
