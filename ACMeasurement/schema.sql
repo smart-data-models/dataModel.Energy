@@ -1,5 +1,5 @@
 /* (Beta) Export of data model ACMeasurement of the subject dataModel.Energy for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE phaseType_type AS ENUM ('singlePhase', 'threePhase');
+CREATE TYPE ACMeasurement_phaseType_type AS ENUM ('singlePhase', 'threePhase');
 CREATE TYPE ACMeasurement_type AS ENUM ('ACMeasurement');
 CREATE TABLE ACMeasurement (
   "activeEnergyExport" JSON,
@@ -27,7 +27,7 @@ CREATE TABLE ACMeasurement (
   "name" TEXT,
   "owner" JSON,
   "phaseToPhaseVoltage" JSON,
-  "phaseType" phaseType_type,
+  "phaseType" ACMeasurement_phaseType_type,
   "phaseVoltage" JSON,
   "powerFactor" JSON,
   "reactiveEnergyExport" JSON,
