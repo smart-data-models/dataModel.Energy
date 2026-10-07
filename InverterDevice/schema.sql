@@ -1,19 +1,19 @@
 /* (Beta) Export of data model InverterDevice of the subject dataModel.Energy for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE coolingSystem_type AS ENUM ('Convection', 'OptiCool', 'Regulated-fan', 'Other');
-CREATE TYPE installationMode_type AS ENUM ('aerial', 'ground', 'pole', 'roofing', 'underGround', 'wall', 'other');
-CREATE TYPE overVoltageCategory_type AS ENUM ('I', 'II', 'III', 'IV');
-CREATE TYPE phaseType_type AS ENUM ('singlePhase', 'threePhase');
-CREATE TYPE possibilityOfUse_type AS ENUM ('mixed', 'mobile', 'stationary', 'other');
-CREATE TYPE protectionClassSLK_type AS ENUM ('0', '1', '2', '3');
+CREATE TYPE InverterDevice_coolingSystem_type AS ENUM ('Convection', 'OptiCool', 'Regulated-fan', 'Other');
+CREATE TYPE InverterDevice_installationMode_type AS ENUM ('aerial', 'ground', 'pole', 'roofing', 'underGround', 'wall', 'other');
+CREATE TYPE InverterDevice_overVoltageCategory_type AS ENUM ('I', 'II', 'III', 'IV');
+CREATE TYPE InverterDevice_phaseType_type AS ENUM ('singlePhase', 'threePhase');
+CREATE TYPE InverterDevice_possibilityOfUse_type AS ENUM ('mixed', 'mobile', 'stationary', 'other');
+CREATE TYPE InverterDevice_protectionClassSLK_type AS ENUM ('0', '1', '2', '3');
 CREATE TYPE InverterDevice_type AS ENUM ('InverterDevice');
-CREATE TYPE typeOfUse_type AS ENUM ('indoor', 'outdoor', 'mixed', 'other');
+CREATE TYPE InverterDevice_typeOfUse_type AS ENUM ('indoor', 'outdoor', 'mixed', 'other');
 CREATE TABLE InverterDevice (
   "address" JSON,
   "alternateName" TEXT,
   "application" JSON,
   "areaServed" TEXT,
   "brandName" TEXT,
-  "coolingSystem" coolingSystem_type,
+  "coolingSystem" InverterDevice_coolingSystem_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateLastReported" TIMESTAMP,
@@ -23,7 +23,7 @@ CREATE TABLE InverterDevice (
   "documentation" TEXT,
   "id" TEXT PRIMARY KEY,
   "installationCondition" JSON,
-  "installationMode" installationMode_type,
+  "installationMode" InverterDevice_installationMode_type,
   "inverterStatus" JSON,
   "location" JSON,
   "mPPTPVVoltageDC" JSON,
@@ -52,12 +52,12 @@ CREATE TABLE InverterDevice (
   "operatingTemperature" JSON,
   "operatingVoltageAC" JSON,
   "operatingVoltageDC" JSON,
-  "overVoltageCategory" overVoltageCategory_type,
+  "overVoltageCategory" InverterDevice_overVoltageCategory_type,
   "owner" JSON,
-  "phaseType" phaseType_type,
-  "possibilityOfUse" possibilityOfUse_type,
+  "phaseType" InverterDevice_phaseType_type,
+  "possibilityOfUse" InverterDevice_possibilityOfUse_type,
   "powerFactorAC" NUMERIC,
-  "protectionClassSLK" protectionClassSLK_type,
+  "protectionClassSLK" InverterDevice_protectionClassSLK_type,
   "protectionIK" NUMERIC,
   "protectionIP" TEXT,
   "refDevice" JSON,
@@ -70,6 +70,6 @@ CREATE TABLE InverterDevice (
   "supplyPhaseNb" NUMERIC,
   "topology" TEXT,
   "type" InverterDevice_type,
-  "typeOfUse" typeOfUse_type,
+  "typeOfUse" InverterDevice_typeOfUse_type,
   "weight" NUMERIC
 );
